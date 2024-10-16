@@ -45,6 +45,4 @@ for filename in $destDir/*; do
   rm -rf $tempdir
 done
 
-for filename in $manifestdir/*; do
-
-done
+cat $manifest_dir/* > manifest.out
