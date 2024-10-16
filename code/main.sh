@@ -2,7 +2,7 @@ uuid=64ad5ee4-fa4e-4106-a2e5-c9f1c3eb6e4a
 editions="core;professional"
 destDir="UUPs"
 tempScript="aria2_script.$RANDOM.txt"
-$manifestdir="manifest_dir"
+manifestdir="manifest_dir"
 
 mkdir $destDir
 mkdir $manifestdir
@@ -31,9 +31,11 @@ fi
 
 for filename in $destDir/*; do
   echo Extracting $filename
-  tempdir=$RANDOM
+  tempdir="name.$RANDOM.dir"
   mkdir $tempdir
-  7z x $destDir/$filename -o $tempdir
+  echo "Extracting $filename"
+  7z x $filename -o $tempdir
+  ls $tempdir
   echo Creating manifest for $filename
   pdblister manifest $tempdir $manifestdir/$RANDOM
   echo Deleting not needed directory
