@@ -1,6 +1,6 @@
 uuid=64ad5ee4-fa4e-4106-a2e5-c9f1c3eb6e4a
-#editions="core;professional"
-editions="updateOnly"
+editions="core;professional"
+#editions="updateOnly"
 destDir="UUPs"
 tempScript="aria2_script.$RANDOM.txt"
 manifestdir="manifest_dir"
