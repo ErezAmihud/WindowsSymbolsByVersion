@@ -1,0 +1,25 @@
+FROM ubuntu:24.04
+
+# Update default packages
+RUN apt-get update
+
+# Get Ubuntu packages
+RUN apt-get install --no-install-recommends -y \
+    build-essential \
+    curl \
+    cabextract \
+    wimtools \
+    chntpw \
+    genisoimage \
+    p7zip-full
+
+# Update new packages
+RUN apt-get update
+
+# Get Rust
+RUN curl https://sh.rustup.rs -sSf | bash -s -- -y
+
+RUN echo 'source $HOME/.cargo/env' >> $HOME/.bashrc ; PATH="/root/.cargo/bin:${PATH}"
+RUN cargo install pdblister -y
+
+

@@ -1,0 +1,17 @@
+name: Detect more uup entries
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Run
+    runs-on: ubuntu-latest
+    container:
+      image: ./code/dockerfile
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+
+      - name: Run main
+        run: ./code/main.sh
+          #runs-on: ubuntu-latest
