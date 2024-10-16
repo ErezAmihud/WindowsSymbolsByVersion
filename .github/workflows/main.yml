@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run main
-        run: chmod +x ./code/main.sh && ./code/main.sh
+        run: chmod +x ./code/main.sh && bash ./code/main.sh
   
       - name: Archive manifest result
         uses: actions/upload-artifact@v4
