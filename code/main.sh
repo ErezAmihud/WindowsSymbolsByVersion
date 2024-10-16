@@ -31,21 +31,21 @@ if [ $? != 0 ]; then
 fi
 
 set -e 
-
-extract() {
-  case $(file --mime-type -b "$1")
-    "application/x-ms-wim")
-      7z x $1 -o"$2"
-    ;;
-    "application/*-cab-*")
-      cabextract -d"$2" $1
-    *)
-    echo "Cannot extract unsupported file type"
-    exit -1
-    ;;
-  esac
-  return 0
-}
+# jq --compact-output --null-input '$ARGS.positional' --args -- "${X[@]}"
+#extract() {
+#  case $(file --mime-type -b "$1")
+#    "application/x-ms-wim")
+#      7z x $1 -o"$2"
+#    ;;
+#    "application/*-cab-*")
+#      cabextract -d"$2" $1
+#    *)
+#    echo "Cannot extract unsupported file type"
+#    exit -1
+#    ;;
+#  esac
+#  return 0
+#}
 
 # TODO change cab to use something that is not 7zip
 for filename in $destDir/*; do  
@@ -53,7 +53,7 @@ for filename in $destDir/*; do
   manifest="$manifestdir/something$RANDOM.b"
   mkdir $tempdir
   echo "Extracting $filename"
-  extract $filename $tempdir
+  7z x $filename -o"$tempdir"
   echo Creating manifest for $filename in $manifest
   pdblister manifest $tempdir $manifest
   echo Deleting not needed directory
