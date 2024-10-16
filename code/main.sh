@@ -31,19 +31,35 @@ if [ $? != 0 ]; then
 fi
 
 set -e 
+
+extract() {
+  case $(file --mime-type -b "$1")
+    "application/x-ms-wim")
+      7z x $1 -o"$2"
+    ;;
+    "application/*-cab-*")
+      cabextract -d"$2" $1
+    *)
+    echo "Cannot extract unsupported file type"
+    exit -1
+    ;;
+  esac
+  return 0
+}
+
 # TODO change cab to use something that is not 7zip
-for filename in $destDir/*; do
-  echo Extracting $filename
+for filename in $destDir/*; do  
   tempdir="name.$RANDOM.dir"
   manifest="$manifestdir/something$RANDOM.b"
   mkdir $tempdir
   echo "Extracting $filename"
-  7z x $filename -o"$tempdir"
-  ls $tempdir
+  extract $filename $tempdir
   echo Creating manifest for $filename in $manifest
   pdblister manifest $tempdir $manifest
   echo Deleting not needed directory
   rm -rf $tempdir
 done
+
+
 
 cat $manifestdir/* > manifest.out
