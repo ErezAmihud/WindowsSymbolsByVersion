@@ -35,7 +35,7 @@ for filename in $destDir/*; do
   tempdir="name.$RANDOM.dir"
   mkdir $tempdir
   echo "Extracting $filename"
-  7z x $filename -o$tempdir
+  7z x $filename -o"$tempdir"
   ls $tempdir
   echo Creating manifest for $filename
   pdblister manifest $tempdir $manifestdir/$RANDOM
