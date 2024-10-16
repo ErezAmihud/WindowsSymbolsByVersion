@@ -10,6 +10,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     libssl-dev \
     pkg-config \
     python3 \
+    wimtools \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 #wimtools \

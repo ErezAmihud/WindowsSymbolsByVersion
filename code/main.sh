@@ -60,7 +60,7 @@ handle_cab() {
 count_images() {
   local count=0
   wiminfo $1 $count
-  local out=$?
+  out=$?
   while [[ $out == 0 ]]
   do
     count=$count+1
@@ -70,6 +70,8 @@ count_images() {
   
   #return $count
 }
+
+
 
 handle_wim() {
   
