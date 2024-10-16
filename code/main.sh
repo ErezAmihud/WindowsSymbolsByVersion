@@ -34,7 +34,7 @@ set -e
 for filename in $destDir/*; do
   echo Extracting $filename
   tempdir="name.$RANDOM.dir"
-  manifest="$manifestdir/$RANDOM"
+  manifest="$manifestdir/something$RANDOM.b"
   mkdir $tempdir
   echo "Extracting $filename"
   7z x $filename -o"$tempdir"
