@@ -46,4 +46,4 @@ for filename in $destDir/*; do
   rm -rf $tempdir
 done
 
-cat $manifest_dir/* > manifest.out
+cat $manifestdir/* > manifest.out
