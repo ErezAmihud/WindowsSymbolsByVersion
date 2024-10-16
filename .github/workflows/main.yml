@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/erezamihud/pdblist:latest
+      credentials:
+        username: erezamihud
+        password: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Checkout main
         uses: actions/checkout@v4
