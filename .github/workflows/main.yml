@@ -1,6 +1,8 @@
 name: Detect more uup entries
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - "feature/actual-data"
 
 jobs:
   build:
