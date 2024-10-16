@@ -6,15 +6,16 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     curl \
     cabextract \
     aria2 \
-    #wimtools \
-    #chntpw \
-    #genisoimage \
     p7zip-full \
     libssl-dev \
     pkg-config \
+    python3 \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
-
+#wimtools \
+    #chntpw \
+    #genisoimage \
+    
 
 # Get Rust
 #RUN curl https://sh.rustup.rs -sSf | bash -s -- -y
