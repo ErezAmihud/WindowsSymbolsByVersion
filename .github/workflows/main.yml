@@ -9,11 +9,10 @@ jobs:
     name: Run
     runs-on: ubuntu-latest
     container:
-      image: ./code/dockerfile
+      image: ghcr.io/erezamihud/pdblist:latest
     steps:
       - name: Checkout main
         uses: actions/checkout@v4
 
       - name: Run main
         run: ./code/main.sh
-          #runs-on: ubuntu-latest
