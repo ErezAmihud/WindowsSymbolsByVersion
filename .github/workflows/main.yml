@@ -5,6 +5,14 @@ on:
       - "feature/actual-data"
 
 jobs:
+  login:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Log in to GHCR
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u USERNAME --password-stdin
+        env:
+          USERNAME: ${{ github.actor }} # or your GitHub username
+
   build:
     name: Run
     runs-on: ubuntu-latest
