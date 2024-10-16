@@ -67,7 +67,8 @@ count_images() {
     wiminfo $1 $count
     out=$?
   done
-  return $count
+  
+  #return $count
 }
 
 handle_wim() {
