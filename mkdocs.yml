@@ -1,0 +1,7 @@
+site_name: Public Windows Symbols
+site_description: 'A mapping of windows version to windows symbols'
+site_author: 'Erez Amihud'
+docs_dir: docs/
+repo_name: 'ErezAmihud/WindowsSymbolsByVersion'
+repo_url: 'https://github.com/ErezAmihud/WindowsSymbolsByVersion'
+theme: readthedocs
