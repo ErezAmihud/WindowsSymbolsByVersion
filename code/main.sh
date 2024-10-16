@@ -30,15 +30,21 @@ if [ $? != 0 ]; then
 fi
 
 set -e 
+# TODO change cab to use something that is not 7zip
 for filename in $destDir/*; do
   echo Extracting $filename
   tempdir="name.$RANDOM.dir"
+  manifest="$manifestdir/$RANDOM"
   mkdir $tempdir
   echo "Extracting $filename"
   7z x $filename -o"$tempdir"
   ls $tempdir
-  echo Creating manifest for $filename
-  pdblister manifest $tempdir $manifestdir/$RANDOM
+  echo Creating manifest for $filename in $manifest
+  pdblister manifest $tempdir $manifest
   echo Deleting not needed directory
   rm -rf $tempdir
+done
+
+for filename in $manifestdir/*; do
+
 done
