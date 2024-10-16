@@ -17,4 +17,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run main
-        run: ./code/main.sh
+        run: chmod +x ./code/main.sh && ./code/main.sh
