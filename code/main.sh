@@ -30,7 +30,7 @@ if [ $? != 0 ]; then
   exit 1
 fi
 
-set -e 
+#set -e 
 # jq --compact-output --null-input '$ARGS.positional' --args -- "${X[@]}"
 #extract() {
 #  case $(file --mime-type -b "$1")
@@ -47,17 +47,58 @@ set -e
 #  return 0
 #}
 
-# TODO change cab to use something that is not 7zip
-for filename in $destDir/*; do  
-  tempdir="name.$RANDOM.dir"
-  manifest="$manifestdir/something$RANDOM.b"
-  mkdir $tempdir
-  echo "Extracting $filename"
-  7z x $filename -o"$tempdir"
+handle_cab() {
+  local tempdir="name.$RANDOM.dir"
+  local manifest="$manifestdir/something$RANDOM.b"
+  cabextract $1 -D $tempdir
   echo Creating manifest for $filename in $manifest
   pdblister manifest $tempdir $manifest
-  echo Deleting not needed directory
+  echo "Delete directory"
   rm -rf $tempdir
+}
+
+count_images() {
+  local count=0
+  wiminfo $1 $count
+  local out=$?
+  while [[ $out == 0 ]]
+  do
+    count=$count+1
+    wiminfo $1 $count
+    out=$?
+  done
+  return $count
+}
+
+handle_wim() {
+  
+  local number=$(count_images $1)
+  for i in $(seq 1 $number); do 
+    local manifest="$manifestdir/something$RANDOM.b"
+    local tempdir="name.$RANDOM.dir"
+    echo "extracting image $i from $1"
+    WIMEXTRACT --dest-dir $tempdir $1 $i
+    echo Creating manifest for $filename image $i in $manifest
+    pdblister manifest $tempdir $manifest
+    echo "Delete directory"
+    rm -rf $tempdir
+  done
+}
+
+
+# TODO change cab to use something that is not 7zip
+for filename in $destDir/*; do    
+  #manifest="$manifestdir/something$RANDOM.b"
+  #mkdir $tempdir
+  echo "Extracting $filename"
+  if [[ $(file --mime-type -b "$filename") == "application/vnd.ms-cab-compressed" ]] ; then
+    handle_cab $filename
+  else if [[ $(file --mime-type -b "$filename") == "application/x-ms-wim" ]] ; then
+    handle_wim $filename
+  else
+    local mm=$(file --mime-type -b "$filename")
+    echo "other mimetipe = $mm"
+  fi
 done
 
 
