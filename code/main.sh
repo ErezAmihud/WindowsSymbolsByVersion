@@ -83,7 +83,7 @@ handle_wim() {
       exit 1
     fi
     echo "Delete directory"
-    #rm -rf $tempdir
+    rm -rf $tempdir
   done
 }
 
