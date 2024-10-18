@@ -38,11 +38,15 @@ download_uup_files() {
 }
 
 handle_cab() {
-  local tempdir="name.$RANDOM.dir"
+  local tempdir="name2.$RANDOM.dir"
   local manifest="$manifestdir/something$RANDOM.b"
   cabextract "$1" -D $tempdir
   echo Creating manifest for "$filename" in $manifest
-  pdblister manifest $tempdir $manifest
+  python3 ./code/pdb_finding.py $tempdir $manifest
+  if [ $? != 0 ]; then
+    echo "We have a problem creating the manifest file"
+    exit 1
+  fi
   echo "Delete directory"
   rm -rf $tempdir
 }
@@ -56,11 +60,15 @@ handle_wim() {
   for i in $(seq 1 "$number")
   do
     local manifest="$manifestdir/something$RANDOM.b"
-    local tempdir="name.$RANDOM.dir"
+    local tempdir="name3.$RANDOM.dir"
     echo "extracting image $i from $1"
     wimextract --dest-dir $tempdir "$1" "$i"
     echo Creating manifest for "$filename" image "$i" in $manifest  
-    pdblister manifest $tempdir $manifest
+    python33 ./code/pdb_finding.py $tempdir $manifest
+    if [ $? != 0 ]; then
+      echo "We have a problem creating the manifest file"
+      exit 1
+    fi
     echo "Delete directory"
     #rm -rf $tempdir
   done
@@ -69,15 +77,11 @@ handle_wim() {
 # TODO change cab to use something that is not 7zip
 process_files(){
 for filename in "$destDir"/*; do    
-  #manifest="$manifestdir/something$RANDOM.b"
-  #mkdir $tempdir
   echo "Extracting $filename"
   if [[ $(file --mime-type -b "$filename") == "application/vnd.ms-cab-compressed" ]] ; then
     echo "cab"
     #handle_cab "$filename"
   elif [[ $(file --mime-type -b "$filename") == "application/x-ms-wim" ]] ; then
-    #c=$(count_images $filename)
-    #echo "$filename image count is $c" 
     handle_wim "$filename"
   else
     echo "other mimetipe = $(file --mime-type -b "$filename")"
