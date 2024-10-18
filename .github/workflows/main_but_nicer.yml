@@ -1,4 +1,4 @@
-name: Download uup entries
+name: Nicer Download uup entries
 on:
   push:
     branches:
