@@ -2,7 +2,7 @@
 uuid=64ad5ee4-fa4e-4106-a2e5-c9f1c3eb6e4a
 editions="core;professional"
 #editions="updateOnly"
-destDir="u"
+destDir="UUPs"
 tempScript="aria2_script.$RANDOM.txt"
 manifestdir="manifest_dir"
 
@@ -51,7 +51,7 @@ handle_cab() {
     exit 1
   fi
   echo Creating manifest for "$filename" in $manifest
-  python3 ../code/pdb_finding.py $tempdir $manifest
+  python3 ./code/pdb_finding.py $tempdir $manifest
   if [ $? != 0 ]; then
     echo "We have a problem creating the manifest file"
     exit 1
@@ -77,7 +77,7 @@ handle_wim() {
       exit 1
     fi
     echo Creating manifest for "$filename" image "$i" in $manifest  
-    python3 ../code/pdb_finding.py $tempdir $manifest
+    python3 ./code/pdb_finding.py $tempdir $manifest
     if [ $? != 0 ]; then
       echo "We have a problem creating the manifest file"
       exit 1
@@ -113,5 +113,4 @@ main() {
 
 mkdir $destDir
 mkdir $manifestdir
-#main
-process_files
+main
