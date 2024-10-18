@@ -44,9 +44,13 @@ download_uup_files() {
 handle_cab() {
   local tempdir="name2.$RANDOM.dir"
   local manifest="$manifestdir/something$RANDOM.b"
-  cabextract "$1" -d $tempdir
+  cabextract "$1" -d $tempdir > /dev/null
+  if [ $? != 0 ]; then
+    echo "Failed to extract cab"
+    exit 1
+  fi
   echo Creating manifest for "$filename" in $manifest
-  python3 ./code/pdb_finding.py $tempdir $manifest 0
+  python3 ./code/pdb_finding.py $tempdir $manifest 1
   if [ $? != 0 ]; then
     echo "We have a problem creating the manifest file"
     exit 1
@@ -67,8 +71,12 @@ handle_wim() {
     local tempdir="name3.$RANDOM.dir"
     echo "extracting image $i from $1"
     wimextract --dest-dir $tempdir "$1" "$i" > /dev/null
+    if [ $? != 0 ]; then
+      echo "Failed to extract wim"
+      exit 1
+    fi
     echo Creating manifest for "$filename" image "$i" in $manifest  
-    python3 ./code/pdb_finding.py $tempdir $manifest 0
+    python3 ./code/pdb_finding.py $tempdir $manifest 1
     if [ $? != 0 ]; then
       echo "We have a problem creating the manifest file"
       exit 1
