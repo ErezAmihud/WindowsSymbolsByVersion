@@ -12,20 +12,20 @@ jobs:
       uuid: 64ad5ee4-fa4e-4106-a2e5-c9f1c3eb6e4a
       destDir: UUPs
       manifestdir: manifest_dir
-      tempScript: aria2_scripttxt
+      tempScript: aria2_script.txt
     runs-on: ubuntu-latest
-    permissions: 
-      packages: read
+    outputs:
+      matrix: ${{ steps.split_file.outputs.matrix }}
     container:
       image: ghcr.io/erezamihud/pdblist:latest
     steps:
       - name: Checkout main
         uses: actions/checkout@v4
-      - run: mkdir $destDir ; mkdir $manifestdir
       - name: Get download lines
-        run: aria2c --no-conf --console-log-level=warn --log-level=info --log="aria2_download.log" -o"$tempScript" --allow-overwrite=true --auto-file-renaming=false "https://uupdump.net/get.php?id=$uuid&pack=en-us&edition=$editions&aria2=2"
-      - name: Split file
-        run: python3 -c "import json;print(json.dumps(open('$tempScript','r').read().split('\n\n')))"
+        run: curl "https://uupdump.net/get.php?id=$uuid&pack=en-us&edition=$editions&aria2=2" -o"$tempScript"
+      - id: split_file
+        name: Split file
+        run: python3 -c "import json;print(json.dumps({'download_url': open('$tempScript','r').read().split('\n\n')}))"
       #- name: Run main
       #  run: chmod +x ./code/main.sh && bash ./code/main.sh
   
@@ -34,3 +34,13 @@ jobs:
       #  with:
       #    name: manifest.out
       #    path: manifest.out
+  job2:
+    needs: build
+    runs-on: ubuntu-latest
+    strategy:
+      matrix: ${{fromJson(needs.build.outputs.matrix)}}
+    steps:
+    - run: echo ${{ matrix.download_url }} > a.txt
+    - run: 
+    - run: echo ${{ matrix.project }}
+    - run: echo ${{ matrix.config }}
