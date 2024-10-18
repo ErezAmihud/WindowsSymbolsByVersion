@@ -46,7 +46,7 @@ handle_cab() {
   local manifest="$manifestdir/something$RANDOM.b"
   cabextract "$1" -d $tempdir
   echo Creating manifest for "$filename" in $manifest
-  python3 ./code/pdb_finding.py $tempdir $manifest
+  python3 ./code/pdb_finding.py $tempdir $manifest 0
   if [ $? != 0 ]; then
     echo "We have a problem creating the manifest file"
     exit 1
@@ -68,7 +68,7 @@ handle_wim() {
     echo "extracting image $i from $1"
     wimextract --dest-dir $tempdir "$1" "$i" > /dev/null
     echo Creating manifest for "$filename" image "$i" in $manifest  
-    python3 ./code/pdb_finding.py $tempdir $manifest
+    python3 ./code/pdb_finding.py $tempdir $manifest 0
     if [ $? != 0 ]; then
       echo "We have a problem creating the manifest file"
       exit 1
