@@ -50,7 +50,7 @@ handle_cab() {
     exit 1
   fi
   echo Creating manifest for "$filename" in $manifest
-  python3 ./code/pdb_finding.py $tempdir $manifest 1
+  python3 ./code/pdb_finding.py $tempdir $manifest
   if [ $? != 0 ]; then
     echo "We have a problem creating the manifest file"
     exit 1
@@ -76,7 +76,7 @@ handle_wim() {
       exit 1
     fi
     echo Creating manifest for "$filename" image "$i" in $manifest  
-    python3 ./code/pdb_finding.py $tempdir $manifest 1
+    python3 ./code/pdb_finding.py $tempdir $manifest
     if [ $? != 0 ]; then
       echo "We have a problem creating the manifest file"
       exit 1

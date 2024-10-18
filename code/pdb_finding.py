@@ -35,13 +35,12 @@ def traverse_directory(directory,out):
                
 
 if __name__ == "__main__":
-    if len(sys.argv) != 4:
-        print("Usage: python script.py <directory> <out> <0|1>")
+    if len(sys.argv) != 3:
+        print("Usage: python script.py <directory> <out>")
         sys.exit(1)
 
     target_directory = sys.argv[1]
     target_output = sys.argv[2]
-    is_tqdm = bool(int(sys.argv[3]))
 
     if not os.path.isdir(target_directory):
         print(f"The specified path '{target_directory}' is not a directory.")
@@ -50,6 +49,6 @@ if __name__ == "__main__":
     file_count = sum(len(files) for _, _, files in os.walk(target_directory))
 
     with open(target_output, "w") as f:
-        for i in tqdm.tqdm(traverse_directory(target_directory, f),total=file_count, disable=is_tqdm):
+        for i in tqdm.tqdm(traverse_directory(target_directory, f),total=file_count, mininterval=10):
            pass
         
