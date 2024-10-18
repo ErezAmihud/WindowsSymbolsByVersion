@@ -53,11 +53,15 @@ handle_cab() {
   echo Creating manifest for "$filename" in $manifest
   python3 ./code/pdb_finding.py $tempdir $manifest
   if [ $? != 0 ]; then
+  ##
+  echo "==================================================="
     echo "We have a problem creating the manifest file"
-    exit 1
+    ##
+    #exit 1
   fi
   echo "Delete directory"
-  rm -rf $tempdir
+  ##
+  #rm -rf $tempdir
 }
 
 count_images() {
@@ -79,11 +83,15 @@ handle_wim() {
     echo Creating manifest for "$filename" image "$i" in $manifest  
     python3 ./code/pdb_finding.py $tempdir $manifest
     if [ $? != 0 ]; then
+      ##
+      echo "==================================================="
       echo "We have a problem creating the manifest file"
-      exit 1
+      ##
+      #exit 1
     fi
     echo "Delete directory"
-    rm -rf $tempdir
+    ##
+    #rm -rf $tempdir
   done
 }
 
