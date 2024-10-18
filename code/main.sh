@@ -52,7 +52,6 @@ count_images() {
 }
 
 handle_wim() {
-  
   number=$(count_images "$1")
   for i in $(seq 1 "$number")
   do
@@ -63,7 +62,7 @@ handle_wim() {
     echo Creating manifest for "$filename" image "$i" in $manifest  
     pdblister manifest $tempdir $manifest
     echo "Delete directory"
-    rm -rf $tempdir
+    #rm -rf $tempdir
   done
 }
 
