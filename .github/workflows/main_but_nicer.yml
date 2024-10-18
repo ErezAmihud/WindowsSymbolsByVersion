@@ -25,7 +25,8 @@ jobs:
         run: curl "https://uupdump.net/get.php?id=$uuid&pack=en-us&edition=$editions&aria2=2" -o"$tempScript"
       - id: split_file
         name: Split file
-        run: python3 -c "import json;print(json.dumps({'download_url': open('$tempScript','r').read().split('\n\n')}))"
+        run: |
+          python3 -c "import json;print(json.dumps({'download_url': open('$tempScript','r').read().split('\n\n')}))"
       #- name: Run main
       #  run: chmod +x ./code/main.sh && bash ./code/main.sh
   
