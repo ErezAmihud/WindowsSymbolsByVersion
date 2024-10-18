@@ -28,13 +28,17 @@ get_links(){
 
 download_uup_files() {
   # 1 == dest dir 2 == aria2 script
-  echo ""
-  echo "Downloading the UUP set..."
-  aria2c --no-conf --console-log-level=warn --log-level=info --log="aria2_download.log" -x16 -s16 -j5 -c -d "$1" -i "$2" -m 20
-  if [ $? != 0 ]; then
-    echo "We have encountered an error while downloading files."
-    exit 1
-  fi
+  #for i in $(seq 1 5); do
+    echo ""
+    echo "Downloading the UUP set..."
+    aria2c --no-conf --console-log-level=warn --log-level=info --log="aria2_download.log" -x16 -s16 -j5 -c -d "$1" -i "$2" -m 20
+    #if [ $? != 0 ]; then
+    #  echo "We have encountered an error while downloading files."
+    #  continue
+    #fi
+    return 0
+  #done
+  #exit 1
 }
 
 handle_cab() {
