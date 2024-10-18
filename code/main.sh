@@ -60,7 +60,7 @@ handle_wim() {
     local tempdir="name.$RANDOM.dir"
     echo "extracting image $i from $1"
     wimextract --dest-dir $tempdir "$1" "$i"
-    echo Creating manifest for "$filename" image "$i" in $manifest
+    echo Creating manifest for "$filename" image "$i" in $manifest  
     pdblister manifest $tempdir $manifest
     echo "Delete directory"
     rm -rf $tempdir
@@ -80,23 +80,21 @@ for filename in "$destDir"/*; do
     #c=$(count_images $filename)
     #echo "$filename image count is $c" 
     handle_wim "$filename"
-    exit 1
   else
-    local mm=$(file --mime-type -b "$filename")
-    echo "other mimetipe = $mm"
+    echo "other mimetipe = $(file --mime-type -b "$filename")"
   fi
 done
 }
 
 
 main() {
-mkdir $destDir
-mkdir $manifestdir
+  mkdir $destDir
+  mkdir $manifestdir
 
-get_links "$tempScript" "$uuid" "$editions"
-download_uup_files "$destDir" "$tempScript"
-process_files
-cat $manifestdir/* > manifest.out
+  get_links "$tempScript" "$uuid" "$editions"
+  download_uup_files "$destDir" "$tempScript"
+  process_files
+  cat $manifestdir/* > manifest.out
 }
 
 main

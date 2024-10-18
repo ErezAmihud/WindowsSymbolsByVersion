@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     p7zip-full \
     libssl-dev \
     pkg-config \
-    python3 \
+    python3-dev \
     wimtools \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
@@ -24,7 +24,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
 #ENV PATH="/root/.cargo/bin:${PATH}"
 
 #RUN apt install 
-RUN cargo install pdblister
+RUN cargo install --git https://github.com/microsoft/pdblister
 #RUN echo 'source $HOME/.cargo/env' >> $HOME/.bashrc ; PATH="/root/.cargo/bin:${PATH}" ; cargo install pdblister -y
 
 
