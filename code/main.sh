@@ -96,6 +96,7 @@ mkdir $manifestdir
 get_links "$tempScript" "$uuid" "$editions"
 download_uup_files "$destDir" "$tempScript"
 process_files
-
-#cat $manifestdir/* > manifest.out
+cat $manifestdir/* > manifest.out
 }
+
+main
