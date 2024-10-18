@@ -40,7 +40,7 @@ download_uup_files() {
 handle_cab() {
   local tempdir="name2.$RANDOM.dir"
   local manifest="$manifestdir/something$RANDOM.b"
-  cabextract "$1" -D $tempdir
+  cabextract "$1" -d $tempdir
   echo Creating manifest for "$filename" in $manifest
   python3 ./code/pdb_finding.py $tempdir $manifest
   if [ $? != 0 ]; then

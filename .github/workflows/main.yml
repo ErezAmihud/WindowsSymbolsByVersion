@@ -13,12 +13,9 @@ jobs:
     container:
       image: ghcr.io/erezamihud/pdblist:latest
     steps:
-      - name: Checkout main
-        uses: actions/checkout@v4
-
+      - uses: actions/checkout@v4
       - name: Run main
         run: chmod +x ./code/main.sh && bash ./code/main.sh
-  
       - name: Archive manifest result
         uses: actions/upload-artifact@v4
         with:
