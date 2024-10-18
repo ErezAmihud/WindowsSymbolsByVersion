@@ -62,9 +62,9 @@ handle_wim() {
     local manifest="$manifestdir/something$RANDOM.b"
     local tempdir="name3.$RANDOM.dir"
     echo "extracting image $i from $1"
-    wimextract --dest-dir $tempdir "$1" "$i"
+    wimextract --dest-dir $tempdir "$1" "$i" > /dev/null
     echo Creating manifest for "$filename" image "$i" in $manifest  
-    python33 ./code/pdb_finding.py $tempdir $manifest
+    python3 ./code/pdb_finding.py $tempdir $manifest
     if [ $? != 0 ]; then
       echo "We have a problem creating the manifest file"
       exit 1
@@ -79,8 +79,7 @@ process_files(){
 for filename in "$destDir"/*; do    
   echo "Extracting $filename"
   if [[ $(file --mime-type -b "$filename") == "application/vnd.ms-cab-compressed" ]] ; then
-    echo "cab"
-    #handle_cab "$filename"
+    handle_cab "$filename"
   elif [[ $(file --mime-type -b "$filename") == "application/x-ms-wim" ]] ; then
     handle_wim "$filename"
   else
