@@ -8,7 +8,13 @@ def get_guid(dll: pefile.PE):
     if hasattr(dll, "DIRECTORY_ENTRY_DEBUG"):
         for entry in dll.DIRECTORY_ENTRY_DEBUG:
             if entry.struct.Type == pefile.DEBUG_TYPE["IMAGE_DEBUG_TYPE_CODEVIEW"] and b"\\" not in entry.entry.PdbFileName:
-                yield entry.entry.PdbFileName.rstrip(b"\x00").decode("ascii"), entry.entry.Signature_String
+                signature_string = ""
+                if hasattr(entry.entry, "signature"):
+                    signature_string = hex(entry.entry.signature[2:])
+                else:
+                    signature_string = entry.entry.Signature_String
+
+                yield entry.entry.PdbFileName.rstrip(b"\x00").decode("ascii"), signature_string
 
 
 def process_file(file_path):
@@ -27,9 +33,13 @@ def traverse_directory(directory,out):
     for root, _, files in os.walk(directory):
         for file in files:
             file_path = os.path.join(root, file)
-            for ret in process_file(file_path):
-                if ret is not None:
-                    out.write(f"{ret[0]},{ret[1]},1\n")
+            try:
+                for ret in process_file(file_path):
+                    if ret is not None:
+                        out.write(f"{ret[0]},{ret[1]},1\n")
+            except:
+                print(f"error in {file_path}")
+                raise
             yield
 
                

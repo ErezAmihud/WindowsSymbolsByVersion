@@ -2,7 +2,7 @@
 uuid=64ad5ee4-fa4e-4106-a2e5-c9f1c3eb6e4a
 editions="core;professional"
 #editions="updateOnly"
-destDir="UUPs"
+destDir="u"
 tempScript="aria2_script.$RANDOM.txt"
 manifestdir="manifest_dir"
 
@@ -44,13 +44,14 @@ download_uup_files() {
 handle_cab() {
   local tempdir="name2.$RANDOM.dir"
   local manifest="$manifestdir/something$RANDOM.b"
+  echo "extracting cab from $1 to $tempdir"
   cabextract "$1" -d $tempdir > /dev/null
   if [ $? != 0 ]; then
     echo "Failed to extract cab"
     exit 1
   fi
   echo Creating manifest for "$filename" in $manifest
-  python3 ./code/pdb_finding.py $tempdir $manifest
+  python3 ../code/pdb_finding.py $tempdir $manifest
   if [ $? != 0 ]; then
     echo "We have a problem creating the manifest file"
     exit 1
@@ -69,14 +70,14 @@ handle_wim() {
   do
     local manifest="$manifestdir/something$RANDOM.b"
     local tempdir="name3.$RANDOM.dir"
-    echo "extracting image $i from $1"
+    echo "extracting image $i from $1 to $tempdir"
     wimextract --dest-dir $tempdir "$1" "$i" > /dev/null
     if [ $? != 0 ]; then
       echo "Failed to extract wim"
       exit 1
     fi
     echo Creating manifest for "$filename" image "$i" in $manifest  
-    python3 ./code/pdb_finding.py $tempdir $manifest
+    python3 ../code/pdb_finding.py $tempdir $manifest
     if [ $? != 0 ]; then
       echo "We have a problem creating the manifest file"
       exit 1
@@ -102,8 +103,7 @@ done
 
 
 main() {
-  mkdir $destDir
-  mkdir $manifestdir
+  
 
   get_links "$tempScript" "$uuid" "$editions"
   download_uup_files "$destDir" "$tempScript"
@@ -111,4 +111,7 @@ main() {
   cat $manifestdir/* > manifest.out
 }
 
-main
+mkdir $destDir
+mkdir $manifestdir
+#main
+process_files
