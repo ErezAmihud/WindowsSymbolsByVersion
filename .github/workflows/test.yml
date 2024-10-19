@@ -23,11 +23,11 @@ jobs:
           retry_wait_seconds: 100
           retry_on: error
           shell: bash
-          command: bash ./code/main2.sh ; mv $(find -iname *.iso) windows.iso
+          command: bash ./code/main2.sh && mv $(find -iname *.iso) windows.iso
       - name: Split iso
         run: 7z x "windows.iso" -o"unpacked_dir"
       - name: Run pdbfinder
-        run: python3 pdb_finder.py unpacked_dir manifest_general.out
+        run: python3 ./code/pdb_finding.py unpacked_dir manifest_general.out
       - name: Archive manifest result
         uses: actions/upload-artifact@v4
         with:
