@@ -1,6 +1,6 @@
 #!/usr/bin/bash
-destDir="out"
-manifestdir="manifest_dir"
+destDir=$(mktemp -d)
+manifestdir=$(mktemp -d)
 
 
 count_images() {
@@ -21,7 +21,7 @@ handle_wim() {
       exit 1
     fi
     echo Creating manifest for "$filename" image "$i" in $manifest
-    python3 ./pdb_finding.py $tempdir $manifest
+    python3 ./code/pdb_finding.py $tempdir $manifest
     if [ $? != 0 ]; then
       ##
       echo "==================================================="
@@ -47,13 +47,14 @@ process_files(){
 local manifest="$manifestdir/something$RANDOM.b"
 echo ""
 echo "Checking files in original iso"
-python3 ./pdb_finding.py $destDir $manifest
+python3 ./code/pdb_finding.py $destDir $manifest
 for filename in $(find "$destDir"); do
   process_single_file "$filename"
 done
 }
 
 mkdir "$manifestdir"
+echo "Using $manifestdir and $destDir"
 b="$(find . -iname '*.iso')"
 7z x "$b" -o"$destDir"
 process_files
