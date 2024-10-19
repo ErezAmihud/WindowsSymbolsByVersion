@@ -13,10 +13,14 @@ jobs:
       split_install: ${{ steps.split_install.outputs.version_matrix }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          lfs: '1'
+      - run: git lfs pull
       - name: Installations
         run: sudo apt-get update && xargs sudo apt-get install --no-install-recommends -y < packages.txt && python3 -m pip install pefile tqdm && chmod +x ./code/*
-      - name: Create iso
-        run: chmod +x ./code/main2.sh && bash ./code/main2.sh ; mv $(find -iname *.iso) windows.iso
+
+      #- name: Create iso
+      #  run: bash ./code/main2.sh ; mv $(find -iname *.iso) windows.iso
       - name: Split iso
         run: 7z x "windows.iso" -o"unpacked_dir"
       - name: Run pdbfinder
@@ -63,7 +67,7 @@ jobs:
         with:
           name: boot.wim
       - name: Generate boot wim manifest
-        run: chmod +x ./code/main_after_split.sh && bash ./code/main_after_split.sh boot ${{ matrix.version }}
+        run: bash ./code/main_after_split.sh boot ${{ matrix.version }}
 
       - name: Archive manifest result
         uses: actions/upload-artifact@v4
@@ -87,7 +91,7 @@ jobs:
         with:
           name: install.wim
       - name: Generate install wim manifest
-        run: chmod +x ./code/main_after_split.sh && bash ./code/main_after_split.sh install ${{ matrix.version }}
+        run: bash ./code/main_after_split.sh install ${{ matrix.version }}
       - name: Archive manifest result
         uses: actions/upload-artifact@v4
         with:
