@@ -1,12 +1,10 @@
 build-essential
-core-utils
 curl
 unzip
 cabextract
 aria2
 p7zip-full
 libssl-dev
-pkg-config
 python3-dev
 wimtools
 chntpw

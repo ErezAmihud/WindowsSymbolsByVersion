@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - id: split_file
-        run: echo '::set-output name=matrix::{"it_works":[1,2,3]}'
+        run: echo 'matrix={"it_works":[1,2,3]}' >> "$GITHUB_OUTPUT"
   job2:
     needs: build
     runs-on: ubuntu-latest

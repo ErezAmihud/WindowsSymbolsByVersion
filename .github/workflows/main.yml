@@ -13,13 +13,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Installations
-        runs: sudo apt-get update && apt-get install --no-install-recommends -y < packages.txt
+        run: sudo apt-get update
+      - name: Install apt packages
+        run: xargs sudo apt-get install --no-install-recommends -y < packages.txt
       - name: Installations python
-        runs: python3 -m pip install pefile tqdm
+        run: python3 -m pip install pefile tqdm
       - name: Run main
-        runs: chmod +x ./code/main2.sh && bash ./code/main2.sh
+        run: chmod +x ./code/main2.sh && bash ./code/main2.sh
       - name: Run Manifest
-        runs: chmod +x ./code/main3.sh && bash ./code/main3.sh
+        run: chmod +x ./code/main3.sh && bash ./code/main3.sh
       - name: Archive manifest result
         uses: actions/upload-artifact@v4
         with:
