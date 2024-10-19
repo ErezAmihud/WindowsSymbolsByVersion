@@ -2,7 +2,6 @@
 destDir=$(mktemp -d)
 manifestdir="manifest_directory" # $(mktemp -d)
 
-
 count_images() {
   wiminfo "$1" -h | grep -oP "Image Count\s*=\s*\K[\d]+"
 }

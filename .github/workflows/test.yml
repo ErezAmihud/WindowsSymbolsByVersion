@@ -6,22 +6,111 @@ on:
 
 jobs:
   build:
-    name: test_run
+    name: Run
     runs-on: ubuntu-latest
-    container:
-      image: ghcr.io/erezamihud/pdblist:latest
     outputs:
-      matrix: ${{ steps.split_file.outputs.matrix }}
+      split_boot: ${{ steps.split_boot.outputs.version_matrix }}
+      split_install: ${{ steps.split_install.outputs.version_matrix }}
     steps:
       - uses: actions/checkout@v4
-      - id: split_file
-        run: echo 'matrix={"it_works":[1,2,3]}' >> "$GITHUB_OUTPUT"
-  job2:
+      - name: Installations
+        run: sudo apt-get update && xargs sudo apt-get install --no-install-recommends -y < packages.txt && python3 -m pip install pefile tqdm && chmod +x ./code/*
+      - name: Create iso
+        run: chmod +x ./code/main2.sh && bash ./code/main2.sh ; mv $(find -iname *.iso) windows.iso
+      - name: Split iso
+        run: 7z x "windows.iso" -o"unpacked_dir"
+      - name: Run pdbfinder
+        run: python3 pdb_finder.py unpacked_dir manifest_general.out
+      - name: Archive manifest result
+        uses: actions/upload-artifact@v4
+        with:
+          name: manifest_general
+          path: manifest_general.out
+
+      - name: Find boot split
+        id: split_boot
+        run: bash ./code/split_file.sh boot && cat a.txt >> "$GITHUB_OUTPUT"
+      - name: Find install split
+        id: split_install
+        run: bash ./code/split_file.sh install && cat a.txt >> "$GITHUB_OUTPUT"
+      - name: Upload boot wim artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: boot.wim
+          path: boot.wim
+          retention-days: 1
+      - name: Upload install wim artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: install.wim
+          path: install.wim
+          retention-days: 1
+
+
+  parse_boot_wim:
     needs: build
+    name: parse boot wim
     runs-on: ubuntu-latest
     strategy:
-      matrix: ${{fromJson(needs.build.outputs.matrix)}}
+      matrix:
+        version: ${{ fromJson(needs.build.outputs.split_boot) }}
     steps:
-    - run: echo ${{ matrix.it_works }}
-    #4- run: echo ${{ matrix.project }}
-    #- run: echo ${{ matrix.config }}
+      - uses: actions/checkout@v4
+      - name: Installations
+        run: sudo apt-get update && xargs sudo apt-get install --no-install-recommends -y < packages.txt && python3 -m pip install pefile tqdm && chmod +x ./code/*
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: boot.wim
+      - name: Generate boot wim manifest
+        run: chmod +x ./code/main_after_split.sh && bash ./code/main_after_split.sh boot ${{ matrix.version }}
+
+      - name: Archive manifest result
+        uses: actions/upload-artifact@v4
+        with:
+          name: manifest_boot_${{ matrix.version }}
+          path: manifest_boot_${{ matrix.version }}.out
+
+  parse_install_wim:
+    needs: build
+    name: parse install wim
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        version: ${{ fromJson(needs.build.outputs.split_install) }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Installations
+        run: sudo apt-get update && xargs sudo apt-get install --no-install-recommends -y < packages.txt && python3 -m pip install pefile tqdm && chmod +x ./code/*
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: install.wim
+      - name: Generate install wim manifest
+        run: chmod +x ./code/main_after_split.sh && bash ./code/main_after_split.sh install ${{ matrix.version }}
+      - name: Archive manifest result
+        uses: actions/upload-artifact@v4
+        with:
+          name: manifest_install_${{ matrix.version }}
+          path: manifest_install_${{ matrix.version }}.out
+
+
+  merge_artifacts:
+    needs:
+      - parse_boot_wim
+      - parse_install_wim
+      - build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Download All Artifacts
+      uses: actions/download-artifact@v4
+      with:
+        path: manifests
+        pattern: manifest*
+        merge-multiple: true
+    - run: cat ./manifests/* > manifest.out
+    - name: Archive manifest result
+      uses: actions/upload-artifact@v4
+      with:
+        name: merged_manifest
+        path: manifest.out
