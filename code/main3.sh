@@ -12,7 +12,7 @@ handle_wim() {
   for i in $(seq 1 "$number")
   do
     local manifest="$manifestdir/something$RANDOM.b"
-    local tempdir="name3.$RANDOM.dir"
+    local tempdir="$(mktemp -d)"
     echo "extracting image $i from $1 to $tempdir"
     wimextract --dest-dir $tempdir "$1" "$i" > /dev/null
     #7z x -o "$tempdir" "$1" @1
@@ -30,7 +30,7 @@ handle_wim() {
       #exit 1
     fi
     echo "Delete directory"
-    rm -rf $tempdir
+    rm -rf "$tempdir"
   done
 }
 

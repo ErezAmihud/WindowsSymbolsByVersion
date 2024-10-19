@@ -8,12 +8,14 @@ jobs:
   build:
     name: Run
     runs-on: ubuntu-latest
-    permissions: 
-      packages: read
-    container:
-      image: ghcr.io/erezamihud/pdblist:latest
+    #container:
+    #  image: ghcr.io/erezamihud/pdblist:latest
     steps:
       - uses: actions/checkout@v4
+      - name: Installations
+        runs: sudo apt-get update && apt-get install --no-install-recommends -y < packages.txt
+      - name: Installations python
+        runs: python3 -m pip install pefile tqdm
       - name: Run main
         run: chmod +x ./code/main2.sh && bash ./code/main2.sh
       - name: Run Manifest

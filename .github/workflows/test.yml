@@ -1,0 +1,27 @@
+name: test
+on:
+  push:
+    branches:
+      - "feature/actual-data"
+
+jobs:
+  build:
+    name: test_run
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/erezamihud/pdblist:latest
+    outputs:
+      matrix: ${{ steps.split_file.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: split_file
+        run: echo '::set-output name=matrix::{"it_works":[1,2,3]}'
+  job2:
+    needs: build
+    runs-on: ubuntu-latest
+    strategy:
+      matrix: ${{fromJson(needs.build.outputs.matrix)}}
+    steps:
+    - run: echo ${{ matrix.it_works }}
+    #4- run: echo ${{ matrix.project }}
+    #- run: echo ${{ matrix.config }}
