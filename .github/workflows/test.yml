@@ -13,14 +13,10 @@ jobs:
       split_install: ${{ steps.split_install.outputs.version_matrix }}
     steps:
       - uses: actions/checkout@v4
-        with:
-          lfs: '1'
-      - run: git lfs pull
       - name: Installations
         run: sudo apt-get update && xargs sudo apt-get install --no-install-recommends -y < packages.txt && python3 -m pip install pefile tqdm && chmod +x ./code/*
-
-      #- name: Create iso
-      #  run: bash ./code/main2.sh ; mv $(find -iname *.iso) windows.iso
+      - name: Create iso
+        run: bash ./code/main2.sh ; mv $(find -iname *.iso) windows.iso
       - name: Split iso
         run: 7z x "windows.iso" -o"unpacked_dir"
       - name: Run pdbfinder
