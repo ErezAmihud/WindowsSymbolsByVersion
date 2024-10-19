@@ -10,7 +10,7 @@ def get_guid(dll: pefile.PE):
             if entry.struct.Type == pefile.DEBUG_TYPE["IMAGE_DEBUG_TYPE_CODEVIEW"] and b"\\" not in entry.entry.PdbFileName:
                 signature_string = ""
                 if hasattr(entry.entry, "Signature"):
-                    signature_string = hex(entry.entry.Signature[2:])
+                    signature_string = hex(entry.entry.Signature)[2:]
                 else:
                     signature_string = entry.entry.Signature_String
 

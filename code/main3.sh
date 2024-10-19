@@ -58,3 +58,4 @@ echo "Using $manifestdir and $destDir"
 b="$(find . -iname '*.iso')"
 7z x "$b" -o"$destDir"
 process_files
+cat "$manifestdir/*" > manifest.out

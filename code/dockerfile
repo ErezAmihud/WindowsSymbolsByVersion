@@ -3,7 +3,9 @@ FROM rust:slim-bullseye
 # Update default packages
 RUN apt-get update && apt-get install --no-install-recommends -y \
     build-essential \
+    core-utils \
     curl \
+    unzip \
     cabextract \
     aria2 \
     p7zip-full \
