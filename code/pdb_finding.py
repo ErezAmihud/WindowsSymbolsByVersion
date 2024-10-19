@@ -9,7 +9,7 @@ def get_guid(dll: pefile.PE):
         for entry in dll.DIRECTORY_ENTRY_DEBUG:
             if entry.struct.Type == pefile.DEBUG_TYPE["IMAGE_DEBUG_TYPE_CODEVIEW"] and b"\\" not in entry.entry.PdbFileName:
                 signature_string = ""
-                if hasattr(entry.entry, "signature"):
+                if hasattr(entry.entry, "Signature"):
                     signature_string = hex(entry.entry.signature[2:])
                 else:
                     signature_string = entry.entry.Signature_String
@@ -20,12 +20,11 @@ def get_guid(dll: pefile.PE):
 def process_file(file_path):
     """Function to process each file."""
     try:
-        with pefile.PE(file_path) as dll:
+        with pefile.PE(file_path, fast_load=True) as dll:
+            dll.full_load()
             yield from get_guid(dll)
     except (pefile.PEFormatError,FileNotFoundError):
        pass
-    
-    
     # Add your file processing logic here
 
 def traverse_directory(directory,out):
@@ -42,7 +41,7 @@ def traverse_directory(directory,out):
                 raise
             yield
 
-               
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
@@ -55,10 +54,10 @@ if __name__ == "__main__":
     if not os.path.isdir(target_directory):
         print(f"The specified path '{target_directory}' is not a directory.")
         sys.exit(1)
-    
+
     file_count = sum(len(files) for _, _, files in os.walk(target_directory))
 
     with open(target_output, "w") as f:
         for i in tqdm.tqdm(traverse_directory(target_directory, f),total=file_count, mininterval=10):
            pass
-        
+
