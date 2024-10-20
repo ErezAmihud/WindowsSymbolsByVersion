@@ -70,7 +70,7 @@ jobs:
         with:
           name: boot.wim
       - name: Generate boot wim manifest
-        run: bash ./code/main_after_split.sh boot ${{ matrix.version }}
+        run: bash ./code/after_split.sh boot ${{ matrix.version }}
 
       - name: Archive manifest result
         uses: actions/upload-artifact@v4
@@ -94,7 +94,7 @@ jobs:
         with:
           name: install.wim
       - name: Generate install wim manifest
-        run: bash ./code/main_after_split.sh install ${{ matrix.version }}
+        run: bash ./code/after_split.sh install ${{ matrix.version }}
       - name: Archive manifest result
         uses: actions/upload-artifact@v4
         with:
