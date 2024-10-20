@@ -1,4 +1,4 @@
-name: test
+name: Download uuid build
 on:
   workflow_call:
     inputs:

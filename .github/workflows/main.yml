@@ -10,14 +10,19 @@ concurrency:
 
 
 jobs:
-  build:
-    uses: ./.github/workflows/download_build.yml
-  build2:
-    uses: ./.github/workflows/download_build.yml
-    with:
-      uuid: 81d564e8-6a20-4668-87c3-9604cbf0c12c
+  list-releases:
+    name: Get not figured out builds
+    runs-on: ubuntu-latest
+    outputs:
+      uuids: ${{ steps.version_list_step.outputs.uuid_matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: python ./code/daily.py ; echo "uuid_matrix=$(cat a.txt)" >> "$GITHUB_OUTPUT"
+        id: version_list_step
 
-    #name: Run
-    #runs-on: ubuntu-latest
-    #container:
-    #  image: ghcr.io/erezamihud/pdblist:latest
+  download-releases:
+    needs: list-releases
+    strategy:
+      matrix:
+        uuid: ${{ fromJson(needs.list-releases.outputs.uuids) }}
+    uses: ./.github/workflows/download_build.yml
