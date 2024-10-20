@@ -1,8 +1,12 @@
 name: test
 on:
-  push:
-    branches:
-      - "feature/actual-data"
+  workflow_call:
+    inputs:
+      uuid:
+        description: 'UUP entry uuid'
+        default: 'c598cdd6-8d6a-4fa1-8161-8e96e362b127'
+        required: false
+        type: string
 
 jobs:
   build:
@@ -23,7 +27,8 @@ jobs:
           retry_wait_seconds: 100
           retry_on: error
           shell: bash
-          command: bash ./code/main2.sh && mv $(find -iname *.iso) windows.iso
+          command: ./code/get_uupdump_script.sh ${{ inputs.uuid }} && mv $(find -iname *.iso) windows.iso
+          #command: bash ./code/main2.sh && mv $(find -iname *.iso) windows.iso
       - name: Split iso
         run: 7z x "windows.iso" -o"unpacked_dir"
       - name: Run pdbfinder

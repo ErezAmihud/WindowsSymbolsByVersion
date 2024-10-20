@@ -1,0 +1,18 @@
+name: Detect more uup entries
+on:
+  push:
+    branches:
+      - "feature/actual-data"
+
+jobs:
+  build:
+    uses: ./.github/workflows/test.yml
+  build2:
+    uses: ./.github/workflows/test.yml
+    with:
+      uuid: 81d564e8-6a20-4668-87c3-9604cbf0c12c
+
+    #name: Run
+    #runs-on: ubuntu-latest
+    #container:
+    #  image: ghcr.io/erezamihud/pdblist:latest
