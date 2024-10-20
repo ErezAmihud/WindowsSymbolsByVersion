@@ -1,0 +1,42 @@
+name: Download uuid build on windows
+on:
+    push:
+        branches:
+            - "test-windows"
+
+jobs:
+  build:
+    name: Run
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Installations
+        run: sudo apt-get update && xargs sudo apt-get install --no-install-recommends -y < packages.txt && python3 -m pip install pefile tqdm && chmod +x ./code/*
+      - name: Download uup generator scripts
+        run: ./code/get_uupdump_script.sh "a0f51b86-2ddf-40a9-8df4-870619b2ff1d"
+      - name: Upload script
+        uses: actions/upload-artifact@v4
+        with:
+          name: aa
+          path: download.zip
+          retention-days: 1
+  create-iso:
+    name: create iso
+    needs: build
+    runs-on: windows-latest
+    steps:
+        - uses: actions/checkout@v4
+        - name: Download artifact
+          uses: actions/download-artifact@v4
+          with:
+            name: aa
+        - name: unzip zip
+          run: Expand-Archive download.zip -DestinationPath .
+
+        - name: Create iso
+          run: .\uup_download_windows.cmd
+        - uses: actions/upload-artifact@v4
+          with:
+            name: iso
+            path: "*.iso"
+
