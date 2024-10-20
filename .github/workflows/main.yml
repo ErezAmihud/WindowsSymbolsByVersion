@@ -17,7 +17,8 @@ jobs:
       uuids: ${{ steps.version_list_step.outputs.uuid_matrix }}
     steps:
       - uses: actions/checkout@v4
-      - run: python ./code/daily.py ; echo "uuid_matrix=$(cat a.txt)" >> "$GITHUB_OUTPUT"
+      - run: pip install pydantic requests && chmod +x ./code/mmmm.sh
+      - run: python ./code/daily.py && bash ./code/mmmm.sh
         id: version_list_step
 
   download-releases:

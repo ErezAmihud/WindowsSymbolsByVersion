@@ -22,6 +22,7 @@ jobs:
       split_install: ${{ steps.split_install.outputs.version_matrix }}
     steps:
       - uses: actions/checkout@v4
+      - run: which sort
       - name: Installations
         run: sudo apt-get update && xargs sudo apt-get install --no-install-recommends -y < packages.txt && python3 -m pip install pefile tqdm && chmod +x ./code/*
       - name: Download uup generator scripts
@@ -125,7 +126,8 @@ jobs:
         path: manifests
         pattern: ${{ inputs.uuid }}manifest*
         merge-multiple: true
-    - run: cat ./manifests/* > manifest.out
+    - run: cat ./manifests/* | sort | uniq > manifest.out
+
     - name: Archive manifest result
       uses: actions/upload-artifact@v4
       with:
