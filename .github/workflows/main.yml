@@ -4,11 +4,16 @@ on:
     branches:
       - "feature/actual-data"
 
+concurrency:
+  group: main-yml
+  cancel-in-progress: true
+
+
 jobs:
   build:
-    uses: ./.github/workflows/test.yml
+    uses: ./.github/workflows/download_build.yml
   build2:
-    uses: ./.github/workflows/test.yml
+    uses: ./.github/workflows/download_build.yml
     with:
       uuid: 81d564e8-6a20-4668-87c3-9604cbf0c12c
 

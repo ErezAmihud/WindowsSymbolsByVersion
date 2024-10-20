@@ -7,6 +7,11 @@ on:
         default: 'c598cdd6-8d6a-4fa1-8161-8e96e362b127'
         required: false
         type: string
+      name:
+        description: 'The name of the distro'
+        default: 'Windows something something'
+        required: false
+        type: string
 
 jobs:
   build:
@@ -19,6 +24,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Installations
         run: sudo apt-get update && xargs sudo apt-get install --no-install-recommends -y < packages.txt && python3 -m pip install pefile tqdm && chmod +x ./code/*
+      - name: Download uup generator scripts
+        run: ./code/get_uupdump_script.sh ${{ inputs.uuid }}
       - name: Create iso
         uses: nick-fields/retry@v3
         with:
@@ -27,8 +34,7 @@ jobs:
           retry_wait_seconds: 100
           retry_on: error
           shell: bash
-          command: ./code/get_uupdump_script.sh ${{ inputs.uuid }} && mv $(find -iname *.iso) windows.iso
-          #command: bash ./code/main2.sh && mv $(find -iname *.iso) windows.iso
+          command: ./uup_download_linux.sh && mv $(find -iname *.iso) windows.iso
       - name: Split iso
         run: 7z x "windows.iso" -o"unpacked_dir"
       - name: Run pdbfinder
@@ -36,7 +42,7 @@ jobs:
       - name: Archive manifest result
         uses: actions/upload-artifact@v4
         with:
-          name: manifest_general
+          name: ${{ inputs.uuid }}manifest_general
           path: manifest_general.out
 
       - name: Find boot split
@@ -48,13 +54,13 @@ jobs:
       - name: Upload boot wim artifact
         uses: actions/upload-artifact@v4
         with:
-          name: boot.wim
+          name: ${{ inputs.uuid }}boot.wim
           path: boot.wim
           retention-days: 1
       - name: Upload install wim artifact
         uses: actions/upload-artifact@v4
         with:
-          name: install.wim
+          name: ${{ inputs.uuid }}install.wim
           path: install.wim
           retention-days: 1
 
@@ -73,14 +79,13 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
-          name: boot.wim
+          name: ${{ inputs.uuid }}boot.wim
       - name: Generate boot wim manifest
         run: bash ./code/after_split.sh boot ${{ matrix.version }}
-
       - name: Archive manifest result
         uses: actions/upload-artifact@v4
         with:
-          name: manifest_boot_${{ matrix.version }}
+          name: ${{ inputs.uuid }}manifest_boot_${{ matrix.version }}
           path: manifest_boot_${{ matrix.version }}.out
 
   parse_install_wim:
@@ -97,13 +102,13 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
-          name: install.wim
+          name: ${{ inputs.uuid }}install.wim
       - name: Generate install wim manifest
         run: bash ./code/after_split.sh install ${{ matrix.version }}
       - name: Archive manifest result
         uses: actions/upload-artifact@v4
         with:
-          name: manifest_install_${{ matrix.version }}
+          name: ${{ inputs.uuid }}manifest_install_${{ matrix.version }}
           path: manifest_install_${{ matrix.version }}.out
 
 
@@ -118,11 +123,30 @@ jobs:
       uses: actions/download-artifact@v4
       with:
         path: manifests
-        pattern: manifest*
+        pattern: ${{ inputs.uuid }}manifest*
         merge-multiple: true
     - run: cat ./manifests/* > manifest.out
     - name: Archive manifest result
       uses: actions/upload-artifact@v4
       with:
-        name: merged_manifest
+        name: ${{ inputs.uuid }}merged_manifest
         path: manifest.out
+
+  deploy_manifest:
+    concurrency: deploy_new_version
+    needs: merge_artifacts
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download manifest
+        uses: actions/download-artifact@v4
+        with:
+          name: ${{ inputs.uuid }}merged_manifest
+      - run: mv manifest.out manifests/${{ inputs.uuid }}.manifest
+      - run: echo "(${{ inputs.name }})[../manifests/${{ inputs.uuid }}.manifest]" >> docs/versions.md
+      - uses: EndBug/add-and-commit@v9
+        with:
+          add: '["manifests", "docs"]'
+          message: 'Automated commit, add manifest for ${{inputs.uuid}}'
+
+
