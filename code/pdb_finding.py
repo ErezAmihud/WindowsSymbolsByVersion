@@ -7,7 +7,7 @@ import os.path, pefile, struct
 def get_guid(dll: pefile.PE):
     if hasattr(dll, "DIRECTORY_ENTRY_DEBUG"):
         for entry in dll.DIRECTORY_ENTRY_DEBUG:
-            if entry.struct.Type == pefile.DEBUG_TYPE["IMAGE_DEBUG_TYPE_CODEVIEW"] and b"\\" not in entry.entry.PdbFileName:
+            if entry.struct.Type == pefile.DEBUG_TYPE["IMAGE_DEBUG_TYPE_CODEVIEW"] and entry.entry is not None and b"\\" not in entry.entry.PdbFileName:
                 signature_string = ""
                 if hasattr(entry.entry, "Signature"):
                     signature_string = hex(entry.entry.Signature)[2:]

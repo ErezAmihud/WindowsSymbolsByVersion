@@ -10,6 +10,9 @@ class BuildInfo(BaseModel):
     created: int | None
     uuid: str
 
+    def __str__(self):
+        return f"{self.title} - {self.build} - arch:{self.arch}"
+
 class Response(BaseModel):
     apiVersion: str
     builds: List[BuildInfo]

@@ -10,5 +10,5 @@ builds = filter(lambda build: build.arch in ["x86", "amd64"], builds)
 
 builds = map(lambda build: build.uuid, builds)
 builds = list(builds)
-builds=builds[:250]
+builds=builds[:2]
 json.dump(builds, open("a.txt", 'w'))

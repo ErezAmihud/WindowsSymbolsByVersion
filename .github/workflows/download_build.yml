@@ -7,11 +7,6 @@ on:
         default: 'c598cdd6-8d6a-4fa1-8161-8e96e362b127'
         required: false
         type: string
-      name:
-        description: 'The name of the distro'
-        default: 'Windows something something'
-        required: false
-        type: string
 
 jobs:
   build:
@@ -140,15 +135,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - run: sudo apt-get update && xargs sudo apt-get install --no-install-recommends -y < packages.txt && python3 -m pip install pydantic requests pefile tqdm && chmod +x ./code/*
       - name: Download manifest
         uses: actions/download-artifact@v4
         with:
           name: ${{ inputs.uuid }}merged_manifest
       - run: mv manifest.out manifests/${{ inputs.uuid }}.manifest
-      - run: echo "(${{ inputs.name }})[../manifests/${{ inputs.uuid }}.manifest]" >> docs/versions.md
+      - run: python code/get_name.py ${{inputs.uuid}} && cat b.txt >> $GITHUB_OUTPUT
+        id: get_name
+      - run: python -c "import json;out=json.load(open('process_builds.json', 'r'));out.append('${{inputs.uuid}}');json.dump(out, open('process_builds.json', 'w'))"
+        name: Add uuid to processt build
+      - run: echo "(${{ steps.get_name.outputs.name }})[../manifests/${{ inputs.uuid }}.manifest]" >> docs/versions.md
       - uses: EndBug/add-and-commit@v9
         with:
-          add: '["manifests", "docs"]'
+          add: '["manifests", "docs", "process_builds.json"]'
           message: 'Automated commit, add manifest for ${{inputs.uuid}}'
 
 
