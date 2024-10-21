@@ -12,6 +12,8 @@ class BuildInfo(BaseModel):
 
     def __str__(self):
         return f"{self.title} - {self.build} - arch:{self.arch}"
+    def __repr__(self):
+        return f"{self.title} - {self.build} - arch:{self.arch}"
 
 class Response(BaseModel):
     apiVersion: str
