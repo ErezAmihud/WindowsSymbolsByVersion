@@ -20,6 +20,8 @@ jobs:
           - 3
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{github.ref_name}}
       - run: echo ${{matrix.name}} >> test.txt
         id: version_list_step
       - uses: EndBug/add-and-commit@v9
