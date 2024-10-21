@@ -1,0 +1,156 @@
+name: Download uuid build
+on:
+  workflow_call:
+    inputs:
+      uuid:
+        description: 'UUP entry uuid'
+        default: 'c598cdd6-8d6a-4fa1-8161-8e96e362b127'
+        required: false
+        type: string
+
+jobs:
+  build:
+    name: Run
+    runs-on: ubuntu-latest
+    outputs:
+      split_boot: ${{ steps.split_boot.outputs.version_matrix }}
+      split_install: ${{ steps.split_install.outputs.version_matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: which sort
+      - name: Installations
+        run: sudo apt-get update && xargs sudo apt-get install --no-install-recommends -y < packages.txt && python3 -m pip install pefile tqdm && chmod +x ./code/*
+      - name: Download uup generator scripts
+        run: ./code/get_uupdump_script.sh ${{ inputs.uuid }}
+      - name: Create iso
+        uses: nick-fields/retry@v3
+        with:
+          max_attempts: 3
+          timeout_minutes: 10000
+          retry_wait_seconds: 100
+          retry_on: error
+          shell: bash
+          command: ./uup_download_linux.sh && mv $(find -iname *.iso) windows.iso
+      - name: Split iso
+        run: 7z x "windows.iso" -o"unpacked_dir"
+      - name: Run pdbfinder
+        run: python3 ./code/pdb_finding.py unpacked_dir manifest_general.out
+      - name: Archive manifest result
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.uuid }}manifest_general
+          path: manifest_general.out
+
+      - name: Find boot split
+        id: split_boot
+        run: bash ./code/split_file.sh boot && cat a.txt >> "$GITHUB_OUTPUT"
+      - name: Find install split
+        id: split_install
+        run: bash ./code/split_file.sh install && cat a.txt >> "$GITHUB_OUTPUT"
+      - name: Upload boot wim artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.uuid }}boot.wim
+          path: boot.wim
+          retention-days: 1
+      - name: Upload install wim artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.uuid }}install.wim
+          path: install.wim
+          retention-days: 1
+
+
+  parse_boot_wim:
+    needs: build
+    name: parse boot wim
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        version: ${{ fromJson(needs.build.outputs.split_boot) }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Installations
+        run: sudo apt-get update && xargs sudo apt-get install --no-install-recommends -y < packages.txt && python3 -m pip install pefile tqdm && chmod +x ./code/*
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: ${{ inputs.uuid }}boot.wim
+      - name: Generate boot wim manifest
+        run: bash ./code/after_split.sh boot ${{ matrix.version }}
+      - name: Archive manifest result
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.uuid }}manifest_boot_${{ matrix.version }}
+          path: manifest_boot_${{ matrix.version }}.out
+
+  parse_install_wim:
+    needs: build
+    name: parse install wim
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        version: ${{ fromJson(needs.build.outputs.split_install) }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Installations
+        run: sudo apt-get update && xargs sudo apt-get install --no-install-recommends -y < packages.txt && python3 -m pip install pefile tqdm && chmod +x ./code/*
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: ${{ inputs.uuid }}install.wim
+      - name: Generate install wim manifest
+        run: bash ./code/after_split.sh install ${{ matrix.version }}
+      - name: Archive manifest result
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.uuid }}manifest_install_${{ matrix.version }}
+          path: manifest_install_${{ matrix.version }}.out
+
+
+  merge_artifacts:
+    needs:
+      - parse_boot_wim
+      - parse_install_wim
+      - build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Download All Artifacts
+      uses: actions/download-artifact@v4
+      with:
+        path: manifests
+        pattern: ${{ inputs.uuid }}manifest*
+        merge-multiple: true
+    - run: cat ./manifests/* | sort | uniq > manifest.out
+
+    - name: Archive manifest result
+      uses: actions/upload-artifact@v4
+      with:
+        name: ${{ inputs.uuid }}merged_manifest
+        path: manifest.out
+
+  deploy_manifest:
+    concurrency: deploy_new_version
+    needs: merge_artifacts
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - run: sudo apt-get update && xargs sudo apt-get install --no-install-recommends -y < packages.txt && python3 -m pip install pydantic requests pefile tqdm && chmod +x ./code/*
+      - name: Download manifest
+        uses: actions/download-artifact@v4
+        with:
+          name: ${{ inputs.uuid }}merged_manifest
+      - run: mv manifest.out manifests/${{ inputs.uuid }}.manifest
+      - run: python code/get_name.py ${{inputs.uuid}} && cat b.txt >> $GITHUB_OUTPUT
+        id: get_name
+      - run: python -c "import json;out=json.load(open('process_builds.json', 'r'));out.append('${{inputs.uuid}}');json.dump(out, open('process_builds.json', 'w'))"
+        name: Add uuid to processt build
+      - run: echo "(${{ steps.get_name.outputs.name }})[../manifests/${{ inputs.uuid }}.manifest]" >> docs/versions.md
+      - uses: EndBug/add-and-commit@v9
+        with:
+          add: '["manifests", "docs", "process_builds.json"]'
+          message: 'Automated commit, add manifest for ${{inputs.uuid}}'
+
+
