@@ -9,37 +9,66 @@ on:
         type: string
 
 jobs:
-  build:
-    name: Run
+  create-iso:
+    name: create iso
+    runs-on: windows-latest
+    steps:
+        - uses: actions/checkout@v4
+        - name: Download Commands
+          run: |
+            curl "https://uupdump.net/get.php?id=${{inputs.uuid}}&pack=en-us&edition=core;coren;professional;professionaln" -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "autodl=2&updates=1" -o download_commands.zip
+        - name: unzip download_commands.zip
+          run: Expand-Archive download_commands.zip -DestinationPath .
+        - name: Set config
+          run: copy config.template ConvertConfig.ini
+          shell: cmd
+        - name: Create iso
+          uses: nick-fields/retry@v3
+          with:
+            max_attempts: 3
+            timeout_minutes: 10000
+            retry_wait_seconds: 100
+            retry_on: error
+            shell: cmd
+            command: .\uup_download_windows.cmd
+        - name: Rename result
+          shell: cmd
+          run: for /D %s in (.\*) do ( if exist %s\setup.exe (ren %s unpacked_dir))
+        - uses: actions/setup-python@v5
+          with:
+            python-version: '3.10'
+        - run: python -m pip install pefile tqdm && python ./code/pdb_finding.py unpacked_dir manifest_general.out
+        - uses: actions/upload-artifact@v4
+          with:
+            name: ${{inputs.uuid}}manifest_general.out
+            path: manifest_general.out
+            retention-days: 1
+        - uses: actions/upload-artifact@v4
+          with:
+            name: ${{inputs.uuid}}install.wim
+            path: unpacked_dir/source/install.wim
+            retention-days: 1
+        - uses: actions/upload-artifact@v4
+          with:
+            name: ${{inputs.uuid}}boot.wim
+            path: unpacked_dir/source/boot.wim
+            retention-days: 1
+
+  split-iso:
     runs-on: ubuntu-latest
+    needs: create-iso
     outputs:
       split_boot: ${{ steps.split_boot.outputs.version_matrix }}
       split_install: ${{ steps.split_install.outputs.version_matrix }}
     steps:
-      - uses: actions/checkout@v4
-      - run: which sort
-      - name: Installations
-        run: sudo apt-get update && xargs sudo apt-get install --no-install-recommends -y < packages.txt && python3 -m pip install pefile tqdm && chmod +x ./code/*
-      - name: Download uup generator scripts
-        run: ./code/get_uupdump_script.sh ${{ inputs.uuid }}
-      - name: Create iso
-        uses: nick-fields/retry@v3
+      - name: Download boot wim
+        uses: actions/download-artifact@v4
         with:
-          max_attempts: 3
-          timeout_minutes: 10000
-          retry_wait_seconds: 100
-          retry_on: error
-          shell: bash
-          command: ./uup_download_linux.sh && mv $(find -iname *.iso) windows.iso
-      - name: Split iso
-        run: 7z x "windows.iso" -o"unpacked_dir"
-      - name: Run pdbfinder
-        run: python3 ./code/pdb_finding.py unpacked_dir manifest_general.out
-      - name: Archive manifest result
-        uses: actions/upload-artifact@v4
+          name: ${{ inputs.uuid }}boot.wim
+      - name: Download install wim
+        uses: actions/download-artifact@v4
         with:
-          name: ${{ inputs.uuid }}manifest_general
-          path: manifest_general.out
+          name: ${{ inputs.uuid }}install.wim
 
       - name: Find boot split
         id: split_boot
@@ -60,14 +89,13 @@ jobs:
           path: install.wim
           retention-days: 1
 
-
   parse_boot_wim:
-    needs: build
+    needs: split-iso
     name: parse boot wim
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        version: ${{ fromJson(needs.build.outputs.split_boot) }}
+        version: ${{ fromJson(needs.split-iso.outputs.split_boot) }}
     steps:
       - uses: actions/checkout@v4
       - name: Installations
@@ -85,12 +113,12 @@ jobs:
           path: manifest_boot_${{ matrix.version }}.out
 
   parse_install_wim:
-    needs: build
+    needs: split-iso
     name: parse install wim
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        version: ${{ fromJson(needs.build.outputs.split_install) }}
+        version: ${{ fromJson(needs.split-iso.outputs.split_install) }}
     steps:
       - uses: actions/checkout@v4
       - name: Installations
