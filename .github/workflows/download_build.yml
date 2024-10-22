@@ -140,7 +140,7 @@ jobs:
     needs:
       - parse_boot_wim
       - parse_install_wim
-      - build
+      - create-iso
     runs-on: ubuntu-latest
     steps:
     - name: Download All Artifacts
