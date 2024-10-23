@@ -30,7 +30,7 @@ jobs:
             retry_wait_seconds: 100
             retry_on: error
             shell: cmd
-            command: .\uup_download_windows.cmd
+            command: cmd /c .\uup_download_windows.cmd
         - name: Rename result
           shell: cmd
           run: for /D %s in (.\*) do ( if exist %s\setup.exe (ren %s unpacked_dir))
