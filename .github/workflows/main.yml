@@ -24,6 +24,7 @@ jobs:
   download-releases:
     needs: list-releases
     strategy:
+      fail-fast: false
       matrix:
         uuid: ${{ fromJson(needs.list-releases.outputs.uuids) }}
     uses: ./.github/workflows/download_build.yml

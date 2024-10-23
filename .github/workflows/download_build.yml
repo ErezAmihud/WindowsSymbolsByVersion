@@ -33,7 +33,7 @@ jobs:
             command: cmd /c .\uup_download_windows.cmd
         - name: Rename result
           shell: cmd
-          run: for /D %s in (.\*) do ( if exist %s\setup.exe (ren %s unpacked_dir))
+          run: .\code\move_iso_dir.bat
         - uses: actions/setup-python@v5
           with:
             python-version: '3.10'
@@ -46,12 +46,12 @@ jobs:
         - uses: actions/upload-artifact@v4
           with:
             name: ${{inputs.uuid}}install.wim
-            path: unpacked_dir/source/install.wim
+            path: unpacked_dir/sources/install.wim
             retention-days: 1
         - uses: actions/upload-artifact@v4
           with:
             name: ${{inputs.uuid}}boot.wim
-            path: unpacked_dir/source/boot.wim
+            path: unpacked_dir/sources/boot.wim
             retention-days: 1
 
   split-iso:
@@ -61,6 +61,9 @@ jobs:
       split_boot: ${{ steps.split_boot.outputs.version_matrix }}
       split_install: ${{ steps.split_install.outputs.version_matrix }}
     steps:
+      - uses: actions/checkout@v4
+      - name: Installations
+        run: sudo apt-get update && xargs sudo apt-get install --no-install-recommends -y < packages.txt && python3 -m pip install pefile tqdm && chmod +x ./code/*
       - name: Download boot wim
         uses: actions/download-artifact@v4
         with:
@@ -76,18 +79,6 @@ jobs:
       - name: Find install split
         id: split_install
         run: bash ./code/split_file.sh install && cat a.txt >> "$GITHUB_OUTPUT"
-      - name: Upload boot wim artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: ${{ inputs.uuid }}boot.wim
-          path: boot.wim
-          retention-days: 1
-      - name: Upload install wim artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: ${{ inputs.uuid }}install.wim
-          path: install.wim
-          retention-days: 1
 
   parse_boot_wim:
     needs: split-iso

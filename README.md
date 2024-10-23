@@ -6,5 +6,5 @@ I am using uup files from uupdump.net to get all the dll's.
 If any symbol version that is here is not working let me know.
 
 
-Todo:
-- delete all image files from output
+## Help is appriciated
+If any1 have a faster method be free to contribute
