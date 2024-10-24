@@ -11,3 +11,4 @@ NOTE - probably most of the pdbs listed in the manifests don't have the files in
 ([BuildInfo(title='Windows 11 Insider Preview 27729.1000 (rs_prerelease)', build='27729.1000', arch='amd64', created=1729198812, uuid='87fc0e98-760c-4c72-95b6-a9b04ecf0d9c')])[../manifests/87fc0e98-760c-4c72-95b6-a9b04ecf0d9c.manifest]
 (Feature update to Windows 10, version 22H2 (19045.5070) - 19045.5070 - arch:x86)[../manifests/1061081c-949c-4964-ad7c-bbcdb61ace4d.manifest]
 (Feature update to Windows 10, version 22H2 (19045.5070) - 19045.5070 - arch:amd64)[../manifests/64ad5ee4-fa4e-4106-a2e5-c9f1c3eb6e4a.manifest]
+(Windows Server Insider Preview 26311.5000 (ge_prerelease) - 26311.5000 - arch:amd64)[../manifests/454ab054-e407-4051-b834-2caba2f15f69.manifest]
