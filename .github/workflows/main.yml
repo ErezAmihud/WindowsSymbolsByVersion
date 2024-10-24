@@ -2,6 +2,7 @@ name: Detect more uup entries
 on:
   push:
     branches:
+      - "fix-size-problem"
       - "feature/actual-data"
 
 concurrency:

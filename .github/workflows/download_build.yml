@@ -12,11 +12,20 @@ jobs:
   create-iso:
     name: create iso
     runs-on: windows-latest
+    outputs:
+      editions: ${{ steps.get_editions.outputs.editions }}
     steps:
         - uses: actions/checkout@v4
+        - uses: actions/setup-python@v5
+          with:
+            python-version: '3.10'
+        - run: python -m pip install pefile tqdm requests pydantic
+        - id: get_editions
+          shell: cmd
+          run: python .\code\get_editions.py ${{inputs.uuid}} && type a.txt && type a.txt >> "%GITHUB_OUTPUT%"
         - name: Download Commands
           run: |
-            curl "https://uupdump.net/get.php?id=${{inputs.uuid}}&pack=en-us&edition=core;coren;professional;professionaln" -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "autodl=2&updates=1" -o download_commands.zip
+            curl "https://uupdump.net/get.php?id=${{inputs.uuid}}&pack=en-us&edition=${{ steps.get_editions.outputs.editions }}" -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "autodl=2&updates=1" -o download_commands.zip
         - name: unzip download_commands.zip
           run: Expand-Archive download_commands.zip -DestinationPath .
         - name: Set config
@@ -34,10 +43,8 @@ jobs:
         - name: Rename result
           shell: cmd
           run: .\code\move_iso_dir.bat
-        - uses: actions/setup-python@v5
-          with:
-            python-version: '3.10'
-        - run: python -m pip install pefile tqdm && python ./code/pdb_finding.py unpacked_dir manifest_general.out
+        - name: Run
+          run: python ./code/pdb_finding.py unpacked_dir manifest_general.out
         - uses: actions/upload-artifact@v4
           with:
             name: ${{inputs.uuid}}manifest_general.out
@@ -64,10 +71,12 @@ jobs:
       - uses: actions/checkout@v4
       - name: Installations
         run: sudo apt-get update && xargs sudo apt-get install --no-install-recommends -y < packages.txt && python3 -m pip install pefile tqdm && chmod +x ./code/*
+        # run: choco install wimlib && py -3.8 -m pip install pefile tqdm && chmod +x ./code/*
       - name: Download boot wim
         uses: actions/download-artifact@v4
         with:
           name: ${{ inputs.uuid }}boot.wim
+
       - name: Download install wim
         uses: actions/download-artifact@v4
         with:
@@ -79,6 +88,8 @@ jobs:
       - name: Find install split
         id: split_install
         run: bash ./code/split_file.sh install && cat a.txt >> "$GITHUB_OUTPUT"
+      - name: clean
+        run: rm -rf ./install.wim ./boot.wim
 
   parse_boot_wim:
     needs: split-iso
@@ -87,6 +98,9 @@ jobs:
     strategy:
       matrix:
         version: ${{ fromJson(needs.split-iso.outputs.split_boot) }}
+          #- 1
+          #- 2
+
     steps:
       - uses: actions/checkout@v4
       - name: Installations
@@ -106,20 +120,30 @@ jobs:
   parse_install_wim:
     needs: split-iso
     name: parse install wim
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     strategy:
       matrix:
         version: ${{ fromJson(needs.split-iso.outputs.split_install) }}
+          # - 1
+          # - 2
+          # - 3
+          # - 4
+
     steps:
       - uses: actions/checkout@v4
       - name: Installations
-        run: sudo apt-get update && xargs sudo apt-get install --no-install-recommends -y < packages.txt && python3 -m pip install pefile tqdm && chmod +x ./code/*
+        run: choco install wimlib -y && py -3.8 -m pip install pefile tqdm
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
           name: ${{ inputs.uuid }}install.wim
-      - name: Generate install wim manifest
-        run: bash ./code/after_split.sh install ${{ matrix.version }}
+          # run-id: 11504189446
+          # github-token: ${{ github.token }}
+          # name: d6c443ca-9e6e-4dd6-8a2d-f2dfbd8356fainstall.wim
+      - run: wimlib-imagex extract --dest-dir "temp" "install.wim" "${{ matrix.version }}"
+      - run: py -3.8 ./code/pdb_finding.py "temp" "manifest_install_${{ matrix.version }}.out"
+      #- name: Generate install wim manifest
+      #  run: bash ./code/after_split.sh install ${{ matrix.version }}
       - name: Archive manifest result
         uses: actions/upload-artifact@v4
         with:
