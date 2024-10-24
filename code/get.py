@@ -27,7 +27,7 @@ class UupDumpResponse(BaseModel):
     jsonApiVersion: str
 
 
-def parse_get(text) -> UupDumpResponse:
+def parse_get(text) -> Response:
     try:
         return UupDumpResponse(**text).response
     except (json.JSONDecodeError, ValidationError) as e:
@@ -36,4 +36,4 @@ def parse_get(text) -> UupDumpResponse:
 
 # TODO try with updateOnly
 def get(id:str, editions = ("COREN","CORE","PROFESSIONAL","PROFESSIONALN","PPIPRO")):
-    return parse_get(requests.get("https://api.uupdump.net/get.php", params={"id":id, "pack":"en-us", "edition":editions}).json()).response
+    return parse_get(requests.get("https://api.uupdump.net/get.php", params={"id":id, "pack":"en-us", "edition":editions}).json())
