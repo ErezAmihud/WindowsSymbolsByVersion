@@ -1,0 +1,14 @@
+# Windows versions
+Those are the mapping of the name to manifest file.
+I recommend to search this page with the browser search functionality, and not to do it manually. Other method is to go to [uupdump](https://uupdump.net/), open the download page for the version you want, and copy the `id` from the url bar. For example, for `https://uupdump.net/selectlang.php?id=fa82ea51-04ac-4e3e-a487-70429b5d2bdb` take `fa82ea51-04ac-4e3e-a487-70429b5d2bdb` and take the file `manifests/fa82ea51-04ac-4e3e-a487-70429b5d2bdb.manifest` from [this](https://github.com/ErezAmihud/WindowsSymbolsByVersion) repo.
+
+NOTE - probably most of the pdbs listed in the manifests don't have the files in the microsoft symbol server, it is ok, the manifest just contains every pdb possibly needed from the windows image.
+
+
+
+([BuildInfo(title='Windows 11 Insider Preview 10.0.22635.4371 (ni_release)', build='22635.4371', arch='amd64', created=1729270849, uuid='cf191367-54bf-4350-9b53-4e482ccefa52')])[../manifests/cf191367-54bf-4350-9b53-4e482ccefa52.manifest]
+([BuildInfo(title='Windows 11 Insider Preview 10.0.26120.2130 (ge_release_upr)', build='26120.2130', arch='amd64', created=1729270826, uuid='8e99fe48-06d3-4f0a-9a09-a849f7f2551c')])[../manifests/8e99fe48-06d3-4f0a-9a09-a849f7f2551c.manifest]
+([BuildInfo(title='Windows 11 Insider Preview 27729.1000 (rs_prerelease)', build='27729.1000', arch='amd64', created=1729198812, uuid='87fc0e98-760c-4c72-95b6-a9b04ecf0d9c')])[../manifests/87fc0e98-760c-4c72-95b6-a9b04ecf0d9c.manifest]
+(Feature update to Windows 10, version 22H2 (19045.5070) - 19045.5070 - arch:x86)[../manifests/1061081c-949c-4964-ad7c-bbcdb61ace4d.manifest]
+(Feature update to Windows 10, version 22H2 (19045.5070) - 19045.5070 - arch:amd64)[../manifests/64ad5ee4-fa4e-4106-a2e5-c9f1c3eb6e4a.manifest]
+(Windows Server Insider Preview 26311.5000 (ge_prerelease) - 26311.5000 - arch:amd64)[../manifests/454ab054-e407-4051-b834-2caba2f15f69.manifest]
