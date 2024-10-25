@@ -1,11 +1,7 @@
 name: Detect more uup entries
 on:
-  push:
-    branches:
-      - "fix-size-problem"
-      - "feature/actual-data"
-  # schedule:
-  #   - cron: '* 0-23/3 * * *'
+  schedule:
+    - cron: '* 0-23/3 * * *'
 
 concurrency:
   group: main-yml
@@ -21,7 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: pip install pydantic requests && chmod +x ./code/mmmm.sh
-      - run: python ./code/daily.py $ALLOWED_DOWNLOAD_SIZE && bash ./code/mmmm.sh
+      - run: python ./code/daily.py ${{ vars.ALLOWED_DOWNLOAD_SIZE }} && bash ./code/mmmm.sh
         id: version_list_step
 
   download-releases:
