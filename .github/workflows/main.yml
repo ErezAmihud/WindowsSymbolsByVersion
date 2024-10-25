@@ -5,8 +5,7 @@ on:
 
 concurrency:
   group: main-yml
-  cancel-in-progress: true
-
+  cancel-in-progress: false
 
 jobs:
   list-releases:
