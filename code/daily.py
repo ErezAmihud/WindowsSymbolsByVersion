@@ -1,10 +1,11 @@
 #!/usr/bin/bash
 
+import sys
 import json
 from listid import listid
 from get_lang import get_langs
 
-allowed_size=1
+allowed_size=int(sys.argv[1])
 
 processed_builds = set(json.load(open("process_builds.json", "r")))
 builds = listid()
