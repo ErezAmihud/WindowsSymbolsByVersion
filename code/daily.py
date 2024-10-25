@@ -16,8 +16,11 @@ builds = filter(lambda build: "cumulative update " not in build.title.lower(), b
 builds = map(lambda build: build.uuid, builds)
 builds = filter(lambda uuid: "en-us" in get_langs(uuid), builds)
 actual_builds = []
-for i in range(allowed_size):
-    actual_builds.append(next(builds))
+try:
+    for i in range(allowed_size):
+        actual_builds.append(next(builds))
+except StopIteration:
+    pass
 
 print(actual_builds)
 json.dump(actual_builds, open("a.txt", 'w'))
