@@ -4,3 +4,7 @@ Creation of a mapping between windows version to public pdb symbols. It is usefu
 
 I am using uup files from uupdump.net to get all the dll's.
 If any symbol version that is here is not working let me know.
+
+
+## Help is appriciated
+If any1 have a faster method be free to contribute

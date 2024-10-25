@@ -1,0 +1,31 @@
+name: Detect more uup entries
+on:
+  schedule:
+    - cron: '* 0-23/3 * * *'
+
+concurrency:
+  group: main-yml
+  cancel-in-progress: true
+
+
+jobs:
+  list-releases:
+    name: Get not figured out builds
+    runs-on: ubuntu-latest
+    outputs:
+      uuids: ${{ steps.version_list_step.outputs.uuid_matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install pydantic requests && chmod +x ./code/mmmm.sh
+      - run: python ./code/daily.py ${{ vars.ALLOWED_DOWNLOAD_SIZE }} && bash ./code/mmmm.sh
+        id: version_list_step
+
+  download-releases:
+    needs: list-releases
+    strategy:
+      fail-fast: false
+      matrix:
+        uuid: ${{ fromJson(needs.list-releases.outputs.uuids) }}
+    uses: ./.github/workflows/download_build.yml
+    with:
+      uuid: ${{matrix.uuid}}
