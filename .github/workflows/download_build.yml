@@ -31,6 +31,9 @@ jobs:
         - name: Set config
           run: copy config.template ConvertConfig.ini
           shell: cmd
+        - name: Change blocking commands to non blocking
+          run: (gc uup_download_windows.cmd) -replace 'pause', 'exit 1' | Out-File -encoding ASCII uup_download_windows.cmd
+          shell: powershell
         - name: Create iso
           uses: nick-fields/retry@v3
           with:
@@ -174,13 +177,16 @@ jobs:
 
   deploy_manifest:
     concurrency: deploy_new_version
+    cancel-timeout-minutes: 100
     needs: merge_artifacts
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: write
     steps:
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.ref_name }}
-          token: ${{ secrets.PAT }}
       - run: sudo apt-get update && xargs sudo apt-get install --no-install-recommends -y < packages.txt && python3 -m pip install pydantic requests pefile tqdm && chmod +x ./code/*
       - name: Download manifest
         uses: actions/download-artifact@v4
