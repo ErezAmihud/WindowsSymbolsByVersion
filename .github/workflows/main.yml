@@ -1,7 +1,7 @@
 name: Detect more uup entries
 on:
   schedule:
-    - cron: '1 0-23/3 * * *'
+    - cron: '1 0-23/2 * * *'
 
 concurrency:
   group: main-yml
