@@ -197,7 +197,7 @@ jobs:
         id: get_name
       - run: python -c "import json;out=json.load(open('process_builds.json', 'r'));out.append('${{inputs.uuid}}');json.dump(out, open('process_builds.json', 'w'))"
         name: Add uuid to processt build
-      - run: echo "[${{ steps.get_name.outputs.name }}](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/${{ inputs.uuid }}.manifest) \\" >> docs/index.md
+      - run: echo -e "[${{ steps.get_name.outputs.name }}](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/${{ inputs.uuid }}.manifest) \n\n" >> docs/index.md
       - uses: EndBug/add-and-commit@v9
         with:
           add: '["manifests", "docs", "process_builds.json"]'
