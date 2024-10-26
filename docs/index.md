@@ -165,3 +165,4 @@ NOTE - probably most of the pdbs listed in the manifests don't have the files in
 [Windows 11 Insider Preview 10.0.22635.4371 (ni_release) - 22635.4371 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/cf191367-54bf-4350-9b53-4e482ccefa52.manifest) \
 [Windows 11 Insider Preview 10.0.22635.4367 (ni_release) - 22635.4367 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/a9af177b-6bea-4ab5-92c7-48a8787ce5f8.manifest) \
 [Windows 11 Insider Preview 10.0.22635.4435 (ni_release) - 22635.4435 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/c782f4ff-3e71-4453-ac16-d0cab4d5c45d.manifest) \
+[Windows 11 Insider Preview 10.0.26120.2122 (ge_release_upr) - 26120.2122 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/a495c8ac-f626-4839-9c4f-231eb4ad5ce2.manifest) \
