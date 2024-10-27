@@ -327,3 +327,6 @@ NOTE - probably most of the pdbs listed in the manifests don't have the files in
 [Feature update to Windows 10, version 22H2 (19045.4894) - 19045.4894 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/f2f33f64-14ce-4e4c-9c6e-a71c07276e33.manifest) 
 
 
+[Cumulative Update Preview for Windows 11 Version 23H2 (22631.4249) - 22631.4249 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/f22478d7-da3f-4c7b-8259-a5d34233ba34.manifest) 
+
+
