@@ -202,3 +202,6 @@ NOTE - probably most of the pdbs listed in the manifests don't have the files in
 [Windows 10 Insider Preview 10.0.18327.7 (19h1_release) - 18327.7 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/b7ee45bf-127d-4044-9e79-e7d07f2286a2.manifest) 
 
 
+[Windows 11, version 22H2 (22621.4169) - 22621.4169 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/7c62499d-6d61-41d2-b54f-985badc06e28.manifest) 
+
+
