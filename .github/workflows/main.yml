@@ -32,6 +32,7 @@ jobs:
 
 
   publish_docs:
+    needs: download-releases
     name: Deploy docs
     runs-on: ubuntu-latest
     continue-on-error: true
