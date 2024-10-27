@@ -161,110 +161,118 @@ NOTE - probably most of the pdbs listed in the manifests don't have the files in
 
 [Windows 11, version 24H2 (26100.2161) - 26100.2161 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/d6c443ca-9e6e-4dd6-8a2d-f2dfbd8356fa.manifest)
 
-[Windows 11, version 23H2 (22631.4391) - 22631.4391 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/64aa3acc-d2d2-4f80-af12-80820c44c14b.manifest) \
-[Windows 11 Insider Preview 10.0.22635.4371 (ni_release) - 22635.4371 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/cf191367-54bf-4350-9b53-4e482ccefa52.manifest) \
-[Windows 11 Insider Preview 10.0.22635.4367 (ni_release) - 22635.4367 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/a9af177b-6bea-4ab5-92c7-48a8787ce5f8.manifest) \
-[Windows 11 Insider Preview 10.0.22635.4435 (ni_release) - 22635.4435 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/c782f4ff-3e71-4453-ac16-d0cab4d5c45d.manifest) \
-[Windows 11 Insider Preview 10.0.26120.2122 (ge_release_upr) - 26120.2122 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/a495c8ac-f626-4839-9c4f-231eb4ad5ce2.manifest) \
-[Windows 11 Insider Preview 10.0.26120.2200 (ge_release_upr) - 26120.2200 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/1ddbb3b6-9ebd-4d4c-b9d7-4b0c39663fd0.manifest) \
-[Windows 11 Insider Preview 10.0.26120.2130 (ge_release_upr) - 26120.2130 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/8e99fe48-06d3-4f0a-9a09-a849f7f2551c.manifest) \
-[Windows 11, version 24H2 (26100.2161) - 26100.2161 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/d6c443ca-9e6e-4dd6-8a2d-f2dfbd8356fa.manifest) \
-[Windows Server, version 23H2 (25398.1189) - 25398.1189 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/d289e1be-37f2-4980-96a9-5ceae469fff2.manifest) 
+[Windows 11, version 23H2 (22631.4391) - 22631.4391 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/64aa3acc-d2d2-4f80-af12-80820c44c14b.manifest)
 
+[Windows 11 Insider Preview 10.0.22635.4371 (ni_release) - 22635.4371 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/cf191367-54bf-4350-9b53-4e482ccefa52.manifest)
 
-[Windows 11 Insider Preview 27718.1000 (rs_prerelease) - 27718.1000 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/9c9aaa4d-3424-4334-aa1c-86b82f95b7ba.manifest) 
+[Windows 11 Insider Preview 10.0.22635.4367 (ni_release) - 22635.4367 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/a9af177b-6bea-4ab5-92c7-48a8787ce5f8.manifest)
 
+[Windows 11 Insider Preview 10.0.22635.4435 (ni_release) - 22635.4435 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/c782f4ff-3e71-4453-ac16-d0cab4d5c45d.manifest)
 
-[Windows 11, version 23H2 (22631.4387) - 22631.4387 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/e93eb708-98ec-494c-b4fc-025c6b012173.manifest) 
+[Windows 11 Insider Preview 10.0.26120.2122 (ge_release_upr) - 26120.2122 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/a495c8ac-f626-4839-9c4f-231eb4ad5ce2.manifest)
 
+[Windows 11 Insider Preview 10.0.26120.2200 (ge_release_upr) - 26120.2200 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/1ddbb3b6-9ebd-4d4c-b9d7-4b0c39663fd0.manifest)
 
-[Windows 11, version 22H2 (22621.4387) - 22621.4387 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/e7036acd-c5d4-46e5-bce0-ccb55d8dbf56.manifest) 
+[Windows 11 Insider Preview 10.0.26120.2130 (ge_release_upr) - 26120.2130 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/8e99fe48-06d3-4f0a-9a09-a849f7f2551c.manifest)
 
+[Windows 11, version 24H2 (26100.2161) - 26100.2161 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/d6c443ca-9e6e-4dd6-8a2d-f2dfbd8356fa.manifest)
 
-[Windows 11 Insider Preview 10.0.26120.1930 (ge_release_upr) - 26120.1930 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/9c6443e2-4652-4d3d-b0b6-34895deca5a6.manifest) 
+[Windows Server, version 23H2 (25398.1189) - 25398.1189 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/d289e1be-37f2-4980-96a9-5ceae469fff2.manifest)
 
 
-[Windows 11, version 24H2 (26100.2033) - 26100.2033 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/7a25f043-fbfb-43f1-b1ef-dee8694dd06a.manifest) 
+[Windows 11 Insider Preview 27718.1000 (rs_prerelease) - 27718.1000 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/9c9aaa4d-3424-4334-aa1c-86b82f95b7ba.manifest)
 
 
-[Windows 11, version 24H2 (26100.2152) - 26100.2152 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/a4da2b41-0ac3-4987-9b07-30c19c5d594f.manifest) 
+[Windows 11, version 23H2 (22631.4387) - 22631.4387 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/e93eb708-98ec-494c-b4fc-025c6b012173.manifest)
 
 
-[Windows 11, version 24H2 (26100.1882) - 26100.1882 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/8bb7f81c-c236-456c-92ca-1f70baf26f35.manifest) 
+[Windows 11, version 22H2 (22621.4387) - 22621.4387 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/e7036acd-c5d4-46e5-bce0-ccb55d8dbf56.manifest)
 
 
-[Windows 11 Insider Preview 10.0.26120.1912 (ge_release_svc_betaflt_upr) - 26120.1912 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/d991198d-989d-4440-8d7f-9eb3096120a7.manifest) 
+[Windows 11 Insider Preview 10.0.26120.1930 (ge_release_upr) - 26120.1930 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/9c6443e2-4652-4d3d-b0b6-34895deca5a6.manifest)
 
 
-[Windows 11, version 24H2 (26100.1656) - 26100.1656 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/fae5cd98-5bb2-4420-b9f8-8fab03a8d3d8.manifest) 
+[Windows 11, version 24H2 (26100.2033) - 26100.2033 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/7a25f043-fbfb-43f1-b1ef-dee8694dd06a.manifest)
 
 
-[Windows 10 Insider Preview 10.0.18327.7 (19h1_release) - 18327.7 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/b7ee45bf-127d-4044-9e79-e7d07f2286a2.manifest) 
+[Windows 11, version 24H2 (26100.2152) - 26100.2152 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/a4da2b41-0ac3-4987-9b07-30c19c5d594f.manifest)
 
 
-[Windows 11, version 22H2 (22621.4169) - 22621.4169 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/7c62499d-6d61-41d2-b54f-985badc06e28.manifest) 
+[Windows 11, version 24H2 (26100.1882) - 26100.1882 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/8bb7f81c-c236-456c-92ca-1f70baf26f35.manifest)
 
 
-[Windows 11 Insider Preview 10.0.22635.4225 (ni_release) - 22635.4225 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/738ea25b-cbc3-4633-8e5f-7ce15a1ab826.manifest) 
+[Windows 11 Insider Preview 10.0.26120.1912 (ge_release_svc_betaflt_upr) - 26120.1912 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/d991198d-989d-4440-8d7f-9eb3096120a7.manifest)
 
 
-[Windows 11 Insider Preview 10.0.26120.1843 (ge_release_svc_betaflt_upr) - 26120.1843 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/e27f002d-e3b6-4f24-a4d8-8b09d279fe5b.manifest) 
+[Windows 11, version 24H2 (26100.1656) - 26100.1656 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/fae5cd98-5bb2-4420-b9f8-8fab03a8d3d8.manifest)
 
 
-[Windows 11 Insider Preview 10.0.26120.1912 (ge_release_svc_betaflt_upr) - 26120.1912 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/d991198d-989d-4440-8d7f-9eb3096120a7.manifest) 
+[Windows 10 Insider Preview 10.0.18327.7 (19h1_release) - 18327.7 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/b7ee45bf-127d-4044-9e79-e7d07f2286a2.manifest)
 
 
-[Windows 11, version 24H2 (26100.1742) - 26100.1742 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/e1d5e11a-7054-49cf-b9c9-ba54258d5cc6.manifest) 
+[Windows 11, version 22H2 (22621.4169) - 22621.4169 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/7c62499d-6d61-41d2-b54f-985badc06e28.manifest)
 
 
-[Windows 11 Insider Preview 10.0.22635.4145 (ni_release) - 22635.4145 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/b0dc6fb8-ec25-4f6d-9eb9-427480649d5e.manifest) 
+[Windows 11 Insider Preview 10.0.22635.4225 (ni_release) - 22635.4225 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/738ea25b-cbc3-4633-8e5f-7ce15a1ab826.manifest)
 
 
-[Windows 11, version 23H2 (22631.4169) - 22631.4169 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/8dda76ff-194a-4a47-b1e7-c303136bf54e.manifest) 
+[Windows 11 Insider Preview 10.0.26120.1843 (ge_release_svc_betaflt_upr) - 26120.1843 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/e27f002d-e3b6-4f24-a4d8-8b09d279fe5b.manifest)
 
 
-[Windows 11 Insider Preview 10.0.26120.1843 (ge_release_svc_betaflt_upr) - 26120.1843 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/e27f002d-e3b6-4f24-a4d8-8b09d279fe5b.manifest) 
+[Windows 11 Insider Preview 10.0.26120.1912 (ge_release_svc_betaflt_upr) - 26120.1912 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/d991198d-989d-4440-8d7f-9eb3096120a7.manifest)
 
 
-[Windows 11, version 24H2 (26100.1591) - 26100.1591 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/df9477d8-1bf3-4847-b928-24e20e441486.manifest) 
+[Windows 11, version 24H2 (26100.1742) - 26100.1742 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/e1d5e11a-7054-49cf-b9c9-ba54258d5cc6.manifest)
 
 
-[Windows 11, version 23H2 (22631.4108) - 22631.4108 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/fa8dfa59-196d-442d-8469-0c8a51a06828.manifest) 
+[Windows 11 Insider Preview 10.0.22635.4145 (ni_release) - 22635.4145 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/b0dc6fb8-ec25-4f6d-9eb9-427480649d5e.manifest)
 
 
-[Windows 11, version 22H2 (22621.4108) - 22621.4108 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/abcb6f67-a9a4-42f7-a612-ffaaf3098ec4.manifest) 
+[Windows 11, version 23H2 (22631.4169) - 22631.4169 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/8dda76ff-194a-4a47-b1e7-c303136bf54e.manifest)
 
 
-[Windows 11, version 22H2 (22621.4112) - 22621.4112 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/9c97ebe6-2486-404b-bf10-f51d51bb0f92.manifest) 
+[Windows 11 Insider Preview 10.0.26120.1843 (ge_release_svc_betaflt_upr) - 26120.1843 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/e27f002d-e3b6-4f24-a4d8-8b09d279fe5b.manifest)
 
 
-[Windows 11, version 24H2 (26100.1591) - 26100.1591 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/df9477d8-1bf3-4847-b928-24e20e441486.manifest) 
+[Windows 11, version 24H2 (26100.1591) - 26100.1591 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/df9477d8-1bf3-4847-b928-24e20e441486.manifest)
 
 
-[Windows 11, version 23H2 (22631.4108) - 22631.4108 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/fa8dfa59-196d-442d-8469-0c8a51a06828.manifest) 
+[Windows 11, version 23H2 (22631.4108) - 22631.4108 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/fa8dfa59-196d-442d-8469-0c8a51a06828.manifest)
 
 
-[Windows 11, version 22H2 (22621.4112) - 22621.4112 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/9c97ebe6-2486-404b-bf10-f51d51bb0f92.manifest) 
+[Windows 11, version 22H2 (22621.4108) - 22621.4108 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/abcb6f67-a9a4-42f7-a612-ffaaf3098ec4.manifest)
 
 
-[Windows 11, version 22H2 (22621.4108) - 22621.4108 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/abcb6f67-a9a4-42f7-a612-ffaaf3098ec4.manifest) 
+[Windows 11, version 22H2 (22621.4112) - 22621.4112 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/9c97ebe6-2486-404b-bf10-f51d51bb0f92.manifest)
 
 
-[Windows 11, version 24H2 (26100.1586) - 26100.1586 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/7db0a8d0-e2b9-48c8-8d7b-e34e431f0954.manifest) 
+[Windows 11, version 24H2 (26100.1591) - 26100.1591 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/df9477d8-1bf3-4847-b928-24e20e441486.manifest)
 
 
-[Windows 11 Insider Preview 10.0.22635.4076 (ni_release) - 22635.4076 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/902f1ab7-5ceb-4c2c-a46a-3970faf401e3.manifest) 
+[Windows 11, version 23H2 (22631.4108) - 22631.4108 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/fa8dfa59-196d-442d-8469-0c8a51a06828.manifest)
 
 
-[Windows 11 Insider Preview 10.0.26120.1542 (ge_release_svc_betaflt_upr) - 26120.1542 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/2bf57e55-e7da-47c8-8221-8222b14ed79c.manifest) 
+[Windows 11, version 22H2 (22621.4112) - 22621.4112 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/9c97ebe6-2486-404b-bf10-f51d51bb0f92.manifest)
 
 
-[Windows 11, version 24H2 (26100.1586) - 26100.1586 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/7db0a8d0-e2b9-48c8-8d7b-e34e431f0954.manifest) 
+[Windows 11, version 22H2 (22621.4108) - 22621.4108 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/abcb6f67-a9a4-42f7-a612-ffaaf3098ec4.manifest)
 
 
-[Windows 11 Insider Preview 10.0.22635.4076 (ni_release) - 22635.4076 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/902f1ab7-5ceb-4c2c-a46a-3970faf401e3.manifest) 
+[Windows 11, version 24H2 (26100.1586) - 26100.1586 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/7db0a8d0-e2b9-48c8-8d7b-e34e431f0954.manifest)
 
 
-[Windows 11 Insider Preview 10.0.26120.1542 (ge_release_svc_betaflt_upr) - 26120.1542 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/2bf57e55-e7da-47c8-8221-8222b14ed79c.manifest) 
+[Windows 11 Insider Preview 10.0.22635.4076 (ni_release) - 22635.4076 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/902f1ab7-5ceb-4c2c-a46a-3970faf401e3.manifest)
+
+
+[Windows 11 Insider Preview 10.0.26120.1542 (ge_release_svc_betaflt_upr) - 26120.1542 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/2bf57e55-e7da-47c8-8221-8222b14ed79c.manifest)
+
+
+[Windows 11, version 24H2 (26100.1586) - 26100.1586 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/7db0a8d0-e2b9-48c8-8d7b-e34e431f0954.manifest)
+
+
+[Windows 11 Insider Preview 10.0.22635.4076 (ni_release) - 22635.4076 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/902f1ab7-5ceb-4c2c-a46a-3970faf401e3.manifest)
+
+
+[Windows 11 Insider Preview 10.0.26120.1542 (ge_release_svc_betaflt_upr) - 26120.1542 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/2bf57e55-e7da-47c8-8221-8222b14ed79c.manifest)
 
 
