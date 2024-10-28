@@ -10,6 +10,7 @@ jobs:
   build:
     name: Deploy docs
     runs-on: ubuntu-latest
+    concurrency: publish_docs
     steps:
       - name: Checkout main
         uses: actions/checkout@v4

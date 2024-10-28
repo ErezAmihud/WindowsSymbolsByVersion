@@ -64,6 +64,14 @@ jobs:
             path: unpacked_dir/sources/boot.wim
             retention-days: 1
 
+  failed-create-iso:
+    runs-on: ubuntu-latest
+    needs: create-iso
+    concurrency: deploy_new_version
+    if: ${{ always() && contains(needs.*.result, 'failure') }}
+    steps:
+      - run: python3 -c "import json;out=json.load(open('problematic.json', 'r'));out.append('${{inputs.uuid}}');json.dump(out, open('problematic.json', 'w'))"
+
   split-iso:
     runs-on: ubuntu-latest
     needs: create-iso
@@ -202,5 +210,4 @@ jobs:
         with:
           add: '["manifests", "docs", "process_builds.json"]'
           message: 'Automated commit, add manifest for ${{inputs.uuid}}'
-
 
