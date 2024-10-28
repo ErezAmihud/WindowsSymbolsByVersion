@@ -35,7 +35,8 @@ jobs:
     needs: download-releases
     name: Deploy docs
     runs-on: ubuntu-latest
-    continue-on-error: true
+    if: ${{ always() }}
+    concurrency: publish_docs
     steps:
       - name: Checkout main
         uses: actions/checkout@v4
