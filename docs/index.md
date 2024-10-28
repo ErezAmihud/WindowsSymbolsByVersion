@@ -675,3 +675,6 @@ NOTE - probably most of the pdbs listed in the manifests don't have the files in
 [Windows Server Insider Preview 26227.5000 (ge_prerelease) - 26227.5000 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/7c427289-259b-4d18-9450-e17c3de63bc9.manifest) 
 
 
+[Feature update to Windows 10, version 1809 (17763.5936) - 17763.5936 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/a68ff2b2-ab4c-46d3-bbe9-4eadfba9ea2f.manifest) 
+
+
