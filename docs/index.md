@@ -702,3 +702,6 @@ NOTE - probably most of the pdbs listed in the manifests don't have the files in
 [Windows 11 Insider Preview 10.0.22635.3720 (ni_release) - 22635.3720 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/bdf52396-54c4-4a17-80e1-b670ac3667da.manifest) 
 
 
+[Feature update to Azure Stack HCI, version 23H2 (25398.887) - 25398.887 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/70a2b03a-f86e-4af6-aea6-a6586f2467ad.manifest) 
+
+
