@@ -546,3 +546,6 @@ NOTE - probably most of the pdbs listed in the manifests don't have the files in
 [Windows 11, version 22H2 (22621.3880) - 22621.3880 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/eead5e53-68fd-47a0-ba3f-1b6deb71a57b.manifest) 
 
 
+[Windows 11 Insider Preview 10.0.22635.3858 (ni_release) - 22635.3858 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/a4d404fb-086f-4220-a2b8-d655fd92a2e5.manifest) 
+
+
