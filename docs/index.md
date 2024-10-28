@@ -681,3 +681,6 @@ NOTE - probably most of the pdbs listed in the manifests don't have the files in
 [Windows 11 Insider Preview 10.0.26120.770 (ge_release) - 26120.770 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/a95de9c4-eda6-4dbc-87e6-0fd3ab104170.manifest) 
 
 
+[Feature update to Microsoft server operating system, version 21H2 (20348.2527) - 20348.2527 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/a341031f-9835-4c4b-bcad-b5d7eb7ef76d.manifest) 
+
+
