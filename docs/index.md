@@ -759,3 +759,6 @@ NOTE - probably most of the pdbs listed in the manifests don't have the files in
 [Windows Server, version 23H2 (25398.887) - 25398.887 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/c8c2410f-b814-409c-b9ab-602b7adb1fb6.manifest) 
 
 
+[Feature update to Windows 10, version 1809 (17763.5696) - 17763.5696 - arch:x86](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/877caeca-6240-43ba-bb31-759d631fbce3.manifest) 
+
+
