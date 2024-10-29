@@ -762,3 +762,6 @@ NOTE - probably most of the pdbs listed in the manifests don't have the files in
 [Feature update to Windows 10, version 1809 (17763.5696) - 17763.5696 - arch:x86](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/877caeca-6240-43ba-bb31-759d631fbce3.manifest) 
 
 
+[Cumulative Update for Windows 11 Version 24H2 (26100.2) - 26100.2 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/bb586e00-2b89-4654-9091-1d261f2f09e2.manifest) 
+
+
