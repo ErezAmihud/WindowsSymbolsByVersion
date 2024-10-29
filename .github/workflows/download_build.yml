@@ -72,6 +72,8 @@ jobs:
     if: ${{ always() && contains(needs.*.result, 'failure') }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
       - run: python3 -c "import json;out=json.load(open('problematic.json', 'r'));out.append('${{inputs.uuid}}');json.dump(out, open('problematic.json', 'w'))"
       - uses: EndBug/add-and-commit@v9
         with:
