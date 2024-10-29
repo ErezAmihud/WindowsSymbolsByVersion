@@ -68,9 +68,15 @@ jobs:
     runs-on: ubuntu-latest
     needs: create-iso
     concurrency: deploy_new_version
+    cancel-timeout-minutes: 100
     if: ${{ always() && contains(needs.*.result, 'failure') }}
     steps:
+      - uses: actions/checkout@v4
       - run: python3 -c "import json;out=json.load(open('problematic.json', 'r'));out.append('${{inputs.uuid}}');json.dump(out, open('problematic.json', 'w'))"
+      - uses: EndBug/add-and-commit@v9
+        with:
+          add: "problematic.json"
+          message: 'Automated commit, add a problematic uuid - ${{inputs.uuid}}'
 
   split-iso:
     runs-on: ubuntu-latest

@@ -9,7 +9,17 @@ allowed_size=int(sys.argv[1])
 
 processed_builds = set(json.load(open("process_builds.json", "r")))
 processed_builds.union(set(json.load(open("problematic.json", "r"))))
+priority_uuids = set(json.load(open("priority.json", "r")))
+priority_uuids.difference_update(processed_builds)
+
 builds = listid()
+for uuid in priority_uuids:
+    for build in builds:
+        if build.uuid == uuid:
+            break
+    builds.remove(build)
+    builds.insert(0, build)
+
 builds = filter(lambda build: build.uuid not in processed_builds, builds)
 builds = filter(lambda build: build.arch in ["x86", "amd64"], builds)
 builds = filter(lambda build: " insider " not in build.title.lower(), builds) # filter insider or preview
