@@ -672,3 +672,456 @@ NOTE - probably most of the pdbs listed in the manifests don't have the files in
 [Windows 11 Insider Preview 10.0.22635.3785 (ni_release) - 22635.3785 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/d6ec4b61-9dfd-441e-bb16-8e3cd7cee482.manifest) 
 
 
+[Windows Server Insider Preview 26227.5000 (ge_prerelease) - 26227.5000 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/7c427289-259b-4d18-9450-e17c3de63bc9.manifest) 
+
+
+[Feature update to Windows 10, version 1809 (17763.5936) - 17763.5936 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/a68ff2b2-ab4c-46d3-bbe9-4eadfba9ea2f.manifest) 
+
+
+[Windows 11 Insider Preview 10.0.26120.770 (ge_release) - 26120.770 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/a95de9c4-eda6-4dbc-87e6-0fd3ab104170.manifest) 
+
+
+[Feature update to Microsoft server operating system, version 21H2 (20348.2527) - 20348.2527 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/a341031f-9835-4c4b-bcad-b5d7eb7ef76d.manifest) 
+
+
+[Feature update to Windows 10, version 21H2 (19044.1147) - 19044.1147 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/bf929762-ae43-4e9f-8a69-cdb0ccca01ef.manifest) 
+
+
+[Windows 11, version 22H2 (22621.3737) - 22621.3737 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/bccff4b8-ac15-412d-b965-f146e7c22365.manifest) 
+
+
+[Feature update to Windows 10, version 21H2 (19044.4529) - 19044.4529 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/a0f51b86-2ddf-40a9-8df4-870619b2ff1d.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.4529) - 19045.4529 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/cd8257ce-cb10-4a06-a107-1e60725358fa.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.4474) - 19045.4474 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/b8d2df04-86bd-4d00-b46f-c33df4a394a3.manifest) 
+
+
+[Windows 11 Insider Preview 10.0.22635.3720 (ni_release) - 22635.3720 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/bdf52396-54c4-4a17-80e1-b670ac3667da.manifest) 
+
+
+[Feature update to Azure Stack HCI, version 23H2 (25398.887) - 25398.887 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/70a2b03a-f86e-4af6-aea6-a6586f2467ad.manifest) 
+
+
+[Cumulative Update for Windows 11 Version 24H2 (26100.560) - 26100.560 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/d9285770-3257-48d5-851a-ff2cc96e0391.manifest) 
+
+
+[Windows 11, version 24H2 (26100.268) - 26100.268 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/f801fc1f-9fd4-4e6f-92a0-a9274d2bf247.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.4353) - 19045.4353 - arch:x86](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/e28f21b2-1549-4228-9d94-0335109d0e0f.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.4472) - 19045.4472 - arch:x86](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/0708b1c7-6ea3-4d9a-b01d-12c3f1f2b255.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.4412) - 19045.4412 - arch:x86](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/6a57e66a-cc5d-4684-a35b-6b0a81cdccfa.manifest) 
+
+
+[Feature update to Microsoft server operating system, version 21H2 (20348.2402) - 20348.2402 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/c2f28323-8acf-4d2c-8bd2-38b748336518.manifest) 
+
+
+[Feature update to Windows 10, version 21H2 (19044.1147) - 19044.1147 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/bf929762-ae43-4e9f-8a69-cdb0ccca01ef.manifest) 
+
+
+[Windows 11, version 22H2 (22621.3374) (2) - 22621.3374 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/6d078ee4-611e-4bc8-aa75-74632f7dcc8d.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.4353) - 19045.4353 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/e5d6d50f-6ff3-4323-b7d6-d6daa7ab9d80.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.4474) - 19045.4474 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/b8d2df04-86bd-4d00-b46f-c33df4a394a3.manifest) 
+
+
+[Feature update to Microsoft server operating system, version 21H2 (20348.2461) - 20348.2461 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/b9f1ddc0-255a-43e5-b7a4-baf4e12ffabe.manifest) 
+
+
+[Windows 11, version 23H2 (22631.3527) - 22631.3527 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/af807cf8-5c46-41f1-81ac-2ea51e64fba4.manifest) 
+
+
+[Windows 11, version 23H2 (22631.3668) - 22631.3668 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/593f698d-708d-4d73-a5d2-811bfbf7c133.manifest) 
+
+
+[Windows 11, version 23H2 (22631.3672) - 22631.3672 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/8feed3b3-9036-4cbf-be32-b0c88f764e37.manifest) 
+
+
+[Windows 11, version 22H2 (22621.3527) - 22621.3527 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/a3892b7a-7f8b-4158-820d-3f2ab3ba9330.manifest) 
+
+
+[Windows 11, version 22H2 (22621.2792) - 22621.2792 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/f0e8c7b1-a035-4ad8-b431-e6f0c6683d6d.manifest) 
+
+
+[Windows 11, version 23H2 (22631.3593) - 22631.3593 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/5910b449-8a5a-47e3-b7e1-c9d83bee7c21.manifest) 
+
+
+[Windows Server, version 23H2 (25398.887) - 25398.887 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/c8c2410f-b814-409c-b9ab-602b7adb1fb6.manifest) 
+
+
+[Feature update to Windows 10, version 1809 (17763.5696) - 17763.5696 - arch:x86](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/877caeca-6240-43ba-bb31-759d631fbce3.manifest) 
+
+
+[Cumulative Update for Windows 11 Version 24H2 (26100.2) - 26100.2 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/bb586e00-2b89-4654-9091-1d261f2f09e2.manifest) 
+
+
+[Windows 11, version 24H2 (26100.2) - 26100.2 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/f85d43a4-60e9-4607-8997-a761beb7ef77.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.4412) - 19045.4412 - arch:x86](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/6a57e66a-cc5d-4684-a35b-6b0a81cdccfa.manifest) 
+
+
+[Windows 11, version 24H2 (26100.560) - 26100.560 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/ba068ab5-c754-4115-902a-9f0786c706a8.manifest) 
+
+
+[Feature update to Windows 10, version 21H2 (19044.4412) - 19044.4412 - arch:x86](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/f3ec4067-0f96-441f-ae73-8d0d426ed964.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.4353) - 19045.4353 - arch:x86](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/e28f21b2-1549-4228-9d94-0335109d0e0f.manifest) 
+
+
+[Feature update to Windows 10, version 1809 (17763.5820) - 17763.5820 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/7ecae58a-b384-44d8-985d-4877e4bd40b2.manifest) 
+
+
+[Feature update to Windows 10, version 1809OB (17763.5830) - 17763.5830 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/a25c1e53-e5f6-4620-95d9-3d22059ed916.manifest) 
+
+
+[Windows 11, version 22H2 (22621.2792) - 22621.2792 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/f0e8c7b1-a035-4ad8-b431-e6f0c6683d6d.manifest) 
+
+
+[Feature update to Microsoft server operating system, version 21H2 (20348.2461) - 20348.2461 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/b9f1ddc0-255a-43e5-b7a4-baf4e12ffabe.manifest) 
+
+
+[Feature update to Microsoft server operating system, version 21H2 (20348.2402) - 20348.2402 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/c2f28323-8acf-4d2c-8bd2-38b748336518.manifest) 
+
+
+[Windows 11, version 23H2 (22631.3668) - 22631.3668 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/593f698d-708d-4d73-a5d2-811bfbf7c133.manifest) 
+
+
+[Feature update to Windows 10, version 21H2 (19044.4291) - 19044.4291 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/6660c956-c620-4de7-94b4-c11c4f99bc70.manifest) 
+
+
+[Windows 11, version 22H2 (22621.3527) - 22621.3527 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/a3892b7a-7f8b-4158-820d-3f2ab3ba9330.manifest) 
+
+
+[Windows 11, version 23H2 (22631.3672) - 22631.3672 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/8feed3b3-9036-4cbf-be32-b0c88f764e37.manifest) 
+
+
+[Windows 11, version 22H2 (22621.3374) (2) - 22621.3374 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/6d078ee4-611e-4bc8-aa75-74632f7dcc8d.manifest) 
+
+
+[Windows 11, version 23H2 (22631.3593) - 22631.3593 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/5910b449-8a5a-47e3-b7e1-c9d83bee7c21.manifest) 
+
+
+[Windows 11, version 23H2 (22631.3527) - 22631.3527 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/af807cf8-5c46-41f1-81ac-2ea51e64fba4.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.4353) - 19045.4353 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/e5d6d50f-6ff3-4323-b7d6-d6daa7ab9d80.manifest) 
+
+
+[Feature update to Azure Stack HCI, version 23H2 (25398.763) - 25398.763 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/673ff3e5-dbaf-44a0-a3fd-435d12d552bd.manifest) 
+
+
+[Windows Server, version 23H2 (25398.763) - 25398.763 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/eb38ee0a-58f3-4d2e-b1e8-c8cd544246be.manifest) 
+
+
+[Feature update to Azure Stack HCI, version 22H2 (20349.2340) - 20349.2340 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/74452e7d-4c4b-4e32-a165-98e8d82de15d.manifest) 
+
+
+[Feature update to Azure Stack HCI, version 22H2 (20349.2402) - 20349.2402 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/2e4d05c4-a182-4a08-bc6e-cdab16227c05.manifest) 
+
+
+[Feature update to Windows 10, version 1809 (17763.5820) - 17763.5820 - arch:x86](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/7b7b462e-4fd8-48ac-8926-3e9e3206caad.manifest) 
+
+
+[Feature update to Windows 10, version 1809 (17763.5576) - 17763.5576 - arch:x86](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/adcb52f6-a73f-4eb4-8c40-6e6f0c7bb66e.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.4235) - 19045.4235 - arch:x86](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/b5080ce6-8be3-4776-917b-48a03eb411ec.manifest) 
+
+
+[Feature update to Windows 10, version 21H2 (19044.4170) - 19044.4170 - arch:x86](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/8735bcf9-1cc4-44ab-88ea-8f71df13c5dd.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.4233) - 19045.4233 - arch:x86](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/6cbc35c1-e1fc-4546-9262-bd60342bb973.manifest) 
+
+
+[Feature update to Windows 10, version 1809 (17763.5576) - 17763.5576 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/81d564e8-6a20-4668-87c3-9604cbf0c12c.manifest) 
+
+
+[Windows 11, version 22H2 (22621.3371) - 22621.3371 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/2bee595b-b99d-4ca9-9d75-ee466e390cab.manifest) 
+
+
+[Windows 11 (22000.2836) - 22000.2836 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/57ec4f4f-bfd5-4353-aed2-647c538eaa2f.manifest) 
+
+
+[Windows 11, version 23H2 (22631.3374) - 22631.3374 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/d9c561ec-7f71-44c7-aad2-d86d4b6a9053.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.4235) - 19045.4235 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/0954b458-dff2-4262-88a4-1c9f169e938b.manifest) 
+
+
+[Feature update to Windows 10, version 21H2 (19044.4170) - 19044.4170 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/19d6f2f0-22a2-457d-b99a-4daf36e746c2.manifest) 
+
+
+[Windows 11, version 22H2 (22621.3447) - 22621.3447 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/88d80f90-a006-4f14-99d0-2cd4f6530874.manifest) 
+
+
+[Windows 11, version 23H2 (22631.3371) - 22631.3371 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/96ddb213-f0eb-444c-a053-33249dde6410.manifest) 
+
+
+[Feature update to Microsoft server operating system, version 21H2 (20348.2340) - 20348.2340 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/c73b016f-4803-4288-9966-40e6c5fc8a12.manifest) 
+
+
+[Windows 11 (22000.2899) - 22000.2899 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/7e8e5b90-a2cf-4d5a-95e0-475de778450b.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.4291) - 19045.4291 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/f4fcb90a-fde2-4bfa-8fc7-84ff8628643d.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.4239) - 19045.4239 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/6ee3be2f-ebaf-4e6d-9e74-a9d37a53bfe8.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.4233) - 19045.4233 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/28997d3a-e5d4-40f9-8d35-7a85dc7f4d98.manifest) 
+
+
+[Windows Server, version 23H2 (25398.709) - 25398.709 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/b5f0b18e-7d00-4aa5-a399-04045239e866.manifest) 
+
+
+[Feature update to Windows 10, version 1809 (17763.5458) - 17763.5458 - arch:x86](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/f7de30f3-7fbe-4d8c-920a-121b3194c2b4.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.4116) - 19045.4116 - arch:x86](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/84634514-da62-4166-b397-555f566f13c2.manifest) 
+
+
+[Feature update to Windows 10, version 1809 (17763.316) - 17763.316 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/7b76d7c8-0ea8-445c-968b-dfe2552a419c.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.4239) - 19045.4239 - arch:x86](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/0e57f791-eb3d-43d3-9877-94c7486cbe91.manifest) 
+
+
+[Windows 11, version 22H2 (22621.3235) - 22621.3235 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/0fd55fe1-1306-48dc-b051-1fd2ebcfc0cb.manifest) 
+
+
+[Windows 11, version 22H2 (22621.3296) - 22621.3296 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/d7286d02-6f0e-4b60-bdc3-a33bf5acdc53.manifest) 
+
+
+[Windows 11, version 23H2 (22631.3235) - 22631.3235 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/d7cfe811-f371-4187-8267-1beef215651b.manifest) 
+
+
+[Windows 11 (22000.2899) - 22000.2899 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/7e8e5b90-a2cf-4d5a-95e0-475de778450b.manifest) 
+
+
+[Feature update to Windows 10, version 21H2 (19044.4046) - 19044.4046 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/8f378cec-5123-4340-aca9-e94c446ed27d.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.4239) - 19045.4239 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/6ee3be2f-ebaf-4e6d-9e74-a9d37a53bfe8.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.4170) - 19045.4170 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/3ce84465-3024-4b40-8747-ef5afd25644f.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.4291) - 19045.4291 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/f4fcb90a-fde2-4bfa-8fc7-84ff8628643d.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.4116) - 19045.4116 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/f433aac2-8356-4321-87ce-ab56831c8a65.manifest) 
+
+
+[Feature update to Azure Stack HCI, version 23H2 (25398.709) - 25398.709 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/aa98b859-83e4-44ea-b052-e1027c283f39.manifest) 
+
+
+[Feature update to Azure Stack HCI, version 22H2 (20349.2322) - 20349.2322 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/9456da32-4542-4b66-9bcf-b9369499e018.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.4123) - 19045.4123 - arch:x86](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/5038380a-2344-448c-93ec-20b4c292bac4.manifest) 
+
+
+[Feature update to Windows 10, version 21H2 (19044.4046) - 19044.4046 - arch:x86](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/ad4fc001-5441-4761-8f4a-1a47350c398a.manifest) 
+
+
+[Feature update to Windows 10, version 1809 (17763.316) - 17763.316 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/7b76d7c8-0ea8-445c-968b-dfe2552a419c.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.4291) - 19045.4291 - arch:x86](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/e72d1502-9493-4cd7-b258-d160d25997d8.manifest) 
+
+
+[Windows 11, version 23H2 (22631.3155) - 22631.3155 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/18947b65-2180-4838-a051-2dbe1ee40064.manifest) 
+
+
+[Windows 11, version 23H2 (22631.3235) - 22631.3235 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/d7cfe811-f371-4187-8267-1beef215651b.manifest) 
+
+
+[Windows 11, version 23H2 (22631.3227) - 22631.3227 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/329b657c-5e69-46f4-929e-1b7a45305e1b.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.4046) - 19045.4046 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/61c4a135-b280-49eb-9120-f88e30d8bc1e.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.4116) - 19045.4116 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/f433aac2-8356-4321-87ce-ab56831c8a65.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.4170) - 19045.4170 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/3ce84465-3024-4b40-8747-ef5afd25644f.manifest) 
+
+
+[Windows 11, version 23H2 (22631.3296) - 22631.3296 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/07dd20c8-a2de-4792-a336-2ab01b43a160.manifest) 
+
+
+[Feature update to Windows 10, version 21H2 (19044.4046) - 19044.4046 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/8f378cec-5123-4340-aca9-e94c446ed27d.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.4123) - 19045.4123 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/1f35ee93-65fe-42d6-a62a-40cbb49364b2.manifest) 
+
+
+[Windows 11, version 22H2 (22621.3235) - 22621.3235 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/0fd55fe1-1306-48dc-b051-1fd2ebcfc0cb.manifest) 
+
+
+[Windows Server, version 23H2 (25398.643) - 25398.643 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/eb94f61c-c8b5-4988-b154-2c3c0f1f2b57.manifest) 
+
+
+[Feature update to Azure Stack HCI, version 23H2 (25398.643) - 25398.643 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/fb6021d7-54ef-441b-a31b-71f1f722b3ef.manifest) 
+
+
+[Feature update to Windows 10, version 1809 (17763.5329) - 17763.5329 - arch:x86](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/bd5cb82b-2afd-4ece-9e60-eed518d3f3ec.manifest) 
+
+
+[Feature update to Azure Stack HCI, version 22H2 (20349.2227) - 20349.2227 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/ab8dd4d0-486f-4120-b2cf-e634e2b2bb5a.manifest) 
+
+
+[Feature update to Windows 10, version 21H2 (19044.3930) - 19044.3930 - arch:x86](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/cde96590-48a0-425a-beb3-c228d2cabb42.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.3996) - 19045.3996 - arch:x86](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/7718c0b4-9ec3-4d2d-b0d3-8741c22d65ac.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.3930) - 19045.3930 - arch:x86](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/927e7c93-ddba-426b-8912-34616f6c8ddd.manifest) 
+
+
+[Feature update to Windows 10, version 1809 (17763.5329) - 17763.5329 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/57491d4e-16c1-4673-ae22-daef362f60a8.manifest) 
+
+
+[Feature update to Microsoft server operating system, version 21H2 (20348.2227) - 20348.2227 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/0384a015-21fa-4b4c-bcfc-bf12721ceb48.manifest) 
+
+
+[Feature update to Windows 10, version 21H2 (19044.3930) - 19044.3930 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/6990cf1d-3de8-437b-b220-119e6fca515f.manifest) 
+
+
+[Windows 11, version 23H2 (22631.3085) - 22631.3085 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/0dd6b1ee-9167-418d-b4a3-491f21c8ba6c.manifest) 
+
+
+[Windows 11, version 23H2 (22631.3078) - 22631.3078 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/b17b4c3e-9403-4b4f-90eb-9654e461e02e.manifest) 
+
+
+[Windows 11 (22000.2713) - 22000.2713 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/3efcc9b1-839d-42ac-a209-2234c4bfde9a.manifest) 
+
+
+[Windows 11 (22000.2777) - 22000.2777 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/b4be6290-17b7-4284-8ae5-03abbe384901.manifest) 
+
+
+[Windows 11, version 23H2 (22631.3296) - 22631.3296 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/07dd20c8-a2de-4792-a336-2ab01b43a160.manifest) 
+
+
+[Feature update to Windows 10, version 1809 (17763.5458) - 17763.5458 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/f83989b7-20df-4fc2-9cb4-72183c21d735.manifest) 
+
+
+[Windows 11, version 22H2 (22621.3155) - 22621.3155 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/5190f377-ae2b-4bab-a677-20ed0aa9b0a8.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.3996) - 19045.3996 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/035d3119-ab89-4771-8dea-8f291986630b.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.4123) - 19045.4123 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/1f35ee93-65fe-42d6-a62a-40cbb49364b2.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.3992) - 19045.3992 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/8ed7ea8d-2c38-4ce5-a1ea-ab786275ce06.manifest) 
+
+
+[Windows 11, version 22H2 (22621.3227) - 22621.3227 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/ed397f9d-d715-4a5e-a288-243d9ac41093.manifest) 
+
+
+[Feature update to Azure Stack HCI, version 23H2 (25398.584) - 25398.584 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/d2a954c5-1215-488d-9675-d1284defbc93.manifest) 
+
+
+[Windows Server, version 23H2 (25398.584) - 25398.584 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/5f876b5a-61a0-4289-bc5c-966f283a86de.manifest) 
+
+
+[Feature update to Azure Stack HCI, version 22H2 (20349.2159) - 20349.2159 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/82ced77e-a1a3-4afd-b55c-845ef330b039.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.4046) - 19045.4046 - arch:x86](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/571b92e1-9ebb-4d74-80be-6f01b247a1f7.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.3992) - 19045.3992 - arch:x86](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/66cfd98d-18e1-48ac-acc6-d59449807354.manifest) 
+
+
+[Feature update to Windows 10, version 21H2 (19044.3930) - 19044.3930 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/6990cf1d-3de8-437b-b220-119e6fca515f.manifest) 
+
+
+[Windows 11, version 23H2 (22631.3007) - 22631.3007 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/b46a1232-2383-4626-946c-2d78dee5d557.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.3930) - 19045.3930 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/d8fb5cff-e224-457a-9086-90dee2c30fec.manifest) 
+
+
+[Windows 11 (22000.2713) - 22000.2713 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/3efcc9b1-839d-42ac-a209-2234c4bfde9a.manifest) 
+
+
+[Windows 11, version 22H2 (22621.3227) - 22621.3227 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/ed397f9d-d715-4a5e-a288-243d9ac41093.manifest) 
+
+
+[Windows 11, version 23H2 (22631.3078) - 22631.3078 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/b17b4c3e-9403-4b4f-90eb-9654e461e02e.manifest) 
+
+
+[Windows 11, version 23H2 (22631.3085) - 22631.3085 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/0dd6b1ee-9167-418d-b4a3-491f21c8ba6c.manifest) 
+
+
+[Windows 11, version 22H2 (22621.3155) - 22621.3155 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/5190f377-ae2b-4bab-a677-20ed0aa9b0a8.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.3996) - 19045.3996 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/035d3119-ab89-4771-8dea-8f291986630b.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.3992) - 19045.3992 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/8ed7ea8d-2c38-4ce5-a1ea-ab786275ce06.manifest) 
+
+
+[Windows Server, version 23H2 (25398.531) - 25398.531 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/3212456b-0c98-45b0-96a7-d393437215c7.manifest) 
+
+
+[Feature update to Azure Stack HCI, version 21H2 (20348.2113) - 20348.2113 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/208c39d2-fa5e-4fdf-94db-58f070d3cd07.manifest) 
+
+
+[Feature update to Windows 10, version 1809 (17763.5206) - 17763.5206 - arch:x86](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/21d92cc5-b0f5-4323-aa48-1e28544aebfb.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.3758) - 19045.3758 - arch:x86](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/a5e17efd-b8e8-44ec-800c-257ad96aa3a0.manifest) 
+
+
+[Feature update to Windows 10, version 21H2 (19044.3803) - 19044.3803 - arch:x86](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/8d09c516-e2b6-4deb-81b0-ef7de0acfa8b.manifest) 
+
+
+[Windows 11, version 22H2 (22621.2861) - 22621.2861 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/8ef9bf34-c20d-4f5d-8894-9ed551d34cea.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.3803) - 19045.3803 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/169eb6b3-af73-4a01-a70b-c4c31fb731a9.manifest) 
+
+
+[Windows 11, version 22H2 (22621.3007) - 22621.3007 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/7eb972cf-1897-4ee1-9b75-09fb001a7be4.manifest) 
+
+
+[Cumulative Update for Windows 10 Version 22H2 (19045.3693) - 19045.3693 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/ed138d1a-9e5a-4338-ab55-6827321a570a.manifest) 
+
+
+[Windows 11, version 23H2 (22631.2787) - 22631.2787 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/850173b3-c30d-449a-8478-cc07fd3f62ea.manifest) 
+
+
+[Windows 11, version 23H2 (22631.2792) - 22631.2792 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/64686512-561b-4390-a48a-0470611eeede.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.3757) - 19045.3757 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/8005dbc9-b3b7-4198-b6cc-351959d136e1.manifest) 
+
+
+[Feature update to Windows 10, version 21H2 (19044.3803) - 19044.3803 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/59c70753-8452-47e1-b825-ec2c888ff741.manifest) 
+
+
+[Feature update to Windows 10, version 22H2 (19045.3758) - 19045.3758 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/ad04a3e0-d7fb-45ab-8eb4-73a58b611ae0.manifest) 
+
+
