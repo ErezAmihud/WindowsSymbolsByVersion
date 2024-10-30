@@ -1368,3 +1368,6 @@ NOTE - probably most of the pdbs listed in the manifests don't have the files in
 [Feature update to Microsoft server operating system, version 21H2 (20348.2113) - 20348.2113 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/61429954-93f8-4eed-a246-3e81eaca00e8.manifest) 
 
 
+[Windows 11, version 22H2 (22621.2283) - 22621.2283 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/2d375561-4821-488d-ba0a-8269aebf51bc.manifest) 
+
+
