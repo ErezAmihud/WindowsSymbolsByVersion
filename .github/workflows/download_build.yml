@@ -67,10 +67,10 @@ jobs:
   failed-create-iso:
     runs-on: ubuntu-latest
     needs: create-iso
-    concurrency: deploy_new_version
-    cancel-timeout-minutes: 100
     if: ${{ always() && contains(needs.*.result, 'failure') }}
     steps:
+      - name: Mutex Action
+        uses: ben-z/gh-action-mutex@v1.0.0-alpha.9
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.ref_name }}
@@ -192,14 +192,14 @@ jobs:
         path: manifest.out
 
   deploy_manifest:
-    concurrency: deploy_new_version
-    cancel-timeout-minutes: 100
     needs: merge_artifacts
     runs-on: ubuntu-latest
     permissions:
       contents: write
       actions: write
     steps:
+      - name: Mutex Action
+        uses: ben-z/gh-action-mutex@v1.0.0-alpha.9
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.ref_name }}
