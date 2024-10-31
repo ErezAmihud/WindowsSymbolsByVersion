@@ -1647,3 +1647,6 @@ NOTE - probably most of the pdbs listed in the manifests don't have the files in
 [Feature update to Azure Stack HCI, version 21H2 (20348.1787) - 20348.1787 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/170da49f-4f0d-403b-8e6d-8bbcefe151df.manifest) 
 
 
+[Feature update to Windows 10, version 22H2 (19045.3155) - 19045.3155 - arch:x86](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/8e881618-6ad9-4a30-b1b5-7d5949018436.manifest) 
+
+
