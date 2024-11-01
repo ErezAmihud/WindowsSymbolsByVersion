@@ -1971,3 +1971,6 @@ NOTE - probably most of the pdbs listed in the manifests don't have the files in
 [Feature update to Windows 10, version 22H2 (19045.2846) - 19045.2846 - arch:x86](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/b6582c6b-f98c-4989-8802-6e259a1134ed.manifest) 
 
 
+[Feature update to Windows 10, version 1809 (17763.4252) - 17763.4252 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/6b1d5798-b454-4d18-a53e-78e3a3d5aa03.manifest) 
+
+
