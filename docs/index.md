@@ -2076,3 +2076,6 @@ NOTE - probably most of the pdbs listed in the manifests don't have the files in
 [Windows 11 (22000.1757) - 22000.1757 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/a1962e61-a626-4242-84c0-3f0c86b5693e.manifest) 
 
 
+[Feature update to Azure Stack HCI, version 21H2 (20348.1607) - 20348.1607 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/7fde7fc9-df24-4d5e-8215-77f9193a474a.manifest) 
+
+
