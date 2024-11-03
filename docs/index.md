@@ -2322,3 +2322,6 @@ NOTE - probably most of the pdbs listed in the manifests don't have the files in
 [Windows 11, version 22H2 (22621.1265) - 22621.1265 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/2c34b461-1255-485f-8845-420f1e8ba2e3.manifest) 
 
 
+[Windows 11, version 22H2 (22621.1194) - 22621.1194 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/907109b4-a6ea-4d67-8ee6-2a2710c46b5b.manifest) 
+
+
