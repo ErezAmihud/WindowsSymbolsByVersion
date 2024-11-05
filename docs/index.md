@@ -2754,3 +2754,6 @@ NOTE - probably most of the pdbs listed in the manifests don't have the files in
 [Windows Server 2025 (26100.2033) - 26100.2033 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/88285020-3ed0-4f3f-90c7-d2fa3581bd7f.manifest) 
 
 
+[Cumulative Update for Windows 10 Version 20H2 (19042.2194) - 19042.2194 - arch:x86](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/e205684b-6624-4a9a-a7e5-bfb37e77c736.manifest) 
+
+
