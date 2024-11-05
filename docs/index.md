@@ -2838,3 +2838,6 @@ NOTE - probably most of the pdbs listed in the manifests don't have the files in
 [Cumulative Update for Windows 10 Version 1809 (17763.3534) - 17763.3534 - arch:x86](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/4590b16e-3f4e-4715-befb-9e752f077ef5.manifest) 
 
 
+[Cumulative Update for Windows 10 Version 20H2 (19042.2132) - 19042.2132 - arch:x86](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/c288937f-d09b-4587-a912-db112f63571d.manifest) 
+
+
