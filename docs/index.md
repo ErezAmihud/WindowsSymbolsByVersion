@@ -2751,3 +2751,6 @@ NOTE - probably most of the pdbs listed in the manifests don't have the files in
 [Cumulative Update for Windows 10 Version 22H2 (19045.2194) - 19045.2194 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/1617284e-dc6c-487e-a88b-6a548380c2f0.manifest) 
 
 
+[Windows Server 2025 (26100.2033) - 26100.2033 - arch:amd64](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/88285020-3ed0-4f3f-90c7-d2fa3581bd7f.manifest) 
+
+
