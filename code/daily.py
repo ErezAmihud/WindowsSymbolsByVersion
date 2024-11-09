@@ -22,6 +22,7 @@ for uuid in priority_uuids:
 
 builds = filter(lambda build: build.uuid not in processed_builds, builds)
 builds = filter(lambda build: build.arch in ["x86", "amd64"], builds)
+builds = filter(lambda build: "cumulative update" not in build.title.lower(), builds) # filter camulative update
 builds = filter(lambda build: " insider " not in build.title.lower(), builds) # filter insider or preview
 builds = filter(lambda build: " preview " not in build.title.lower(), builds) # filter insider or preview
 #builds = filter(lambda build: " update " not in build.title.lower(), builds) # filter updates from the db
