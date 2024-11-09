@@ -16,4 +16,5 @@ Read more in the website.
 ### Help is appriciated
 If any1 have a faster method that is reliable to generate symbol manifests, feel free to contribute.
 
+I saw that [mas](https://massgrave.dev/genuine-installation-media) has some ways to get windows installation media, and [files.rg](https://files.rg-adguard.net/) can actually supply them, but I am not sure it is actually that important - as the repo currently works. 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/erezamihud)
