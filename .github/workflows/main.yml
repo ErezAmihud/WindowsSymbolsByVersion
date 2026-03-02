@@ -14,9 +14,13 @@ jobs:
       uuids: ${{ steps.version_list_step.outputs.uuid_matrix }}
     steps:
       - uses: actions/checkout@v4
-      - run: pip install pydantic requests && chmod +x ./code/mmmm.sh
-      - run: python ./code/daily.py ${{ vars.ALLOWED_DOWNLOAD_SIZE }} && bash ./code/mmmm.sh
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+      - name: Get pending build UUIDs
         id: version_list_step
+        run: |
+          python -m src.daily ${{ vars.ALLOWED_DOWNLOAD_SIZE }}
+          echo "uuid_matrix=$(cat a.txt)" >> "$GITHUB_OUTPUT"
 
   download-releases:
     needs: list-releases
@@ -26,8 +30,7 @@ jobs:
         uuid: ${{ fromJson(needs.list-releases.outputs.uuids) }}
     uses: ./.github/workflows/download_build.yml
     with:
-      uuid: ${{matrix.uuid}}
-
+      uuid: ${{ matrix.uuid }}
 
   publish_docs:
     needs: download-releases
@@ -38,7 +41,8 @@ jobs:
     steps:
       - name: Checkout main
         uses: actions/checkout@v4
-      - run: python3 -m pip install --upgrade pip setuptools wheel && python3 -m pip install mkdocs mkdocs-gen-files
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt && pip install mkdocs mkdocs-gen-files
       - run: git config user.name 'github-actions[bot]' && git config user.email 'github-actions[bot]@users.noreply.github.com'
       - name: Publish docs
         run: mkdocs gh-deploy --force

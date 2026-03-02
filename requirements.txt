@@ -1,0 +1,5 @@
+requests
+pydantic
+pefile
+tqdm
+tenacity
