@@ -2,7 +2,11 @@
 import os
 import sys
 import tqdm
-import os.path, pefile, struct
+import os.path, pefile
+from concurrent.futures import ProcessPoolExecutor
+
+DEBUG_DIRECTORY_INDEX = pefile.DIRECTORY_ENTRY["IMAGE_DIRECTORY_ENTRY_DEBUG"]
+
 
 def get_guid(dll: pefile.PE):
     if hasattr(dll, "DIRECTORY_ENTRY_DEBUG"):
@@ -18,29 +22,41 @@ def get_guid(dll: pefile.PE):
 
 
 def process_file(file_path):
-    """Function to process each file."""
+    """Return the (pdb, guid) entries of a single file."""
+    results = []
     try:
+        # Cheap pre-filter: most files are not PE files at all, and raising
+        # PEFormatError for each of them is much slower than this check.
+        with open(file_path, "rb") as f:
+            if f.read(2) != b"MZ":
+                return results
         with pefile.PE(file_path, fast_load=True) as dll:
-            dll.full_load()
-            yield from get_guid(dll)
-    except (pefile.PEFormatError,FileNotFoundError):
-       pass
-    # Add your file processing logic here
+            # Only the debug directory is needed. full_load() would also parse
+            # imports/exports/resources etc., which dominates the runtime on
+            # resource-heavy binaries.
+            dll.parse_data_directories(directories=[DEBUG_DIRECTORY_INDEX])
+            results.extend(get_guid(dll))
+    except (pefile.PEFormatError, FileNotFoundError):
+        pass
+    except Exception:
+        print(f"error in {file_path}")
+        raise
+    return results
 
-def traverse_directory(directory,out):
-    """Traverse the directory and process each file."""
+
+def list_files(directory):
     for root, _, files in os.walk(directory):
         for file in files:
-            file_path = os.path.join(root, file)
-            try:
-                for ret in process_file(file_path):
-                    if ret is not None:
-                        out.write(f"{ret[0]},{ret[1]},1\n")
-            except:
-                print(f"error in {file_path}")
-                raise
-            yield
+            yield os.path.join(root, file)
 
+
+def traverse_directory(directory, out, workers=None):
+    """Traverse the directory and process each file."""
+    files = list(list_files(directory))
+    with ProcessPoolExecutor(max_workers=workers or os.cpu_count()) as executor:
+        for rets in tqdm.tqdm(executor.map(process_file, files, chunksize=64), total=len(files), mininterval=10):
+            for ret in rets:
+                out.write(f"{ret[0]},{ret[1]},1\n")
 
 
 if __name__ == "__main__":
@@ -55,9 +71,5 @@ if __name__ == "__main__":
         print(f"The specified path '{target_directory}' is not a directory.")
         sys.exit(1)
 
-    file_count = sum(len(files) for _, _, files in os.walk(target_directory))
-
     with open(target_output, "w") as f:
-        for i in tqdm.tqdm(traverse_directory(target_directory, f),total=file_count, mininterval=10):
-           pass
-
+        traverse_directory(target_directory, f)
