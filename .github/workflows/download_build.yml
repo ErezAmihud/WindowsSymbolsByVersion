@@ -101,12 +101,18 @@ jobs:
         with:
           name: ${{ inputs.uuid }}install.wim
 
-      - name: Find boot split
+      - name: Find boot files to parse
         id: split_boot
-        run: bash ./code/split_file.sh boot && cat a.txt >> "$GITHUB_OUTPUT"
-      - name: Find install split
+        run: python3 ./code/wim_dedup.py boot.wim boot >> "$GITHUB_OUTPUT"
+      - name: Find install files to parse
         id: split_install
-        run: bash ./code/split_file.sh install && cat a.txt >> "$GITHUB_OUTPUT"
+        run: python3 ./code/wim_dedup.py install.wim install >> "$GITHUB_OUTPUT"
+      - name: Upload listfiles
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.uuid }}listfiles
+          path: listfile_*.txt
+          retention-days: 1
       - name: clean
         run: rm -rf ./install.wim ./boot.wim
 
@@ -128,8 +134,12 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: ${{ inputs.uuid }}boot.wim
+      - name: Download listfiles
+        uses: actions/download-artifact@v4
+        with:
+          name: ${{ inputs.uuid }}listfiles
       - name: Generate boot wim manifest
-        run: bash ./code/after_split.sh boot ${{ matrix.version }}
+        run: bash ./code/extract_and_parse.sh boot ${{ matrix.version }}
       - name: Archive manifest result
         uses: actions/upload-artifact@v4
         with:
@@ -139,30 +149,25 @@ jobs:
   parse_install_wim:
     needs: split-iso
     name: parse install wim
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         version: ${{ fromJson(needs.split-iso.outputs.split_install) }}
-          # - 1
-          # - 2
-          # - 3
-          # - 4
 
     steps:
       - uses: actions/checkout@v4
       - name: Installations
-        run: choco install wimlib -y && py -3.8 -m pip install pefile tqdm
+        run: sudo apt-get update && xargs sudo apt-get install --no-install-recommends -y < packages.txt && python3 -m pip install pefile tqdm && chmod +x ./code/*
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
           name: ${{ inputs.uuid }}install.wim
-          # run-id: 11504189446
-          # github-token: ${{ github.token }}
-          # name: d6c443ca-9e6e-4dd6-8a2d-f2dfbd8356fainstall.wim
-      - run: wimlib-imagex extract --dest-dir "temp" "install.wim" "${{ matrix.version }}"
-      - run: py -3.8 ./code/pdb_finding.py "temp" "manifest_install_${{ matrix.version }}.out"
-      #- name: Generate install wim manifest
-      #  run: bash ./code/after_split.sh install ${{ matrix.version }}
+      - name: Download listfiles
+        uses: actions/download-artifact@v4
+        with:
+          name: ${{ inputs.uuid }}listfiles
+      - name: Generate install wim manifest
+        run: bash ./code/extract_and_parse.sh install ${{ matrix.version }}
       - name: Archive manifest result
         uses: actions/upload-artifact@v4
         with:
