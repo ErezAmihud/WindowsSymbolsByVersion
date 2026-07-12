@@ -952,6 +952,12 @@
    "build": "22631.4112",
    "arch": "amd64"
   },
+  "30cf9763-71b9-4daa-901c-06ebc099293e": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.7417)",
+   "build": "19045.7417",
+   "arch": "x86"
+  },
   "30da46b4-2ff2-4682-a9ae-23b66dd98713": {
    "status": "done",
    "title": "Windows Server 2025 (26100.1)",
