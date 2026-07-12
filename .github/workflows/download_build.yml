@@ -74,7 +74,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.ref_name }}
-      - run: python3 -c "import json;out=json.load(open('problematic.json', 'r'));out.append('${{inputs.uuid}}');json.dump(out, open('problematic.json', 'w'))"
+      - run: python3 -c "import json;u='${{inputs.uuid}}';out=json.load(open('problematic.json', 'r'));out=out if u in out else out+[u];json.dump(out, open('problematic.json', 'w'))"
       - uses: EndBug/add-and-commit@v9
         with:
           add: "problematic.json"
@@ -216,9 +216,9 @@ jobs:
       - run: mv manifest.out manifests/${{ inputs.uuid }}.manifest
       - run: python code/get_name.py ${{inputs.uuid}} && cat b.txt >> $GITHUB_OUTPUT
         id: get_name
-      - run: python -c "import json;out=json.load(open('process_builds.json', 'r'));out.append('${{inputs.uuid}}');json.dump(out, open('process_builds.json', 'w'))"
-        name: Add uuid to processt build
-      - run: echo -e "[${{ steps.get_name.outputs.name }}](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/${{ inputs.uuid }}.manifest) \n\n" >> docs/index.md
+      - run: python -c "import json;u='${{inputs.uuid}}';out=json.load(open('process_builds.json', 'r'));out=out if u in out else out+[u];json.dump(out, open('process_builds.json', 'w'))"
+        name: Add uuid to processed builds
+      - run: grep -q "manifests/${{ inputs.uuid }}.manifest" docs/index.md || echo -e "[${{ steps.get_name.outputs.name }}](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/${{ inputs.uuid }}.manifest) \n\n" >> docs/index.md
       - uses: EndBug/add-and-commit@v9
         with:
           add: '["manifests", "docs", "process_builds.json"]'

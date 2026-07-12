@@ -1,6 +1,8 @@
 name: Detect more uup entries
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 3 * * *'
 
 concurrency:
   group: main-yml
@@ -20,6 +22,7 @@ jobs:
 
   download-releases:
     needs: list-releases
+    if: ${{ needs.list-releases.outputs.uuids != '[]' }}
     strategy:
       fail-fast: false
       matrix:
