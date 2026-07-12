@@ -1,36 +1,41 @@
 name: Detect more uup entries
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 3 * * *'
+
+permissions:
+  contents: write
 
 concurrency:
   group: main-yml
   cancel-in-progress: false
 
 jobs:
-  list-releases:
+  list_releases:
     name: Get not figured out builds
     runs-on: ubuntu-latest
     outputs:
-      uuids: ${{ steps.version_list_step.outputs.uuid_matrix }}
+      uuids: ${{ steps.pick_builds.outputs.uuid_matrix }}
     steps:
       - uses: actions/checkout@v4
-      - run: pip install pydantic requests && chmod +x ./code/mmmm.sh
-      - run: python ./code/daily.py ${{ vars.ALLOWED_DOWNLOAD_SIZE }} && bash ./code/mmmm.sh
-        id: version_list_step
+      - run: pip install -r requirements.txt
+      - run: python ./code/daily.py ${{ vars.ALLOWED_DOWNLOAD_SIZE }}
+        id: pick_builds
 
-  download-releases:
-    needs: list-releases
+  download_releases:
+    needs: list_releases
+    if: ${{ needs.list_releases.outputs.uuids != '[]' }}
     strategy:
       fail-fast: false
       matrix:
-        uuid: ${{ fromJson(needs.list-releases.outputs.uuids) }}
+        uuid: ${{ fromJson(needs.list_releases.outputs.uuids) }}
     uses: ./.github/workflows/download_build.yml
     with:
       uuid: ${{matrix.uuid}}
 
-
   publish_docs:
-    needs: download-releases
+    needs: download_releases
     name: Deploy docs
     runs-on: ubuntu-latest
     if: ${{ always() }}
@@ -38,7 +43,7 @@ jobs:
     steps:
       - name: Checkout main
         uses: actions/checkout@v4
-      - run: python3 -m pip install --upgrade pip setuptools wheel && python3 -m pip install mkdocs mkdocs-gen-files
+      - run: pip install -r requirements.txt
       - run: git config user.name 'github-actions[bot]' && git config user.email 'github-actions[bot]@users.noreply.github.com'
       - name: Publish docs
         run: mkdocs gh-deploy --force

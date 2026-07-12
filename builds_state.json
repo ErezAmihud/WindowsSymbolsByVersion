@@ -1,0 +1,5334 @@
+{
+ "priority": [],
+ "builds": {
+  "0019d8ed-e89b-4b79-9f76-9f1c77461e5f": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H1 (19043.1826)",
+   "build": "19043.1826",
+   "arch": "x86"
+  },
+  "002ea580-e6b8-4a16-9b83-536dc48fedb3": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.4252)",
+   "build": "17763.4252",
+   "arch": "x86"
+  },
+  "009cea5e-2175-4dc7-87c0-16ec7f0e40da": {
+   "status": "done",
+   "title": "Windows 11, version 24H2 (26100.1876)",
+   "build": "26100.1876",
+   "arch": "amd64"
+  },
+  "00c26a49-4fd4-4bff-8812-66f8d4721fe9": {
+   "status": "done",
+   "title": "Windows 11, version 24H2 (26100.994)",
+   "build": "26100.994",
+   "arch": "amd64"
+  },
+  "00d57e63-fe2c-4f28-b9a1-1287dfe722c9": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 11 (22000.776)",
+   "build": "22000.776",
+   "arch": "amd64"
+  },
+  "0197228c-7297-4b86-bb51-a2e37bd21e4c": {
+   "status": "done",
+   "title": "Cumulative Update Preview for Windows 11 Version 22H2 (22621.4387)",
+   "build": "22621.4387",
+   "arch": "amd64"
+  },
+  "025319ad-e6d9-495f-bdb8-cd8099b99428": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 22H2 (20349.946)",
+   "build": "20349.946",
+   "arch": "amd64"
+  },
+  "02636583-e5d6-4ced-9448-c1fb9651e689": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 23H2 (25398.950)",
+   "build": "25398.950",
+   "arch": "amd64"
+  },
+  "02d7c564-5dfb-4de7-a094-d8d3d739022f": {
+   "status": "done",
+   "title": "Windows 11, version 24H2 (26100.1386)",
+   "build": "26100.1386",
+   "arch": "amd64"
+  },
+  "035d3119-ab89-4771-8dea-8f291986630b": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3996)",
+   "build": "19045.3996",
+   "arch": "amd64"
+  },
+  "035fe94b-1631-471f-bf20-a078951e7ca9": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 22H2 (20349.2527)",
+   "build": "20349.2527",
+   "arch": "amd64"
+  },
+  "0384a015-21fa-4b4c-bcfc-bf12721ceb48": {
+   "status": "done",
+   "title": "Feature update to Microsoft server operating system, version 21H2 (20348.2227)",
+   "build": "20348.2227",
+   "arch": "amd64"
+  },
+  "03e7f864-f321-466d-8a39-49c764c19f02": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.5198)",
+   "build": "19045.5198",
+   "arch": "x86"
+  },
+  "04253119-0422-4029-b395-2ce9c8df32c8": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": null
+  },
+  "04e76108-ab0d-45ff-baf1-32f7313c9f32": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.2075)",
+   "build": "19044.2075",
+   "arch": "x86"
+  },
+  "05449c1d-9928-4761-888b-f79ba1a9b82a": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.1741)",
+   "build": "19044.1741",
+   "arch": "x86"
+  },
+  "05570b44-11e7-4984-8647-fbf1e7cf8d53": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.1865)",
+   "build": "19045.1865",
+   "arch": "x86"
+  },
+  "05e0e08d-4316-41ab-8f82-e051d3385052": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 21H2 (20348.1006)",
+   "build": "20348.1006",
+   "arch": "amd64"
+  },
+  "05ed8c0d-67aa-4f62-8db9-b20da3301bec": {
+   "status": "done",
+   "title": "Windows 11 Insider Preview 10.0.22635.3495 (ni_release)",
+   "build": "22635.3495",
+   "arch": "amd64"
+  },
+  "0653dd2a-94b3-4bd4-9a3c-34ae727e8b68": {
+   "status": "done",
+   "title": "Feature update to Microsoft server operating system, version 21H2 (20348.1129)",
+   "build": "20348.1129",
+   "arch": "amd64"
+  },
+  "06776003-dc27-48c6-9028-f878eba634a3": {
+   "status": "done",
+   "title": "Windows 11 Insider Preview 10.0.22635.4082 (ni_release)",
+   "build": "22635.4082",
+   "arch": "amd64"
+  },
+  "068ce486-dc69-4164-81f7-99594a3e688b": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.674)",
+   "build": "22621.674",
+   "arch": "amd64"
+  },
+  "06a63f2b-fd1f-4d87-8dbf-41039bcdd708": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.4974)",
+   "build": "17763.4974",
+   "arch": "amd64"
+  },
+  "06d726b6-cb97-42c9-9ba5-bff773315e91": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.4247)",
+   "build": "22621.4247",
+   "arch": "amd64"
+  },
+  "06d792a3-cfab-40fb-8f9b-ce5ceae49a71": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.2486)",
+   "build": "19044.2486",
+   "arch": "amd64"
+  },
+  "0708b1c7-6ea3-4d9a-b01d-12c3f1f2b255": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4472)",
+   "build": "19045.4472",
+   "arch": "x86"
+  },
+  "075e97b8-110a-4d2f-a0ac-06eaca1de7c4": {
+   "status": "done",
+   "title": "Windows 11 Insider Preview 10.0.26120.961 (ge_release)",
+   "build": "26120.961",
+   "arch": "amd64"
+  },
+  "077a53be-23de-4c5c-afc9-3bae5a7e872f": {
+   "status": "done",
+   "title": "Windows 10 Insider Preview 10.0.18327.7 (19h1_release)",
+   "build": "18327.7",
+   "arch": "x86"
+  },
+  "07b5d982-3a98-4209-8953-de3eae9e9317": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3391)",
+   "build": "19045.3391",
+   "arch": "amd64"
+  },
+  "07dd20c8-a2de-4792-a336-2ab01b43a160": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.3296)",
+   "build": "22631.3296",
+   "arch": "amd64"
+  },
+  "08561de5-5357-472c-913a-524ba63743e1": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.3770)",
+   "build": "17763.3770",
+   "arch": "amd64"
+  },
+  "08603f4b-e38f-4c34-b25e-3399e5ae0700": {
+   "status": "done",
+   "title": "Windows 11 (22000.1098)",
+   "build": "22000.1098",
+   "arch": "amd64"
+  },
+  "088dd35d-2a37-4fb2-8fb9-eae894e62e99": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 21H1 (19043.2364)",
+   "build": "19043.2364",
+   "arch": "amd64"
+  },
+  "08a5842e-d056-4c17-ae7f-911abdc791bd": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 21H2 (20348.887)",
+   "build": "20348.887",
+   "arch": "amd64"
+  },
+  "08b3c017-0b84-4d77-8914-6c123a8a0f77": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2913)",
+   "build": "19045.2913",
+   "arch": "x86"
+  },
+  "0954b458-dff2-4262-88a4-1c9f169e938b": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4235)",
+   "build": "19045.4235",
+   "arch": "amd64"
+  },
+  "0955d4cf-c8ee-477f-becd-d72a5be2f98d": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.5131)",
+   "build": "19044.5131",
+   "arch": "amd64"
+  },
+  "098e93a5-93b5-405b-814e-3009a27b4864": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.5131)",
+   "build": "19045.5131",
+   "arch": "amd64"
+  },
+  "0a62f322-7ce2-4155-ab96-bdc39a3d69d4": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": null
+  },
+  "0a870918-3dfe-4b88-b1bb-467712d0345a": {
+   "status": "done",
+   "title": "Windows 11 (22000.1516)",
+   "build": "22000.1516",
+   "arch": "amd64"
+  },
+  "0a88be10-74eb-4168-8dfc-30cbcc24c9de": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.3046)",
+   "build": "17763.3046",
+   "arch": "x86"
+  },
+  "0c06c91c-0d13-401f-a646-749b12f1d6ca": {
+   "status": "done",
+   "title": "Windows 11 (22000.1163)",
+   "build": "22000.1163",
+   "arch": "amd64"
+  },
+  "0c36c0e6-8397-424d-b460-26cc0d044c7f": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.4602)",
+   "build": "22631.4602",
+   "arch": "amd64"
+  },
+  "0c393b5f-8132-42c7-b9d1-57e532111734": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": null
+  },
+  "0c905a0b-fa76-49ac-807a-c94e4ae9a317": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H1 (19043.1949)",
+   "build": "19043.1949",
+   "arch": "x86"
+  },
+  "0c9c86d9-03ef-437a-bf38-195ca6bda7ef": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3271)",
+   "build": "19045.3271",
+   "arch": "x86"
+  },
+  "0ca2f5c9-57bd-48ef-b833-5287082e9169": {
+   "status": "done",
+   "title": "Windows Server, version 23H2 (25398.950)",
+   "build": "25398.950",
+   "arch": "amd64"
+  },
+  "0ca360f6-826a-46a5-aa0a-c7b1b58af279": {
+   "status": "done",
+   "title": "Windows 11 (22000.1936)",
+   "build": "22000.1936",
+   "arch": "amd64"
+  },
+  "0cb4a4de-f97b-4cb5-8c01-13f17c40581e": {
+   "status": "done",
+   "title": "Cumulative Update Preview for Windows 11 Version 24H2 (26100.1301)",
+   "build": "26100.1301",
+   "arch": "amd64"
+  },
+  "0cda15f9-a14a-4adf-bb3c-2ce79d0de621": {
+   "status": "done",
+   "title": "Windows 11, version 24H2 (26100.1000)",
+   "build": "26100.1000",
+   "arch": "amd64"
+  },
+  "0d2e059f-7630-4665-8561-b43c43877151": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2787)",
+   "build": "19045.2787",
+   "arch": "amd64"
+  },
+  "0d95158a-8142-4fd7-99c7-797571b921cf": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3391)",
+   "build": "19045.3391",
+   "arch": "x86"
+  },
+  "0dd5a250-b142-47cb-9a88-45788bd9a59b": {
+   "status": "done",
+   "title": "Windows 11 (22000.1641)",
+   "build": "22000.1641",
+   "arch": "amd64"
+  },
+  "0dd6b1ee-9167-418d-b4a3-491f21c8ba6c": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.3085)",
+   "build": "22631.3085",
+   "arch": "amd64"
+  },
+  "0de8aa1b-fab4-41bc-a8ab-8fdd795f43c7": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 11 Version 22H2 (22621.457)",
+   "build": "22621.457",
+   "arch": "amd64"
+  },
+  "0e16a39c-aa41-44be-9663-e780dd452f1e": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.3737)",
+   "build": "22631.3737",
+   "arch": "amd64"
+  },
+  "0e331317-46de-4b08-a2fe-9c605edc00fb": {
+   "status": "done",
+   "title": "Feature update to Microsoft server operating system, version 21H2 (20348.1850)",
+   "build": "20348.1850",
+   "arch": "amd64"
+  },
+  "0e57f791-eb3d-43d3-9877-94c7486cbe91": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4239)",
+   "build": "19045.4239",
+   "arch": "x86"
+  },
+  "0fb6ccaa-e0d0-4e4d-8127-30a364f80b86": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3516)",
+   "build": "19045.3516",
+   "arch": "x86"
+  },
+  "0fd55fe1-1306-48dc-b051-1fd2ebcfc0cb": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.3235)",
+   "build": "22621.3235",
+   "arch": "amd64"
+  },
+  "100befc9-670b-4979-a1bc-749bbc9cdc65": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 20H2 (19042.2673)",
+   "build": "19042.2673",
+   "arch": "x86"
+  },
+  "1061081c-949c-4964-ad7c-bbcdb61ace4d": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.5070)",
+   "build": "19045.5070",
+   "arch": "x86"
+  },
+  "10b3d9c9-afe7-4c72-888d-d2a680f186f3": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 11 (22000.708)",
+   "build": "22000.708",
+   "arch": "amd64"
+  },
+  "10dd81fc-9766-438e-ac1b-11d9ddf7da2f": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 21H2 (19044.2132)",
+   "build": "19044.2132",
+   "arch": "amd64"
+  },
+  "1146b74d-6a0f-4702-9e37-135204b608ee": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2130)",
+   "build": "19045.2130",
+   "arch": "x86"
+  },
+  "1210147c-9ea3-4cac-96d8-6e4d4fdf5196": {
+   "status": "done",
+   "title": "Windows 11 (22000.1042)",
+   "build": "22000.1042",
+   "arch": "amd64"
+  },
+  "124d8ac1-6270-450e-beb2-77db7a30a342": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H1 (19043.1947)",
+   "build": "19043.1947",
+   "arch": "amd64"
+  },
+  "12614771-2e0c-4fda-a3f9-9dbd1086f004": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.4460)",
+   "build": "22621.4460",
+   "arch": "amd64"
+  },
+  "12d5a0ec-7580-44e6-8ffa-a398ba0e5559": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 11 (22000.1042)",
+   "build": "22000.1042",
+   "arch": "amd64"
+  },
+  "13a51fa0-7e8c-4ccb-baa4-f95246c5235e": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H1 (19043.2130)",
+   "build": "19043.2130",
+   "arch": "x86"
+  },
+  "13ec3f1a-08d1-4c78-8fe2-58a15fc7efaf": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.6293)",
+   "build": "17763.6293",
+   "arch": "amd64"
+  },
+  "13ed57f1-9e58-41e0-993c-481a6d7d4be9": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.3693)",
+   "build": "19044.3693",
+   "arch": "amd64"
+  },
+  "14836e75-a8de-498d-9a4c-3af40b12bf11": {
+   "status": "done",
+   "title": "Feature update to Microsoft server operating system, version 21H2 (20348.1249)",
+   "build": "20348.1249",
+   "arch": "amd64"
+  },
+  "153d27a4-bb23-45be-ba14-d678f889e69c": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.521)",
+   "build": "22621.521",
+   "arch": "amd64"
+  },
+  "15bc4e80-2ffe-4f61-af4d-2b35b51591cd": {
+   "status": "done",
+   "title": "Windows 11 Insider Preview 10.0.22635.3570 (ni_release)",
+   "build": "22635.3570",
+   "arch": "amd64"
+  },
+  "1617284e-dc6c-487e-a88b-6a548380c2f0": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 22H2 (19045.2194)",
+   "build": "19045.2194",
+   "arch": "amd64"
+  },
+  "1636361d-8916-493f-a0ad-1721beae9d6e": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 21H1 (19043.1766)",
+   "build": "19043.1766",
+   "arch": "x86"
+  },
+  "164292dd-776a-4152-89e0-a68438e82e01": {
+   "status": "done",
+   "title": "Windows Server, version 23H2 (25398.830)",
+   "build": "25398.830",
+   "arch": "amd64"
+  },
+  "169eb6b3-af73-4a01-a70b-c4c31fb731a9": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3803)",
+   "build": "19045.3803",
+   "arch": "amd64"
+  },
+  "16ea1a87-3b4f-467d-9e4b-504ee91eef5e": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.3887)",
+   "build": "17763.3887",
+   "arch": "amd64"
+  },
+  "170da49f-4f0d-403b-8e6d-8bbcefe151df": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 21H2 (20348.1787)",
+   "build": "20348.1787",
+   "arch": "amd64"
+  },
+  "1729b6d9-54f5-42f4-8249-e6eb937a6618": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.3520)",
+   "build": "22621.3520",
+   "arch": "amd64"
+  },
+  "1843eef2-a370-40c5-8cfd-e1ed2956e77c": {
+   "status": "done",
+   "title": "Windows 11 (22000.2960)",
+   "build": "22000.2960",
+   "arch": "amd64"
+  },
+  "186ddec5-e65a-4e6a-8a17-9a7a02ebd720": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 22H2 (20349.2113)",
+   "build": "20349.2113",
+   "arch": "amd64"
+  },
+  "18947b65-2180-4838-a051-2dbe1ee40064": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.3155)",
+   "build": "22631.3155",
+   "arch": "amd64"
+  },
+  "18bd6535-01a6-48b7-9bd8-a1a1c7929c45": {
+   "status": "done",
+   "title": "Windows Server, version 23H2 (25398.1251)",
+   "build": "25398.1251",
+   "arch": "amd64"
+  },
+  "194cf4e0-be0c-4a4d-85eb-bb7b3ec5339a": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.2788)",
+   "build": "19044.2788",
+   "arch": "x86"
+  },
+  "198a1f3d-57cf-4cf4-9418-3ec96470651d": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3803)",
+   "build": "19045.3803",
+   "arch": "x86"
+  },
+  "1991e6d2-0e13-4e72-8828-bd2ccc2cb6c7": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.2670)",
+   "build": "19044.2670",
+   "arch": "x86"
+  },
+  "19d6f2f0-22a2-457d-b99a-4daf36e746c2": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.4170)",
+   "build": "19044.4170",
+   "arch": "amd64"
+  },
+  "1aa81dc2-1a01-4fae-affa-dbbf4d53c07e": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.5247)",
+   "build": "19044.5247",
+   "arch": "amd64"
+  },
+  "1ab03382-9c0b-4371-8518-9ab6314d6aec": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.3807)",
+   "build": "22621.3807",
+   "arch": "amd64"
+  },
+  "1adec6ff-8e84-4fbe-ab29-d4e8a3968c0a": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.5936)",
+   "build": "17763.5936",
+   "arch": "x86"
+  },
+  "1ae36bcf-8ba3-4903-99f7-a2feca72c51b": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2486)",
+   "build": "19045.2486",
+   "arch": "x86"
+  },
+  "1ae58b7f-7b0f-4043-9075-7752a5107d72": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.5696)",
+   "build": "17763.5696",
+   "arch": "amd64"
+  },
+  "1b786802-e70f-4c24-891c-4766e1912ce2": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.3208)",
+   "build": "19044.3208",
+   "arch": "amd64"
+  },
+  "1c103928-9a3d-4d59-bde1-9a01e428d506": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 20H2 (19042.2006)",
+   "build": "19042.2006",
+   "arch": "amd64"
+  },
+  "1c1dd3cf-eefb-4a49-909c-3c810aa2fcb7": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 24H2 (26100.1)",
+   "build": "26100.1",
+   "arch": "amd64"
+  },
+  "1c95994c-8d53-46cf-bb50-ad8f13c7b26e": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2310)",
+   "build": "19045.2310",
+   "arch": "x86"
+  },
+  "1cf7ec69-1caf-4c29-be73-2601aa6655cf": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 20H2 (19042.2604)",
+   "build": "19042.2604",
+   "arch": "amd64"
+  },
+  "1d73161d-38ed-4230-a859-f7a9fc61c2f4": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.4317)",
+   "build": "22631.4317",
+   "arch": "amd64"
+  },
+  "1d7d801c-792e-4c1a-a16a-8b50149741c1": {
+   "status": "done",
+   "title": "Feature update to Microsoft server operating system, version 21H2 (20348.2849)",
+   "build": "20348.2849",
+   "arch": "amd64"
+  },
+  "1d9398a5-2b21-469d-a671-797faa004bce": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.4534)",
+   "build": "22631.4534",
+   "arch": "amd64"
+  },
+  "1ddbb3b6-9ebd-4d4c-b9d7-4b0c39663fd0": {
+   "status": "done",
+   "title": "Windows 11 Insider Preview 10.0.26120.2200 (ge_release_upr)",
+   "build": "26120.2200",
+   "arch": "amd64"
+  },
+  "1e442ec4-1ba4-48de-95d9-b35d2cd4db72": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.4249)",
+   "build": "22631.4249",
+   "arch": "amd64"
+  },
+  "1f35ee93-65fe-42d6-a62a-40cbb49364b2": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4123)",
+   "build": "19045.4123",
+   "arch": "amd64"
+  },
+  "1f4580cd-5bf1-4662-a723-f7dccf3bbb91": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3693)",
+   "build": "19045.3693",
+   "arch": "x86"
+  },
+  "1fe92200-ca4b-4ff0-aa38-cba882ff65f1": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 11 Version 22H2 (22621.755)",
+   "build": "22621.755",
+   "arch": "amd64"
+  },
+  "1ff017f0-5de3-407d-be45-31afbc450f4c": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.6532)",
+   "build": "17763.6532",
+   "arch": "x86"
+  },
+  "203cf116-947d-43a5-9df0-aaf47837da69": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.4737)",
+   "build": "17763.4737",
+   "arch": "x86"
+  },
+  "205bc94e-8234-42f9-9488-5b0e9cd1abb2": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.2673)",
+   "build": "19044.2673",
+   "arch": "x86"
+  },
+  "208c39d2-fa5e-4fdf-94db-58f070d3cd07": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 21H2 (20348.2113)",
+   "build": "20348.2113",
+   "arch": "amd64"
+  },
+  "20c2c103-2de7-4341-b4ad-07c16b4ce157": {
+   "status": "done",
+   "title": "Cumulative Update Preview for Windows 11 Version 23H2 (22631.4112)",
+   "build": "22631.4112",
+   "arch": "amd64"
+  },
+  "20c74156-f8e4-4095-a75a-65139084ba0b": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.2130)",
+   "build": "19044.2130",
+   "arch": "amd64"
+  },
+  "216be9a2-a065-4e29-ad7e-1569fff44af6": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2310)",
+   "build": "19045.2310",
+   "arch": "amd64"
+  },
+  "21d92cc5-b0f5-4323-aa48-1e28544aebfb": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.5206)",
+   "build": "17763.5206",
+   "arch": "x86"
+  },
+  "21dec2dc-8213-4021-a31c-7dd07e034dd5": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.5247)",
+   "build": "19045.5247",
+   "arch": "x86"
+  },
+  "21e0d12a-ca39-4468-978d-ab32b8bc1956": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 23H2 (25398.287)",
+   "build": "25398.287",
+   "arch": "amd64"
+  },
+  "2314f880-3a62-4a87-856b-55e2e980ceda": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.2251)",
+   "build": "19044.2251",
+   "arch": "amd64"
+  },
+  "231c80d2-3e2e-4e81-8364-943a3a1befdf": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.3165)",
+   "build": "17763.3165",
+   "arch": "x86"
+  },
+  "2326143b-ab3d-484a-90aa-3bc64e1a7c0c": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.1413)",
+   "build": "22621.1413",
+   "arch": "amd64"
+  },
+  "23665cc3-1efb-4a79-a29f-d370e8d043fe": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.1635)",
+   "build": "22621.1635",
+   "arch": "amd64"
+  },
+  "23b376bc-3097-48b9-a898-68a6ac056517": {
+   "status": "done",
+   "title": "Windows 11 (22000.1879)",
+   "build": "22000.1879",
+   "arch": "amd64"
+  },
+  "242b5aa2-6b97-4c14-932e-61eeec640d08": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.1631)",
+   "build": "22621.1631",
+   "arch": "amd64"
+  },
+  "259474b7-3fc7-4537-924e-e5bfb5a945df": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 23H2 (25398.830)",
+   "build": "25398.830",
+   "arch": "amd64"
+  },
+  "25d726e0-fe39-4610-ad90-460341bff3c2": {
+   "status": "done",
+   "title": "Windows 11, version 24H2 (26100.1297)",
+   "build": "26100.1297",
+   "arch": "amd64"
+  },
+  "26fe067c-35b4-41ef-b03a-1391cb7ef39a": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.755)",
+   "build": "22621.755",
+   "arch": "amd64"
+  },
+  "27c6aab2-ffc0-4bb7-94d7-2e3f5f235471": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.3593)",
+   "build": "22621.3593",
+   "arch": "amd64"
+  },
+  "2871d66d-99c8-4ca9-932a-b1e007bea7ea": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.2428)",
+   "build": "22631.2428",
+   "arch": "amd64"
+  },
+  "2892fb44-abdf-478c-af7f-5afec04035c9": {
+   "status": "done",
+   "title": "Windows Server, version 23H2 (25398.287)",
+   "build": "25398.287",
+   "arch": "amd64"
+  },
+  "28997d3a-e5d4-40f9-8d35-7a85dc7f4d98": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4233)",
+   "build": "19045.4233",
+   "arch": "amd64"
+  },
+  "28c4fd46-de85-4fa1-aa90-666c06ace3a3": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2788)",
+   "build": "19045.2788",
+   "arch": "amd64"
+  },
+  "2953ae48-67e2-478e-8e63-bb9d4bc27ae3": {
+   "status": "done",
+   "title": "Cumulative Update for Azure Stack HCI version 23H2 (25398.345)",
+   "build": "25398.345",
+   "arch": "amd64"
+  },
+  "299201bc-d363-465a-9c22-eb714cd9ef41": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.2070)",
+   "build": "22621.2070",
+   "arch": "amd64"
+  },
+  "29b87706-e789-4797-86ff-58df8efe7e3e": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 11 Version 23H2 (22631.2361)",
+   "build": "22631.2361",
+   "arch": "amd64"
+  },
+  "2a023074-e74a-493d-86c9-be98c74b5658": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3570)",
+   "build": "19045.3570",
+   "arch": "amd64"
+  },
+  "2b875ab4-07de-4bdd-9138-29bfd73275ea": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 11 (22000.1639)",
+   "build": "22000.1639",
+   "arch": "amd64"
+  },
+  "2ba76eaa-32d3-406d-948c-172de9ff97ac": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.1344)",
+   "build": "22621.1344",
+   "arch": "amd64"
+  },
+  "2bb180a0-b0db-4720-82aa-ddc383b8d249": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 21H2 (20348.1726)",
+   "build": "20348.1726",
+   "arch": "amd64"
+  },
+  "2bb3c0d0-7d08-4b35-a3a0-b28101f6f5b0": {
+   "status": "done",
+   "title": "Windows 11 Insider Preview 10.0.26120.1340 (ge_release_svc_betaflt_upr)",
+   "build": "26120.1340",
+   "arch": "amd64"
+  },
+  "2bbf5b05-bddf-4121-bb3d-01c9dff6986e": {
+   "status": "done",
+   "title": "Feature update to Windows 10 Team (19045.1865)",
+   "build": "19045.1865",
+   "arch": "amd64"
+  },
+  "2bee595b-b99d-4ca9-9d75-ee466e390cab": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.3371)",
+   "build": "22621.3371",
+   "arch": "amd64"
+  },
+  "2bf57e55-e7da-47c8-8221-8222b14ed79c": {
+   "status": "done",
+   "title": "Windows 11 Insider Preview 10.0.26120.1542 (ge_release_svc_betaflt_upr)",
+   "build": "26120.1542",
+   "arch": "amd64"
+  },
+  "2c1f9fc7-452e-4f61-904d-1c8cea1ceb06": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.1555)",
+   "build": "22621.1555",
+   "arch": "amd64"
+  },
+  "2c34b461-1255-485f-8845-420f1e8ba2e3": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.1265)",
+   "build": "22621.1265",
+   "arch": "amd64"
+  },
+  "2d1ecbd0-f7a5-4da1-8230-5a6283511d84": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 20H2 (19042.2670)",
+   "build": "19042.2670",
+   "arch": "amd64"
+  },
+  "2d375561-4821-488d-ba0a-8269aebf51bc": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.2283)",
+   "build": "22621.2283",
+   "arch": "amd64"
+  },
+  "2d652122-0ea3-477a-9807-c8506fec8fc4": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.2715)",
+   "build": "22631.2715",
+   "arch": "amd64"
+  },
+  "2dce4b1a-819f-42df-89d3-e35238f5d323": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.3447)",
+   "build": "22631.3447",
+   "arch": "amd64"
+  },
+  "2dd5ef28-f0df-4026-9f23-05e0c1ce91d7": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 21H2 (20348.1668)",
+   "build": "20348.1668",
+   "arch": "amd64"
+  },
+  "2e4d05c4-a182-4a08-bc6e-cdab16227c05": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 22H2 (20349.2402)",
+   "build": "20349.2402",
+   "arch": "amd64"
+  },
+  "2e9d3812-57df-4b13-bec6-f218a9603dba": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3513)",
+   "build": "19045.3513",
+   "arch": "x86"
+  },
+  "2f285c59-e8b3-49c3-bc83-bed2f4498b75": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 20H2 (19042.1766)",
+   "build": "19042.1766",
+   "arch": "amd64"
+  },
+  "2f47a1bf-101d-4967-90f0-fa9f6f5cdf0d": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4412)",
+   "build": "19045.4412",
+   "arch": "amd64"
+  },
+  "2f4c6810-eb6e-4488-a8ce-aee9408c0ee1": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3324)",
+   "build": "19045.3324",
+   "arch": "x86"
+  },
+  "2fa342ca-0da5-42cc-9231-5741cde037ed": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 21H1 (19043.2194)",
+   "build": "19043.2194",
+   "arch": "amd64"
+  },
+  "2fc98795-e43c-4120-bb05-2c9f0c4f5289": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 20H2 (19042.631)",
+   "build": "19042.631",
+   "arch": "amd64"
+  },
+  "2fec9f1b-9b6a-4ddb-9111-a0afb8219c1b": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H1 (19043.2192)",
+   "build": "19043.2192",
+   "arch": "x86"
+  },
+  "3046790b-373b-457a-9e85-ef14aeea182a": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.4112)",
+   "build": "22631.4112",
+   "arch": "amd64"
+  },
+  "30da46b4-2ff2-4682-a9ae-23b66dd98713": {
+   "status": "done",
+   "title": "Windows Server 2025 (26100.1)",
+   "build": "26100.1",
+   "arch": "amd64"
+  },
+  "31357333-eeec-4295-abd8-d81e6d57393a": {
+   "status": "done",
+   "title": "Windows Server, version 23H2 (25398.1009)",
+   "build": "25398.1009",
+   "arch": "amd64"
+  },
+  "3150d96f-4a35-47b1-b8d4-ca3a3a193511": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.4317)",
+   "build": "22621.4317",
+   "arch": "amd64"
+  },
+  "31978a90-7b9b-403b-9e58-ebcfbf1545c1": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2604)",
+   "build": "19045.2604",
+   "arch": "amd64"
+  },
+  "31a2403f-6b21-4765-ab20-64449a100e07": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 20H2 (19042.2486)",
+   "build": "19042.2486",
+   "arch": "x86"
+  },
+  "3212456b-0c98-45b0-96a7-d393437215c7": {
+   "status": "done",
+   "title": "Windows Server, version 23H2 (25398.531)",
+   "build": "25398.531",
+   "arch": "amd64"
+  },
+  "321b8021-be37-4b12-9713-c4a66f8099b2": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3271)",
+   "build": "19045.3271",
+   "arch": "amd64"
+  },
+  "323bb7f9-d9e0-4915-ae46-33e79da424b4": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 21H1 (19043.2132)",
+   "build": "19043.2132",
+   "arch": "amd64"
+  },
+  "329b657c-5e69-46f4-929e-1b7a45305e1b": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.3227)",
+   "build": "22631.3227",
+   "arch": "amd64"
+  },
+  "32a3e279-d82f-4579-b899-270a391b85cc": {
+   "status": "done",
+   "title": "Feature update to Windows 10 Team (19045.2130)",
+   "build": "19045.2130",
+   "arch": "amd64"
+  },
+  "3330a78d-935c-4db6-b3c3-00de9d15c925": {
+   "status": "done",
+   "title": "Feature update to Microsoft server operating system, version 21H2 (20348.825)",
+   "build": "20348.825",
+   "arch": "amd64"
+  },
+  "334f6f35-0a8b-47a8-8099-251103be1bbb": {
+   "status": "done",
+   "title": "Windows 11 Insider Preview 10.0.26120.461 (ge_release)",
+   "build": "26120.461",
+   "arch": "amd64"
+  },
+  "33948b14-448e-42a2-8caf-1f4a594b9a53": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 22H2 (19045.2130)",
+   "build": "19045.2130",
+   "arch": "x86"
+  },
+  "33ce6e87-f379-43c3-8833-72e633f57a60": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H1 (19043.1741)",
+   "build": "19043.1741",
+   "arch": "amd64"
+  },
+  "33e82e38-a1ee-463b-9e13-897394144478": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.4010)",
+   "build": "17763.4010",
+   "arch": "amd64"
+  },
+  "348cc840-2674-4338-96eb-39824bfa447b": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 11 (22000.1100)",
+   "build": "22000.1100",
+   "arch": "amd64"
+  },
+  "34d37308-ce0a-4b7a-9470-b29c3d96d2f8": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.1702)",
+   "build": "22621.1702",
+   "arch": "amd64"
+  },
+  "354ed011-b5d5-4f39-b3fb-78c9c68f9cef": {
+   "status": "done",
+   "title": "Windows 11 (22000.1696)",
+   "build": "22000.1696",
+   "arch": "amd64"
+  },
+  "354f5027-9b2b-4c3e-81a7-1b9f6e513265": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.3668)",
+   "build": "22621.3668",
+   "arch": "amd64"
+  },
+  "35630b7b-4509-45b6-83a1-d4c75d5aa9b6": {
+   "status": "done",
+   "title": "Windows 11 (22000.3260)",
+   "build": "22000.3260",
+   "arch": "amd64"
+  },
+  "356c1621-04e7-4e66-8928-03a687c3db73": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.1)",
+   "build": "22621.1",
+   "arch": "amd64"
+  },
+  "356fbc18-c951-40ac-8e1b-282f1bb491fd": {
+   "status": "done",
+   "title": "Cumulative Update Preview for Windows 11 Version 22H2 (22621.4112)",
+   "build": "22621.4112",
+   "arch": "amd64"
+  },
+  "358e12e8-282d-4b95-96d2-f3c4dc18baa4": {
+   "status": "done",
+   "title": "Cumulative Update for Azure Stack HCI version 23H2 (25398.408)",
+   "build": "25398.408",
+   "arch": "amd64"
+  },
+  "36587bb7-4289-444e-8391-021d813f6b7d": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.3086)",
+   "build": "19044.3086",
+   "arch": "x86"
+  },
+  "3674b493-571a-4e96-839e-47eee110179c": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.2364)",
+   "build": "19044.2364",
+   "arch": "amd64"
+  },
+  "367848fb-48ba-4a1e-aac4-fc901c84fa60": {
+   "status": "done",
+   "title": "Windows 11, version 24H2 (26100.3)",
+   "build": "26100.3",
+   "arch": "amd64"
+  },
+  "36bd498a-41b1-4d22-aed3-41d3a5b2c3dc": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4955)",
+   "build": "19045.4955",
+   "arch": "amd64"
+  },
+  "36f0f77f-a424-4fb2-ba8a-722e3cdd3d6f": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 20H2 (19042.2965)",
+   "build": "19042.2965",
+   "arch": "x86"
+  },
+  "377a7b26-456f-488a-8382-48061fc9c877": {
+   "status": "done",
+   "title": "Windows 11 Insider Preview 10.0.26120.1350 (ge_release_svc_betaflt_upr)",
+   "build": "26120.1350",
+   "arch": "amd64"
+  },
+  "385d9843-49ed-44a1-b214-08844e9117f1": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": null
+  },
+  "39143328-3eb9-4179-b9c7-0f6dcbd964aa": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4472)",
+   "build": "19045.4472",
+   "arch": "amd64"
+  },
+  "39f6d4dd-56ce-45b0-9afb-b8b669c36164": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 1809 (17763.3772)",
+   "build": "17763.3772",
+   "arch": "x86"
+  },
+  "3a34d712-ee6f-46fa-991a-e7d9520c16fc": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.1992)",
+   "build": "22621.1992",
+   "arch": "amd64"
+  },
+  "3ba7c542-eed4-4fca-a9cb-2587d53ec522": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.1865)",
+   "build": "19044.1865",
+   "arch": "amd64"
+  },
+  "3ba7da8c-0e1f-4b49-b52c-b4a78dd21bd5": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.5131)",
+   "build": "19044.5131",
+   "arch": "x86"
+  },
+  "3c50d994-f8f3-4c8a-8e4c-646ae3e0fdb1": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 23H2 (25398.469)",
+   "build": "25398.469",
+   "arch": "amd64"
+  },
+  "3c53e7c8-01d4-4cb8-a6cc-77679a164b37": {
+   "status": "done",
+   "title": "Cumulative Update Preview for Windows 11 Version 24H2 (26100.1586)",
+   "build": "26100.1586",
+   "arch": "amd64"
+  },
+  "3cda27c6-e7fd-4de9-b9f0-cac311f0736c": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 22H2 (19045.2006)",
+   "build": "19045.2006",
+   "arch": "x86"
+  },
+  "3ce84465-3024-4b40-8747-ef5afd25644f": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4170)",
+   "build": "19045.4170",
+   "arch": "amd64"
+  },
+  "3d2af73b-32b6-4bd7-b717-46da4ee719c1": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.4412)",
+   "build": "19044.4412",
+   "arch": "amd64"
+  },
+  "3d8ad3cf-1fa6-43e7-a8ca-b55ed1c7c557": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 20H2 (19042.2788)",
+   "build": "19042.2788",
+   "arch": "amd64"
+  },
+  "3dcf3076-f269-49d2-a253-2faf3e20057e": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3324)",
+   "build": "19045.3324",
+   "arch": "amd64"
+  },
+  "3e9bc777-cf0d-4c82-8b50-44c78abe2227": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 11 Version 22H2 (22621.1344)",
+   "build": "22621.1344",
+   "arch": "amd64"
+  },
+  "3ec42f84-4c09-482c-90be-e031a38d3cc9": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.4247)",
+   "build": "22631.4247",
+   "arch": "amd64"
+  },
+  "3efcc9b1-839d-42ac-a209-2234c4bfde9a": {
+   "status": "done",
+   "title": "Windows 11 (22000.2713)",
+   "build": "22000.2713",
+   "arch": "amd64"
+  },
+  "3f106b39-c52e-47d7-9d71-b4937fd899e7": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 20H2 (19042.2728)",
+   "build": "19042.2728",
+   "arch": "amd64"
+  },
+  "3f44de05-9072-4ce1-a908-ea52ca0970b1": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.2364)",
+   "build": "19044.2364",
+   "arch": "x86"
+  },
+  "3f550853-e171-4b4d-94a3-d1f8fe88c03e": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H1 (19043.1766)",
+   "build": "19043.1766",
+   "arch": "x86"
+  },
+  "3f57cd2b-48a7-406f-a1b4-9fb1eb55c26e": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 22H2 (19045.2194)",
+   "build": "19045.2194",
+   "arch": "x86"
+  },
+  "3f85b104-aa6f-41b0-86b8-29196c1f2c3b": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.1889)",
+   "build": "19045.1889",
+   "arch": "x86"
+  },
+  "3f89a0a6-cfea-4f80-8312-025f94655192": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3754)",
+   "build": "19045.3754",
+   "arch": "amd64"
+  },
+  "4009587d-164f-4964-b4f0-4f9de4c763b5": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.1862)",
+   "build": "19044.1862",
+   "arch": "amd64"
+  },
+  "400d7cc4-345e-4447-9f75-9a7566acb352": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3031)",
+   "build": "19045.3031",
+   "arch": "x86"
+  },
+  "404363ff-9e72-45f2-a187-096eca569b03": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 21H2 (20348.1970)",
+   "build": "20348.1970",
+   "arch": "amd64"
+  },
+  "40a43656-7c67-4e9a-b1a8-23e8275d8bbc": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 20H2 (19042.1766)",
+   "build": "19042.1766",
+   "arch": "x86"
+  },
+  "40ca70bf-d1cc-40eb-a5bf-ecb38d7e26d7": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": null
+  },
+  "41713986-67ec-4fa9-94dd-b9ee1b6795a1": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 21H1 (19043.1766)",
+   "build": "19043.1766",
+   "arch": "amd64"
+  },
+  "41748193-33d3-4ce3-a653-a3021dc01d01": {
+   "status": "done",
+   "title": "Windows 11 Insider Preview 27723.1000 (rs_prerelease)",
+   "build": "27723.1000",
+   "arch": "amd64"
+  },
+  "41a574f2-b782-4e2b-92a4-f79c120fb017": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.6414)",
+   "build": "17763.6414",
+   "arch": "amd64"
+  },
+  "41b54cec-4f79-4fad-81d2-282beea4b859": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 20H2 (19042.2965)",
+   "build": "19042.2965",
+   "arch": "amd64"
+  },
+  "41df0628-8f59-4933-8b9b-892014d17937": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.6054)",
+   "build": "17763.6054",
+   "arch": "amd64"
+  },
+  "4277a09a-1f4a-492c-a474-4143cab62007": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4355)",
+   "build": "19045.4355",
+   "arch": "x86"
+  },
+  "427c43da-3ce5-4bb0-adff-a844d1ff8417": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.3570)",
+   "build": "19044.3570",
+   "arch": "x86"
+  },
+  "42f9f137-9fd8-4b53-ae58-74dc50f01f49": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.2193)",
+   "build": "19044.2193",
+   "arch": "x86"
+  },
+  "43c74ca8-a631-4719-986e-9743ee2e9561": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 20H2 (19042.2251)",
+   "build": "19042.2251",
+   "arch": "x86"
+  },
+  "441a55a8-2503-448c-9768-14f925f5f8c8": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.4499)",
+   "build": "17763.4499",
+   "arch": "amd64"
+  },
+  "4467b357-2680-47a1-8551-bea3fed7085b": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3448)",
+   "build": "19045.3448",
+   "arch": "amd64"
+  },
+  "446f2934-e38b-4801-a529-fcf40231a02a": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4355)",
+   "build": "19045.4355",
+   "arch": "amd64"
+  },
+  "44ec6209-1796-4c40-acd7-b81b90d98398": {
+   "status": "done",
+   "title": "Windows 11 (22000.2003)",
+   "build": "22000.2003",
+   "arch": "amd64"
+  },
+  "44f91eb3-3039-41ec-9d34-f993afbbf79f": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2965)",
+   "build": "19045.2965",
+   "arch": "x86"
+  },
+  "4501e627-3f35-40f2-a8a7-c204975c7a92": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.1949)",
+   "build": "19045.1949",
+   "arch": "x86"
+  },
+  "450757d1-c8ee-4abb-a988-4510e0af20f1": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3516)",
+   "build": "19045.3516",
+   "arch": "amd64"
+  },
+  "454ab054-e407-4051-b834-2caba2f15f69": {
+   "status": "done",
+   "title": "Windows Server Insider Preview 26311.5000 (ge_prerelease)",
+   "build": "26311.5000",
+   "arch": "amd64"
+  },
+  "4566b81e-f85f-41c4-a031-2299636c2260": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.3532)",
+   "build": "17763.3532",
+   "arch": "x86"
+  },
+  "4590b16e-3f4e-4715-befb-9e752f077ef5": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 1809 (17763.3534)",
+   "build": "17763.3534",
+   "arch": "x86"
+  },
+  "4596a622-905b-4876-bb7f-c48b7b6226ad": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.5011)",
+   "build": "19045.5011",
+   "arch": "amd64"
+  },
+  "45974967-f2bf-429c-9f5b-cd2e7b9c6c6a": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": null
+  },
+  "45a038d5-3925-4052-b7ad-7419d4cdb430": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 21H2 (20348.768)",
+   "build": "20348.768",
+   "arch": "amd64"
+  },
+  "46bae697-f3df-452f-8a9b-efbbbf88b3bb": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3031)",
+   "build": "19045.3031",
+   "arch": "amd64"
+  },
+  "46c0ab88-5b0d-41ad-a927-172ecfcb3d98": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3030)",
+   "build": "19045.3030",
+   "arch": "x86"
+  },
+  "46c118a6-e2e5-43df-b778-1e8110542769": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1903 (18362.175)",
+   "build": "18362.175",
+   "arch": "x86"
+  },
+  "47278140-1a78-4d36-b6b8-161dc8f4faec": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3154)",
+   "build": "19045.3154",
+   "arch": "amd64"
+  },
+  "476e30d4-de6d-407b-bb6d-344fd1e64dc7": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.5196)",
+   "build": "19045.5196",
+   "arch": "amd64"
+  },
+  "478febd9-f670-4700-9a3a-25325f8fc24f": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 22H2 (20349.1070)",
+   "build": "20349.1070",
+   "arch": "amd64"
+  },
+  "47e1b23b-dae0-48af-8997-fe9221b3762f": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.3046)",
+   "build": "17763.3046",
+   "arch": "amd64"
+  },
+  "48541db7-b8ab-4cf5-85f0-2a1d93bbb175": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 20H2 (19042.2670)",
+   "build": "19042.2670",
+   "arch": "x86"
+  },
+  "48a5686b-2c90-4db7-a578-c8399d8b02cd": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4598)",
+   "build": "19045.4598",
+   "arch": "amd64"
+  },
+  "48ea7c96-b1fb-4a82-9aee-669f44956da7": {
+   "status": "done",
+   "title": "Windows 11, version 24H2 (26100.1301)",
+   "build": "26100.1301",
+   "arch": "amd64"
+  },
+  "48eb4da5-7382-4da1-ba37-b0f693ca47d1": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 11 Version 22H2 (22621.1194)",
+   "build": "22621.1194",
+   "arch": "amd64"
+  },
+  "49427338-b2b6-4375-aadc-375a11c9494e": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 11 Version 22H2 (22621.607)",
+   "build": "22621.607",
+   "arch": "amd64"
+  },
+  "495d6dc7-62d0-4f04-b7d2-ccaf2193c4e1": {
+   "status": "done",
+   "title": "Windows 11 (22000.3197)",
+   "build": "22000.3197",
+   "arch": "amd64"
+  },
+  "49935233-dfee-4dee-8feb-9d6b5a4da325": {
+   "status": "done",
+   "title": "Windows 11 Insider Preview 10.0.22635.4300 (ni_release)",
+   "build": "22635.4300",
+   "arch": "amd64"
+  },
+  "49c101a1-1044-43d6-83ee-c8baebfa69a1": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3208)",
+   "build": "19045.3208",
+   "arch": "amd64"
+  },
+  "49d28a1f-8159-4dc5-b858-6556f636b3bd": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.6189)",
+   "build": "17763.6189",
+   "arch": "x86"
+  },
+  "4a059051-c804-4bc7-8e4b-53989a8d252c": {
+   "status": "done",
+   "title": "Windows 11 Insider Preview 10.0.22635.3575 (ni_release)",
+   "build": "22635.3575",
+   "arch": "amd64"
+  },
+  "4a575506-3dd8-42e0-987a-1cdaa9b50530": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.3951)",
+   "build": "22621.3951",
+   "arch": "amd64"
+  },
+  "4a9cc302-1261-4e58-bba1-56824eef9348": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H1 (19043.2251)",
+   "build": "19043.2251",
+   "arch": "x86"
+  },
+  "4b0c76d2-666b-4826-a941-2addd7b34ee8": {
+   "status": "done",
+   "title": "Windows 11 (22000.2652)",
+   "build": "22000.2652",
+   "arch": "amd64"
+  },
+  "4b198c0a-71de-4f6f-b7e1-831729d92c77": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2251)",
+   "build": "19045.2251",
+   "arch": "amd64"
+  },
+  "4c12b548-3138-4f1c-a0db-b57fc13fc98b": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H1 (19043.2364)",
+   "build": "19043.2364",
+   "arch": "amd64"
+  },
+  "4c457b2c-5fa2-4fd4-bff8-4373067e4e48": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2193)",
+   "build": "19045.2193",
+   "arch": "x86"
+  },
+  "4cfaec52-d536-4e5c-bde4-0f2969f91264": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 20H2 (19042.2673)",
+   "build": "19042.2673",
+   "arch": "amd64"
+  },
+  "4d5e0561-ce66-4894-9433-fb1624e73190": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.3570)",
+   "build": "19044.3570",
+   "arch": "amd64"
+  },
+  "4d769aa5-0624-453a-b62d-e836ee507df2": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4474)",
+   "build": "19045.4474",
+   "arch": "x86"
+  },
+  "4d89ecc4-502d-412e-89b0-8a616c761a91": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": null
+  },
+  "4d9217dd-3d1a-43c9-8151-ae28469e3922": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3154)",
+   "build": "19045.3154",
+   "arch": "x86"
+  },
+  "4d950336-a662-4482-b26f-70780a7b5eee": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.3165)",
+   "build": "17763.3165",
+   "arch": "amd64"
+  },
+  "4e5cdfb8-57ed-436d-8480-91de3abd9fe2": {
+   "status": "done",
+   "title": "Windows 11 Insider Preview 10.0.26120.751 (ge_release)",
+   "build": "26120.751",
+   "arch": "amd64"
+  },
+  "4fd93f6e-3e8c-4d12-a32b-09c10335524f": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4842)",
+   "build": "19045.4842",
+   "arch": "x86"
+  },
+  "5038380a-2344-448c-93ec-20b4c292bac4": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4123)",
+   "build": "19045.4123",
+   "arch": "x86"
+  },
+  "507cf67d-d0b0-4139-af31-6ad2c42d9aa4": {
+   "status": "done",
+   "title": "Windows 11 (22000.3019)",
+   "build": "22000.3019",
+   "arch": "amd64"
+  },
+  "50b80247-0699-4e40-a20f-194ce6bf56f2": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.2311)",
+   "build": "19044.2311",
+   "arch": "amd64"
+  },
+  "516a583e-5af3-403d-843a-ea09f678f94a": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 20H2 (19042.2965)",
+   "build": "19042.2965",
+   "arch": "amd64"
+  },
+  "517e837e-2781-463c-84c9-464f6db497f7": {
+   "status": "done",
+   "title": "Windows 11 (22000.2243)",
+   "build": "22000.2243",
+   "arch": "amd64"
+  },
+  "5190f377-ae2b-4bab-a677-20ed0aa9b0a8": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.3155)",
+   "build": "22621.3155",
+   "arch": "amd64"
+  },
+  "5202443a-9d39-4459-9dda-48abbf5f8af1": {
+   "status": "done",
+   "title": "Windows Server, version 23H2 (25398.1128)",
+   "build": "25398.1128",
+   "arch": "amd64"
+  },
+  "520806d4-7865-4801-be49-cb7425efe547": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 20H2 (19042.2311)",
+   "build": "19042.2311",
+   "arch": "x86"
+  },
+  "526530f8-8c20-4e8d-a6b9-bdde9765db17": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2673)",
+   "build": "19045.2673",
+   "arch": "x86"
+  },
+  "5297182b-147a-4e8c-ad41-c5155c3cd64a": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 1809 (17763.3653)",
+   "build": "17763.3653",
+   "arch": "amd64"
+  },
+  "53026188-2ac7-4ce8-9116-77ff895b7031": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.4377)",
+   "build": "17763.4377",
+   "arch": "x86"
+  },
+  "5490ab3b-a78e-43d1-9883-fcd9ca2579ba": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.4391)",
+   "build": "22621.4391",
+   "arch": "amd64"
+  },
+  "54d90f84-f04c-45d5-b893-9910804a2a4a": {
+   "status": "done",
+   "title": "Cumulative Update Preview for Windows 11 Version 22H2 (22621.3810)",
+   "build": "22621.3810",
+   "arch": "amd64"
+  },
+  "54f16eae-97dd-4128-bbba-d79128853a40": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.4291)",
+   "build": "19044.4291",
+   "arch": "x86"
+  },
+  "5618dec2-c5fe-4174-8742-619e06ac7e49": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.6054)",
+   "build": "17763.6054",
+   "arch": "x86"
+  },
+  "5628eefd-b361-47b5-b481-5d44a782fff8": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.4037) (2)",
+   "build": "22621.4037",
+   "arch": "amd64"
+  },
+  "56a3a44d-357b-493e-a8d9-e555cb4a567c": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 11 Version 24H2 (26100.863)",
+   "build": "26100.863",
+   "arch": "amd64"
+  },
+  "56a3bf23-b9a0-4eac-9cf2-70072e6a7751": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3633)",
+   "build": "19045.3633",
+   "arch": "amd64"
+  },
+  "570df760-c565-49e3-931e-cb3c958438f0": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.1265) (2)",
+   "build": "22621.1265",
+   "arch": "amd64"
+  },
+  "571b92e1-9ebb-4d74-80be-6f01b247a1f7": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4046)",
+   "build": "19045.4046",
+   "arch": "x86"
+  },
+  "57491d4e-16c1-4673-ae22-daef362f60a8": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.5329)",
+   "build": "17763.5329",
+   "arch": "amd64"
+  },
+  "577284db-ea84-4862-93bf-1f850e4392a4": {
+   "status": "done",
+   "title": "Cumulative Update Preview for Windows 11 Version 22H2 (22621.4249)",
+   "build": "22621.4249",
+   "arch": "amd64"
+  },
+  "57aec014-fb92-480e-93e7-5b4e8b878d51": {
+   "status": "done",
+   "title": "Feature update to Microsoft server operating system, version 21H2 (20348.1726)",
+   "build": "20348.1726",
+   "arch": "amd64"
+  },
+  "57d5718b-02a3-49b0-bff1-202f0811a060": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.3520)",
+   "build": "22631.3520",
+   "arch": "amd64"
+  },
+  "57ec4f4f-bfd5-4353-aed2-647c538eaa2f": {
+   "status": "done",
+   "title": "Windows 11 (22000.2836)",
+   "build": "22000.2836",
+   "arch": "amd64"
+  },
+  "582f21ac-488f-485a-8f4c-5a52f770249a": {
+   "status": "done",
+   "title": "Windows 11 Insider Preview 10.0.22635.3790 (ni_release)",
+   "build": "22635.3790",
+   "arch": "amd64"
+  },
+  "58826b60-8047-4d55-bd41-34f4e9fe762f": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.2728)",
+   "build": "19044.2728",
+   "arch": "amd64"
+  },
+  "58a0d3f9-e632-4957-9653-44f1e6aa040c": {
+   "status": "done",
+   "title": "Windows 11 Insider Preview 10.0.22635.4291 (ni_release)",
+   "build": "22635.4291",
+   "arch": "amd64"
+  },
+  "58b65e6d-b736-4fbf-ad57-f6f73477446d": {
+   "status": "done",
+   "title": "Windows 11 (22000.2245)",
+   "build": "22000.2245",
+   "arch": "amd64"
+  },
+  "5910b449-8a5a-47e3-b7e1-c9d83bee7c21": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.3593)",
+   "build": "22631.3593",
+   "arch": "amd64"
+  },
+  "593f698d-708d-4d73-a5d2-811bfbf7c133": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.3668)",
+   "build": "22631.3668",
+   "arch": "amd64"
+  },
+  "59c70753-8452-47e1-b825-ec2c888ff741": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.3803)",
+   "build": "19044.3803",
+   "arch": "amd64"
+  },
+  "5a072a7c-9f28-4809-8f63-02f6825a6e6d": {
+   "status": "done",
+   "title": "Cumulative Update Preview for Windows 11 Version 22H2 (22621.4391)",
+   "build": "22621.4391",
+   "arch": "amd64"
+  },
+  "5a0fb7aa-577c-4cef-8ec9-b897fe9ec7ad": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H1 (19043.1739)",
+   "build": "19043.1739",
+   "arch": "x86"
+  },
+  "5a1853ef-d285-4946-a1fa-7ca4f5bc10d8": {
+   "status": "done",
+   "title": "Windows 11, version 24H2 (26100.2448)",
+   "build": "26100.2448",
+   "arch": "amd64"
+  },
+  "5a27b6d3-a2d9-40ab-9b32-b15593a2e6f0": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 22H2 (20349.2966)",
+   "build": "20349.2966",
+   "arch": "amd64"
+  },
+  "5a44e686-6741-4f18-bac7-ffaacfbecb60": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809OB (17763.5830)",
+   "build": "17763.5830",
+   "arch": "x86"
+  },
+  "5aa4a1a2-8bd2-4b8b-b463-523d7c944ca3": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.1778)",
+   "build": "22621.1778",
+   "arch": "amd64"
+  },
+  "5aeda3be-be4f-496f-b99d-1c0a19ffc4ff": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2075)",
+   "build": "19045.2075",
+   "arch": "x86"
+  },
+  "5b232720-2c83-4f7c-8fc7-e2235c73fd0e": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 11 Version 22H2 (22621.754)",
+   "build": "22621.754",
+   "arch": "amd64"
+  },
+  "5c5d2169-9876-436c-95ad-20303ad01972": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4713)",
+   "build": "19045.4713",
+   "arch": "x86"
+  },
+  "5c5f51d6-2602-406a-9bcb-825f6ee5cb10": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3269)",
+   "build": "19045.3269",
+   "arch": "amd64"
+  },
+  "5d4283bf-7d4d-4daa-a442-f623dfc29399": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.4651)",
+   "build": "19044.4651",
+   "arch": "x86"
+  },
+  "5d5ef944-1ba0-436b-b7d3-571d59a15cbb": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.900)",
+   "build": "22621.900",
+   "arch": "amd64"
+  },
+  "5d8d37ec-6063-4c4f-9095-47fc1dd92f36": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": null
+  },
+  "5dea5950-ac3a-41c6-ae18-be310050c123": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3513)",
+   "build": "19045.3513",
+   "arch": "amd64"
+  },
+  "5dfbca17-fcff-467b-9e63-3ca1576a3c61": {
+   "status": "done",
+   "title": "Feature update to Microsoft server operating system, version 21H2 (20348.2582)",
+   "build": "20348.2582",
+   "arch": "amd64"
+  },
+  "5e67247e-c2a3-45ee-86c9-0712b94a01c7": {
+   "status": "done",
+   "title": "Windows 11 (22000.2538)",
+   "build": "22000.2538",
+   "arch": "amd64"
+  },
+  "5ef23669-8f5f-482d-9a42-6188295e436a": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 21H2 (20348.1487)",
+   "build": "20348.1487",
+   "arch": "amd64"
+  },
+  "5f48e7bb-aba4-4a79-9111-6dbe48d891a7": {
+   "status": "done",
+   "title": "Windows 11 (22000.778)",
+   "build": "22000.778",
+   "arch": "amd64"
+  },
+  "5f876b5a-61a0-4289-bc5c-966f283a86de": {
+   "status": "done",
+   "title": "Windows Server, version 23H2 (25398.584)",
+   "build": "25398.584",
+   "arch": "amd64"
+  },
+  "5fb708ae-81ca-41cd-9f22-ccc9cc897c46": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4894)",
+   "build": "19045.4894",
+   "arch": "x86"
+  },
+  "606d689b-7496-4124-8dbe-f29a8b3a4ea5": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 22H2 (20349.1850)",
+   "build": "20349.1850",
+   "arch": "amd64"
+  },
+  "60a4e1fe-ab87-4f69-8bc9-45b6e6f21072": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 22H2 (20349.1607)",
+   "build": "20349.1607",
+   "arch": "amd64"
+  },
+  "60d84f07-7bce-4652-a0cd-24608a0cd0fc": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.5073)",
+   "build": "19045.5073",
+   "arch": "amd64"
+  },
+  "612a5263-8b0c-4208-8c0d-a580bc5a811e": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 22H2 (20349.2461)",
+   "build": "20349.2461",
+   "arch": "amd64"
+  },
+  "61429954-93f8-4eed-a246-3e81eaca00e8": {
+   "status": "done",
+   "title": "Feature update to Microsoft server operating system, version 21H2 (20348.2113)",
+   "build": "20348.2113",
+   "arch": "amd64"
+  },
+  "61a679ee-5f85-4199-867a-a2569c3f03bc": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3754)",
+   "build": "19045.3754",
+   "arch": "x86"
+  },
+  "61bd7906-098c-42ac-8b39-85a6d5b5912c": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 11 Version 22H2 (22621.675)",
+   "build": "22621.675",
+   "arch": "amd64"
+  },
+  "61c4a135-b280-49eb-9120-f88e30d8bc1e": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4046)",
+   "build": "19045.4046",
+   "arch": "amd64"
+  },
+  "62db365d-e438-4827-a79e-33c1fee1ccb4": {
+   "status": "done",
+   "title": "Windows 11 Insider Preview 10.0.22635.4010 (ni_release)",
+   "build": "22635.4010",
+   "arch": "amd64"
+  },
+  "630d819c-1aa3-48e3-9c34-fc2486c8ec3f": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.2965)",
+   "build": "19044.2965",
+   "arch": "x86"
+  },
+  "63365e5b-4b0a-44ec-9dc3-aa5e68abc4a5": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 23H2 (25398.1251)",
+   "build": "25398.1251",
+   "arch": "amd64"
+  },
+  "63a5da4a-8407-4f61-a983-5abfc4a39e05": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4529)",
+   "build": "19045.4529",
+   "arch": "x86"
+  },
+  "64686512-561b-4390-a48a-0470611eeede": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.2792)",
+   "build": "22631.2792",
+   "arch": "amd64"
+  },
+  "64aa3acc-d2d2-4f80-af12-80820c44c14b": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.4391)",
+   "build": "22631.4391",
+   "arch": "amd64"
+  },
+  "64ad5ee4-fa4e-4106-a2e5-c9f1c3eb6e4a": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.5070)",
+   "build": "19045.5070",
+   "arch": "amd64"
+  },
+  "64dc860d-e5ab-4544-952d-690dd50df1dc": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 20H2 (19042.1889)",
+   "build": "19042.1889",
+   "arch": "x86"
+  },
+  "6501e74d-5a5e-40fb-8032-b49aa6d779f4": {
+   "status": "done",
+   "title": "Windows 11 (22000.1880)",
+   "build": "22000.1880",
+   "arch": "amd64"
+  },
+  "6517cd68-5f87-4724-8f77-6225c1d2e06e": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.1766)",
+   "build": "19044.1766",
+   "arch": "x86"
+  },
+  "659d799d-0bff-455b-9cd1-385c8bb86f6c": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": null
+  },
+  "6660c956-c620-4de7-94b4-c11c4f99bc70": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.4291)",
+   "build": "19044.4291",
+   "arch": "amd64"
+  },
+  "6661ce49-e38c-49ac-b4bf-d13779b8eed6": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.2215)",
+   "build": "22621.2215",
+   "arch": "amd64"
+  },
+  "66cfd98d-18e1-48ac-acc6-d59449807354": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3992)",
+   "build": "19045.3992",
+   "arch": "x86"
+  },
+  "673fde7d-af91-4412-9636-a21f5175e69d": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2670)",
+   "build": "19045.2670",
+   "arch": "x86"
+  },
+  "673ff3e5-dbaf-44a0-a3fd-435d12d552bd": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 23H2 (25398.763)",
+   "build": "25398.763",
+   "arch": "amd64"
+  },
+  "688ffe9a-36b5-4b16-992c-edcfe8e9a4f6": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.1928)",
+   "build": "22621.1928",
+   "arch": "amd64"
+  },
+  "68a82dc5-a291-4744-8964-0abb00b9b030": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 22H2 (19045.2130)",
+   "build": "19045.2130",
+   "arch": "amd64"
+  },
+  "695e208e-9240-4766-aac1-1e6b76eb5598": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.3406)",
+   "build": "17763.3406",
+   "arch": "amd64"
+  },
+  "6960a64b-bcbb-4a3c-8854-4bb5d72b4e6d": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H1 (19043.2075)",
+   "build": "19043.2075",
+   "arch": "amd64"
+  },
+  "6966a29a-94f3-4f11-a451-1a2d52c8e37e": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.1192)",
+   "build": "22621.1192",
+   "arch": "amd64"
+  },
+  "6990cf1d-3de8-437b-b220-119e6fca515f": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.3930)",
+   "build": "19044.3930",
+   "arch": "amd64"
+  },
+  "6a01ee15-d373-4df1-85b4-86e44f68af43": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.5073)",
+   "build": "19045.5073",
+   "arch": "x86"
+  },
+  "6a331068-30d4-484b-be3b-1456d9296496": {
+   "status": "done",
+   "title": "Windows 11, version 24H2 (26100.2314)",
+   "build": "26100.2314",
+   "arch": "amd64"
+  },
+  "6a3a8068-916b-443e-b0dd-e3c6def8f2c3": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.607)",
+   "build": "22621.607",
+   "arch": "amd64"
+  },
+  "6a57e66a-cc5d-4684-a35b-6b0a81cdccfa": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4412)",
+   "build": "19045.4412",
+   "arch": "x86"
+  },
+  "6ad755cf-d1ea-4f60-a918-98616ac73860": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 11 (22000.917)",
+   "build": "22000.917",
+   "arch": "amd64"
+  },
+  "6b0e3a35-a126-4176-8602-2f9c515aba3f": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.2965)",
+   "build": "19044.2965",
+   "arch": "amd64"
+  },
+  "6b1d5798-b454-4d18-a53e-78e3a3d5aa03": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.4252)",
+   "build": "17763.4252",
+   "arch": "amd64"
+  },
+  "6b2c7372-e1fb-4c89-8456-902902e5ae7c": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4780)",
+   "build": "19045.4780",
+   "arch": "x86"
+  },
+  "6b46b861-a20c-45c8-be8d-fb3f0ccd0e68": {
+   "status": "done",
+   "title": "Feature update to Microsoft server operating system, version 21H2 (20348.1607)",
+   "build": "20348.1607",
+   "arch": "amd64"
+  },
+  "6b594da3-96b8-409b-ba75-75bf21aaae76": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 11 Version 22H2 (22621.317)",
+   "build": "22621.317",
+   "arch": "amd64"
+  },
+  "6b74eb77-d1b0-41fc-95b1-5b69d3009ef2": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.1766)",
+   "build": "19044.1766",
+   "arch": "amd64"
+  },
+  "6bcce867-cd35-4c42-8329-bfae7d12de83": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.2545)",
+   "build": "19044.2545",
+   "arch": "x86"
+  },
+  "6c003e3a-9ac7-49bf-a823-a548d3864672": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2546)",
+   "build": "19045.2546",
+   "arch": "amd64"
+  },
+  "6c4d3b77-0e39-4067-9063-0c455490f07c": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.5011)",
+   "build": "19044.5011",
+   "arch": "x86"
+  },
+  "6c952690-e413-4f31-b07a-bead1b094dc9": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.2486)",
+   "build": "19044.2486",
+   "arch": "x86"
+  },
+  "6cbc35c1-e1fc-4546-9262-bd60342bb973": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4233)",
+   "build": "19045.4233",
+   "arch": "x86"
+  },
+  "6d014c9e-61a2-431b-a229-bc7ea20518ba": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4593)",
+   "build": "19045.4593",
+   "arch": "amd64"
+  },
+  "6d078ee4-611e-4bc8-aa75-74632f7dcc8d": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.3374) (2)",
+   "build": "22621.3374",
+   "arch": "amd64"
+  },
+  "6d2ee518-0f8c-4a46-96f7-891af7d80dc5": {
+   "status": "done",
+   "title": "Cumulative Update Preview for Windows 11 Version 22H2 (22621.3807)",
+   "build": "22621.3807",
+   "arch": "amd64"
+  },
+  "6d5634b9-cb81-42c5-8b52-cd8911a1721f": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 11 Version 22H2 (22621.169)",
+   "build": "22621.169",
+   "arch": "amd64"
+  },
+  "6d81ad55-1d76-4ec4-8f40-22e63962e048": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 22H2 (20349.2031)",
+   "build": "20349.2031",
+   "arch": "amd64"
+  },
+  "6d91ceb7-7b72-4724-a8e2-273851a171ef": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.1865)",
+   "build": "19044.1865",
+   "arch": "x86"
+  },
+  "6e55d759-d9f7-4975-b7dd-49f98e7b032d": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 23H2 (25398.1085)",
+   "build": "25398.1085",
+   "arch": "amd64"
+  },
+  "6ec6e8c1-684d-4adb-abbe-aee50d434d9c": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.4851)",
+   "build": "17763.4851",
+   "arch": "amd64"
+  },
+  "6ee3be2f-ebaf-4e6d-9e74-a9d37a53bfe8": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4239)",
+   "build": "19045.4239",
+   "arch": "amd64"
+  },
+  "6f2e22a6-7fc7-4f8d-bf47-4c589289c0bb": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": null
+  },
+  "6f5c7066-1c20-4c3e-b710-5c0fde2d8df2": {
+   "status": "done",
+   "title": "Windows 11 (22000.2176)",
+   "build": "22000.2176",
+   "arch": "amd64"
+  },
+  "6f7e2bd3-4526-46be-afe9-a5f8a9b9e9d4": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.1739)",
+   "build": "19044.1739",
+   "arch": "x86"
+  },
+  "6fb29406-3d63-4d77-91c8-f780664a40cb": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 1809 (17763.3653)",
+   "build": "17763.3653",
+   "arch": "x86"
+  },
+  "70713178-6750-4dcd-8aa3-36a77d3fa70d": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.3958)",
+   "build": "22631.3958",
+   "arch": "amd64"
+  },
+  "70a2b03a-f86e-4af6-aea6-a6586f2467ad": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 23H2 (25398.887)",
+   "build": "25398.887",
+   "arch": "amd64"
+  },
+  "70dcf910-342c-4f66-a241-91adf7765925": {
+   "status": "done",
+   "title": "Cumulative Update Preview for Windows 11 Version 22H2 (22621.3951)",
+   "build": "22621.3951",
+   "arch": "amd64"
+  },
+  "70fec5a1-1f6b-4432-81f2-bbbad20f956a": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.1343)",
+   "build": "22621.1343",
+   "arch": "amd64"
+  },
+  "72063df2-4506-4410-90d4-a7f9c4920518": {
+   "status": "done",
+   "title": "Cumulative Update Preview for Windows 11 Version 24H2 (26100.1000)",
+   "build": "26100.1000",
+   "arch": "amd64"
+  },
+  "7271d1c0-ee4c-421f-94e0-3e6f34fefe3c": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": null
+  },
+  "729286f3-1382-4f8f-891f-db82f03c6267": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.4499)",
+   "build": "17763.4499",
+   "arch": "x86"
+  },
+  "72d7fcbe-993a-42f8-a953-eb9742b02b65": {
+   "status": "done",
+   "title": "Windows 11 (22000.1041)",
+   "build": "22000.1041",
+   "arch": "amd64"
+  },
+  "73275c4f-b96a-4195-89e0-cda78aeb6a52": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.819)",
+   "build": "22621.819",
+   "arch": "amd64"
+  },
+  "735626fa-b40b-4b54-a241-1422c3145ea5": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.2546)",
+   "build": "19044.2546",
+   "arch": "x86"
+  },
+  "7376c94d-75d4-4475-9f2e-a5f6384ee2f4": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": null
+  },
+  "738ac477-d93f-486e-93b7-10bea9d7fafd": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.1741)",
+   "build": "19044.1741",
+   "arch": "amd64"
+  },
+  "738ea25b-cbc3-4633-8e5f-7ce15a1ab826": {
+   "status": "done",
+   "title": "Windows 11 Insider Preview 10.0.22635.4225 (ni_release)",
+   "build": "22635.4225",
+   "arch": "amd64"
+  },
+  "74452e7d-4c4b-4e32-a165-98e8d82de15d": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 22H2 (20349.2340)",
+   "build": "20349.2340",
+   "arch": "amd64"
+  },
+  "74db1138-e0bb-4698-aed9-ec4ea015cee8": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.5194)",
+   "build": "19045.5194",
+   "arch": "amd64"
+  },
+  "74ec98b8-3f74-475d-91e3-8058a3c8efbf": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4598)",
+   "build": "19045.4598",
+   "arch": "x86"
+  },
+  "74ee411f-928d-4f28-bca9-c63fd69f60c0": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2545)",
+   "build": "19045.2545",
+   "arch": "x86"
+  },
+  "75681b8b-e7cb-469a-8ed6-9dcb5b010d91": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 11 (22000.829)",
+   "build": "22000.829",
+   "arch": "amd64"
+  },
+  "75eaff2b-d1fc-4551-84d7-356ea7f2d237": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H1 (19043.1766)",
+   "build": "19043.1766",
+   "arch": "amd64"
+  },
+  "75f77afa-ab5c-489f-bc71-ad05c26bd8a3": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.1926)",
+   "build": "22621.1926",
+   "arch": "amd64"
+  },
+  "7635931b-6834-440e-8d9b-84ea36d3bfee": {
+   "status": "done",
+   "title": "Windows 11, version 24H2 (26100.2240)",
+   "build": "26100.2240",
+   "arch": "amd64"
+  },
+  "7658f0b3-03b0-4646-94ed-9b797a8ad9fa": {
+   "status": "done",
+   "title": "Windows 11, version 24H2 (26100.500)",
+   "build": "26100.500",
+   "arch": "amd64"
+  },
+  "7718c0b4-9ec3-4d2d-b0d3-8741c22d65ac": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3996)",
+   "build": "19045.3996",
+   "arch": "x86"
+  },
+  "772fc069-f7b5-46de-b138-fedb1613b1f0": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": null
+  },
+  "775f078d-2631-48f6-b911-fda1de943e38": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.1889)",
+   "build": "19044.1889",
+   "arch": "x86"
+  },
+  "77739130-0195-44b1-96d0-570e4c40ec11": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": null
+  },
+  "77e24e81-9721-42c0-9c3a-dfe3aae32c6c": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H1 (19043.1865)",
+   "build": "19043.1865",
+   "arch": "x86"
+  },
+  "77f34146-e8fc-40e8-a76e-f007ca365179": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.2787)",
+   "build": "19044.2787",
+   "arch": "x86"
+  },
+  "7801bd92-1ba5-4027-82f3-382778a6ac03": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 20H2 (19042.2364)",
+   "build": "19042.2364",
+   "arch": "x86"
+  },
+  "783c1b3a-fffc-4de5-a5f2-9c92463fcb47": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H1 (19043.2311)",
+   "build": "19043.2311",
+   "arch": "amd64"
+  },
+  "785ee69a-2c0b-4d97-9e3e-4668b90c6c15": {
+   "status": "done",
+   "title": "Windows 11 (22000.2600)",
+   "build": "22000.2600",
+   "arch": "amd64"
+  },
+  "786c3fdf-ddf7-45b6-9e6d-ecf8adfa2a06": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.1889)",
+   "build": "19045.1889",
+   "arch": "amd64"
+  },
+  "787f94a1-0c6f-4df3-a964-ec5cf0ace004": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.3086)",
+   "build": "19044.3086",
+   "arch": "amd64"
+  },
+  "78b19799-9d4b-4abc-95eb-6a910e970990": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 20H2 (19042.2788)",
+   "build": "19042.2788",
+   "arch": "x86"
+  },
+  "78b758c9-068e-4dd1-b6c0-f484706f91d2": {
+   "status": "done",
+   "title": "Feature update to Microsoft server operating system, version 21H2 (20348.768)",
+   "build": "20348.768",
+   "arch": "amd64"
+  },
+  "797be41b-d1e5-4f6e-8155-1189cd239208": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2546)",
+   "build": "19045.2546",
+   "arch": "x86"
+  },
+  "79a1da43-2a79-4817-92d4-8f7adbb5601c": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 22H2 (20349.1726)",
+   "build": "20349.1726",
+   "arch": "amd64"
+  },
+  "7a25f043-fbfb-43f1-b1ef-dee8694dd06a": {
+   "status": "done",
+   "title": "Windows 11, version 24H2 (26100.2033)",
+   "build": "26100.2033",
+   "arch": "amd64"
+  },
+  "7a6756b3-41a4-442a-a599-3a2214ee3fd7": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.525)",
+   "build": "22621.525",
+   "arch": "amd64"
+  },
+  "7a87ae9d-1431-4eeb-a010-e7e3260058ad": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.3951)",
+   "build": "22631.3951",
+   "arch": "amd64"
+  },
+  "7ab4fc06-757e-4b13-897e-7f76bba9e469": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.5198)",
+   "build": "19045.5198",
+   "arch": "amd64"
+  },
+  "7aba5cbb-7c86-4e38-bba9-c539f1b54340": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 22H2 (20349.1487)",
+   "build": "20349.1487",
+   "arch": "amd64"
+  },
+  "7b76d7c8-0ea8-445c-968b-dfe2552a419c": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.316)",
+   "build": "17763.316",
+   "arch": "amd64"
+  },
+  "7b7b462e-4fd8-48ac-8926-3e9e3206caad": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.5820)",
+   "build": "17763.5820",
+   "arch": "x86"
+  },
+  "7b7d02e2-6cef-4649-a24c-3f176d3a5cde": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 21H2 (20348.1129)",
+   "build": "20348.1129",
+   "arch": "amd64"
+  },
+  "7b878347-a1f0-4acc-b65a-f288339788fc": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.2546)",
+   "build": "19044.2546",
+   "arch": "amd64"
+  },
+  "7ba8ab7b-8c58-49e3-8cd4-85f80951b3fb": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.5011)",
+   "build": "19045.5011",
+   "arch": "x86"
+  },
+  "7c267c63-a42f-4c37-b2e1-ba9a3ff61ce7": {
+   "status": "done",
+   "title": "Windows 11 (22000.795)",
+   "build": "22000.795",
+   "arch": "amd64"
+  },
+  "7c427289-259b-4d18-9450-e17c3de63bc9": {
+   "status": "done",
+   "title": "Windows Server Insider Preview 26227.5000 (ge_prerelease)",
+   "build": "26227.5000",
+   "arch": "amd64"
+  },
+  "7c5f4dc3-c475-4f27-803e-6b28433af02d": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 11 Version 22H2 (22621.898)",
+   "build": "22621.898",
+   "arch": "amd64"
+  },
+  "7c62499d-6d61-41d2-b54f-985badc06e28": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.4169)",
+   "build": "22621.4169",
+   "arch": "amd64"
+  },
+  "7c7aac60-93b5-4733-b7ee-d6fd13c9bce6": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.457)",
+   "build": "22621.457",
+   "arch": "amd64"
+  },
+  "7d08d67e-d6ef-42a2-ac1e-3c60e4f34dcd": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3636)",
+   "build": "19045.3636",
+   "arch": "x86"
+  },
+  "7d32d622-b517-48e2-b727-169fead48e03": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H1 (19043.2192)",
+   "build": "19043.2192",
+   "arch": "amd64"
+  },
+  "7d458531-ea04-44b3-8c0b-9a97fa81b439": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H1 (19043.2006)",
+   "build": "19043.2006",
+   "arch": "x86"
+  },
+  "7d533c97-58ec-4493-8841-207aab36ed08": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.2130)",
+   "build": "19044.2130",
+   "arch": "x86"
+  },
+  "7d576d08-2e3a-4984-9ed0-0ccb7d2ee4f9": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 22H2 (19045.2364)",
+   "build": "19045.2364",
+   "arch": "amd64"
+  },
+  "7d5c9bef-8711-48f5-a58c-47bbda25d509": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2728)",
+   "build": "19045.2728",
+   "arch": "amd64"
+  },
+  "7db0a8d0-e2b9-48c8-8d7b-e34e431f0954": {
+   "status": "done",
+   "title": "Windows 11, version 24H2 (26100.1586)",
+   "build": "26100.1586",
+   "arch": "amd64"
+  },
+  "7dbe8262-895a-46e8-8347-8eb3af6cd911": {
+   "status": "done",
+   "title": "Feature update to Microsoft server operating system, version 21H2 (20348.1787)",
+   "build": "20348.1787",
+   "arch": "amd64"
+  },
+  "7e33f1ba-a017-4656-a354-4142565b0a3c": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 22H2 (20349.2762)",
+   "build": "20349.2762",
+   "arch": "amd64"
+  },
+  "7e84f4b9-bcbd-45da-a19c-dbe2a5c52500": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 22H2 (20349.2700)",
+   "build": "20349.2700",
+   "arch": "amd64"
+  },
+  "7e8e5b90-a2cf-4d5a-95e0-475de778450b": {
+   "status": "done",
+   "title": "Windows 11 (22000.2899)",
+   "build": "22000.2899",
+   "arch": "amd64"
+  },
+  "7eb972cf-1897-4ee1-9b75-09fb001a7be4": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.3007)",
+   "build": "22621.3007",
+   "arch": "amd64"
+  },
+  "7ecae58a-b384-44d8-985d-4877e4bd40b2": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.5820)",
+   "build": "17763.5820",
+   "arch": "amd64"
+  },
+  "7f2d4132-3f7f-45b2-b07c-228bc7807799": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.4974)",
+   "build": "17763.4974",
+   "arch": "x86"
+  },
+  "7f5f6ff3-0d2e-46bc-9e1f-1131be2029e5": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 11 Version 22H2 (22621.1192)",
+   "build": "22621.1192",
+   "arch": "amd64"
+  },
+  "7fde7fc9-df24-4d5e-8215-77f9193a474a": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 21H2 (20348.1607)",
+   "build": "20348.1607",
+   "arch": "amd64"
+  },
+  "7fdfe51e-a542-4f65-a299-d833cf07d69e": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.3287)",
+   "build": "17763.3287",
+   "arch": "amd64"
+  },
+  "8005dbc9-b3b7-4198-b6cc-351959d136e1": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3757)",
+   "build": "19045.3757",
+   "arch": "amd64"
+  },
+  "801dc7e6-7afb-4854-86b4-967b729182f4": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 1809 (17763.3772)",
+   "build": "17763.3772",
+   "arch": "amd64"
+  },
+  "80380bee-6c60-455b-ad20-d995a61addbb": {
+   "status": "done",
+   "title": "Windows 11 Insider Preview 10.0.22635.4005 (ni_release)",
+   "build": "22635.4005",
+   "arch": "amd64"
+  },
+  "805f21df-317f-467b-911a-3e3cb52e3593": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 21H1 (19043.2194)",
+   "build": "19043.2194",
+   "arch": "x86"
+  },
+  "806ad015-35bb-4e96-bd8b-84f0b68f6fbf": {
+   "status": "done",
+   "title": "Windows 11, version 24H2 (26100.793)",
+   "build": "26100.793",
+   "arch": "amd64"
+  },
+  "80a3a6ec-3a33-432d-bb2c-19beae74e58e": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.5247)",
+   "build": "19044.5247",
+   "arch": "x86"
+  },
+  "81795854-b92a-4d37-9b92-9418a155d89f": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 22H2 (20349.2655)",
+   "build": "20349.2655",
+   "arch": "amd64"
+  },
+  "8185e362-975f-4658-9d20-79950d4750ac": {
+   "status": "done",
+   "title": "Windows 11 (22000.1574)",
+   "build": "22000.1574",
+   "arch": "amd64"
+  },
+  "81d564e8-6a20-4668-87c3-9604cbf0c12c": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.5576)",
+   "build": "17763.5576",
+   "arch": "amd64"
+  },
+  "82140c90-834f-4321-8875-6018522ae382": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.608)",
+   "build": "22621.608",
+   "arch": "amd64"
+  },
+  "82cec21a-7169-49c4-8f5f-9c76b29c36ed": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.2787)",
+   "build": "19044.2787",
+   "arch": "amd64"
+  },
+  "82ced77e-a1a3-4afd-b55c-845ef330b039": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 22H2 (20349.2159)",
+   "build": "20349.2159",
+   "arch": "amd64"
+  },
+  "831ecd2c-396c-48e7-81f2-3b42f544dcd7": {
+   "status": "done",
+   "title": "Cumulative Update Preview for Windows 11 Version 24H2 (26100.1591)",
+   "build": "26100.1591",
+   "arch": "amd64"
+  },
+  "83272877-8f42-4cf1-bbd5-d09388ba51de": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 11 Version 22H2 (22621.521)",
+   "build": "22621.521",
+   "arch": "amd64"
+  },
+  "83447810-a317-46de-bff9-29664fc8c96f": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 11 (22000.1515)",
+   "build": "22000.1515",
+   "arch": "amd64"
+  },
+  "84269bb5-c543-468a-bf38-5f974f8b4c8c": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.4645)",
+   "build": "17763.4645",
+   "arch": "amd64"
+  },
+  "84627731-bce0-4fd7-84cc-6ae19fa1b79a": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.4851)",
+   "build": "17763.4851",
+   "arch": "x86"
+  },
+  "84634514-da62-4166-b397-555f566f13c2": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4116)",
+   "build": "19045.4116",
+   "arch": "x86"
+  },
+  "84726e40-a917-41e5-9cde-cb98ee4667ec": {
+   "status": "done",
+   "title": "Windows 11 (22000.1335)",
+   "build": "22000.1335",
+   "arch": "amd64"
+  },
+  "848a952a-f77e-49c2-95b2-b5a36c3e8cc2": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 20H2 (19042.1766)",
+   "build": "19042.1766",
+   "arch": "amd64"
+  },
+  "84fdaa98-eb96-464f-9eb1-827a73fcc932": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3633)",
+   "build": "19045.3633",
+   "arch": "x86"
+  },
+  "850173b3-c30d-449a-8478-cc07fd3f62ea": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.2787)",
+   "build": "22631.2787",
+   "arch": "amd64"
+  },
+  "8544f2eb-6d1f-4516-841b-074c70cf854c": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2604)",
+   "build": "19045.2604",
+   "arch": "x86"
+  },
+  "854d29b2-edbc-4959-a3e2-8a61f0900a7c": {
+   "status": "done",
+   "title": "Feature update to Microsoft server operating system, version 21H2 (20348.2322)",
+   "build": "20348.2322",
+   "arch": "amd64"
+  },
+  "861425ff-a6f7-415d-8166-7763f98e658c": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.1739)",
+   "build": "19044.1739",
+   "arch": "amd64"
+  },
+  "869e4dc6-a459-4e66-ac91-5df3f06ee526": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2006)",
+   "build": "19045.2006",
+   "arch": "x86"
+  },
+  "86dc5607-4f99-4b07-8601-dd5687512ff3": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 21H2 (20348.1850)",
+   "build": "20348.1850",
+   "arch": "amd64"
+  },
+  "8717a3fa-98ac-4ca8-b87d-df92e1008a63": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4780)",
+   "build": "19045.4780",
+   "arch": "amd64"
+  },
+  "8720e797-7c02-442c-bb3c-a3110089b2b3": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.4529)",
+   "build": "19044.4529",
+   "arch": "x86"
+  },
+  "8735bcf9-1cc4-44ab-88ea-8f71df13c5dd": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.4170)",
+   "build": "19044.4170",
+   "arch": "x86"
+  },
+  "877caeca-6240-43ba-bb31-759d631fbce3": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.5696)",
+   "build": "17763.5696",
+   "arch": "x86"
+  },
+  "87cc3574-66ef-482a-9edb-b40e8cb11e2f": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.6293)",
+   "build": "17763.6293",
+   "arch": "x86"
+  },
+  "87fc0e98-760c-4c72-95b6-a9b04ecf0d9c": {
+   "status": "done",
+   "title": "Windows 11 Insider Preview 27729.1000 (rs_prerelease)",
+   "build": "27729.1000",
+   "arch": "amd64"
+  },
+  "88285020-3ed0-4f3f-90c7-d2fa3581bd7f": {
+   "status": "done",
+   "title": "Windows Server 2025 (26100.2033)",
+   "build": "26100.2033",
+   "arch": "amd64"
+  },
+  "88d620e0-f66f-489f-8b8b-b41279f8684e": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.3448)",
+   "build": "19044.3448",
+   "arch": "amd64"
+  },
+  "88d80f90-a006-4f14-99d0-2cd4f6530874": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.3447)",
+   "build": "22621.3447",
+   "arch": "amd64"
+  },
+  "8905edce-8eb6-44ac-ba28-9230ccfe5dd4": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2130)",
+   "build": "19045.2130",
+   "arch": "amd64"
+  },
+  "89168148-26c6-475f-a67a-3475225b3041": {
+   "status": "done",
+   "title": "Feature update to Microsoft server operating system, version 21H2 (20348.2655)",
+   "build": "20348.2655",
+   "arch": "amd64"
+  },
+  "89b5408e-6bab-4869-94d2-fd4807e785e0": {
+   "status": "done",
+   "title": "Windows 11 Insider Preview 10.0.26120.1252 (ge_release_svc_betaflt_upr)",
+   "build": "26120.1252",
+   "arch": "amd64"
+  },
+  "89da9278-1ece-4c82-b791-d624d229924d": {
+   "status": "done",
+   "title": "Cumulative Update Preview for Windows 11 Version 24H2 (26100.1882)",
+   "build": "26100.1882",
+   "arch": "amd64"
+  },
+  "89db66ac-6e28-41e7-8d7a-0dc8c9bf56a4": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.1949)",
+   "build": "19044.1949",
+   "arch": "amd64"
+  },
+  "89dbec84-376f-4cc5-96fb-ad7f61b8c8f1": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.4131)",
+   "build": "17763.4131",
+   "arch": "x86"
+  },
+  "89fd4acb-02f1-444d-9638-bb71926a308f": {
+   "status": "done",
+   "title": "Windows 11 (22000.918)",
+   "build": "22000.918",
+   "arch": "amd64"
+  },
+  "8a010641-3810-4c1e-80db-d35e89fb807c": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.3287)",
+   "build": "17763.3287",
+   "arch": "x86"
+  },
+  "8a2c5e4b-0040-4cdf-b8c3-131b809ecf01": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 20H2 (19042.2728)",
+   "build": "19042.2728",
+   "arch": "x86"
+  },
+  "8a3b3a11-0794-4193-a3b2-c298c8fe4057": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.2604)",
+   "build": "19044.2604",
+   "arch": "x86"
+  },
+  "8a51b3d1-5fa8-4667-a36e-7afe9fd19186": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.1949)",
+   "build": "19044.1949",
+   "arch": "x86"
+  },
+  "8a883ae4-4260-4972-b8ec-17b0f311acdc": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 23H2 (25398.1128)",
+   "build": "25398.1128",
+   "arch": "amd64"
+  },
+  "8abd8c7c-5699-4604-a02c-dc7f5632e53d": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": null
+  },
+  "8afa0828-7ad5-406f-b1e8-b4a5320ff734": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": null
+  },
+  "8b2844ef-cb78-4181-a203-381baa20a7c8": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2545)",
+   "build": "19045.2545",
+   "arch": "amd64"
+  },
+  "8b6d5a9c-01fe-4d80-a3f3-4c761eb01994": {
+   "status": "done",
+   "title": "Windows Server, version 23H2 (25398.1085)",
+   "build": "25398.1085",
+   "arch": "amd64"
+  },
+  "8bb7f81c-c236-456c-92ca-1f70baf26f35": {
+   "status": "done",
+   "title": "Windows 11, version 24H2 (26100.1882)",
+   "build": "26100.1882",
+   "arch": "amd64"
+  },
+  "8bb893c8-6031-4758-b250-c0cada4b3727": {
+   "status": "done",
+   "title": "Windows 11 (22000.1279)",
+   "build": "22000.1279",
+   "arch": "amd64"
+  },
+  "8d09c516-e2b6-4deb-81b0-ef7de0acfa8b": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.3803)",
+   "build": "19044.3803",
+   "arch": "x86"
+  },
+  "8d75ee41-8349-4d3c-a688-c618bfea5e8a": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 23H2 (25398.1009)",
+   "build": "25398.1009",
+   "arch": "amd64"
+  },
+  "8d8763f7-09e7-497d-813e-10fa27e48f92": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.3693)",
+   "build": "19044.3693",
+   "arch": "x86"
+  },
+  "8d8b5a1c-36e8-476b-98ac-12847ff89a49": {
+   "status": "done",
+   "title": "Windows 11 (22000.708)",
+   "build": "22000.708",
+   "arch": "amd64"
+  },
+  "8dda76ff-194a-4a47-b1e7-c303136bf54e": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.4169)",
+   "build": "22631.4169",
+   "arch": "amd64"
+  },
+  "8e25946e-38b8-4323-9e28-575f445fb6b6": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4713)",
+   "build": "19045.4713",
+   "arch": "amd64"
+  },
+  "8e409263-45b4-438d-ad01-6e9674ab032a": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.521) (2)",
+   "build": "22621.521",
+   "arch": "amd64"
+  },
+  "8e881618-6ad9-4a30-b1b5-7d5949018436": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3155)",
+   "build": "19045.3155",
+   "arch": "x86"
+  },
+  "8e99fe48-06d3-4f0a-9a09-a849f7f2551c": {
+   "status": "done",
+   "title": "Windows 11 Insider Preview 10.0.26120.2130 (ge_release_upr)",
+   "build": "26120.2130",
+   "arch": "amd64"
+  },
+  "8ed7ea8d-2c38-4ce5-a1ea-ab786275ce06": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3992)",
+   "build": "19045.3992",
+   "arch": "amd64"
+  },
+  "8ee57f7e-dd57-44fb-a623-6502efb0cf18": {
+   "status": "done",
+   "title": "Windows 11 (22000.978)",
+   "build": "22000.978",
+   "arch": "amd64"
+  },
+  "8ef9bf34-c20d-4f5d-8894-9ed551d34cea": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.2861)",
+   "build": "22621.2861",
+   "arch": "amd64"
+  },
+  "8f04245b-6d08-476c-9d05-0a446959b8b4": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 20H2 (19042.1826)",
+   "build": "19042.1826",
+   "arch": "amd64"
+  },
+  "8f378cec-5123-4340-aca9-e94c446ed27d": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.4046)",
+   "build": "19044.4046",
+   "arch": "amd64"
+  },
+  "8f39a272-4f37-4f3e-b191-f91c08b50807": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.1826)",
+   "build": "19044.1826",
+   "arch": "amd64"
+  },
+  "8f81617e-552c-41f5-825d-2b898e8deeb1": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.2192)",
+   "build": "19044.2192",
+   "arch": "x86"
+  },
+  "8f87f93a-c576-4a3b-acc5-c8bbbe9c6f98": {
+   "status": "done",
+   "title": "Windows 11 (22000.1281)",
+   "build": "22000.1281",
+   "arch": "amd64"
+  },
+  "8f9662d3-d67d-4133-b87a-b1e37557c118": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.3770)",
+   "build": "17763.3770",
+   "arch": "x86"
+  },
+  "8feed3b3-9036-4cbf-be32-b0c88f764e37": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.3672)",
+   "build": "22631.3672",
+   "arch": "amd64"
+  },
+  "9005d4cd-fce9-466b-b98e-a67414acebd8": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.6659)",
+   "build": "17763.6659",
+   "arch": "amd64"
+  },
+  "900b01d7-0792-4f43-9dce-d034826fbb1c": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 22H2 (20349.1129)",
+   "build": "20349.1129",
+   "arch": "amd64"
+  },
+  "902f1ab7-5ceb-4c2c-a46a-3970faf401e3": {
+   "status": "done",
+   "title": "Windows 11 Insider Preview 10.0.22635.4076 (ni_release)",
+   "build": "22635.4076",
+   "arch": "amd64"
+  },
+  "907109b4-a6ea-4d67-8ee6-2a2710c46b5b": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.1194)",
+   "build": "22621.1194",
+   "arch": "amd64"
+  },
+  "90ad25f6-1ea3-4452-bb91-babad6f61969": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3155)",
+   "build": "19045.3155",
+   "arch": "amd64"
+  },
+  "91f922a2-939e-4731-87ff-07323486fa8f": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2486)",
+   "build": "19045.2486",
+   "arch": "amd64"
+  },
+  "927e7c93-ddba-426b-8912-34616f6c8ddd": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3930)",
+   "build": "19045.3930",
+   "arch": "x86"
+  },
+  "92ec64ac-7c04-4309-b3cc-50e40cbcb609": {
+   "status": "done",
+   "title": "Windows 11, version 24H2 (26100.1457)",
+   "build": "26100.1457",
+   "arch": "amd64"
+  },
+  "92f2ddc1-89d5-47c4-a45e-24ba05c544fd": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.3650)",
+   "build": "17763.3650",
+   "arch": "amd64"
+  },
+  "9310ebcc-79ee-40aa-ae4a-4da849dd4684": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 22H2 (20349.859)",
+   "build": "20349.859",
+   "arch": "amd64"
+  },
+  "94193002-577e-467a-ac19-9c30eaba1523": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2075)",
+   "build": "19045.2075",
+   "arch": "amd64"
+  },
+  "9456da32-4542-4b66-9bcf-b9369499e018": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 22H2 (20349.2322)",
+   "build": "20349.2322",
+   "arch": "amd64"
+  },
+  "9485af52-245e-4136-ab4e-2908d3cf4b34": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 22H2 (19045.2846)",
+   "build": "19045.2846",
+   "arch": "amd64"
+  },
+  "953f39d1-3e91-4270-befd-e7957b8590ac": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4957)",
+   "build": "19045.4957",
+   "arch": "amd64"
+  },
+  "957cd04e-4e29-48f2-a582-710867c22b4a": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.2788)",
+   "build": "19044.2788",
+   "arch": "amd64"
+  },
+  "96a761d2-db68-4faa-b3e3-2336987a50e8": {
+   "status": "done",
+   "title": "Windows 11 (22000.2001)",
+   "build": "22000.2001",
+   "arch": "amd64"
+  },
+  "96aec8fb-f2ae-48ea-9f4a-8279a882da97": {
+   "status": "done",
+   "title": "Windows 11 (22000.1639)",
+   "build": "22000.1639",
+   "arch": "amd64"
+  },
+  "96af3377-a654-43f6-8af2-0d12c838fbaa": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 20H2 (19042.2604)",
+   "build": "19042.2604",
+   "arch": "x86"
+  },
+  "96ddb213-f0eb-444c-a053-33249dde6410": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.3371)",
+   "build": "22631.3371",
+   "arch": "amd64"
+  },
+  "97666913-1b77-41d4-9ebf-916d140b18e6": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.6414)",
+   "build": "17763.6414",
+   "arch": "x86"
+  },
+  "977fe79e-3f7a-4f29-bbc9-3b43782b3ba6": {
+   "status": "done",
+   "title": "Feature update to Microsoft server operating system, version 21H2 (20348.887)",
+   "build": "20348.887",
+   "arch": "amd64"
+  },
+  "97c9e2f0-85cc-4232-9fb0-6d9b018d08e2": {
+   "status": "done",
+   "title": "Windows 11 (22000.2360)",
+   "build": "22000.2360",
+   "arch": "amd64"
+  },
+  "97d687d2-eca1-4572-bcb0-c5935e493f10": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H1 (19043.1806)",
+   "build": "19043.1806",
+   "arch": "x86"
+  },
+  "997706be-9c66-47e9-9824-e3fd0fcf4b59": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.963)",
+   "build": "22621.963",
+   "arch": "amd64"
+  },
+  "99b358eb-2d96-4230-ab36-53e43e2075b4": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 22H2 (19045.1889)",
+   "build": "19045.1889",
+   "arch": "amd64"
+  },
+  "9acfd607-e21d-4260-a2ca-2b992e8a98be": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H1 (19043.2130)",
+   "build": "19043.2130",
+   "arch": "amd64"
+  },
+  "9af2f1d7-e9bd-408f-849a-3cbc6700b196": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 22H2 (19045.1889)",
+   "build": "19045.1889",
+   "arch": "x86"
+  },
+  "9af79884-0a33-44ce-b77d-ae1adc2146cc": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.4645)",
+   "build": "17763.4645",
+   "arch": "x86"
+  },
+  "9b61e35d-fe63-42d5-ae41-42f04bef42e0": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 20H2 (19042.2130)",
+   "build": "19042.2130",
+   "arch": "x86"
+  },
+  "9c6443e2-4652-4d3d-b0b6-34895deca5a6": {
+   "status": "done",
+   "title": "Windows 11 Insider Preview 10.0.26120.1930 (ge_release_upr)",
+   "build": "26120.1930",
+   "arch": "amd64"
+  },
+  "9c97ebe6-2486-404b-bf10-f51d51bb0f92": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.4112)",
+   "build": "22621.4112",
+   "arch": "amd64"
+  },
+  "9c9aaa4d-3424-4334-aa1c-86b82f95b7ba": {
+   "status": "done",
+   "title": "Windows 11 Insider Preview 27718.1000 (rs_prerelease)",
+   "build": "27718.1000",
+   "arch": "amd64"
+  },
+  "9d2720a7-93a8-4af7-9f1a-11d4ebf6c030": {
+   "status": "done",
+   "title": "Feature update to Microsoft server operating system, version 21H2 (20348.1487)",
+   "build": "20348.1487",
+   "arch": "amd64"
+  },
+  "9d469676-9723-4677-9cf3-e30a1fb0fe5e": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": null
+  },
+  "9d738567-53af-4783-9301-264ec8327ab1": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 22H2 (20349.1668)",
+   "build": "20349.1668",
+   "arch": "amd64"
+  },
+  "9d940507-58d4-4d0a-b537-4697b96699a1": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 20H2 (19042.2846)",
+   "build": "19042.2846",
+   "arch": "x86"
+  },
+  "9ddafa1a-261c-4a97-9449-c9c603a325a0": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.2192)",
+   "build": "19044.2192",
+   "arch": "amd64"
+  },
+  "9e38e211-e4ba-40ae-a3c7-e43e97f4bb4a": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": null
+  },
+  "9e4fba0d-b944-48f0-b053-287944332257": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.3880)",
+   "build": "22631.3880",
+   "arch": "amd64"
+  },
+  "9fe43963-d75f-41e3-84c9-6080d35e78a7": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 11 Version 22H2 (22621.382)",
+   "build": "22621.382",
+   "arch": "amd64"
+  },
+  "a0104ee8-62f8-4c2c-b181-997b74d0e2a3": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.5122)",
+   "build": "17763.5122",
+   "arch": "x86"
+  },
+  "a0306c97-531a-41ed-94e8-681ad12c387b": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H1 (19043.1949)",
+   "build": "19043.1949",
+   "arch": "amd64"
+  },
+  "a0c5398a-ac9f-4f72-8395-961800c2703f": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.1848)",
+   "build": "22621.1848",
+   "arch": "amd64"
+  },
+  "a0f51b86-2ddf-40a9-8df4-870619b2ff1d": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.4529)",
+   "build": "19044.4529",
+   "arch": "amd64"
+  },
+  "a15c6186-3840-4a3e-a37e-68da963fbdd0": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.2506)",
+   "build": "22621.2506",
+   "arch": "amd64"
+  },
+  "a1962e61-a626-4242-84c0-3f0c86b5693e": {
+   "status": "done",
+   "title": "Windows 11 (22000.1757)",
+   "build": "22000.1757",
+   "arch": "amd64"
+  },
+  "a1c713dd-42d5-4474-9eff-bb68ed8fea43": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.1806)",
+   "build": "19044.1806",
+   "arch": "x86"
+  },
+  "a1d796f1-7743-4b28-8f0f-bed043709d76": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 21H2 (19044.3208)",
+   "build": "19044.3208",
+   "arch": "amd64"
+  },
+  "a1f81ff0-532f-43a8-82f4-35aad637ec7c": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 22H2 (20349.2582)",
+   "build": "20349.2582",
+   "arch": "amd64"
+  },
+  "a25c1e53-e5f6-4620-95d9-3d22059ed916": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809OB (17763.5830)",
+   "build": "17763.5830",
+   "arch": "amd64"
+  },
+  "a2659b42-5aa4-45d7-87b7-8d3554c851c8": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 20H2 (19042.2006)",
+   "build": "19042.2006",
+   "arch": "x86"
+  },
+  "a341031f-9835-4c4b-bcad-b5d7eb7ef76d": {
+   "status": "done",
+   "title": "Feature update to Microsoft server operating system, version 21H2 (20348.2527)",
+   "build": "20348.2527",
+   "arch": "amd64"
+  },
+  "a3892b7a-7f8b-4158-820d-3f2ab3ba9330": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.3527)",
+   "build": "22621.3527",
+   "arch": "amd64"
+  },
+  "a40b70ac-2763-4b61-88c0-ccac4f61d38a": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.5196)",
+   "build": "19045.5196",
+   "arch": "x86"
+  },
+  "a4870085-021a-4149-ba02-d53f9ec5fb3b": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.3887)",
+   "build": "17763.3887",
+   "arch": "x86"
+  },
+  "a495c8ac-f626-4839-9c4f-231eb4ad5ce2": {
+   "status": "done",
+   "title": "Windows 11 Insider Preview 10.0.26120.2122 (ge_release_upr)",
+   "build": "26120.2122",
+   "arch": "amd64"
+  },
+  "a4d404fb-086f-4220-a2b8-d655fd92a2e5": {
+   "status": "done",
+   "title": "Windows 11 Insider Preview 10.0.22635.3858 (ni_release)",
+   "build": "22635.3858",
+   "arch": "amd64"
+  },
+  "a4da2b41-0ac3-4987-9b07-30c19c5d594f": {
+   "status": "done",
+   "title": "Windows 11, version 24H2 (26100.2152)",
+   "build": "26100.2152",
+   "arch": "amd64"
+  },
+  "a4fce3c2-ebe2-4643-850f-58ab03fe9b64": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.3448)",
+   "build": "19044.3448",
+   "arch": "x86"
+  },
+  "a5e17efd-b8e8-44ec-800c-257ad96aa3a0": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3758)",
+   "build": "19045.3758",
+   "arch": "x86"
+  },
+  "a68ff2b2-ab4c-46d3-bbe9-4eadfba9ea2f": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.5936)",
+   "build": "17763.5936",
+   "arch": "amd64"
+  },
+  "a6ba652c-1bd7-4a85-8751-c877cfb64535": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H1 (19043.2364)",
+   "build": "19043.2364",
+   "arch": "x86"
+  },
+  "a6c7fcec-6729-4c57-a0f3-16726ede16af": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.4131)",
+   "build": "17763.4131",
+   "arch": "amd64"
+  },
+  "a6e58c9a-8d60-4851-a5c9-b9f4ecb98ddb": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 21H2 (19044.2194)",
+   "build": "19044.2194",
+   "arch": "amd64"
+  },
+  "a6f23037-48e3-4aa1-beac-f05d8e57e21f": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H1 (19043.1739)",
+   "build": "19043.1739",
+   "arch": "amd64"
+  },
+  "a71c6e28-09e3-46e5-9466-a9265da6d02e": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 21H2 (19044.2194)",
+   "build": "19044.2194",
+   "arch": "x86"
+  },
+  "a7b56c22-861f-48c1-9684-d1fe70b2b22a": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.2006)",
+   "build": "19044.2006",
+   "arch": "x86"
+  },
+  "a7caff05-ff36-48ed-9901-96c44e582f72": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": null
+  },
+  "a7ec7fc5-f6fc-4096-81c4-2815ac97858a": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.382)",
+   "build": "22621.382",
+   "arch": "amd64"
+  },
+  "a7f02b38-9da4-4d84-9f83-13226e6cb452": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H1 (19043.1826)",
+   "build": "19043.1826",
+   "arch": "amd64"
+  },
+  "a8198661-827d-4c74-9c8f-c70b7f8cd025": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.2506)",
+   "build": "22631.2506",
+   "arch": "amd64"
+  },
+  "a88b46d4-3d62-4497-9d61-a4f634f72ffb": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H1 (19043.1741)",
+   "build": "19043.1741",
+   "arch": "x86"
+  },
+  "a8eaeb9e-6de2-454c-8022-5b3fb5c8fce8": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.2075)",
+   "build": "19044.2075",
+   "arch": "amd64"
+  },
+  "a9334fec-5900-48d6-852b-7536e61148cc": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3448)",
+   "build": "19045.3448",
+   "arch": "x86"
+  },
+  "a95de9c4-eda6-4dbc-87e6-0fd3ab104170": {
+   "status": "done",
+   "title": "Windows 11 Insider Preview 10.0.26120.770 (ge_release)",
+   "build": "26120.770",
+   "arch": "amd64"
+  },
+  "a9af177b-6bea-4ab5-92c7-48a8787ce5f8": {
+   "status": "done",
+   "title": "Windows 11 Insider Preview 10.0.22635.4367 (ni_release)",
+   "build": "22635.4367",
+   "arch": "amd64"
+  },
+  "aa98b859-83e4-44ea-b052-e1027c283f39": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 23H2 (25398.709)",
+   "build": "25398.709",
+   "arch": "amd64"
+  },
+  "ab125414-104b-473b-8c43-820ec8150edb": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 20H2 (19042.2132)",
+   "build": "19042.2132",
+   "arch": "amd64"
+  },
+  "ab25f495-c632-4a8a-b2b9-7f986a2822a3": {
+   "status": "done",
+   "title": "Windows 11 (22000.2359)",
+   "build": "22000.2359",
+   "arch": "amd64"
+  },
+  "ab8dd4d0-486f-4120-b2cf-e634e2b2bb5a": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 22H2 (20349.2227)",
+   "build": "20349.2227",
+   "arch": "amd64"
+  },
+  "abb3603c-defd-4385-ac3e-a7fb0ef589e4": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.1806)",
+   "build": "19044.1806",
+   "arch": "amd64"
+  },
+  "abbcc978-acf2-43e6-9515-9c3b8032333a": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.4010)",
+   "build": "17763.4010",
+   "arch": "x86"
+  },
+  "abc342d0-b774-49e8-84cf-ed3169834450": {
+   "status": "done",
+   "title": "Feature update to Microsoft server operating system, version 21H2 (20348.1547)",
+   "build": "20348.1547",
+   "arch": "amd64"
+  },
+  "abc55837-7a20-4544-989e-ca00842d1dc9": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.4)",
+   "build": "22621.4",
+   "arch": "amd64"
+  },
+  "abcb6f67-a9a4-42f7-a612-ffaaf3098ec4": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.4108)",
+   "build": "22621.4108",
+   "arch": "amd64"
+  },
+  "acbc3228-b04c-406d-afdc-2643cdf2d01b": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.3)",
+   "build": "22621.3",
+   "arch": "amd64"
+  },
+  "ad04a3e0-d7fb-45ab-8eb4-73a58b611ae0": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3758)",
+   "build": "19045.3758",
+   "arch": "amd64"
+  },
+  "ad1c4ce6-82f1-4e4c-8204-31d36d956e6e": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H1 (19043.1862)",
+   "build": "19043.1862",
+   "arch": "amd64"
+  },
+  "ad1caad2-04fe-444b-ba3a-fb2815d52eac": {
+   "status": "done",
+   "title": "Windows 11, version 24H2 (26100.863)",
+   "build": "26100.863",
+   "arch": "amd64"
+  },
+  "ad27e52b-9e18-408a-9df2-8688e5273fbf": {
+   "status": "done",
+   "title": "Windows 11, version 24H2 (26100.2605)",
+   "build": "26100.2605",
+   "arch": "amd64"
+  },
+  "ad4fc001-5441-4761-8f4a-1a47350c398a": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.4046)",
+   "build": "19044.4046",
+   "arch": "x86"
+  },
+  "adcb52f6-a73f-4eb4-8c40-6e6f0c7bb66e": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.5576)",
+   "build": "17763.5576",
+   "arch": "x86"
+  },
+  "ae2c8b47-ecf4-4b2a-9c49-8ded51ca45e9": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.2213)",
+   "build": "22621.2213",
+   "arch": "amd64"
+  },
+  "ae335403-83ec-4654-87d0-d22b6e8dc7f0": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 20H2 (19042.2846)",
+   "build": "19042.2846",
+   "arch": "amd64"
+  },
+  "af6e1934-5417-4286-b904-2e7a078a0342": {
+   "status": "done",
+   "title": "Windows 11 (22000.776)",
+   "build": "22000.776",
+   "arch": "amd64"
+  },
+  "af807cf8-5c46-41f1-81ac-2ea51e64fba4": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.3527)",
+   "build": "22631.3527",
+   "arch": "amd64"
+  },
+  "afd145b6-cb24-4c0c-ba19-2923f6635df0": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.2193)",
+   "build": "19044.2193",
+   "arch": "amd64"
+  },
+  "b001ef2d-30f5-4641-9bab-aa413c9087a6": {
+   "status": "done",
+   "title": "Windows 11 (22000.739)",
+   "build": "22000.739",
+   "arch": "amd64"
+  },
+  "b0500c16-65b7-4e36-b226-98f87290540d": {
+   "status": "done",
+   "title": "Windows 11 (22000.1817)",
+   "build": "22000.1817",
+   "arch": "amd64"
+  },
+  "b0c48c77-7b92-487c-8061-a19c0a0d1913": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.4602)",
+   "build": "22621.4602",
+   "arch": "amd64"
+  },
+  "b0dc6fb8-ec25-4f6d-9eb9-427480649d5e": {
+   "status": "done",
+   "title": "Windows 11 Insider Preview 10.0.22635.4145 (ni_release)",
+   "build": "22635.4145",
+   "arch": "amd64"
+  },
+  "b17b4c3e-9403-4b4f-90eb-9654e461e02e": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.3078)",
+   "build": "22631.3078",
+   "arch": "amd64"
+  },
+  "b1dfd86a-4a85-4055-99e7-6f83d4376642": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.2251)",
+   "build": "19044.2251",
+   "arch": "x86"
+  },
+  "b2d3bec2-6cb3-4017-a159-35828a19420c": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": null
+  },
+  "b329d887-169a-421a-974d-d7a7c7013179": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H1 (19043.2075)",
+   "build": "19043.2075",
+   "arch": "x86"
+  },
+  "b338a37d-e242-4e0a-b13c-db6dad974927": {
+   "status": "done",
+   "title": "Windows 11 (22000.2124)",
+   "build": "22000.2124",
+   "arch": "amd64"
+  },
+  "b39cc454-b30a-40d0-9ea0-9ae47adeb8db": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 22H2 (20349.1970)",
+   "build": "20349.1970",
+   "arch": "amd64"
+  },
+  "b46a1232-2383-4626-946c-2d78dee5d557": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.3007)",
+   "build": "22631.3007",
+   "arch": "amd64"
+  },
+  "b4be6290-17b7-4284-8ae5-03abbe384901": {
+   "status": "done",
+   "title": "Windows 11 (22000.2777)",
+   "build": "22000.2777",
+   "arch": "amd64"
+  },
+  "b5080ce6-8be3-4776-917b-48a03eb411ec": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4235)",
+   "build": "19045.4235",
+   "arch": "x86"
+  },
+  "b5f0b18e-7d00-4aa5-a399-04045239e866": {
+   "status": "done",
+   "title": "Windows Server, version 23H2 (25398.709)",
+   "build": "25398.709",
+   "arch": "amd64"
+  },
+  "b6376b07-1c74-4278-bf6f-e21118a5f9d9": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.3810)",
+   "build": "22621.3810",
+   "arch": "amd64"
+  },
+  "b64af87f-4316-4668-97a4-3f0086c0339e": {
+   "status": "done",
+   "title": "Windows 11 (22000.2057)",
+   "build": "22000.2057",
+   "arch": "amd64"
+  },
+  "b64e2d66-87ab-4c54-871d-e5089b667cf0": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 21H2 (20348.1547)",
+   "build": "20348.1547",
+   "arch": "amd64"
+  },
+  "b6582c6b-f98c-4989-8802-6e259a1134ed": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2846)",
+   "build": "19045.2846",
+   "arch": "x86"
+  },
+  "b6f79780-59ff-4e15-8f13-f4766e39f48c": {
+   "status": "done",
+   "title": "Windows 11 (22000.2416)",
+   "build": "22000.2416",
+   "arch": "amd64"
+  },
+  "b70f45b1-ec4b-4d4d-b83d-b0c7f84df144": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.2545)",
+   "build": "19044.2545",
+   "arch": "amd64"
+  },
+  "b7150a3d-8cc5-4e1e-ad6d-7c1422bacc1d": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 21H2 (19044.3570)",
+   "build": "19044.3570",
+   "arch": "amd64"
+  },
+  "b73925db-dc53-400d-89c5-1061baf24d9f": {
+   "status": "done",
+   "title": "Windows 11 Insider Preview 10.0.22635.3936 (ni_release)",
+   "build": "22635.3936",
+   "arch": "amd64"
+  },
+  "b73f9781-1a6c-446e-81af-3102fa61b8f0": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 20H2 (19042.2130)",
+   "build": "19042.2130",
+   "arch": "amd64"
+  },
+  "b79220ee-7263-4c6c-b7de-d1248db0a126": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2311)",
+   "build": "19045.2311",
+   "arch": "x86"
+  },
+  "b7ee45bf-127d-4044-9e79-e7d07f2286a2": {
+   "status": "done",
+   "title": "Windows 10 Insider Preview 10.0.18327.7 (19h1_release)",
+   "build": "18327.7",
+   "arch": "amd64"
+  },
+  "b81608e0-6b51-4771-affc-ce14dba2ca83": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.4037)",
+   "build": "22631.4037",
+   "arch": "amd64"
+  },
+  "b8d2df04-86bd-4d00-b46f-c33df4a394a3": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4474)",
+   "build": "19045.4474",
+   "arch": "amd64"
+  },
+  "b8f7d511-625c-484d-b6a0-e78e181a93c2": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 20H2 (19042.2846)",
+   "build": "19042.2846",
+   "arch": "amd64"
+  },
+  "b9f1ddc0-255a-43e5-b7a4-baf4e12ffabe": {
+   "status": "done",
+   "title": "Feature update to Microsoft server operating system, version 21H2 (20348.2461)",
+   "build": "20348.2461",
+   "arch": "amd64"
+  },
+  "ba068ab5-c754-4115-902a-9f0786c706a8": {
+   "status": "done",
+   "title": "Windows 11, version 24H2 (26100.560)",
+   "build": "26100.560",
+   "arch": "amd64"
+  },
+  "ba509039-4b45-4dec-a4fd-9996aa9d33db": {
+   "status": "done",
+   "title": "Feature update to Microsoft server operating system, version 21H2 (20348.2031)",
+   "build": "20348.2031",
+   "arch": "amd64"
+  },
+  "ba57f572-7e76-48f9-92c8-7724bbea018d": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.2428)",
+   "build": "22621.2428",
+   "arch": "amd64"
+  },
+  "baa6fbf9-7467-4ffa-8a30-289aad2d9aa5": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2965)",
+   "build": "19045.2965",
+   "arch": "amd64"
+  },
+  "baceabf9-b946-4f1f-b070-8bdc595a5c40": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 20H2 (19042.2194)",
+   "build": "19042.2194",
+   "arch": "amd64"
+  },
+  "bafc95d7-7f1f-49ce-8ca9-94a08af65a32": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 21H2 (20348.1366)",
+   "build": "20348.1366",
+   "arch": "amd64"
+  },
+  "bb586e00-2b89-4654-9091-1d261f2f09e2": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 11 Version 24H2 (26100.2)",
+   "build": "26100.2",
+   "arch": "amd64"
+  },
+  "bb755fa5-94b7-4b31-a176-4fa7ec25533c": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 11 Version 22H2 (22621.608)",
+   "build": "22621.608",
+   "arch": "amd64"
+  },
+  "bc08f4aa-041f-4f20-958c-8a7e8cb2c792": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 11 (22000.1281)",
+   "build": "22000.1281",
+   "arch": "amd64"
+  },
+  "bccff4b8-ac15-412d-b965-f146e7c22365": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.3737)",
+   "build": "22621.3737",
+   "arch": "amd64"
+  },
+  "bce00364-9cea-41cd-a6f5-5c5e47ca7477": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 20H2 (19042.2364)",
+   "build": "19042.2364",
+   "arch": "amd64"
+  },
+  "bd306c8a-5ce6-4358-9e8c-b4e203f5e085": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3693)",
+   "build": "19045.3693",
+   "arch": "amd64"
+  },
+  "bd5cb82b-2afd-4ece-9e60-eed518d3f3ec": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.5329)",
+   "build": "17763.5329",
+   "arch": "x86"
+  },
+  "bd62ff21-f7b6-485c-897b-0931d197d72e": {
+   "status": "done",
+   "title": "Feature update to Microsoft server operating system, version 21H2 (20348.2762)",
+   "build": "20348.2762",
+   "arch": "amd64"
+  },
+  "bdf52396-54c4-4a17-80e1-b670ac3667da": {
+   "status": "done",
+   "title": "Windows 11 Insider Preview 10.0.22635.3720 (ni_release)",
+   "build": "22635.3720",
+   "arch": "amd64"
+  },
+  "becd7fa2-6626-4f77-8fca-721ce2b07ffa": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2908)",
+   "build": "19045.2908",
+   "arch": "x86"
+  },
+  "beda0794-a640-403e-acad-f5467ce2f4b3": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 20H2 (19042.2251)",
+   "build": "19042.2251",
+   "arch": "amd64"
+  },
+  "bef08a78-02c6-4ccf-939c-327288e97bcc": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.4377)",
+   "build": "17763.4377",
+   "arch": "amd64"
+  },
+  "bf0c001b-134c-4339-b0e2-aca19beb7787": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.1105)",
+   "build": "22621.1105",
+   "arch": "amd64"
+  },
+  "bf929762-ae43-4e9f-8a69-cdb0ccca01ef": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.1147)",
+   "build": "19044.1147",
+   "arch": "amd64"
+  },
+  "bfb0ef95-a13e-494e-9389-ae83fcc66bcf": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 22H2 (20349.1787)",
+   "build": "20349.1787",
+   "arch": "amd64"
+  },
+  "bfbeb0e2-1f9f-44ca-9337-eeb16c6862fd": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2193)",
+   "build": "19045.2193",
+   "arch": "amd64"
+  },
+  "c05d41b4-a3a7-4ac0-8a1a-ca98dabde224": {
+   "status": "done",
+   "title": "Cumulative Update Preview for Windows 11 Version 24H2 (26100.2161)",
+   "build": "26100.2161",
+   "arch": "amd64"
+  },
+  "c07dd0d5-8f46-403b-8512-d4ec424ecb58": {
+   "status": "done",
+   "title": "Windows 11 (22000.2482)",
+   "build": "22000.2482",
+   "arch": "amd64"
+  },
+  "c0d7552a-57ff-4e43-a1cf-762034fc9506": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.4460)",
+   "build": "22631.4460",
+   "arch": "amd64"
+  },
+  "c1284e4d-2141-4cb4-9bb5-7d3bb930f88c": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 20H2 (19042.1826)",
+   "build": "19042.1826",
+   "arch": "x86"
+  },
+  "c1502980-ca48-4844-a45f-a3e6b6b9e116": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 11 Version 22H2 (22621.1343)",
+   "build": "22621.1343",
+   "arch": "amd64"
+  },
+  "c1781970-da8a-46f0-82da-2e33561d961b": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 11 (22000.1516)",
+   "build": "22000.1516",
+   "arch": "amd64"
+  },
+  "c1d1482a-8c7a-4b6b-9472-03a8affe4ab5": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.2715)",
+   "build": "22621.2715",
+   "arch": "amd64"
+  },
+  "c1da54e1-2cf1-4534-ba44-61251a6de142": {
+   "status": "done",
+   "title": "Windows 11, version 24H2 (26100.1150)",
+   "build": "26100.1150",
+   "arch": "amd64"
+  },
+  "c209c54e-18ea-4815-a131-6971a5c23a84": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 11 Version 23H2 (22631.2506)",
+   "build": "22631.2506",
+   "arch": "amd64"
+  },
+  "c288937f-d09b-4587-a912-db112f63571d": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 20H2 (19042.2132)",
+   "build": "19042.2132",
+   "arch": "x86"
+  },
+  "c29947fe-0ac7-4b9a-9e2e-4ef5bd13b096": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3393)",
+   "build": "19045.3393",
+   "arch": "x86"
+  },
+  "c2a656ea-022e-40a6-a3d3-6edc66da996e": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.5131)",
+   "build": "19045.5131",
+   "arch": "x86"
+  },
+  "c2c51a80-aa7e-4c6b-af5a-e1d2235c5121": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.3650)",
+   "build": "17763.3650",
+   "arch": "x86"
+  },
+  "c2d243c3-a683-4ba0-89e7-da4c259ac2a4": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 21H1 (19043.2132)",
+   "build": "19043.2132",
+   "arch": "x86"
+  },
+  "c2f28323-8acf-4d2c-8bd2-38b748336518": {
+   "status": "done",
+   "title": "Feature update to Microsoft server operating system, version 21H2 (20348.2402)",
+   "build": "20348.2402",
+   "arch": "amd64"
+  },
+  "c2fc07cf-1cab-471a-830c-cc0a1bccd63b": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H1 (19043.2006)",
+   "build": "19043.2006",
+   "arch": "amd64"
+  },
+  "c333abbc-af8e-4684-bd21-8b9facd06506": {
+   "status": "done",
+   "title": "Feature update to Microsoft server operating system, version 21H2 (20348.1668)",
+   "build": "20348.1668",
+   "arch": "amd64"
+  },
+  "c33491ab-2abe-48f9-9a9c-f63ca21b18da": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.6189)",
+   "build": "17763.6189",
+   "arch": "amd64"
+  },
+  "c4bd87c1-c34e-452f-9d2c-16ee2ec9e19a": {
+   "status": "done",
+   "title": "Windows Server 2025 (26100.2314)",
+   "build": "26100.2314",
+   "arch": "amd64"
+  },
+  "c50b7097-9ab0-4fa3-a3d8-cee79010cbc4": {
+   "status": "done",
+   "title": "Windows 11 (22000.1761)",
+   "build": "22000.1761",
+   "arch": "amd64"
+  },
+  "c516df4c-9540-4386-b0f8-086b4380d42a": {
+   "status": "done",
+   "title": "Windows 11 (22000.1455)",
+   "build": "22000.1455",
+   "arch": "amd64"
+  },
+  "c598cdd6-8d6a-4fa1-8161-8e96e362b127": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.4894)",
+   "build": "19044.4894",
+   "arch": "amd64"
+  },
+  "c6177e06-31cb-403d-b0c0-821d3bef5dd2": {
+   "status": "done",
+   "title": "Windows 11, version 24H2 (26100.2528)",
+   "build": "26100.2528",
+   "arch": "amd64"
+  },
+  "c6e84fdb-8fa9-4cba-8c54-b434da56b8d2": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.5122)",
+   "build": "17763.5122",
+   "arch": "amd64"
+  },
+  "c71c7e40-40b6-471b-adf1-2ee9f2beba34": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4717)",
+   "build": "19045.4717",
+   "arch": "amd64"
+  },
+  "c73b016f-4803-4288-9966-40e6c5fc8a12": {
+   "status": "done",
+   "title": "Feature update to Microsoft server operating system, version 21H2 (20348.2340)",
+   "build": "20348.2340",
+   "arch": "amd64"
+  },
+  "c73b58aa-a549-4dcf-a66d-ec9c87cf99a1": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.2361)",
+   "build": "22631.2361",
+   "arch": "amd64"
+  },
+  "c782f4ff-3e71-4453-ac16-d0cab4d5c45d": {
+   "status": "done",
+   "title": "Windows 11 Insider Preview 10.0.22635.4435 (ni_release)",
+   "build": "22635.4435",
+   "arch": "amd64"
+  },
+  "c7bccfab-383c-4e8f-a768-361411ca6b21": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.5206)",
+   "build": "17763.5206",
+   "arch": "amd64"
+  },
+  "c7fba430-ffdd-4a0e-990c-8aab7cbb96cf": {
+   "status": "done",
+   "title": "Feature update to Microsoft server operating system, version 21H2 (20348.1006)",
+   "build": "20348.1006",
+   "arch": "amd64"
+  },
+  "c7fbaf93-9337-4261-b778-a6e829c07833": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2913)",
+   "build": "19045.2913",
+   "arch": "amd64"
+  },
+  "c820c6e2-be6d-4ba1-9f8f-29c76f6dd714": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 22H2 (19045.2965)",
+   "build": "19045.2965",
+   "arch": "amd64"
+  },
+  "c8aee0b9-c741-4818-bc98-d74ac9ffe383": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.3406)",
+   "build": "17763.3406",
+   "arch": "x86"
+  },
+  "c8c2410f-b814-409c-b9ab-602b7adb1fb6": {
+   "status": "done",
+   "title": "Windows Server, version 23H2 (25398.887)",
+   "build": "25398.887",
+   "arch": "amd64"
+  },
+  "c8e4042b-d6f9-4158-ac72-4ee70a6e2bc2": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.5194)",
+   "build": "19045.5194",
+   "arch": "x86"
+  },
+  "c9df1d54-6ade-4a22-aebb-503b05e6a413": {
+   "status": "done",
+   "title": "Windows 11 (22000.706)",
+   "build": "22000.706",
+   "arch": "amd64"
+  },
+  "c9ec6872-f391-4344-8255-f80159198eda": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 21H2 (20348.1906)",
+   "build": "20348.1906",
+   "arch": "amd64"
+  },
+  "caa1b708-ef0f-438f-95ba-c5be9cb5b718": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.4651)",
+   "build": "19044.4651",
+   "arch": "amd64"
+  },
+  "cb0a865a-803b-43f1-b983-600693beb150": {
+   "status": "done",
+   "title": "Windows 11 (22000.3079)",
+   "build": "22000.3079",
+   "arch": "amd64"
+  },
+  "cb185e53-3f7d-465c-a622-58867187d322": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 11 (22000.1641)",
+   "build": "22000.1641",
+   "arch": "amd64"
+  },
+  "cb1d70ba-0ebf-4e36-b8f8-86ccd6027dab": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.1865)",
+   "build": "19045.1865",
+   "arch": "amd64"
+  },
+  "cb89f312-22ac-4760-9f80-e5b06255e7b0": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 20H2 (19042.2546)",
+   "build": "19042.2546",
+   "arch": "x86"
+  },
+  "cbe3e8dc-d574-4480-b437-c7497a3cef21": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.754)",
+   "build": "22621.754",
+   "arch": "amd64"
+  },
+  "cc058192-46cc-4b93-a7b3-397f445f55b3": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 22H2 (19045.2132)",
+   "build": "19045.2132",
+   "arch": "amd64"
+  },
+  "cc246f69-8058-4501-bda1-47bfcf662a2c": {
+   "status": "done",
+   "title": "Windows 11 (22000.1219)",
+   "build": "22000.1219",
+   "arch": "amd64"
+  },
+  "cc450dcf-cf3d-4a7e-a56e-618276a30ca2": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 22H2 (20349.1366)",
+   "build": "20349.1366",
+   "arch": "amd64"
+  },
+  "cc66a258-d0cf-4621-8d71-835e63d59ebc": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.2361)",
+   "build": "22621.2361",
+   "arch": "amd64"
+  },
+  "cd2d32e1-31b3-42d0-95b9-d1ba206b5573": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4651)",
+   "build": "19045.4651",
+   "arch": "x86"
+  },
+  "cd33017e-ae97-46d3-907b-5482191489a2": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.2006)",
+   "build": "19044.2006",
+   "arch": "amd64"
+  },
+  "cd8257ce-cb10-4a06-a107-1e60725358fa": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4529)",
+   "build": "19045.4529",
+   "arch": "amd64"
+  },
+  "cdba155e-5e3b-4bfb-9963-0b374d24666c": {
+   "status": "done",
+   "title": "Windows 11 (22000.2295)",
+   "build": "22000.2295",
+   "arch": "amd64"
+  },
+  "cde50e47-46c2-4010-906b-bb61758750f1": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H1 (19043.2251)",
+   "build": "19043.2251",
+   "arch": "amd64"
+  },
+  "cde96590-48a0-425a-beb3-c228d2cabb42": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.3930)",
+   "build": "19044.3930",
+   "arch": "x86"
+  },
+  "ce59f2eb-f72a-419c-a690-d5484c3d53c2": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 11 (22000.778)",
+   "build": "22000.778",
+   "arch": "amd64"
+  },
+  "ce7c48c4-b024-4c65-b689-099fdc4aa374": {
+   "status": "done",
+   "title": "Windows Server, version 23H2 (25398.469)",
+   "build": "25398.469",
+   "arch": "amd64"
+  },
+  "ceca7851-67c8-4a1a-84dd-a3c58196367b": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2670)",
+   "build": "19045.2670",
+   "arch": "amd64"
+  },
+  "cef0f044-b039-4a2a-a5ca-f919f0efe6fc": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3086)",
+   "build": "19045.3086",
+   "arch": "amd64"
+  },
+  "cf191367-54bf-4350-9b53-4e482ccefa52": {
+   "status": "done",
+   "title": "Windows 11 Insider Preview 10.0.22635.4371 (ni_release)",
+   "build": "22635.4371",
+   "arch": "amd64"
+  },
+  "cf4057d3-3d10-43c4-b855-c00704606541": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 11 (22000.918)",
+   "build": "22000.918",
+   "arch": "amd64"
+  },
+  "cf44c4d8-b281-4dd5-a160-ee90da59b44d": {
+   "status": "done",
+   "title": "Feature update to Microsoft server operating system, version 21H2 (20348.2159)",
+   "build": "20348.2159",
+   "arch": "amd64"
+  },
+  "cf62dc01-2836-4592-841c-0d161075e136": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3208)",
+   "build": "19045.3208",
+   "arch": "x86"
+  },
+  "cf91f063-2bcb-4f42-ab8c-fbff8172ab92": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.317)",
+   "build": "22621.317",
+   "arch": "amd64"
+  },
+  "cfd1f3e5-afda-4010-87f5-8b6ad57c65f6": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 21H2 (20348.2031)",
+   "build": "20348.2031",
+   "arch": "amd64"
+  },
+  "d053c0d1-24aa-4023-95cf-e1c1fbe1a65a": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.2066)",
+   "build": "22621.2066",
+   "arch": "amd64"
+  },
+  "d0ce293a-3106-479f-95fe-529315124bc9": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.1826)",
+   "build": "19044.1826",
+   "arch": "x86"
+  },
+  "d0d0ccf1-6e1d-4b8d-b794-c45b802bfe31": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 20H2 (19042.1766)",
+   "build": "19042.1766",
+   "arch": "x86"
+  },
+  "d12f36d1-0a2b-4612-a8e2-7e83537b1ab5": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.2846)",
+   "build": "19044.2846",
+   "arch": "amd64"
+  },
+  "d1a0a9a8-f5a5-406e-8f55-5855bc26b83b": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 21H2 (20348.825)",
+   "build": "20348.825",
+   "arch": "amd64"
+  },
+  "d1bb1fda-6d7b-4233-b98c-4337990a0828": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.3532)",
+   "build": "17763.3532",
+   "arch": "amd64"
+  },
+  "d20b7d4b-3135-4715-be2e-5e47252ef589": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3086)",
+   "build": "19045.3086",
+   "arch": "x86"
+  },
+  "d289e1be-37f2-4980-96a9-5ceae469fff2": {
+   "status": "done",
+   "title": "Windows Server, version 23H2 (25398.1189)",
+   "build": "25398.1189",
+   "arch": "amd64"
+  },
+  "d2a954c5-1215-488d-9675-d1284defbc93": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 23H2 (25398.584)",
+   "build": "25398.584",
+   "arch": "amd64"
+  },
+  "d46a4fc9-2fd9-4a12-b8fd-0c9e22a5456c": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2006)",
+   "build": "19045.2006",
+   "arch": "amd64"
+  },
+  "d523cbcd-c2ba-4dd0-a15c-baa75f0c7cf7": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2908)",
+   "build": "19045.2908",
+   "arch": "amd64"
+  },
+  "d545181f-4f45-4052-b284-926c34900f85": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H1 (19043.1806)",
+   "build": "19043.1806",
+   "arch": "amd64"
+  },
+  "d571fc5d-1a85-4654-a7cf-8f872bc98dbb": {
+   "status": "done",
+   "title": "Feature update to Microsoft server operating system, version 21H2 (20348.2966)",
+   "build": "20348.2966",
+   "arch": "amd64"
+  },
+  "d5db6747-a97e-40ba-b839-87719b0adba1": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2251)",
+   "build": "19045.2251",
+   "arch": "x86"
+  },
+  "d5ea3411-5467-4284-9ad2-71a2e1a5d21a": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.1949)",
+   "build": "19045.1949",
+   "arch": "amd64"
+  },
+  "d5ee5cec-81c0-4bc3-8a3a-283c0563f0e5": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2673)",
+   "build": "19045.2673",
+   "arch": "amd64"
+  },
+  "d65d9cd7-26d3-4002-abcb-3821726a9d34": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.1485)",
+   "build": "22621.1485",
+   "arch": "amd64"
+  },
+  "d6633097-6beb-41e9-92d4-d95c7d89a296": {
+   "status": "done",
+   "title": "Windows Server, version 23H2 (25398.1308)",
+   "build": "25398.1308",
+   "arch": "amd64"
+  },
+  "d6719188-17fb-4527-8f52-d46f400d0cb7": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 22H2 (20349.1547)",
+   "build": "20349.1547",
+   "arch": "amd64"
+  },
+  "d6c443ca-9e6e-4dd6-8a2d-f2dfbd8356fa": {
+   "status": "done",
+   "title": "Windows 11, version 24H2 (26100.2161)",
+   "build": "26100.2161",
+   "arch": "amd64"
+  },
+  "d6c8b547-a2c2-4539-bde3-f9343fb7c757": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 23H2 (25398.1189)",
+   "build": "25398.1189",
+   "arch": "amd64"
+  },
+  "d6ec4b61-9dfd-441e-bb16-8e3cd7cee482": {
+   "status": "done",
+   "title": "Windows 11 Insider Preview 10.0.22635.3785 (ni_release)",
+   "build": "22635.3785",
+   "arch": "amd64"
+  },
+  "d7286d02-6f0e-4b60-bdc3-a33bf5acdc53": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.3296)",
+   "build": "22621.3296",
+   "arch": "amd64"
+  },
+  "d767cbf3-9c02-43c7-8ddd-663dc1817353": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 21H2 (19044.2132)",
+   "build": "19044.2132",
+   "arch": "x86"
+  },
+  "d7cfe811-f371-4187-8267-1beef215651b": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.3235)",
+   "build": "22631.3235",
+   "arch": "amd64"
+  },
+  "d82f8ecf-202d-47ac-89a2-2562a7528027": {
+   "status": "done",
+   "title": "Windows 11 (22000.856)",
+   "build": "22000.856",
+   "arch": "amd64"
+  },
+  "d8fb5cff-e224-457a-9086-90dee2c30fec": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3930)",
+   "build": "19045.3930",
+   "arch": "amd64"
+  },
+  "d9285770-3257-48d5-851a-ff2cc96e0391": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 11 Version 24H2 (26100.560)",
+   "build": "26100.560",
+   "arch": "amd64"
+  },
+  "d95ca93b-8457-462c-9aee-95348cc560da": {
+   "status": "done",
+   "title": "Windows 11 (22000.2479)",
+   "build": "22000.2479",
+   "arch": "amd64"
+  },
+  "d978e1db-569a-40f1-855f-8df15fbbcf4b": {
+   "status": "done",
+   "title": "Windows 11 (22000.917)",
+   "build": "22000.917",
+   "arch": "amd64"
+  },
+  "d991198d-989d-4440-8d7f-9eb3096120a7": {
+   "status": "done",
+   "title": "Windows 11 Insider Preview 10.0.26120.1912 (ge_release_svc_betaflt_upr)",
+   "build": "26120.1912",
+   "arch": "amd64"
+  },
+  "d9b8cfaf-4904-4031-a2a5-81d80e25dac5": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 22H2 (19045.3208)",
+   "build": "19045.3208",
+   "arch": "amd64"
+  },
+  "d9c561ec-7f71-44c7-aad2-d86d4b6a9053": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.3374)",
+   "build": "22631.3374",
+   "arch": "amd64"
+  },
+  "d9f4dcb6-65e6-413d-aaf2-821d67c1fd52": {
+   "status": "done",
+   "title": "Windows 11 Insider Preview 10.0.22635.3930 (ni_release)",
+   "build": "22635.3930",
+   "arch": "amd64"
+  },
+  "da5c5877-52f4-4a6e-a4c9-41007c84d328": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H1 (19043.1889)",
+   "build": "19043.1889",
+   "arch": "x86"
+  },
+  "db0e506c-5393-4c26-ae16-51bc62793b86": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 23H2 (25398.531)",
+   "build": "25398.531",
+   "arch": "amd64"
+  },
+  "db426e82-3a45-4e3f-9430-c26f44d865ff": {
+   "status": "done",
+   "title": "Windows 11 (22000.1165)",
+   "build": "22000.1165",
+   "arch": "amd64"
+  },
+  "dc013537-666a-4c83-b7f1-dd2995e3884e": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.3807)",
+   "build": "22631.3807",
+   "arch": "amd64"
+  },
+  "dcb2f7dd-8822-444b-802f-d417e19474a9": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.6659)",
+   "build": "17763.6659",
+   "arch": "x86"
+  },
+  "dcb87cd9-604a-498c-9a8f-f3f3633cc655": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.2861)",
+   "build": "22631.2861",
+   "arch": "amd64"
+  },
+  "dce04336-ad4b-42a2-9dbd-bb78d75841a4": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 11 (22000.832)",
+   "build": "22000.832",
+   "arch": "amd64"
+  },
+  "dd178174-e901-44b3-84ca-88a904460d81": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H1 (19043.1889)",
+   "build": "19043.1889",
+   "arch": "amd64"
+  },
+  "dd23bea2-63c0-45c1-b422-833a47aae6a4": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3030)",
+   "build": "19045.3030",
+   "arch": "amd64"
+  },
+  "dd479289-1925-4aaf-9fc8-cf0f614b2fbe": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.2134)",
+   "build": "22621.2134",
+   "arch": "amd64"
+  },
+  "dd705f1a-c3c7-476a-b9e9-38a13a10949a": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3757)",
+   "build": "19045.3757",
+   "arch": "x86"
+  },
+  "ddabce84-45ed-4515-8675-daec64fcee2c": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": null
+  },
+  "ddd5b1a0-6f79-408b-ad0c-b177d72ed65b": {
+   "status": "done",
+   "title": "Windows 11, version 24H2 (26100.2454)",
+   "build": "26100.2454",
+   "arch": "amd64"
+  },
+  "ddf1d41c-b3df-4ba7-ab15-1ccc01863f53": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2728)",
+   "build": "19045.2728",
+   "arch": "x86"
+  },
+  "de029f6a-7498-4e10-8501-d1581b153ddd": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4651)",
+   "build": "19045.4651",
+   "arch": "amd64"
+  },
+  "de0d9bf4-e672-4766-bc6c-81fc55f38142": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": null
+  },
+  "de92b5a9-0565-49ba-ae6f-a33f8aa47acf": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 21H1 (19043.2130)",
+   "build": "19043.2130",
+   "arch": "x86"
+  },
+  "de9a64be-95b2-480b-aa43-f154bd39f4c0": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.1862)",
+   "build": "19044.1862",
+   "arch": "x86"
+  },
+  "df27ee69-4463-4e72-86f2-123f60a893bf": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.4780)",
+   "build": "19044.4780",
+   "arch": "amd64"
+  },
+  "df9477d8-1bf3-4847-b928-24e20e441486": {
+   "status": "done",
+   "title": "Windows 11, version 24H2 (26100.1591)",
+   "build": "26100.1591",
+   "arch": "amd64"
+  },
+  "dfb804e7-bb24-41dd-9db2-931203293d46": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.3324)",
+   "build": "19044.3324",
+   "arch": "x86"
+  },
+  "e0593ce2-00cd-4d76-bf2c-de3f1411b73f": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H1 (19043.2311)",
+   "build": "19043.2311",
+   "arch": "x86"
+  },
+  "e09baff9-84d1-4df3-8ea8-27e61f330bb4": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.2604)",
+   "build": "19044.2604",
+   "arch": "amd64"
+  },
+  "e0fe4721-975d-4378-a09d-92082d677d29": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.3810)",
+   "build": "22631.3810",
+   "arch": "amd64"
+  },
+  "e1885854-aea0-453d-9e64-bfd00535a925": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.5247)",
+   "build": "19045.5247",
+   "arch": "amd64"
+  },
+  "e1d5e11a-7054-49cf-b9c9-ba54258d5cc6": {
+   "status": "done",
+   "title": "Windows 11, version 24H2 (26100.1742)",
+   "build": "26100.1742",
+   "arch": "amd64"
+  },
+  "e1f8c5b0-6e60-4eb4-947a-37bf5957ff5a": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 21H2 (20348.1249)",
+   "build": "20348.1249",
+   "arch": "amd64"
+  },
+  "e205684b-6624-4a9a-a7e5-bfb37e77c736": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 20H2 (19042.2194)",
+   "build": "19042.2194",
+   "arch": "x86"
+  },
+  "e27f002d-e3b6-4f24-a4d8-8b09d279fe5b": {
+   "status": "done",
+   "title": "Windows 11 Insider Preview 10.0.26120.1843 (ge_release_svc_betaflt_upr)",
+   "build": "26120.1843",
+   "arch": "amd64"
+  },
+  "e28f21b2-1549-4228-9d94-0335109d0e0f": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4353)",
+   "build": "19045.4353",
+   "arch": "x86"
+  },
+  "e2ea1742-e947-44c6-b20a-461972efa45d": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.898)",
+   "build": "22621.898",
+   "arch": "amd64"
+  },
+  "e3e0073c-1c6d-49df-b0bc-cec3cce53853": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 1809 (17763.3534)",
+   "build": "17763.3534",
+   "arch": "amd64"
+  },
+  "e4767a0a-922a-420c-a55f-2e0dc638394c": {
+   "status": "done",
+   "title": "Cumulative Update Preview for Windows 11 Version 22H2 (22621.3958)",
+   "build": "22621.3958",
+   "arch": "amd64"
+  },
+  "e4780b51-3cbd-4aab-a9c6-2a58db4e12fc": {
+   "status": "done",
+   "title": "Windows 11 (22000.829)",
+   "build": "22000.829",
+   "arch": "amd64"
+  },
+  "e5d2dd8c-6664-4c16-8c20-f94a196b26ca": {
+   "status": "done",
+   "title": "Cumulative Update Preview for Windows 11 Version 22H2 (22621.4247)",
+   "build": "22621.4247",
+   "arch": "amd64"
+  },
+  "e5d6d50f-6ff3-4323-b7d6-d6daa7ab9d80": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4353)",
+   "build": "19045.4353",
+   "arch": "amd64"
+  },
+  "e5ecacd4-6e2d-4c87-a410-3759d50109d0": {
+   "status": "done",
+   "title": "Windows 11 Insider Preview 10.0.22635.4000 (ni_release)",
+   "build": "22635.4000",
+   "arch": "amd64"
+  },
+  "e61d6ef4-31f5-4efa-8d73-a62ab2676f2f": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1903 (18362.175)",
+   "build": "18362.175",
+   "arch": "amd64"
+  },
+  "e663f395-bc4c-4ba1-be3a-b2ecdf9f1fd7": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.2673)",
+   "build": "19044.2673",
+   "arch": "amd64"
+  },
+  "e686b35f-94c1-471c-ada3-4dbd358fe75f": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 22H2 (20349.1249)",
+   "build": "20349.1249",
+   "arch": "amd64"
+  },
+  "e68b212c-4a0c-44eb-997a-704cd1c2b6de": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 21H1 (19043.2130)",
+   "build": "19043.2130",
+   "arch": "amd64"
+  },
+  "e6eb7da0-a87a-4400-b1d3-9ed7f14af5ac": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H1 (19043.1862)",
+   "build": "19043.1862",
+   "arch": "x86"
+  },
+  "e7036acd-c5d4-46e5-bce0-ccb55d8dbf56": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.4387)",
+   "build": "22621.4387",
+   "arch": "amd64"
+  },
+  "e726608c-69d4-49a7-a287-796286360899": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2788)",
+   "build": "19045.2788",
+   "arch": "x86"
+  },
+  "e72bc343-e8d4-4856-a154-4dd01ef987ff": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2364)",
+   "build": "19045.2364",
+   "arch": "amd64"
+  },
+  "e72d1502-9493-4cd7-b258-d160d25997d8": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4291)",
+   "build": "19045.4291",
+   "arch": "x86"
+  },
+  "e811c5d0-1df3-4c57-b992-479f1de7f73a": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4717)",
+   "build": "19045.4717",
+   "arch": "x86"
+  },
+  "e8172004-27fc-4a3f-a2f1-35cf54056cda": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3269)",
+   "build": "19045.3269",
+   "arch": "x86"
+  },
+  "e855e59b-5a68-43d0-a4e4-4f74e690cc1a": {
+   "status": "done",
+   "title": "Feature update to Microsoft server operating system, version 21H2 (20348.1366)",
+   "build": "20348.1366",
+   "arch": "amd64"
+  },
+  "e8cc0015-bf6f-4d70-8f48-a562872b3dd0": {
+   "status": "done",
+   "title": "Windows 11 (22000.2121)",
+   "build": "22000.2121",
+   "arch": "amd64"
+  },
+  "e92e60e7-fd23-4013-9483-6985db4638aa": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2364)",
+   "build": "19045.2364",
+   "arch": "x86"
+  },
+  "e93eb708-98ec-494c-b4fc-025c6b012173": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.4387)",
+   "build": "22631.4387",
+   "arch": "amd64"
+  },
+  "e97d500d-9b50-43b6-b889-b8fd91e787d1": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 20H2 (19042.2546)",
+   "build": "19042.2546",
+   "arch": "amd64"
+  },
+  "ea31efaa-66c7-453b-a3b7-722d13dce058": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4170)",
+   "build": "19045.4170",
+   "arch": "x86"
+  },
+  "eada4326-a163-448b-b1b3-dc1572c8e6a8": {
+   "status": "done",
+   "title": "Feature update to Microsoft server operating system, version 21H2 (20348.1970)",
+   "build": "20348.1970",
+   "arch": "amd64"
+  },
+  "eb02aa27-e5e9-4167-9a6d-7142659f4c37": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4593)",
+   "build": "19045.4593",
+   "arch": "x86"
+  },
+  "eb38ee0a-58f3-4d2e-b1e8-c8cd544246be": {
+   "status": "done",
+   "title": "Windows Server, version 23H2 (25398.763)",
+   "build": "25398.763",
+   "arch": "amd64"
+  },
+  "eb572e18-a8a8-4309-91c5-e16ba436e5f7": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.4737)",
+   "build": "17763.4737",
+   "arch": "amd64"
+  },
+  "eb94f61c-c8b5-4988-b154-2c3c0f1f2b57": {
+   "status": "done",
+   "title": "Windows Server, version 23H2 (25398.643)",
+   "build": "25398.643",
+   "arch": "amd64"
+  },
+  "eb9c4ff2-1c2c-4a81-b42a-a1825c2c7a2a": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H1 (19043.1947)",
+   "build": "19043.1947",
+   "arch": "x86"
+  },
+  "ebe1f736-cf93-46ef-9ecb-6c549a31f20e": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.1776)",
+   "build": "22621.1776",
+   "arch": "amd64"
+  },
+  "ebf14a71-0f6e-4958-9bf4-27c746050640": {
+   "status": "done",
+   "title": "Windows Server, version 23H2 (25398.1)",
+   "build": "25398.1",
+   "arch": "amd64"
+  },
+  "ec8096fc-dc44-483f-a6df-73d6e1ddfb26": {
+   "status": "done",
+   "title": "Windows 11, version 24H2 (26100.2454) (2)",
+   "build": "26100.2454",
+   "arch": "amd64"
+  },
+  "ecf9faa5-9cf5-4f0f-89b7-18ccca6e099e": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.2728)",
+   "build": "19044.2728",
+   "arch": "x86"
+  },
+  "ed138d1a-9e5a-4338-ab55-6827321a570a": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 22H2 (19045.3693)",
+   "build": "19045.3693",
+   "arch": "amd64"
+  },
+  "ed397f9d-d715-4a5e-a288-243d9ac41093": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.3227)",
+   "build": "22621.3227",
+   "arch": "amd64"
+  },
+  "ed6cb54a-1bfe-4bb6-90a4-4e2f44088b2d": {
+   "status": "done",
+   "title": "Feature update to Microsoft server operating system, version 21H2 (20348.1906)",
+   "build": "20348.1906",
+   "arch": "amd64"
+  },
+  "edd8bccc-71da-47c7-adf2-ab4dbb1f8115": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 22H2 (20349.2849)",
+   "build": "20349.2849",
+   "arch": "amd64"
+  },
+  "ee8db64f-a6db-479e-af42-ddaad2b68694": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 21H2 (19044.3570)",
+   "build": "19044.3570",
+   "arch": "x86"
+  },
+  "eead5e53-68fd-47a0-ba3f-1b6deb71a57b": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.3880)",
+   "build": "22621.3880",
+   "arch": "amd64"
+  },
+  "ef18a4fc-c696-46f3-81d7-e9b49a123d90": {
+   "status": "done",
+   "title": "Cumulative Update Preview for Windows 11 Version 22H2 (22621.4108)",
+   "build": "22621.4108",
+   "arch": "amd64"
+  },
+  "f098e716-7ba9-44cc-b19b-f9870bef09ce": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.6532)",
+   "build": "17763.6532",
+   "arch": "amd64"
+  },
+  "f0e8c7b1-a035-4ad8-b431-e6f0c6683d6d": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.2792)",
+   "build": "22621.2792",
+   "arch": "amd64"
+  },
+  "f121450f-ce8f-4167-b7ce-e6e43f14a250": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2787)",
+   "build": "19045.2787",
+   "arch": "x86"
+  },
+  "f198783b-6065-4f5f-8257-971e4593501e": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 20H2 (19042.2486)",
+   "build": "19042.2486",
+   "arch": "amd64"
+  },
+  "f1b14ae3-825d-4538-840e-3dc493d93de7": {
+   "status": "done",
+   "title": "Windows 11 (22000.832)",
+   "build": "22000.832",
+   "arch": "amd64"
+  },
+  "f1d17e5b-0ef2-4a23-950a-ab4de0ff7630": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3636)",
+   "build": "19045.3636",
+   "arch": "amd64"
+  },
+  "f22478d7-da3f-4c7b-8259-a5d34233ba34": {
+   "status": "done",
+   "title": "Cumulative Update Preview for Windows 11 Version 23H2 (22631.4249)",
+   "build": "22631.4249",
+   "arch": "amd64"
+  },
+  "f2340fb4-2d57-4da4-b638-cc95ed156be0": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.2846)",
+   "build": "19044.2846",
+   "arch": "x86"
+  },
+  "f272aa08-ee78-4400-898a-f2333acbb7e3": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 23H2 (25398.1308)",
+   "build": "25398.1308",
+   "arch": "amd64"
+  },
+  "f29484a9-6de5-4dcd-80d4-4677498412db": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.3324)",
+   "build": "19044.3324",
+   "arch": "amd64"
+  },
+  "f2f33f64-14ce-4e4c-9c6e-a71c07276e33": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4894)",
+   "build": "19045.4894",
+   "arch": "amd64"
+  },
+  "f333dbeb-1ef5-4661-a413-76f0d2e7a432": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.3208)",
+   "build": "19044.3208",
+   "arch": "x86"
+  },
+  "f3691231-0586-44d5-859b-e25f5eb9cfb7": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.4541)",
+   "build": "22631.4541",
+   "arch": "amd64"
+  },
+  "f3bbc9fb-3d60-465b-93ea-2ef7a040ec11": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 11 Version 23H2 (22631.2428)",
+   "build": "22631.2428",
+   "arch": "amd64"
+  },
+  "f3ec4067-0f96-441f-ae73-8d0d426ed964": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.4412)",
+   "build": "19044.4412",
+   "arch": "x86"
+  },
+  "f433aac2-8356-4321-87ce-ab56831c8a65": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4116)",
+   "build": "19045.4116",
+   "arch": "amd64"
+  },
+  "f482b9b9-1b34-45a6-bfb6-ef6be8f81829": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3393)",
+   "build": "19045.3393",
+   "arch": "amd64"
+  },
+  "f48af559-3c48-4bee-9e76-b4ee02ccc1c7": {
+   "status": "done",
+   "title": "Windows 11 Insider Preview 10.0.26120.1330 (ge_release_svc_betaflt_upr)",
+   "build": "26120.1330",
+   "arch": "amd64"
+  },
+  "f491fb11-c82a-494b-b3e1-ccf268cf87bc": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 11 (22000.1165)",
+   "build": "22000.1165",
+   "arch": "amd64"
+  },
+  "f4ab1776-96a5-409f-a58d-dc4832c78f1c": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.1483)",
+   "build": "22621.1483",
+   "arch": "amd64"
+  },
+  "f4fb493c-bb80-4ec1-89c1-b7f060916efa": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.1947)",
+   "build": "19044.1947",
+   "arch": "x86"
+  },
+  "f4fcb90a-fde2-4bfa-8fc7-84ff8628643d": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4291)",
+   "build": "19045.4291",
+   "arch": "amd64"
+  },
+  "f548dcf7-683b-42f6-828a-9f9d2ff146af": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.5011)",
+   "build": "19044.5011",
+   "arch": "amd64"
+  },
+  "f65803de-3ea0-4cb7-8751-0e9da23ce7f0": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.675)",
+   "build": "22621.675",
+   "arch": "amd64"
+  },
+  "f7566a6a-47e2-4e7d-927c-75fa9b9aa461": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 20H2 (19042.2311)",
+   "build": "19042.2311",
+   "arch": "amd64"
+  },
+  "f7de30f3-7fbe-4d8c-920a-121b3194c2b4": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.5458)",
+   "build": "17763.5458",
+   "arch": "x86"
+  },
+  "f801fc1f-9fd4-4e6f-92a0-a9274d2bf247": {
+   "status": "done",
+   "title": "Windows 11, version 24H2 (26100.268)",
+   "build": "26100.268",
+   "arch": "amd64"
+  },
+  "f83989b7-20df-4fc2-9cb4-72183c21d735": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.5458)",
+   "build": "17763.5458",
+   "arch": "amd64"
+  },
+  "f85d43a4-60e9-4607-8997-a761beb7ef77": {
+   "status": "done",
+   "title": "Windows 11, version 24H2 (26100.2)",
+   "build": "26100.2",
+   "arch": "amd64"
+  },
+  "f85e3f75-e3e6-42c9-94b8-b36c0146971e": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H1 (19043.1865)",
+   "build": "19043.1865",
+   "arch": "amd64"
+  },
+  "f8bf8fd8-f027-477d-b9f0-46243b085f49": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 22H2 (20349.1906)",
+   "build": "20349.1906",
+   "arch": "amd64"
+  },
+  "f8dacdc6-94bd-48b4-9a09-bfd855bf0df6": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3570)",
+   "build": "19045.3570",
+   "arch": "x86"
+  },
+  "f940c27e-3559-43b4-a165-506856b1d65f": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": null
+  },
+  "f9e3c41f-c631-4ccb-ac7f-b52506c17fe7": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2846)",
+   "build": "19045.2846",
+   "arch": "amd64"
+  },
+  "fa685cb1-2e59-486d-b2a8-eedf22be4556": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.2311)",
+   "build": "19044.2311",
+   "arch": "x86"
+  },
+  "fa82ea51-04ac-4e3e-a487-70429b5d2bdb": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.4894)",
+   "build": "19044.4894",
+   "arch": "x86"
+  },
+  "fa860867-acb6-41e5-ae2f-a2d9de40f4f3": {
+   "status": "done",
+   "title": "Windows 11 (22000.3147)",
+   "build": "22000.3147",
+   "arch": "amd64"
+  },
+  "fa8dfa59-196d-442d-8469-0c8a51a06828": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.4108)",
+   "build": "22631.4108",
+   "arch": "amd64"
+  },
+  "fab031f1-92ea-4a99-b038-582f02c9eb0f": {
+   "status": "done",
+   "title": "Feature update to Microsoft server operating system, version 21H2 (20348.2700)",
+   "build": "20348.2700",
+   "arch": "amd64"
+  },
+  "fae5cd98-5bb2-4420-b9f8-8fab03a8d3d8": {
+   "status": "done",
+   "title": "Windows 11, version 24H2 (26100.1656)",
+   "build": "26100.1656",
+   "arch": "amd64"
+  },
+  "fb5a2831-7ecb-48cf-9d86-6af48e56722e": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.2670)",
+   "build": "19044.2670",
+   "arch": "amd64"
+  },
+  "fb6021d7-54ef-441b-a31b-71f1f722b3ef": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 23H2 (25398.643)",
+   "build": "25398.643",
+   "arch": "amd64"
+  },
+  "fbfffa4c-099d-4aea-9113-a91e0f72462f": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 20H2 (19042.1889)",
+   "build": "19042.1889",
+   "arch": "amd64"
+  },
+  "fc019751-31de-45c1-b0ca-4af1e3a3d7be": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 21H2 (19044.3324)",
+   "build": "19044.3324",
+   "arch": "amd64"
+  },
+  "fc1315c2-6da5-4630-ad21-93fb6059dc46": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 21H2 (20348.261)",
+   "build": "20348.261",
+   "arch": "amd64"
+  },
+  "fc348bf4-2b84-4c0c-89cd-7c285229df34": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4955)",
+   "build": "19045.4955",
+   "arch": "x86"
+  },
+  "fc59a088-0c58-4efd-a108-3a65acd966b6": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2311)",
+   "build": "19045.2311",
+   "arch": "amd64"
+  },
+  "fc82fd2a-9653-4437-92c1-e57554b2ff12": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.1889)",
+   "build": "19044.1889",
+   "arch": "amd64"
+  },
+  "fc9e6770-4c71-422b-8eda-fab07f97db57": {
+   "status": "done",
+   "title": "Cumulative Update Preview for Windows 11 Version 23H2 (22631.3807)",
+   "build": "22631.3807",
+   "arch": "amd64"
+  },
+  "fcc8f5c5-5c96-4077-9783-9e7e8f9d8e14": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4842)",
+   "build": "19045.4842",
+   "arch": "amd64"
+  },
+  "fe0e6691-6dba-41d3-997d-ed86b8a0da45": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.4780)",
+   "build": "19044.4780",
+   "arch": "x86"
+  },
+  "fe19a08c-6744-45a0-92c3-6f4e525f4a83": {
+   "status": "done",
+   "title": "Windows 11 (22000.1515)",
+   "build": "22000.1515",
+   "arch": "amd64"
+  },
+  "fe1f57e3-f40a-4e10-a34a-0607b5998c9a": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.4957)",
+   "build": "19045.4957",
+   "arch": "x86"
+  },
+  "feae9ba0-7b4f-40d1-bf6a-453011acfab9": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.1947)",
+   "build": "19044.1947",
+   "arch": "amd64"
+  },
+  "ff7d2dd9-996a-4cb6-94c6-641f45c893ce": {
+   "status": "done",
+   "title": "Cumulative Update for Windows 10 Version 22H2 (19045.2006)",
+   "build": "19045.2006",
+   "arch": "amd64"
+  }
+ }
+}
