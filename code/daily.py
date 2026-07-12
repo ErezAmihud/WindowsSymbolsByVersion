@@ -1,28 +1,22 @@
 #!/usr/bin/env python3
 """Pick the next builds to process.
 
-Reads process_builds.json / problematic.json / priority.json, filters the
-uupdump build list down to new, non-insider x86/amd64 builds available in
-en-us, and writes the picked uuids to a.txt as a JSON list (the uuid matrix
-for the download workflow).
+Filters the uupdump build list down to new, non-insider x86/amd64 builds
+available in en-us (consulting builds_state.json for what is already done,
+failed too often, or user-prioritized) and sets the picked uuids as the
+`uuid_matrix` step output for the download workflow.
 
 Usage: daily.py [allowed_download_size]
 """
 import re
 import sys
 import json
-from listid import listid
-from get_lang import get_langs
+from uupdump import listid, get_langs
+from state import load_state, excluded_uuids, priority_uuids
+from gha import write_output
 
 DEFAULT_ALLOWED_SIZE = 3
 EXCLUDED_TITLE_PATTERNS = [r"cumulative update", r"\binsider\b", r"\bpreview\b"]
-
-
-def load_state():
-    processed = set(json.load(open("process_builds.json", "r")))
-    processed.update(json.load(open("problematic.json", "r")))
-    priority = set(json.load(open("priority.json", "r")))
-    return processed, priority
 
 
 def is_wanted(build, processed):
@@ -55,8 +49,8 @@ def pick_builds(builds, processed, priority, allowed_size, get_langs=get_langs):
 if __name__ == "__main__":
     allowed_size = int(sys.argv[1]) if len(sys.argv) > 1 and sys.argv[1] else DEFAULT_ALLOWED_SIZE
 
-    processed, priority = load_state()
-    picked = pick_builds(listid(), processed, priority, allowed_size)
+    state = load_state()
+    picked = pick_builds(listid(), excluded_uuids(state), priority_uuids(state), allowed_size)
     for build in picked:
-        print(build.uuid, str(build))
-    json.dump([build.uuid for build in picked], open("a.txt", "w"))
+        print(build.uuid, str(build), file=sys.stderr)
+    write_output("uuid_matrix", json.dumps([build.uuid for build in picked]))

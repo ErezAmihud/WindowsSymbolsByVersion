@@ -9,20 +9,20 @@ on:
         type: string
 
 jobs:
-  create-iso:
+  create_iso:
     name: create iso
     runs-on: windows-latest
-    outputs:
-      editions: ${{ steps.get_editions.outputs.editions }}
+    permissions:
+      contents: read
     steps:
         - uses: actions/checkout@v4
         - uses: actions/setup-python@v5
           with:
             python-version: '3.10'
-        - run: python -m pip install pefile tqdm requests pydantic
+        - run: python -m pip install -r requirements.txt
         - id: get_editions
           shell: cmd
-          run: python .\code\get_editions.py ${{inputs.uuid}} && type a.txt && type a.txt >> "%GITHUB_OUTPUT%"
+          run: python .\code\get_editions.py ${{inputs.uuid}}
         - name: Download Commands
           run: |
             curl "https://uupdump.net/get.php?id=${{inputs.uuid}}&pack=en-us&edition=${{ steps.get_editions.outputs.editions }}" -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "autodl=2&updates=1" -o download_commands.zip
@@ -38,7 +38,7 @@ jobs:
           uses: nick-fields/retry@v3
           with:
             max_attempts: 3
-            timeout_minutes: 10000
+            timeout_minutes: 110
             retry_wait_seconds: 100
             retry_on: error
             shell: cmd
@@ -46,7 +46,7 @@ jobs:
         - name: Rename result
           shell: cmd
           run: .\code\move_iso_dir.bat
-        - name: Run
+        - name: Parse iso root
           run: python ./code/pdb_finding.py unpacked_dir manifest_general.out
         - uses: actions/upload-artifact@v4
           with:
@@ -64,33 +64,36 @@ jobs:
             path: unpacked_dir/sources/boot.wim
             retention-days: 1
 
-  failed-create-iso:
+  mark_build_failed:
     runs-on: ubuntu-latest
-    needs: create-iso
+    needs: create_iso
     if: ${{ always() && contains(needs.*.result, 'failure') }}
+    permissions:
+      contents: write
     steps:
       - name: Mutex Action
         uses: ben-z/gh-action-mutex@v1.0.0-alpha.9
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.ref_name }}
-      - run: python3 -c "import json;u='${{inputs.uuid}}';out=json.load(open('problematic.json', 'r'));out=out if u in out else out+[u];json.dump(out, open('problematic.json', 'w'))"
+      - run: python3 code/state.py mark-failed '${{ inputs.uuid }}' --run-url "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
       - uses: EndBug/add-and-commit@v9
         with:
-          add: "problematic.json"
-          message: 'Automated commit, add a problematic uuid - ${{inputs.uuid}}'
+          add: "builds_state.json"
+          message: 'Automated commit, record failed attempt for ${{inputs.uuid}}'
 
-  split-iso:
+  split_wims:
     runs-on: ubuntu-latest
-    needs: create-iso
+    needs: create_iso
+    permissions:
+      contents: read
     outputs:
       split_boot: ${{ steps.split_boot.outputs.version_matrix }}
       split_install: ${{ steps.split_install.outputs.version_matrix }}
     steps:
       - uses: actions/checkout@v4
       - name: Installations
-        run: sudo apt-get update && xargs sudo apt-get install --no-install-recommends -y < packages.txt && python3 -m pip install pefile tqdm && chmod +x ./code/*
-        # run: choco install wimlib && py -3.8 -m pip install pefile tqdm && chmod +x ./code/*
+        run: sudo apt-get update && xargs sudo apt-get install --no-install-recommends -y < packages.txt && python3 -m pip install -r requirements.txt && chmod +x ./code/*
       - name: Download boot wim
         uses: actions/download-artifact@v4
         with:
@@ -117,19 +120,19 @@ jobs:
         run: rm -rf ./install.wim ./boot.wim
 
   parse_boot_wim:
-    needs: split-iso
+    needs: split_wims
     name: parse boot wim
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     strategy:
       matrix:
-        version: ${{ fromJson(needs.split-iso.outputs.split_boot) }}
-          #- 1
-          #- 2
+        version: ${{ fromJson(needs.split_wims.outputs.split_boot) }}
 
     steps:
       - uses: actions/checkout@v4
       - name: Installations
-        run: sudo apt-get update && xargs sudo apt-get install --no-install-recommends -y < packages.txt && python3 -m pip install pefile tqdm && chmod +x ./code/*
+        run: sudo apt-get update && xargs sudo apt-get install --no-install-recommends -y < packages.txt && python3 -m pip install -r requirements.txt && chmod +x ./code/*
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
@@ -147,17 +150,19 @@ jobs:
           path: manifest_boot_${{ matrix.version }}.out
 
   parse_install_wim:
-    needs: split-iso
+    needs: split_wims
     name: parse install wim
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     strategy:
       matrix:
-        version: ${{ fromJson(needs.split-iso.outputs.split_install) }}
+        version: ${{ fromJson(needs.split_wims.outputs.split_install) }}
 
     steps:
       - uses: actions/checkout@v4
       - name: Installations
-        run: sudo apt-get update && xargs sudo apt-get install --no-install-recommends -y < packages.txt && python3 -m pip install pefile tqdm && chmod +x ./code/*
+        run: sudo apt-get update && xargs sudo apt-get install --no-install-recommends -y < packages.txt && python3 -m pip install -r requirements.txt && chmod +x ./code/*
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
@@ -179,8 +184,10 @@ jobs:
     needs:
       - parse_boot_wim
       - parse_install_wim
-      - create-iso
+      - create_iso
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
     - name: Download All Artifacts
       uses: actions/download-artifact@v4
@@ -201,26 +208,21 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      actions: write
     steps:
       - name: Mutex Action
         uses: ben-z/gh-action-mutex@v1.0.0-alpha.9
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.ref_name }}
-      - run: sudo apt-get update && xargs sudo apt-get install --no-install-recommends -y < packages.txt && python3 -m pip install pydantic requests pefile tqdm && chmod +x ./code/*
+      - run: python3 -m pip install -r requirements.txt
       - name: Download manifest
         uses: actions/download-artifact@v4
         with:
           name: ${{ inputs.uuid }}merged_manifest
       - run: mv manifest.out manifests/${{ inputs.uuid }}.manifest
-      - run: python code/get_name.py ${{inputs.uuid}} && cat b.txt >> $GITHUB_OUTPUT
-        id: get_name
-      - run: python -c "import json;u='${{inputs.uuid}}';out=json.load(open('process_builds.json', 'r'));out=out if u in out else out+[u];json.dump(out, open('process_builds.json', 'w'))"
-        name: Add uuid to processed builds
-      - run: grep -q "manifests/${{ inputs.uuid }}.manifest" docs/index.md || echo -e "[${{ steps.get_name.outputs.name }}](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests/${{ inputs.uuid }}.manifest) \n\n" >> docs/index.md
+      - name: Mark build done
+        run: python3 code/state.py mark-done '${{ inputs.uuid }}'
       - uses: EndBug/add-and-commit@v9
         with:
-          add: '["manifests", "docs", "process_builds.json"]'
+          add: '["manifests", "builds_state.json"]'
           message: 'Automated commit, add manifest for ${{inputs.uuid}}'
-

@@ -9,7 +9,10 @@ If you want the **latest** version, check this site after 1 day the release is o
 
 ### Method
 I am using uup files from uupdump.net to create iso for each windows version and then parse it's install.wim and boot.wim to get all the dll's. If any symbol version that is here is not working let me know.
-Read more in the website.
+Read more in the website, or see [ARCHITECTURE.md](ARCHITECTURE.md) for how the pipeline works.
+
+There is also a machine-readable index of all versions at
+[index.json](https://erezamihud.github.io/WindowsSymbolsByVersion/index.json) if you want to script the lookup.
 
 
 

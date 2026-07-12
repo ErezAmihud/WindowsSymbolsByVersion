@@ -6,7 +6,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "code"))
-from listid import BuildInfo
+from uupdump import BuildInfo
 from daily import pick_builds
 
 
@@ -28,7 +28,7 @@ def main():
         build("nolang-1"),                                      # not available in en-us
         build("langfail-1"),                                    # listlangs endpoint keeps failing
         build("new-3"),
-        build("prio-1"),                                        # requested via priority.json
+        build("prio-1"),                                        # user-requested priority build
     ]
     processed = {"done-1", "bad-1"}
     priority = {"prio-1", "done-1"}  # priority on a processed build must not resurrect it
