@@ -3893,6 +3893,12 @@
    "build": "19045.2311",
    "arch": "x86"
   },
+  "b7cccf88-c6fb-4040-8db6-87498738a46a": {
+   "status": "done",
+   "title": "Feature update for Windows CPC OS, version 25H2 (26200.8457)",
+   "build": "26200.8457",
+   "arch": "amd64"
+  },
   "b7ee45bf-127d-4044-9e79-e7d07f2286a2": {
    "status": "done",
    "title": "Windows 10 Insider Preview 10.0.18327.7 (19h1_release)",
