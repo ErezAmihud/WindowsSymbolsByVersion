@@ -3,9 +3,13 @@
 Generates:
   index.md   - the website landing page, grouped by product and sorted by build
   index.json - machine-readable mapping for scripting:
-               [{uuid, title, build, arch, manifest}, ...]
+               [{uuid, title, build, arch, manifest, files?}, ...]
+               `files` (the per-build path data used by the winsyms CLI for
+               scope filtering) is only present for builds processed after
+               the pipeline started recording binary paths.
 """
 import json
+import os.path
 
 import mkdocs_gen_files
 
@@ -71,11 +75,14 @@ def main():
                     f"| [download]({BLOB_BASE}/{e['uuid']}.manifest) |\n"
                 )
 
+    def index_entry(e):
+        entry = {**e, "manifest": f"{RAW_BASE}/{e['uuid']}.manifest"}
+        if os.path.exists(f"manifests/{e['uuid']}.files.json"):
+            entry["files"] = f"{RAW_BASE}/{e['uuid']}.files.json"
+        return entry
+
     with mkdocs_gen_files.open("index.json", "w") as f:
-        json.dump(
-            [{**e, "manifest": f"{RAW_BASE}/{e['uuid']}.manifest"} for e in done],
-            f, indent=1,
-        )
+        json.dump([index_entry(e) for e in done], f, indent=1)
 
 
 main()

@@ -47,11 +47,13 @@ jobs:
           shell: cmd
           run: .\code\move_iso_dir.bat
         - name: Parse iso root
-          run: python ./code/pdb_finding.py unpacked_dir manifest_general.out
+          run: python ./code/pdb_finding.py unpacked_dir manifest_general.out manifest_general.paths
         - uses: actions/upload-artifact@v4
           with:
             name: ${{inputs.uuid}}manifest_general.out
-            path: manifest_general.out
+            path: |
+              manifest_general.out
+              manifest_general.paths
             retention-days: 1
         - uses: actions/upload-artifact@v4
           with:
@@ -147,7 +149,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ${{ inputs.uuid }}manifest_boot_${{ matrix.version }}
-          path: manifest_boot_${{ matrix.version }}.out
+          path: |
+            manifest_boot_${{ matrix.version }}.out
+            manifest_boot_${{ matrix.version }}.paths
 
   parse_install_wim:
     needs: split_wims
@@ -177,7 +181,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ${{ inputs.uuid }}manifest_install_${{ matrix.version }}
-          path: manifest_install_${{ matrix.version }}.out
+          path: |
+            manifest_install_${{ matrix.version }}.out
+            manifest_install_${{ matrix.version }}.paths
 
 
   merge_artifacts:
@@ -189,19 +195,23 @@ jobs:
     permissions:
       contents: read
     steps:
+    - uses: actions/checkout@v4
     - name: Download All Artifacts
       uses: actions/download-artifact@v4
       with:
-        path: manifests
+        path: partials
         pattern: ${{ inputs.uuid }}manifest*
         merge-multiple: true
-    - run: cat ./manifests/* | sort | uniq > manifest.out
+    - run: cat ./partials/*.out | sort | uniq > manifest.out
+    - run: python3 code/merge_paths.py ./partials files.json
 
     - name: Archive manifest result
       uses: actions/upload-artifact@v4
       with:
         name: ${{ inputs.uuid }}merged_manifest
-        path: manifest.out
+        path: |
+          manifest.out
+          files.json
 
   deploy_manifest:
     needs: merge_artifacts
@@ -220,6 +230,10 @@ jobs:
         with:
           name: ${{ inputs.uuid }}merged_manifest
       - run: mv manifest.out manifests/${{ inputs.uuid }}.manifest
+      - name: Deploy files.json
+        # an empty list means the paths pipeline produced nothing - do not
+        # commit it, the CLI treats a missing files.json as "no path data"
+        run: if [ -s files.json ] && [ "$(cat files.json)" != "[]" ]; then mv files.json manifests/${{ inputs.uuid }}.files.json; fi
       - name: Mark build done
         run: python3 code/state.py mark-done '${{ inputs.uuid }}'
       - uses: EndBug/add-and-commit@v9
