@@ -1310,6 +1310,12 @@
    "failures": 3,
    "last_run": null
   },
+  "413372f8-51db-4ea1-970a-8dce91db00aa": {
+   "status": "done",
+   "title": "Windows 11, version 26H1 (28000.2269)",
+   "build": "28000.2269",
+   "arch": "amd64"
+  },
   "41713986-67ec-4fa9-94dd-b9ee1b6795a1": {
    "status": "done",
    "title": "Cumulative Update for Windows 10 Version 21H1 (19043.1766)",
