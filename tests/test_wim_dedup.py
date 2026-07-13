@@ -4,11 +4,15 @@ Builds a 2-image WIM where image 2 shares most files with image 1 (like the
 editions inside a real install.wim), then checks that:
  - the per-image listfiles only contain PE-like files not seen in an earlier image,
  - extracting via the listfiles and parsing yields exactly the union of pdb
-   entries that a full extraction of both images would yield.
+   entries that a full extraction of both images would yield,
+ - the .paths sidecars record the in-image path of every entry, and
+   merge_paths.py turns them into a files.json whose pdb/guid set reproduces
+   the merged manifest exactly (the scope=all recreation guarantee).
 
 Requires wimlib-imagex (apt package wimtools).
 Run from the repo root: python3 tests/test_wim_dedup.py
 """
+import json
 import os
 import shutil
 import subprocess
@@ -78,7 +82,7 @@ def main():
         workdir = os.path.join(tmp, "work")
         code_dir = os.path.join(workdir, "code")
         os.makedirs(code_dir)
-        for script in ("wim_dedup.py", "extract_and_parse.sh", "pdb_finding.py"):
+        for script in ("wim_dedup.py", "extract_and_parse.sh", "pdb_finding.py", "merge_paths.py"):
             shutil.copy(os.path.join(REPO_ROOT, "code", script), code_dir)
         shutil.copy(wim, workdir)
 
@@ -103,18 +107,44 @@ def main():
         assert "readme.txt" not in listfile_1 + listfile_2
 
         got = set()
+        got_paths = {}
         for image in ("1", "2"):
             subprocess.run(["bash", "code/extract_and_parse.sh", "install", image],
                            check=True, cwd=workdir)
             with open(os.path.join(workdir, f"manifest_install_{image}.out")) as f:
                 got.update(line.strip() for line in f if line.strip())
+            with open(os.path.join(workdir, f"manifest_install_{image}.paths")) as f:
+                got_paths[image] = sorted(line.split("\t")[0] for line in f if line.strip())
 
         assert got == expected, f"manifest mismatch:\nmissing: {sorted(expected - got)}\nunexpected: {sorted(got - expected)}"
 
-        # empty-listfile path: extract_and_parse must produce an empty manifest
+        # .paths must record the in-image path of every extracted PE
+        assert got_paths["1"] == [
+            "Program Files/App/sp ace.exe",
+            "Windows/System32/b.dll",
+            "Windows/System32/ntdll.dll",
+        ], f"unexpected image 1 paths: {got_paths['1']}"
+        assert got_paths["2"] == [
+            "Windows/System32/b.dll",
+            "Windows/System32/only2.sys",
+            "bootmgr",
+        ], f"unexpected image 2 paths: {got_paths['2']}"
+
+        # empty-listfile path: extract_and_parse must produce empty outputs
         open(os.path.join(workdir, "listfile_install_9.txt"), "w").close()
         subprocess.run(["bash", "code/extract_and_parse.sh", "install", "9"], check=True, cwd=workdir)
         assert os.path.getsize(os.path.join(workdir, "manifest_install_9.out")) == 0
+        assert os.path.getsize(os.path.join(workdir, "manifest_install_9.paths")) == 0
+
+        # merging all .paths must reproduce the merged manifest (scope=all guarantee)
+        subprocess.run([sys.executable, "code/merge_paths.py", ".", "files.json"],
+                       check=True, cwd=workdir)
+        files = json.load(open(os.path.join(workdir, "files.json")))
+        recreated = {f"{f['pdb']},{f['guid']},1" for f in files}
+        assert recreated == expected, (
+            f"files.json does not reproduce the manifest:\nmissing: {sorted(expected - recreated)}"
+            f"\nunexpected: {sorted(recreated - expected)}"
+        )
 
     print(f"test_wim_dedup OK ({len(expected)} entries)")
 

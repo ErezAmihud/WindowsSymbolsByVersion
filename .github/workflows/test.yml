@@ -17,5 +17,7 @@ jobs:
       - run: python3 tests/test_state.py
       - run: python3 tests/test_pdb_finding.py
       - run: python3 tests/test_wim_dedup.py
+      - run: pip install -e ./cli
+      - run: python3 tests/test_cli.py
       - name: Docs build
         run: mkdocs build --strict

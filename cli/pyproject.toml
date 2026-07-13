@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "winsyms"
+version = "0.1.0"
+description = "Download the public PDB symbols of a specific Windows release, powered by WindowsSymbolsByVersion"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = ["requests"]
+authors = [{ name = "Erez Amihud" }]
+keywords = ["windows", "symbols", "pdb", "symbol-server", "pdblister"]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Debuggers",
+]
+
+[project.urls]
+Homepage = "https://github.com/ErezAmihud/WindowsSymbolsByVersion"
+Index = "https://erezamihud.github.io/WindowsSymbolsByVersion/"
+
+[project.scripts]
+winsyms = "winsyms.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/winsyms"]

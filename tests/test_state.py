@@ -51,15 +51,14 @@ def test_cli():
 
 
 def test_repo_state_consistent():
-    """The committed state file must match the manifests on disk."""
+    """Every manifest on disk must belong to a done build. Done builds may
+    lack a manifest (the 2026-07 purge deleted pre-path-data manifests but
+    kept their state entries so they are never reprocessed)."""
     repo = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     state = json.load(open(os.path.join(repo, "builds_state.json")))
     done = {u for u, i in state["builds"].items() if i["status"] == "done"}
     manifests = {f[:-9] for f in os.listdir(os.path.join(repo, "manifests")) if f.endswith(".manifest")}
-    assert done == manifests, (
-        f"state/manifest mismatch: done-without-manifest={sorted(done - manifests)[:5]} "
-        f"manifest-without-done={sorted(manifests - done)[:5]}"
-    )
+    assert manifests <= done, f"manifest-without-done={sorted(manifests - done)[:5]}"
 
 
 if __name__ == "__main__":
