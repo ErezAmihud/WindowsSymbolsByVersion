@@ -55,6 +55,12 @@
    "build": "26100.1386",
    "arch": "amd64"
   },
+  "032c5c24-c579-4e18-b730-a23246319f17": {
+   "status": "done",
+   "title": "Windows Server, version 23H2 (25398.2330)",
+   "build": "25398.2330",
+   "arch": "amd64"
+  },
   "035d3119-ab89-4771-8dea-8f291986630b": {
    "status": "done",
    "title": "Feature update to Windows 10, version 22H2 (19045.3996)",
