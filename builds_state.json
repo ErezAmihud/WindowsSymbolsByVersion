@@ -640,6 +640,12 @@
    "build": "19045.3693",
    "arch": "x86"
   },
+  "1fc1bde8-4da4-4fff-b690-3c50f7da3a88": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.7417)",
+   "build": "19044.7417",
+   "arch": "amd64"
+  },
   "1fe92200-ca4b-4ff0-aa38-cba882ff65f1": {
    "status": "done",
    "title": "Cumulative Update for Windows 11 Version 22H2 (22621.755)",
