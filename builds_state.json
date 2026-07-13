@@ -61,6 +61,12 @@
    "build": "17763.8880",
    "arch": "amd64"
   },
+  "79bdbb8e-d944-4aa3-a554-052bb3147d5b": {
+   "status": "done",
+   "title": "Feature update to Microsoft server operating system, version 21H2 (20348.5139)",
+   "build": "20348.5139",
+   "arch": "amd64"
+  },
   "808e9015-f738-4353-a93d-bc9efb933f11": {
    "status": "done",
    "title": "Feature update for Windows CPC OS, version 25H2 (26200.8655)",
