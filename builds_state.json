@@ -3612,6 +3612,12 @@
    "build": "19045.3448",
    "arch": "x86"
   },
+  "a9574c03-a346-492c-8cd6-a6771a5562b7": {
+   "status": "done",
+   "title": "Windows 11, version 25H2 (26200.8390)",
+   "build": "26200.8390",
+   "arch": "amd64"
+  },
   "a95de9c4-eda6-4dbc-87e6-0fd3ab104170": {
    "status": "done",
    "title": "Windows 11 Insider Preview 10.0.26120.770 (ge_release)",
