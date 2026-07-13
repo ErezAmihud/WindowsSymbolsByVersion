@@ -41,6 +41,9 @@ The single record of what happened to every build, owned by `code/state.py`:
 ```
 
 - `done` builds are never re-attempted; their metadata renders the website.
+  Builds processed before per-build path data (2026-07) had their manifests
+  purged from the repo - their `done` entries remain solely so the pipeline
+  never reprocesses them, and the website skips them.
 - `failed` builds are retried until `failures` reaches `MAX_FAILURES` (3), so
   transient runner/uupdump errors do not permanently blacklist a build.
 - `priority` uuids are picked before anything else on the next run.

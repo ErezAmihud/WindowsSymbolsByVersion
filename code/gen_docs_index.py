@@ -51,10 +51,13 @@ def build_sort_key(build: str):
 
 def main():
     state = json.load(open("builds_state.json"))
+    # done builds without a manifest on disk were purged (2026-07: everything
+    # before per-build path data); they stay in the state so the pipeline
+    # never reprocesses them, but are not listed on the site.
     done = [
         {"uuid": uuid, "title": info["title"], "build": info["build"], "arch": info["arch"]}
         for uuid, info in state["builds"].items()
-        if info["status"] == "done"
+        if info["status"] == "done" and os.path.exists(f"manifests/{uuid}.manifest")
     ]
 
     with mkdocs_gen_files.open("index.md", "w") as f:
