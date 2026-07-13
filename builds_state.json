@@ -6,6 +6,12 @@
    "title": "Feature update to Windows 10, version 1809 (17763.8880)",
    "build": "17763.8880",
    "arch": "x86"
+  },
+  "808e9015-f738-4353-a93d-bc9efb933f11": {
+   "status": "done",
+   "title": "Feature update for Windows CPC OS, version 25H2 (26200.8655)",
+   "build": "26200.8655",
+   "arch": "amd64"
   }
  }
 }
