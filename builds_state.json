@@ -67,6 +67,12 @@
    "build": "28000.2269",
    "arch": "amd64"
   },
+  "509ef3a9-3bd5-4341-acb9-d2682c65550b": {
+   "status": "done",
+   "title": "Windows 11, version 25H2 (26200.8313)",
+   "build": "26200.8313",
+   "arch": "amd64"
+  },
   "521e73d3-fb1e-432e-a572-4f1777cc1501": {
    "status": "done",
    "title": "Feature update to Windows 10, version 1809 (17763.8880)",
