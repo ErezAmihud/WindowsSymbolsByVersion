@@ -312,6 +312,12 @@
    "build": "22631.7079",
    "arch": "amd64"
   },
+  "7ff85d05-b6c9-493c-ac1a-6dc0cde3b551": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 23H2 (25398.2149)",
+   "build": "25398.2149",
+   "arch": "amd64"
+  },
   "808e9015-f738-4353-a93d-bc9efb933f11": {
    "status": "done",
    "title": "Feature update for Windows CPC OS, version 25H2 (26200.8655)",
