@@ -139,6 +139,12 @@
    "build": "26200.8328",
    "arch": "amd64"
   },
+  "2fee948d-d887-4b3c-8987-fa215b4dbd4a": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 23H2 (25398.2092)",
+   "build": "25398.2092",
+   "arch": "amd64"
+  },
   "309e80cc-35c6-454b-b233-adddea1a368f": {
    "status": "done",
    "title": "Windows Server, version 23H2 (25398.2149)",
