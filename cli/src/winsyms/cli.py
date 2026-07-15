@@ -56,7 +56,7 @@ def cmd_get(args):
 
     entry = _resolve_one(args)
     print(f"selected: {entry['title']} [{entry['arch']}] ({entry['uuid']})", file=sys.stderr)
-    text = manifest.build_manifest(entry, prefix)
+    text = manifest.build_manifest(entry, prefix).replace("\r\n", "\n")
     if not text:
         raise SystemExit(f"error: no pdb entries match path prefix {prefix!r} in this build")
 
