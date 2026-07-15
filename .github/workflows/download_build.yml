@@ -202,7 +202,7 @@ jobs:
         path: partials
         pattern: ${{ inputs.uuid }}manifest*
         merge-multiple: true
-    - run: cat ./partials/*.out | sort | uniq > manifest.out
+    - run: cat ./partials/*.out | sort | uniq -c | sed 's/\r$//' > manifest.out
     - run: python3 code/merge_paths.py ./partials files.json
 
     - name: Archive manifest result
@@ -221,6 +221,10 @@ jobs:
     steps:
       - name: Mutex Action
         uses: ben-z/gh-action-mutex@v1.0.0-alpha.9
+      - name: Force LF line endings
+        run: |
+          git config --global core.autocrlf false
+          git config --global core.eol lf
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.ref_name }}
