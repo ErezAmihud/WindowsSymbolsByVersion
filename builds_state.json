@@ -1,6 +1,12 @@
 {
  "priority": [],
  "builds": {
+  "023030e4-725e-4a13-b3e2-34377b225ae5": {
+   "status": "done",
+   "title": "Windows 11, version 25H2 (26200.7705)",
+   "build": "26200.7705",
+   "arch": "amd64"
+  },
   "032c5c24-c579-4e18-b730-a23246319f17": {
    "status": "done",
    "title": "Windows Server, version 23H2 (25398.2330)",
