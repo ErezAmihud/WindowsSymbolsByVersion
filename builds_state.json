@@ -685,6 +685,12 @@
    "build": "22631.7219",
    "arch": "amd64"
   },
+  "840ffefa-32b7-4e3f-8c25-8c86f7ea6753": {
+   "status": "done",
+   "title": "Windows 11, version 24H2 (26100.6901)",
+   "build": "26100.6901",
+   "arch": "amd64"
+  },
   "84f92676-c50f-47ba-8877-9cb3aded078f": {
    "status": "done",
    "title": "Windows 11, version 25H2 (26200.8875)",
