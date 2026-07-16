@@ -36,6 +36,11 @@
    "build": "19045.6390",
    "arch": "x86"
   },
+  "02e98fc7-ded3-4551-9ffe-34874910e69b": {
+   "status": "failed",
+   "failures": 1,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/29503256089"
+  },
   "032c5c24-c579-4e18-b730-a23246319f17": {
    "status": "done",
    "title": "Windows Server, version 23H2 (25398.2330)",
