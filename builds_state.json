@@ -797,6 +797,11 @@
    "build": "26100.8246",
    "arch": "amd64"
   },
+  "a66fe849-c1e4-41b7-bb51-f6abbecf4040": {
+   "status": "failed",
+   "failures": 1,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/29465962624"
+  },
   "a7884f08-1db6-470d-9417-b95e33d91818": {
    "status": "done",
    "title": "Feature update for Windows CPC OS, version 25H2 (26200.8246)",
