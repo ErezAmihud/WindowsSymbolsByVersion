@@ -1776,6 +1776,12 @@
    "build": "26200.8390",
    "arch": "amd64"
   },
+  "a9a00eaf-03f3-4f9e-8aad-dd2baa46a603": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 23H2 (25398.1425)",
+   "build": "25398.1425",
+   "arch": "amd64"
+  },
   "a9ee4e02-9e84-4e29-a706-2d8e521efcb9": {
    "status": "failed",
    "failures": 3,
