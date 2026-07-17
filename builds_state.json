@@ -1446,6 +1446,12 @@
    "failures": 3,
    "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/29489509655"
   },
+  "a6fa8fea-d8bc-4c98-99a1-a7b3ec64de0d": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.5415)",
+   "build": "22631.5415",
+   "arch": "amd64"
+  },
   "a7884f08-1db6-470d-9417-b95e33d91818": {
    "status": "done",
    "title": "Feature update for Windows CPC OS, version 25H2 (26200.8246)",
