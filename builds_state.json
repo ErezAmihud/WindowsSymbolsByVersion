@@ -1384,6 +1384,12 @@
    "build": "19045.6093",
    "arch": "x86"
   },
+  "ae655a7e-6da3-4cc3-911c-bb8e066ac216": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.6033)",
+   "build": "19045.6033",
+   "arch": "x86"
+  },
   "aedb85ac-2c65-4c94-af40-d210e31eb7ec": {
    "status": "done",
    "title": "Windows 11, version 24H2 (26100.4767)",
