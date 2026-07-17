@@ -1508,6 +1508,12 @@
    "build": "26100.7627",
    "arch": "amd64"
   },
+  "bd8d3d91-5716-4f3d-8f00-4c30bc6f6bfa_rev.2": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1709 (16299.19)",
+   "build": "16299.19",
+   "arch": "x86"
+  },
   "be630017-00c7-4e4c-921b-209b6ad1b522": {
    "status": "done",
    "title": "Feature update to Windows 10, version 1809 (17763.8389)",
