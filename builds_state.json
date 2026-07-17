@@ -142,6 +142,12 @@
    "build": "26100.8390",
    "arch": "amd64"
   },
+  "0df8805d-0787-424d-acd8-7186f579520b": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.5624)",
+   "build": "22621.5624",
+   "arch": "amd64"
+  },
   "0e1cec91-9bb2-41ad-929f-fe36a5beda02": {
    "status": "done",
    "title": "Security Update for Windows 11 (28000.1450)",
