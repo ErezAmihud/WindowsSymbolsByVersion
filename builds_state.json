@@ -684,6 +684,12 @@
    "build": "17763.7792",
    "arch": "amd64"
   },
+  "4ef6df23-de64-4bfa-9a43-6446e930f4d5": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.5854)",
+   "build": "19044.5854",
+   "arch": "amd64"
+  },
   "4f430b82-06d3-470d-9e16-9c7c496c2a9a": {
    "status": "done",
    "title": "Windows Server, version 23H2 (25398.1913)",
