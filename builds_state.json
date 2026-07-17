@@ -71,6 +71,12 @@
    "build": "26100.8313",
    "arch": "amd64"
   },
+  "0451370e-a747-4cc4-a984-22d44306fdf0": {
+   "status": "done",
+   "title": "Feature update to Microsoft server operating system, version 21H2 (20348.3453)",
+   "build": "20348.3453",
+   "arch": "amd64"
+  },
   "048c916c-0aa2-4682-8f87-ed2844fb8e99": {
    "status": "done",
    "title": "Feature update to Azure Stack HCI, version 23H2 (25398.1965)",
