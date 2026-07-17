@@ -2218,6 +2218,12 @@
    "failures": 3,
    "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/29310425212"
   },
+  "c7d094e2-6fab-49eb-8cce-150e8199fbd5": {
+   "status": "done",
+   "title": "Windows 11, version 24H2 (26100.3403)",
+   "build": "26100.3403",
+   "arch": "amd64"
+  },
   "c9439871-64f5-4d6f-b69b-49b518538385": {
    "status": "done",
    "title": "Feature update to Microsoft server operating system, version 21H2 (20348.4294)",
