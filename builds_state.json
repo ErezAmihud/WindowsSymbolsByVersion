@@ -2448,6 +2448,12 @@
    "build": "26100.7462",
    "arch": "amd64"
   },
+  "c4bd87c1-c34e-452f-9d2c-16ee2ec9e19a": {
+   "status": "done",
+   "title": "Windows Server 2025 (26100.2314)",
+   "build": "26100.2314",
+   "arch": "amd64"
+  },
   "c4f65e99-f042-4818-8bce-a0129d3f2fae": {
    "status": "done",
    "title": "Feature update to Azure Stack HCI, version 23H2 (25398.2274)",
