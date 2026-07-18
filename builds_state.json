@@ -3038,6 +3038,12 @@
    "failures": 3,
    "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/29476075568"
   },
+  "cb0a865a-803b-43f1-b983-600693beb150": {
+   "status": "done",
+   "title": "Windows 11 (22000.3079)",
+   "build": "22000.3079",
+   "arch": "amd64"
+  },
   "cb213a20-f802-4885-a433-abaf60da11e9": {
    "status": "done",
    "title": "Windows 11, version 23H2 (22631.5984) (2)",
