@@ -2509,6 +2509,12 @@
    "build": "19045.7417",
    "arch": "amd64"
   },
+  "d571fc5d-1a85-4654-a7cf-8f872bc98dbb": {
+   "status": "done",
+   "title": "Feature update to Microsoft server operating system, version 21H2 (20348.2966)",
+   "build": "20348.2966",
+   "arch": "amd64"
+  },
   "d61f8bab-3ca6-4425-ae77-5152858c91cd": {
    "status": "done",
    "title": "Windows 11, version 24H2 (26100.7921)",
