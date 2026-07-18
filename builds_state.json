@@ -2473,6 +2473,12 @@
    "build": "17763.8644",
    "arch": "x86"
   },
+  "d6633097-6beb-41e9-92d4-d95c7d89a296": {
+   "status": "done",
+   "title": "Windows Server, version 23H2 (25398.1308)",
+   "build": "25398.1308",
+   "arch": "amd64"
+  },
   "d727e3b6-343f-422c-bfd4-43b64bbfd1f9": {
    "status": "done",
    "title": "Windows 11, version 24H2 (26100.7628)",
