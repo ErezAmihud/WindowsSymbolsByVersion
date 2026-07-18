@@ -1845,6 +1845,12 @@
    "build": "22631.5545",
    "arch": "amd64"
   },
+  "806ad015-35bb-4e96-bd8b-84f0b68f6fbf": {
+   "status": "done",
+   "title": "Windows 11, version 24H2 (26100.793)",
+   "build": "26100.793",
+   "arch": "amd64"
+  },
   "808e9015-f738-4353-a93d-bc9efb933f11": {
    "status": "done",
    "title": "Feature update for Windows CPC OS, version 25H2 (26200.8655)",
