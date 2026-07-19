@@ -2963,6 +2963,12 @@
    "build": "25398.2207",
    "arch": "amd64"
   },
+  "a15c6186-3840-4a3e-a37e-68da963fbdd0": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.2506)",
+   "build": "22621.2506",
+   "arch": "amd64"
+  },
   "a1a4e1f9-b33c-4156-8997-6da6c7e8f443": {
    "status": "done",
    "title": "Feature update to Azure Stack HCI, version 23H2 (25398.1916)",
