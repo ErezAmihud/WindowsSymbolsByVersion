@@ -696,6 +696,12 @@
    "build": "19045.7417",
    "arch": "x86"
   },
+  "30da46b4-2ff2-4682-a9ae-23b66dd98713": {
+   "status": "done",
+   "title": "Windows Server 2025 (26100.1)",
+   "build": "26100.1",
+   "arch": "amd64"
+  },
   "31357333-eeec-4295-abd8-d81e6d57393a": {
    "status": "done",
    "title": "Windows Server, version 23H2 (25398.1009)",
