@@ -2297,6 +2297,12 @@
    "build": "19044.4529",
    "arch": "x86"
   },
+  "8735bcf9-1cc4-44ab-88ea-8f71df13c5dd": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.4170)",
+   "build": "19044.4170",
+   "arch": "x86"
+  },
   "877caeca-6240-43ba-bb31-759d631fbce3": {
    "status": "done",
    "title": "Feature update to Windows 10, version 1809 (17763.5696)",
