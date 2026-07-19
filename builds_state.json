@@ -917,6 +917,12 @@
    "build": "26100.3037",
    "arch": "amd64"
   },
+  "3212456b-0c98-45b0-96a7-d393437215c7": {
+   "status": "done",
+   "title": "Windows Server, version 23H2 (25398.531)",
+   "build": "25398.531",
+   "arch": "amd64"
+  },
   "32322205-7c4e-4e20-9dc7-7f93dae10af9": {
    "status": "done",
    "title": "Feature update to Windows 10, version 1809 (17763.6893)",
