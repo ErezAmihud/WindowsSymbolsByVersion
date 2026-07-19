@@ -3676,6 +3676,12 @@
    "failures": 3,
    "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/29336356905"
   },
+  "d9c561ec-7f71-44c7-aad2-d86d4b6a9053": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.3374)",
+   "build": "22631.3374",
+   "arch": "amd64"
+  },
   "d9fed5e5-8d27-4f53-a82e-23f384ee8d17": {
    "status": "done",
    "title": "Feature update to Windows 10, version 21H2 (19044.5487)",
