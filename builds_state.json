@@ -405,6 +405,12 @@
    "build": "19045.6156",
    "arch": "x86"
   },
+  "1843eef2-a370-40c5-8cfd-e1ed2956e77c": {
+   "status": "done",
+   "title": "Windows 11 (22000.2960)",
+   "build": "22000.2960",
+   "arch": "amd64"
+  },
   "18874073-e477-49c4-b656-5c0fc7c33f2b": {
    "status": "failed",
    "failures": 3,
