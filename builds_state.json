@@ -2315,6 +2315,12 @@
    "failures": 3,
    "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/29549418903"
   },
+  "82ced77e-a1a3-4afd-b55c-845ef330b039": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 22H2 (20349.2159)",
+   "build": "20349.2159",
+   "arch": "amd64"
+  },
   "8383094f-2b92-47a7-bb6a-6d3c13a6de38": {
    "status": "done",
    "title": "Windows 11, version 23H2 (22631.7219)",
