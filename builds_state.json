@@ -2267,6 +2267,12 @@
    "build": "28000.1764",
    "arch": "amd64"
   },
+  "6501e74d-5a5e-40fb-8032-b49aa6d779f4": {
+   "status": "done",
+   "title": "Windows 11 (22000.1880)",
+   "build": "22000.1880",
+   "arch": "amd64"
+  },
   "6563628e-d112-4e73-a45e-4b984604df48": {
    "status": "failed",
    "failures": 3,
