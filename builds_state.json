@@ -4336,6 +4336,11 @@
    "build": "20348.2159",
    "arch": "amd64"
   },
+  "cf62dc01-2836-4592-841c-0d161075e136": {
+   "status": "failed",
+   "failures": 1,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/29736276499"
+  },
   "cfd1f3e5-afda-4010-87f5-8b6ad57c65f6": {
    "status": "done",
    "title": "Feature update to Azure Stack HCI, version 21H2 (20348.2031)",
