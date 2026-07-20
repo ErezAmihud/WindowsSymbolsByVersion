@@ -995,6 +995,12 @@
    "build": "22631.3227",
    "arch": "amd64"
   },
+  "32a3e279-d82f-4579-b899-270a391b85cc": {
+   "status": "done",
+   "title": "Feature update to Windows 10 Team (19045.2130)",
+   "build": "19045.2130",
+   "arch": "amd64"
+  },
   "32e26961-7bfe-4624-a09f-4be93e3ba2bc": {
    "status": "failed",
    "failures": 3,
