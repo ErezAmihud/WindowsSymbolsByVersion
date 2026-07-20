@@ -4903,6 +4903,12 @@
    "build": "17763.8644",
    "arch": "x86"
   },
+  "d65d9cd7-26d3-4002-abcb-3821726a9d34": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.1485)",
+   "build": "22621.1485",
+   "arch": "amd64"
+  },
   "d6633097-6beb-41e9-92d4-d95c7d89a296": {
    "status": "done",
    "title": "Windows Server, version 23H2 (25398.1308)",
