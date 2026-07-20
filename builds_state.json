@@ -1237,6 +1237,12 @@
    "build": "19045.4355",
    "arch": "x86"
   },
+  "427c43da-3ce5-4bb0-adff-a844d1ff8417": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.3570)",
+   "build": "19044.3570",
+   "arch": "x86"
+  },
   "42d76ccb-302e-47d2-87b2-ab796db050de": {
    "status": "done",
    "title": "Windows 11, version 22H2 (22621.5472)",
