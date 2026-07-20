@@ -4684,6 +4684,12 @@
    "build": "17763.7136",
    "arch": "x86"
   },
+  "f1d17e5b-0ef2-4a23-950a-ab4de0ff7630": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.3636)",
+   "build": "19045.3636",
+   "arch": "amd64"
+  },
   "f24da575-a6e4-4785-ba1b-4d37f2c65ff7": {
    "status": "done",
    "title": "Feature update to Microsoft server operating system, version 21H2 (20348.5256)",
