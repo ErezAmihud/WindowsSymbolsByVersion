@@ -3,24 +3,13 @@
 exclude: '^(manifests/|graphify-out/|\.tokensave/|builds_state\.json$)'
 
 repos:
-  - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v6.0.0
-    hooks:
-      - id: trailing-whitespace
-      - id: end-of-file-fixer
-      - id: check-yaml
-      - id: check-added-large-files
-
-  # Python: lint (ruff) + format (black)
+  # Python: lint (ruff)
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.15.22
     hooks:
       - id: ruff
         args: [--fix]
-  - repo: https://github.com/psf/black
-    rev: 26.5.1
-    hooks:
-      - id: black
+      - id: ruff-format
 
   # Python: type checking
   - repo: https://github.com/facebook/pyrefly-pre-commit
@@ -49,3 +38,11 @@ repos:
     rev: v1.7.12
     hooks:
       - id: actionlint
+  
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-added-large-files
