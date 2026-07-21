@@ -17,11 +17,6 @@ target-version = ["py39"]
 line-length = 88
 extend-exclude = "manifests|graphify-out|.tokensave"
 
-[tool.mypy]
-python_version = "3.9"
-ignore_missing_imports = true  # requests/pefile/etc. ship no stubs here
-exclude = "manifests|graphify-out|.tokensave"
-
 [tool.pyrefly]
 project-includes = ["code", "tests", "cli/src"]
 project-excludes = ["manifests", "graphify-out", ".tokensave"]

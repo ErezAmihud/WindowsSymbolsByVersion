@@ -23,11 +23,6 @@ repos:
       - id: black
 
   # Python: type checking
-  - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v2.3.0
-    hooks:
-      - id: mypy
-        additional_dependencies: [pydantic, types-requests]
   - repo: https://github.com/facebook/pyrefly-pre-commit
     rev: 1.1.1
     hooks:
