@@ -18,7 +18,7 @@ jobs:
     outputs:
       uuids: ${{ steps.pick_builds.outputs.uuid_matrix }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - run: pip install -r requirements.txt
       - run: python ./code/daily.py ${{ vars.ALLOWED_DOWNLOAD_SIZE }}
         id: pick_builds
@@ -42,7 +42,7 @@ jobs:
     concurrency: publish_docs
     steps:
       - name: Checkout main
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
       - run: pip install -r requirements.txt
       - run: git config user.name 'github-actions[bot]' && git config user.email 'github-actions[bot]@users.noreply.github.com'
       - name: Publish docs

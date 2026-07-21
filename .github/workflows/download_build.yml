@@ -20,7 +20,7 @@ jobs:
     permissions:
       contents: read
     steps:
-        - uses: actions/checkout@v4
+        - uses: actions/checkout@v7
         # --- test mode: synthesize tiny WIMs on Linux instead of the ~110min Windows ISO build ---
         - name: Generate fake wims
           if: ${{ inputs.test_mode }}
@@ -123,7 +123,7 @@ jobs:
     steps:
       - name: Mutex Action
         uses: ben-z/gh-action-mutex@v1.0.0-alpha.9
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: ${{ github.ref_name }}
       - run: python3 code/state.py mark-failed '${{ inputs.uuid }}' --run-url "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
@@ -141,7 +141,7 @@ jobs:
       split_boot: ${{ steps.split_boot.outputs.version_matrix }}
       split_install: ${{ steps.split_install.outputs.version_matrix }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Installations
         run: sudo apt-get update && xargs sudo apt-get install --no-install-recommends -y < packages.txt && python3 -m pip install -r requirements.txt && chmod +x ./code/*
       - name: Download boot wim
@@ -180,7 +180,7 @@ jobs:
         version: ${{ fromJson(needs.split_wims.outputs.split_boot) }}
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Installations
         run: sudo apt-get update && xargs sudo apt-get install --no-install-recommends -y < packages.txt && python3 -m pip install -r requirements.txt && chmod +x ./code/*
       - name: Download artifact
@@ -212,7 +212,7 @@ jobs:
         version: ${{ fromJson(needs.split_wims.outputs.split_install) }}
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Installations
         run: sudo apt-get update && xargs sudo apt-get install --no-install-recommends -y < packages.txt && python3 -m pip install -r requirements.txt && chmod +x ./code/*
       - name: Download artifact
@@ -243,7 +243,7 @@ jobs:
     permissions:
       contents: read
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v7
     - name: Download All Artifacts
       uses: actions/download-artifact@v4
       with:
@@ -268,7 +268,7 @@ jobs:
     permissions:
       contents: read
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: actions/setup-python@v5
         with:
           python-version: '3.10'
@@ -291,7 +291,7 @@ jobs:
         run: |
           git config --global core.autocrlf false
           git config --global core.eol lf
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: ${{ !inputs.test_mode && github.ref_name || '' }}
       - run: python3 -m pip install -r requirements.txt
