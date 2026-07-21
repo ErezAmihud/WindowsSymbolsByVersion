@@ -7,34 +7,77 @@ on:
         default: 'c598cdd6-8d6a-4fa1-8161-8e96e362b127'
         required: false
         type: string
+      test_mode:
+        description: 'Skip the Windows ISO build; feed synthetic WIMs to exercise the pipeline'
+        default: false
+        required: false
+        type: boolean
 
 jobs:
   create_iso:
     name: create iso
-    runs-on: windows-latest
+    runs-on: ${{ inputs.test_mode && 'ubuntu-latest' || 'windows-latest' }}
     permissions:
       contents: read
     steps:
         - uses: actions/checkout@v4
-        - uses: actions/setup-python@v5
+        # --- test mode: synthesize tiny WIMs on Linux instead of the ~110min Windows ISO build ---
+        - name: Generate fake wims
+          if: ${{ inputs.test_mode }}
+          run: |
+            sudo apt-get update && sudo apt-get install --no-install-recommends -y wimtools
+            python3 tests/make_fake_wims.py
+        - name: Upload fake manifest_general
+          if: ${{ inputs.test_mode }}
+          uses: actions/upload-artifact@v4
+          with:
+            name: ${{inputs.uuid}}manifest_general.out
+            path: |
+              manifest_general.out
+              manifest_general.paths
+            retention-days: 1
+        - name: Upload fake install wim
+          if: ${{ inputs.test_mode }}
+          uses: actions/upload-artifact@v4
+          with:
+            name: ${{inputs.uuid}}install.wim
+            path: install.wim
+            retention-days: 1
+        - name: Upload fake boot wim
+          if: ${{ inputs.test_mode }}
+          uses: actions/upload-artifact@v4
+          with:
+            name: ${{inputs.uuid}}boot.wim
+            path: boot.wim
+            retention-days: 1
+        # --- real mode: build the Windows ISO ---
+        - if: ${{ !inputs.test_mode }}
+          uses: actions/setup-python@v5
           with:
             python-version: '3.10'
-        - run: python -m pip install -r requirements.txt
+        - if: ${{ !inputs.test_mode }}
+          run: python -m pip install -r requirements.txt
         - id: get_editions
+          if: ${{ !inputs.test_mode }}
           shell: cmd
           run: python .\code\get_editions.py ${{inputs.uuid}}
         - name: Download Commands
+          if: ${{ !inputs.test_mode }}
           run: |
             curl "https://uupdump.net/get.php?id=${{inputs.uuid}}&pack=en-us&edition=${{ steps.get_editions.outputs.editions }}" -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "autodl=2&updates=1" -o download_commands.zip
         - name: unzip download_commands.zip
+          if: ${{ !inputs.test_mode }}
           run: Expand-Archive download_commands.zip -DestinationPath .
         - name: Set config
+          if: ${{ !inputs.test_mode }}
           run: copy config.template ConvertConfig.ini
           shell: cmd
         - name: Change blocking commands to non blocking
+          if: ${{ !inputs.test_mode }}
           run: (gc uup_download_windows.cmd) -replace 'pause', 'exit 1' | Out-File -encoding ASCII uup_download_windows.cmd
           shell: powershell
         - name: Create iso
+          if: ${{ !inputs.test_mode }}
           uses: nick-fields/retry@v3
           with:
             max_attempts: 3
@@ -44,23 +87,28 @@ jobs:
             shell: cmd
             command: cmd /c .\uup_download_windows.cmd
         - name: Rename result
+          if: ${{ !inputs.test_mode }}
           shell: cmd
           run: .\code\move_iso_dir.bat
         - name: Parse iso root
+          if: ${{ !inputs.test_mode }}
           run: python ./code/pdb_finding.py unpacked_dir manifest_general.out manifest_general.paths
-        - uses: actions/upload-artifact@v4
+        - if: ${{ !inputs.test_mode }}
+          uses: actions/upload-artifact@v4
           with:
             name: ${{inputs.uuid}}manifest_general.out
             path: |
               manifest_general.out
               manifest_general.paths
             retention-days: 1
-        - uses: actions/upload-artifact@v4
+        - if: ${{ !inputs.test_mode }}
+          uses: actions/upload-artifact@v4
           with:
             name: ${{inputs.uuid}}install.wim
             path: unpacked_dir/sources/install.wim
             retention-days: 1
-        - uses: actions/upload-artifact@v4
+        - if: ${{ !inputs.test_mode }}
+          uses: actions/upload-artifact@v4
           with:
             name: ${{inputs.uuid}}boot.wim
             path: unpacked_dir/sources/boot.wim
@@ -69,7 +117,7 @@ jobs:
   mark_build_failed:
     runs-on: ubuntu-latest
     needs: create_iso
-    if: ${{ always() && contains(needs.*.result, 'failure') }}
+    if: ${{ always() && contains(needs.*.result, 'failure') && !inputs.test_mode }}
     permissions:
       contents: write
     steps:
@@ -213,6 +261,24 @@ jobs:
           manifest.out
           files.json
 
+  assert_test_manifest:
+    needs: merge_artifacts
+    if: ${{ inputs.test_mode }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: Download merged manifest
+        uses: actions/download-artifact@v4
+        with:
+          name: ${{ inputs.uuid }}merged_manifest
+      - name: Assert merged manifest matches the fixture
+        run: python3 tests/assert_pipeline_manifest.py manifest.out files.json
+
   deploy_manifest:
     needs: merge_artifacts
     runs-on: ubuntu-latest
@@ -227,7 +293,7 @@ jobs:
           git config --global core.eol lf
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.ref_name }}
+          ref: ${{ !inputs.test_mode && github.ref_name || '' }}
       - run: python3 -m pip install -r requirements.txt
       - name: Download manifest
         uses: actions/download-artifact@v4
@@ -239,8 +305,10 @@ jobs:
         # commit it, the CLI treats a missing files.json as "no path data"
         run: if [ -s files.json ] && [ "$(cat files.json)" != "[]" ]; then mv files.json manifests/${{ inputs.uuid }}.files.json; fi
       - name: Mark build done
+        if: ${{ !inputs.test_mode }}
         run: python3 code/state.py mark-done '${{ inputs.uuid }}'
-      - uses: EndBug/add-and-commit@v9
+      - if: ${{ !inputs.test_mode }}
+        uses: EndBug/add-and-commit@v9
         with:
           add: '["manifests", "builds_state.json"]'
           message: 'Automated commit, add manifest for ${{inputs.uuid}}'

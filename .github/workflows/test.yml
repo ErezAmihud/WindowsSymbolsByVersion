@@ -1,6 +1,5 @@
 name: Tests
 on:
-  push:
   pull_request:
 
 permissions:
@@ -21,3 +20,14 @@ jobs:
       - run: python3 tests/test_cli.py
       - name: Docs build
         run: mkdocs build --strict
+
+  # Exercises the full download_build.yml pipeline with synthetic WIMs, skipping the
+  # ~110min Windows create_iso build. test_mode guards off every commit, but the reusable
+  # workflow's deploy/mark-failed jobs still declare contents: write, so the caller must
+  # grant it here or the run fails at startup.
+  pipeline_test:
+    permissions:
+      contents: write
+    uses: ./.github/workflows/download_build.yml
+    with:
+      test_mode: true
