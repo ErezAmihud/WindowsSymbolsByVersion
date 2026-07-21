@@ -5,7 +5,7 @@ The correctness gate for the test_mode pipeline run: green jobs alone don't prov
 manifest is right, so compare the merged output against make_fake_wims.expected_entries().
 
 Usage (in the assert_test_manifest job): assert_pipeline_manifest.py <manifest.out> <files.json>
- - manifest.out lines are `<count> <pdb>,<guid>,1` (from `sort | uniq -c`)
+ - manifest.out lines are `<pdb>,<guid>,1`
  - files.json is a JSON list of {path, pdb, guid}
 Both must reproduce expected_entries(); exits non-zero (failing the job) on any drift.
 """
@@ -37,7 +37,7 @@ def main(manifest_path, files_json_path):
             if not line:
                 continue
             # strip the leading `uniq -c` count, keep the `pdb,guid,1` entry
-            manifest_entries.add(line.split(None, 1)[1].strip())
+            manifest_entries.add(line)
     if manifest_entries != expected:
         _fail("manifest.out", manifest_entries, expected)
 
