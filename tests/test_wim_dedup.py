@@ -10,7 +10,7 @@ editions inside a real install.wim), then checks that:
    the merged manifest exactly (the scope=all recreation guarantee).
 
 Requires wimlib-imagex (apt package wimtools).
-Run from the repo root: python3 tests/test_wim_dedup.py
+Run from the repo root: pytest tests/test_wim_dedup.py
 """
 
 import json
@@ -21,7 +21,7 @@ import sys
 import tempfile
 import uuid
 
-sys.path.insert(0, os.path.dirname(__file__))
+import pytest
 from make_pe import expected_signature_string, make_pe
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -42,10 +42,9 @@ def pe_and_entry(pdb_name, guid_str, age):
     )
 
 
-def main():
+def test_wim_dedup():
     if shutil.which("wimlib-imagex") is None:
-        print("SKIP: wimlib-imagex not installed (apt-get install wimtools)")
-        return
+        pytest.skip("wimlib-imagex not installed (apt-get install wimtools)")
 
     with tempfile.TemporaryDirectory() as tmp:
         img1, img2 = os.path.join(tmp, "img1"), os.path.join(tmp, "img2")
@@ -176,7 +175,3 @@ def main():
         )
 
     print(f"test_wim_dedup OK ({len(expected)} entries)")
-
-
-if __name__ == "__main__":
-    main()

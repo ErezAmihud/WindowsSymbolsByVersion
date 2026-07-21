@@ -4,7 +4,7 @@ No network: a local http.server serves a fixture index.json / manifest /
 files.json, and the end-to-end `get` runs against a fake `pdblister` script
 on PATH that records its argv and staged manifest.
 
-Run from the repo root: python3 tests/test_cli.py
+Run from the repo root: pytest tests/test_cli.py
 """
 
 import json
@@ -17,12 +17,12 @@ import threading
 from functools import partial
 from http.server import HTTPServer, SimpleHTTPRequestHandler
 
-REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-CLI_SRC = os.path.join(REPO_ROOT, "cli", "src")
-sys.path.insert(0, CLI_SRC)
+from winsyms import index as windex
+from winsyms import manifest as wmanifest
 
-from winsyms import index as windex  # noqa: E402
-from winsyms import manifest as wmanifest  # noqa: E402
+REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# Kept for the `-m winsyms` subprocess env below; not a sys.path insert.
+CLI_SRC = os.path.join(REPO_ROOT, "cli", "src")
 
 UUID_NEW = "aaaaaaaa-0000-0000-0000-000000000001"
 UUID_NEW_X86 = "aaaaaaaa-0000-0000-0000-000000000002"
@@ -76,7 +76,7 @@ def make_fixtures(root, base_url):
     return entries
 
 
-def test_resolve(entries):
+def check_resolve(entries):
     assert windex.resolve(entries, UUID_OLD) == [entries[2]]
     # exact build: both arches; --arch narrows to one
     assert windex.resolve(entries, "26100.1297") == entries[:2]
@@ -88,7 +88,7 @@ def test_resolve(entries):
     print("test_resolve OK")
 
 
-def test_build_manifest(entries):
+def check_build_manifest(entries):
     new, old = entries[0], entries[2]
     # scope all: the committed manifest, byte for byte
     assert wmanifest.build_manifest(new, None) == MANIFEST_NEW
@@ -135,7 +135,7 @@ def make_fake_pdblister(bin_dir):
     return bin_dir
 
 
-def test_get(tmp, index_file):
+def check_get(tmp, index_file):
     fake_bin = make_fake_pdblister(os.path.join(tmp, "bin"))
     record = os.path.join(tmp, "record")
     os.makedirs(record)
@@ -210,7 +210,7 @@ def test_get(tmp, index_file):
     print("test_get OK")
 
 
-def main():
+def test_cli_e2e():
     with tempfile.TemporaryDirectory() as tmp:
         fixtures = os.path.join(tmp, "fixtures")
         os.makedirs(fixtures)
@@ -220,13 +220,8 @@ def main():
         try:
             base_url = f"http://127.0.0.1:{server.server_port}"
             entries = make_fixtures(fixtures, base_url)
-            test_resolve(entries)
-            test_build_manifest(entries)
-            test_get(tmp, os.path.join(fixtures, "index.json"))
+            check_resolve(entries)
+            check_build_manifest(entries)
+            check_get(tmp, os.path.join(fixtures, "index.json"))
         finally:
             server.shutdown()
-    print("test_cli OK")
-
-
-if __name__ == "__main__":
-    main()

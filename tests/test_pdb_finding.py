@@ -5,7 +5,7 @@ that the generated manifest contains exactly the expected pdb entries, that
 the optional .paths output records the exact path/pdb/guid TSV lines, and
 that merge_paths.py merges .paths files into a sorted deduped files.json.
 
-Run from the repo root: python3 tests/test_pdb_finding.py
+Run from the repo root: pytest tests/test_pdb_finding.py
 """
 
 import json
@@ -15,7 +15,6 @@ import sys
 import tempfile
 import uuid
 
-sys.path.insert(0, os.path.dirname(__file__))
 from make_pe import expected_signature_string, make_pe
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -152,8 +151,3 @@ def test_merge_paths():
         {"path": "bootmgr", "pdb": "bootmgr.pdb", "guid": "CCCC1"},
     ], f"unexpected files.json: {got}"
     print("test_merge_paths OK")
-
-
-if __name__ == "__main__":
-    test_pdb_finding()
-    test_merge_paths()

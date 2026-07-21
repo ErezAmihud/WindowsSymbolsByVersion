@@ -1,6 +1,6 @@
 """Test for the builds_state.json state machine in code/state.py.
 
-Run from the repo root: python3 tests/test_state.py
+Run from the repo root: pytest tests/test_state.py
 """
 
 import json
@@ -9,9 +9,6 @@ import subprocess
 import sys
 import tempfile
 
-sys.path.insert(
-    0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "code")
-)
 from state import MAX_FAILURES, excluded_uuids, mark_done, mark_failed, priority_uuids
 
 STATE_PY = os.path.join(
@@ -83,10 +80,3 @@ def test_repo_state_consistent():
         f[:-9] for f in os.listdir(os.path.join(repo, "manifests")) if f.endswith(".manifest")
     }
     assert manifests <= done, f"manifest-without-done={sorted(manifests - done)[:5]}"
-
-
-if __name__ == "__main__":
-    test_module()
-    test_cli()
-    test_repo_state_consistent()
-    print("test_state OK")

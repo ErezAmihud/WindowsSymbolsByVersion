@@ -1,14 +1,8 @@
 """Unit test for the build-picking logic in code/daily.py.
 
-Run from the repo root: python3 tests/test_daily.py
+Run from the repo root: pytest tests/test_daily.py
 """
 
-import os
-import sys
-
-sys.path.insert(
-    0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "code")
-)
 from daily import pick_builds
 from uupdump import BuildInfo
 
@@ -17,7 +11,7 @@ def build(uuid, title="Windows 11, version 24H2 (26100.1)", arch="amd64"):
     return BuildInfo(title=title, build="26100.1", arch=arch, created=1, uuid=uuid)
 
 
-def main():
+def test_pick_builds():
     builds = [
         build("done-1"),  # already processed
         build("bad-1"),  # known problematic (also in processed set)
@@ -63,9 +57,3 @@ def main():
         fake_get_langs,
     )
     assert picked == [], f"expected no picks, got: {[b.uuid for b in picked]}"
-
-    print("test_daily OK")
-
-
-if __name__ == "__main__":
-    main()

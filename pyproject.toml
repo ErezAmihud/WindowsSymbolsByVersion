@@ -16,6 +16,11 @@ docstring-code-format = true
 # comprehensions, simplify.
 select = ["E", "F", "W", "I", "B", "C4", "UP", "SIM"]
 
+[tool.pytest.ini_options]
+# code/, cli/src/ and tests/ (for make_pe) go on sys.path at collection time,
+# so tests import their targets directly instead of runtime sys.path hacks.
+pythonpath = ["code", "cli/src", "tests"]
+
 [tool.pyrefly]
 project-includes = ["code", "tests", "cli/src"]
 project-excludes = ["manifests", "graphify-out", ".tokensave"]
