@@ -4761,6 +4761,12 @@
    "build": "17763.4377",
    "arch": "amd64"
   },
+  "bf0c001b-134c-4339-b0e2-aca19beb7787": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.1105)",
+   "build": "22621.1105",
+   "arch": "amd64"
+  },
   "bf499b2e-fcd5-49f0-912d-daee635e8121": {
    "status": "done",
    "title": "Feature update to Windows 10, version 22H2 (19045.5859)",
