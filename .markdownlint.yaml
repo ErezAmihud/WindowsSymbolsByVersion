@@ -1,0 +1,6 @@
+default: true
+MD013: false  # no hard line-length limit on prose
+MD033: false  # allow inline HTML (used in docs)
+MD041: false  # first line need not be a top-level heading
+MD014: false  # READMEs intentionally show `$ command` prompts
+MD060: false  # don't enforce a single table-pipe spacing style
