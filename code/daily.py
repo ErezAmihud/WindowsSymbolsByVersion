@@ -9,12 +9,13 @@ failed too often, or user-prioritized) and sets the picked uuids as the
 Usage: daily.py [allowed_download_size]
 """
 
+import json
 import re
 import sys
-import json
-from uupdump import listid, get_langs
-from state import load_state, excluded_uuids, priority_uuids
+
 from gha import write_output
+from state import excluded_uuids, load_state, priority_uuids
+from uupdump import get_langs, listid
 
 DEFAULT_ALLOWED_SIZE = 3
 EXCLUDED_TITLE_PATTERNS = [r"cumulative update", r"\binsider\b", r"\bpreview\b"]

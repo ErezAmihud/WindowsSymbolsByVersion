@@ -26,7 +26,7 @@ MAX_FAILURES = 3
 
 
 def load_state(path=STATE_FILE):
-    return json.load(open(path, "r"))
+    return json.load(open(path))
 
 
 def save_state(state, path=STATE_FILE):

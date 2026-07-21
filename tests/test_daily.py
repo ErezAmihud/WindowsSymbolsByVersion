@@ -9,8 +9,8 @@ import sys
 sys.path.insert(
     0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "code")
 )
-from uupdump import BuildInfo
 from daily import pick_builds
+from uupdump import BuildInfo
 
 
 def build(uuid, title="Windows 11, version 24H2 (26100.1)", arch="amd64"):

@@ -4,11 +4,11 @@ All endpoints go through one session with a shared retry policy and
 User-Agent; all response models live here.
 """
 
-from typing import Dict, List, Literal, Optional
+from typing import List, Literal, Optional
 
 import requests
-from requests.adapters import HTTPAdapter, Retry
 from pydantic import BaseModel
+from requests.adapters import HTTPAdapter, Retry
 
 API_BASE = "https://api.uupdump.net"
 

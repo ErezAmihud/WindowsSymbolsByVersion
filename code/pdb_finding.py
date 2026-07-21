@@ -1,9 +1,11 @@
 #!/usr/bin/env python
 import os
+import os.path
 import sys
-import tqdm
-import os.path, pefile
 from concurrent.futures import ProcessPoolExecutor
+
+import pefile
+import tqdm
 
 DEBUG_DIRECTORY_INDEX = pefile.DIRECTORY_ENTRY["IMAGE_DIRECTORY_ENTRY_DEBUG"]
 

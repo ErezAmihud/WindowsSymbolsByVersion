@@ -12,7 +12,6 @@ import tempfile
 sys.path.insert(
     0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "code")
 )
-import state as state_mod
 from state import MAX_FAILURES, excluded_uuids, mark_done, mark_failed, priority_uuids
 
 STATE_PY = os.path.join(

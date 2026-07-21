@@ -16,7 +16,7 @@ import tempfile
 import uuid
 
 sys.path.insert(0, os.path.dirname(__file__))
-from make_pe import make_pe, expected_signature_string
+from make_pe import expected_signature_string, make_pe
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
