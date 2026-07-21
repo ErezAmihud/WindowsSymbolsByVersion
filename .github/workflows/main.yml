@@ -1,8 +1,8 @@
 name: Detect more uup entries
 on:
   workflow_dispatch:
-  # schedule:
-  #  - cron: '0 */4 * * *'
+  schedule:
+   - cron: '0 */4 * * *'
 
 permissions:
   contents: write
