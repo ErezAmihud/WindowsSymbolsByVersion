@@ -145,12 +145,12 @@ jobs:
       - name: Installations
         run: sudo apt-get update && xargs sudo apt-get install --no-install-recommends -y < packages.txt && python3 -m pip install -r requirements.txt && chmod +x ./code/*
       - name: Download boot wim
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: ${{ inputs.uuid }}boot.wim
 
       - name: Download install wim
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: ${{ inputs.uuid }}install.wim
 
@@ -184,11 +184,11 @@ jobs:
       - name: Installations
         run: sudo apt-get update && xargs sudo apt-get install --no-install-recommends -y < packages.txt && python3 -m pip install -r requirements.txt && chmod +x ./code/*
       - name: Download artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: ${{ inputs.uuid }}boot.wim
       - name: Download listfiles
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: ${{ inputs.uuid }}listfiles
       - name: Generate boot wim manifest
@@ -216,11 +216,11 @@ jobs:
       - name: Installations
         run: sudo apt-get update && xargs sudo apt-get install --no-install-recommends -y < packages.txt && python3 -m pip install -r requirements.txt && chmod +x ./code/*
       - name: Download artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: ${{ inputs.uuid }}install.wim
       - name: Download listfiles
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: ${{ inputs.uuid }}listfiles
       - name: Generate install wim manifest
@@ -245,7 +245,7 @@ jobs:
     steps:
     - uses: actions/checkout@v7
     - name: Download All Artifacts
-      uses: actions/download-artifact@v4
+      uses: actions/download-artifact@v8
       with:
         path: partials
         pattern: ${{ inputs.uuid }}manifest*
@@ -296,7 +296,7 @@ jobs:
           ref: ${{ !inputs.test_mode && github.ref_name || '' }}
       - run: python3 -m pip install -r requirements.txt
       - name: Download manifest
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: ${{ inputs.uuid }}merged_manifest
       - run: mv manifest.out manifests/${{ inputs.uuid }}.manifest
