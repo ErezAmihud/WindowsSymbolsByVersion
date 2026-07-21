@@ -161,9 +161,11 @@ def check_get(tmp, index_file):
         record_dir=record,
     )
     assert res.returncode == 0, res.stderr
-    argv = open(os.path.join(record, "argv")).read().strip()
+    with open(os.path.join(record, "argv")) as f:
+        argv = f.read().strip()
     assert argv == f"download SRV*{out_dir}*https://sym.example/download", argv
-    staged = open(os.path.join(record, "manifest")).read()
+    with open(os.path.join(record, "manifest")) as f:
+        staged = f.read()
     assert staged == "ntdll.pdb,G1,1\nx.pdb,G2,1\n", staged
 
     # ambiguous query: list candidates, exit non-zero
@@ -191,7 +193,8 @@ def check_get(tmp, index_file):
         ]
     )
     assert res.returncode == 0, res.stderr
-    assert open(manifest_out).read() == MANIFEST_OLD
+    with open(manifest_out) as f:
+        assert f.read() == MANIFEST_OLD
 
     # pre-path-data build with a scope: clear error
     res = run_cli(["get", UUID_OLD, "--index", index_file, "--scope", "system32"])

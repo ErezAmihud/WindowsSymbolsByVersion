@@ -3,11 +3,17 @@
 Run from the repo root: pytest tests/test_daily.py
 """
 
+from typing import Literal
+
 from daily import pick_builds
 from uupdump import BuildInfo
 
 
-def build(uuid, title="Windows 11, version 24H2 (26100.1)", arch="amd64"):
+def build(
+    uuid,
+    title="Windows 11, version 24H2 (26100.1)",
+    arch: Literal["amd64", "arm64", "x86"] = "amd64",
+):
     return BuildInfo(title=title, build="26100.1", arch=arch, created=1, uuid=uuid)
 
 

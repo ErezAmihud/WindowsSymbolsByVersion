@@ -24,3 +24,6 @@ pythonpath = ["code", "cli/src", "tests"]
 [tool.pyrefly]
 project-includes = ["code", "tests", "cli/src"]
 project-excludes = ["manifests", "graphify-out", ".tokensave"]
+# Same roots as pytest's pythonpath above: resolve code/, cli/src/ and tests/
+# imports statically now that tests no longer inject them via sys.path.
+search-path = ["code", "cli/src", "tests"]

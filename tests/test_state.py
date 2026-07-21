@@ -37,7 +37,8 @@ def test_module():
 def test_cli():
     with tempfile.TemporaryDirectory() as tmp:
         state_file = os.path.join(tmp, "builds_state.json")
-        json.dump({"priority": [], "builds": {}}, open(state_file, "w"))
+        with open(state_file, "w") as f:
+            json.dump({"priority": [], "builds": {}}, f)
 
         def run(*args):
             subprocess.run([sys.executable, STATE_PY, *args], check=True, cwd=tmp)
@@ -55,7 +56,8 @@ def test_cli():
             "amd64",
         )
 
-        state = json.load(open(state_file))
+        with open(state_file) as f:
+            state = json.load(f)
         assert state["builds"]["u-1"] == {
             "status": "failed",
             "failures": 2,
@@ -74,7 +76,8 @@ def test_repo_state_consistent():
     lack a manifest (the 2026-07 purge deleted pre-path-data manifests but
     kept their state entries so they are never reprocessed)."""
     repo = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    state = json.load(open(os.path.join(repo, "builds_state.json")))
+    with open(os.path.join(repo, "builds_state.json")) as f:
+        state = json.load(f)
     done = {u for u, i in state["builds"].items() if i["status"] == "done"}
     manifests = {
         f[:-9] for f in os.listdir(os.path.join(repo, "manifests")) if f.endswith(".manifest")

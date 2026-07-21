@@ -93,7 +93,8 @@ def test_pdb_finding():
         with open(manifest) as f:
             got = {line.strip() for line in f if line.strip()}
         assert got == expected, (
-            f"manifest mismatch:\nmissing: {sorted(expected - got)}\nunexpected: {sorted(got - expected)}"
+            f"manifest mismatch:\nmissing: {sorted(expected - got)}\n"
+            f"unexpected: {sorted(got - expected)}"
         )
 
         # 3-arg mode: same manifest, plus exact path<TAB>pdb<TAB>guid lines
@@ -115,7 +116,8 @@ def test_pdb_finding():
         with open(paths) as f:
             got_paths = {line.rstrip("\n") for line in f if line.strip()}
         assert got_paths == expected_paths, (
-            f"paths mismatch:\nmissing: {sorted(expected_paths - got_paths)}\nunexpected: {sorted(got_paths - expected_paths)}"
+            f"paths mismatch:\nmissing: {sorted(expected_paths - got_paths)}\n"
+            f"unexpected: {sorted(got_paths - expected_paths)}"
         )
 
     print(f"test_pdb_finding OK ({len(expected)} entries)")
@@ -143,7 +145,8 @@ def test_merge_paths():
             check=True,
             cwd=REPO_ROOT,
         )
-        got = json.load(open(out))
+        with open(out) as f:
+            got = json.load(f)
 
     assert got == [
         {"path": "Windows/System32/ntdll.dll", "pdb": "ntdll.pdb", "guid": "AAAA1"},

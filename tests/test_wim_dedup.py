@@ -107,8 +107,10 @@ def test_wim_dedup():
         matrix_line = out.stdout.strip()
         assert matrix_line == "version_matrix=[1,2]", f"unexpected matrix output: {matrix_line!r}"
 
-        listfile_1 = open(os.path.join(workdir, "listfile_install_1.txt")).read()
-        listfile_2 = open(os.path.join(workdir, "listfile_install_2.txt")).read()
+        with open(os.path.join(workdir, "listfile_install_1.txt")) as f:
+            listfile_1 = f.read()
+        with open(os.path.join(workdir, "listfile_install_2.txt")) as f:
+            listfile_2 = f.read()
         assert sorted(listfile_1.splitlines()) == [
             '"/Program Files/App/sp ace.exe"',
             '"/Windows/System32/b.dll"',
@@ -136,7 +138,8 @@ def test_wim_dedup():
                 got_paths[image] = sorted(line.split("\t")[0] for line in f if line.strip())
 
         assert got == expected, (
-            f"manifest mismatch:\nmissing: {sorted(expected - got)}\nunexpected: {sorted(got - expected)}"
+            f"manifest mismatch:\nmissing: {sorted(expected - got)}\n"
+            f"unexpected: {sorted(got - expected)}"
         )
 
         # .paths must record the in-image path of every extracted PE
@@ -167,7 +170,8 @@ def test_wim_dedup():
             check=True,
             cwd=workdir,
         )
-        files = json.load(open(os.path.join(workdir, "files.json")))
+        with open(os.path.join(workdir, "files.json")) as fh:
+            files = json.load(fh)
         recreated = {f"{f['pdb']},{f['guid']},1" for f in files}
         assert recreated == expected, (
             f"files.json does not reproduce the manifest:\nmissing: {sorted(expected - recreated)}"
