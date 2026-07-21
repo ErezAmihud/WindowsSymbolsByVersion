@@ -36,7 +36,6 @@ def main(manifest_path, files_json_path):
             line = line.strip()
             if not line:
                 continue
-            # strip the leading `uniq -c` count, keep the `pdb,guid,1` entry
             manifest_entries.add(line)
     if manifest_entries != expected:
         _fail("manifest.out", manifest_entries, expected)
