@@ -29,7 +29,7 @@ jobs:
             python3 tests/make_fake_wims.py
         - name: Upload fake manifest_general
           if: ${{ inputs.test_mode }}
-          uses: actions/upload-artifact@v4
+          uses: actions/upload-artifact@v7
           with:
             name: ${{inputs.uuid}}manifest_general.out
             path: |
@@ -38,14 +38,14 @@ jobs:
             retention-days: 1
         - name: Upload fake install wim
           if: ${{ inputs.test_mode }}
-          uses: actions/upload-artifact@v4
+          uses: actions/upload-artifact@v7
           with:
             name: ${{inputs.uuid}}install.wim
             path: install.wim
             retention-days: 1
         - name: Upload fake boot wim
           if: ${{ inputs.test_mode }}
-          uses: actions/upload-artifact@v4
+          uses: actions/upload-artifact@v7
           with:
             name: ${{inputs.uuid}}boot.wim
             path: boot.wim
@@ -94,7 +94,7 @@ jobs:
           if: ${{ !inputs.test_mode }}
           run: python ./code/pdb_finding.py unpacked_dir manifest_general.out manifest_general.paths
         - if: ${{ !inputs.test_mode }}
-          uses: actions/upload-artifact@v4
+          uses: actions/upload-artifact@v7
           with:
             name: ${{inputs.uuid}}manifest_general.out
             path: |
@@ -102,13 +102,13 @@ jobs:
               manifest_general.paths
             retention-days: 1
         - if: ${{ !inputs.test_mode }}
-          uses: actions/upload-artifact@v4
+          uses: actions/upload-artifact@v7
           with:
             name: ${{inputs.uuid}}install.wim
             path: unpacked_dir/sources/install.wim
             retention-days: 1
         - if: ${{ !inputs.test_mode }}
-          uses: actions/upload-artifact@v4
+          uses: actions/upload-artifact@v7
           with:
             name: ${{inputs.uuid}}boot.wim
             path: unpacked_dir/sources/boot.wim
@@ -161,7 +161,7 @@ jobs:
         id: split_install
         run: python3 ./code/wim_dedup.py install.wim install >> "$GITHUB_OUTPUT"
       - name: Upload listfiles
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: ${{ inputs.uuid }}listfiles
           path: listfile_*.txt
@@ -194,7 +194,7 @@ jobs:
       - name: Generate boot wim manifest
         run: bash ./code/extract_and_parse.sh boot ${{ matrix.version }}
       - name: Archive manifest result
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: ${{ inputs.uuid }}manifest_boot_${{ matrix.version }}
           path: |
@@ -226,7 +226,7 @@ jobs:
       - name: Generate install wim manifest
         run: bash ./code/extract_and_parse.sh install ${{ matrix.version }}
       - name: Archive manifest result
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: ${{ inputs.uuid }}manifest_install_${{ matrix.version }}
           path: |
@@ -254,7 +254,7 @@ jobs:
     - run: python3 code/merge_paths.py ./partials files.json
 
     - name: Archive manifest result
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       with:
         name: ${{ inputs.uuid }}merged_manifest
         path: |
