@@ -1,18 +1,19 @@
 """Test for the builds_state.json state machine in code/state.py.
 
-Run from the repo root: python3 tests/test_state.py
+Run from the repo root: pytest tests/test_state.py
 """
+
 import json
 import os
 import subprocess
 import sys
 import tempfile
 
-sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "code"))
-import state as state_mod
 from state import MAX_FAILURES, excluded_uuids, mark_done, mark_failed, priority_uuids
 
-STATE_PY = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "code", "state.py")
+STATE_PY = os.path.join(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "code", "state.py"
+)
 
 
 def test_module():
@@ -36,18 +37,38 @@ def test_module():
 def test_cli():
     with tempfile.TemporaryDirectory() as tmp:
         state_file = os.path.join(tmp, "builds_state.json")
-        json.dump({"priority": [], "builds": {}}, open(state_file, "w"))
+        with open(state_file, "w") as f:
+            json.dump({"priority": [], "builds": {}}, f)
 
         def run(*args):
             subprocess.run([sys.executable, STATE_PY, *args], check=True, cwd=tmp)
 
         run("mark-failed", "u-1", "--run-url", "https://example/run/1")
         run("mark-failed", "u-1")
-        run("mark-done", "u-2", "--title", "Windows 11 (26100.1)", "--build", "26100.1", "--arch", "amd64")
+        run(
+            "mark-done",
+            "u-2",
+            "--title",
+            "Windows 11 (26100.1)",
+            "--build",
+            "26100.1",
+            "--arch",
+            "amd64",
+        )
 
-        state = json.load(open(state_file))
-        assert state["builds"]["u-1"] == {"status": "failed", "failures": 2, "last_run": None}
-        assert state["builds"]["u-2"] == {"status": "done", "title": "Windows 11 (26100.1)", "build": "26100.1", "arch": "amd64"}
+        with open(state_file) as f:
+            state = json.load(f)
+        assert state["builds"]["u-1"] == {
+            "status": "failed",
+            "failures": 2,
+            "last_run": None,
+        }
+        assert state["builds"]["u-2"] == {
+            "status": "done",
+            "title": "Windows 11 (26100.1)",
+            "build": "26100.1",
+            "arch": "amd64",
+        }
 
 
 def test_repo_state_consistent():
@@ -55,14 +76,10 @@ def test_repo_state_consistent():
     lack a manifest (the 2026-07 purge deleted pre-path-data manifests but
     kept their state entries so they are never reprocessed)."""
     repo = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    state = json.load(open(os.path.join(repo, "builds_state.json")))
+    with open(os.path.join(repo, "builds_state.json")) as f:
+        state = json.load(f)
     done = {u for u, i in state["builds"].items() if i["status"] == "done"}
-    manifests = {f[:-9] for f in os.listdir(os.path.join(repo, "manifests")) if f.endswith(".manifest")}
+    manifests = {
+        f[:-9] for f in os.listdir(os.path.join(repo, "manifests")) if f.endswith(".manifest")
+    }
     assert manifests <= done, f"manifest-without-done={sorted(manifests - done)[:5]}"
-
-
-if __name__ == "__main__":
-    test_module()
-    test_cli()
-    test_repo_state_consistent()
-    print("test_state OK")

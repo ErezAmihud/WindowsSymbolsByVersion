@@ -1,0 +1,56 @@
+# Enforced locally (`pre-commit install`) and in CI (.github/workflows/lint.yml).
+# Generated data dirs are excluded globally so hooks only see real source.
+exclude: '^(manifests/|graphify-out/|\.tokensave/|builds_state\.json$)'
+
+repos:
+  # Python: lint (ruff)
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.15.22
+    hooks:
+      - id: ruff-format
+      - id: ruff
+        args: [--fix]
+
+  # Python: type checking
+  - repo: https://github.com/facebook/pyrefly-pre-commit
+    rev: 1.1.1
+    hooks:
+      - id: pyrefly-check
+        # pyrefly runs in an isolated env; give it the project deps so imports resolve.
+        additional_dependencies:
+          - pydantic==2.13.4
+          - requests==2.33.1
+          - pefile==2024.8.26
+          - tqdm==4.68.4
+          - mkdocs-gen-files==0.6.1
+          - pytest
+
+  # Shell: lint (shellcheck) + format (shfmt)
+  - repo: https://github.com/shellcheck-py/shellcheck-py
+    rev: v0.11.0.1
+    hooks:
+      - id: shellcheck
+  - repo: https://github.com/scop/pre-commit-shfmt
+    rev: v3.13.1-1
+    hooks:
+      - id: shfmt
+
+  # Markdown
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.49.1
+    hooks:
+      - id: markdownlint
+
+  # GitHub Actions workflows
+  - repo: https://github.com/rhysd/actionlint
+    rev: v1.7.12
+    hooks:
+      - id: actionlint
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-added-large-files

@@ -14,20 +14,41 @@ to stdout, for $GITHUB_OUTPUT. Diagnostics go to stderr.
 
 Usage: wim_dedup.py <wim_file> <name>
 """
+
 import re
 import subprocess
 import sys
 
 PE_EXTENSIONS = {
-    "acm", "ax", "com", "cpl", "dll", "drv", "efi", "exe", "ime",
-    "msstyles", "mui", "node", "ocx", "scr", "sys", "tsp", "winmd",
+    "acm",
+    "ax",
+    "com",
+    "cpl",
+    "dll",
+    "drv",
+    "efi",
+    "exe",
+    "ime",
+    "msstyles",
+    "mui",
+    "node",
+    "ocx",
+    "scr",
+    "sys",
+    "tsp",
+    "winmd",
 }
 EMPTY_HASH = "0" * 40
 
 
 def image_count(wim_file):
-    out = subprocess.run(["wimlib-imagex", "info", wim_file], check=True, capture_output=True, text=True).stdout
-    return int(re.search(r"Image Count:\s*(\d+)", out).group(1))
+    out = subprocess.run(
+        ["wimlib-imagex", "info", wim_file], check=True, capture_output=True, text=True
+    ).stdout
+    m = re.search(r"Image Count:\s*(\d+)", out)
+    if m is None:
+        raise ValueError(f"could not find image count in wimlib-imagex info for {wim_file}")
+    return int(m.group(1))
 
 
 def is_interesting(path):
@@ -40,9 +61,12 @@ def list_image_files(wim_file, image):
     """Yield (path, hash) for every regular file in the image."""
     proc = subprocess.Popen(
         ["wimlib-imagex", "dir", wim_file, str(image), "--detailed"],
-        stdout=subprocess.PIPE, text=True, errors="replace",
+        stdout=subprocess.PIPE,
+        text=True,
+        errors="replace",
     )
     path, is_dir, in_unnamed_stream, file_hash = None, False, False, None
+    assert proc.stdout is not None  # stdout=PIPE guarantees this
     with proc.stdout:
         for line in proc.stdout:
             line = line.strip()

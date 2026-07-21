@@ -3,6 +3,7 @@
 Used by the tests to generate deterministic inputs for pdb_finding.py without
 shipping real Windows binaries in the repo.
 """
+
 import struct
 import uuid
 
@@ -16,12 +17,15 @@ def make_pe(pdb_name: str | None = None, guid: uuid.UUID | None = None, age: int
     debug_dir = b""
     if pdb_name is not None:
         guid = guid or uuid.uuid4()
-        cv_blob = b"RSDS" + guid.bytes_le + struct.pack("<I", age) + pdb_name.encode("ascii") + b"\x00"
+        cv_blob = (
+            b"RSDS" + guid.bytes_le + struct.pack("<I", age) + pdb_name.encode("ascii") + b"\x00"
+        )
         debug_dir = struct.pack(
             "<IIHHIIII",
             0,  # Characteristics
             0,  # TimeDateStamp
-            0, 0,  # Major/MinorVersion
+            0,
+            0,  # Major/MinorVersion
             2,  # Type = IMAGE_DEBUG_TYPE_CODEVIEW
             len(cv_blob),
             SECTION_RVA + DEBUG_DIR_SIZE,  # AddressOfRawData
@@ -34,14 +38,16 @@ def make_pe(pdb_name: str | None = None, guid: uuid.UUID | None = None, age: int
         0x8664,  # Machine: amd64
         1,  # NumberOfSections
         0,  # TimeDateStamp
-        0, 0,  # symbols
+        0,
+        0,  # symbols
         240,  # SizeOfOptionalHeader
         0x2022,  # EXECUTABLE | DLL | LARGE_ADDRESS_AWARE
     )
     optional_header = struct.pack(
         "<HBBIIIII",
         0x20B,  # PE32+
-        14, 0,  # linker version
+        14,
+        0,  # linker version
         0,  # SizeOfCode
         0x200,  # SizeOfInitializedData
         0,  # SizeOfUninitializedData
@@ -52,16 +58,22 @@ def make_pe(pdb_name: str | None = None, guid: uuid.UUID | None = None, age: int
         0x180000000,  # ImageBase
         0x1000,  # SectionAlignment
         0x200,  # FileAlignment
-        6, 0,  # OS version
-        0, 0,  # image version
-        6, 0,  # subsystem version
+        6,
+        0,  # OS version
+        0,
+        0,  # image version
+        6,
+        0,  # subsystem version
         0,  # Win32VersionValue
         0x2000,  # SizeOfImage
         0x200,  # SizeOfHeaders
         0,  # CheckSum
         3,  # Subsystem: console
         0,  # DllCharacteristics
-        0x100000, 0x1000, 0x100000, 0x1000,  # stack/heap
+        0x100000,
+        0x1000,
+        0x100000,
+        0x1000,  # stack/heap
         0,  # LoaderFlags
         16,  # NumberOfRvaAndSizes
     )
@@ -77,7 +89,10 @@ def make_pe(pdb_name: str | None = None, guid: uuid.UUID | None = None, age: int
         SECTION_RVA,
         0x200,  # SizeOfRawData
         SECTION_FILE_OFFSET,
-        0, 0, 0, 0,  # relocations/linenumbers
+        0,
+        0,
+        0,
+        0,  # relocations/linenumbers
         0x40000040,  # INITIALIZED_DATA | READ
     )
 

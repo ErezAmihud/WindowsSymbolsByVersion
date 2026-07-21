@@ -18,8 +18,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: pip install -e ./cli
-      - run: python3 tests/test_cli.py
+      - run: pip install -e ./cli pytest
+      - run: pytest tests/test_cli.py
 
   publish:
     needs: test

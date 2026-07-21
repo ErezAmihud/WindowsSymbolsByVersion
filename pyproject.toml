@@ -1,0 +1,29 @@
+# Repo-wide tool config. This is NOT a package (cli/ has its own pyproject.toml
+# for that); it only holds linter/formatter/type-checker settings for code/,
+# tests/ and cli/.
+
+[tool.ruff]
+target-version = "py39"
+line-length = 100
+extend-exclude = ["manifests", "graphify-out", ".tokensave", "builds_state.json"]
+
+[tool.ruff.format]
+quote-style = "double"
+docstring-code-format = true
+
+[tool.ruff.lint]
+# A pragmatic default set: pyflakes/pycodestyle, imports, bugbears, pyupgrade,
+# comprehensions, simplify.
+select = ["E", "F", "W", "I", "B", "C4", "UP", "SIM"]
+
+[tool.pytest.ini_options]
+# code/, cli/src/ and tests/ (for make_pe) go on sys.path at collection time,
+# so tests import their targets directly instead of runtime sys.path hacks.
+pythonpath = ["code", "cli/src", "tests"]
+
+[tool.pyrefly]
+project-includes = ["code", "tests", "cli/src"]
+project-excludes = ["manifests", "graphify-out", ".tokensave"]
+# Same roots as pytest's pythonpath above: resolve code/, cli/src/ and tests/
+# imports statically now that tests no longer inject them via sys.path.
+search-path = ["code", "cli/src", "tests"]

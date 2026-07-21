@@ -10,8 +10,9 @@ editions inside a real install.wim), then checks that:
    the merged manifest exactly (the scope=all recreation guarantee).
 
 Requires wimlib-imagex (apt package wimtools).
-Run from the repo root: python3 tests/test_wim_dedup.py
+Run from the repo root: pytest tests/test_wim_dedup.py
 """
+
 import json
 import os
 import shutil
@@ -20,8 +21,8 @@ import sys
 import tempfile
 import uuid
 
-sys.path.insert(0, os.path.dirname(__file__))
-from make_pe import make_pe, expected_signature_string
+import pytest
+from make_pe import expected_signature_string, make_pe
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -35,13 +36,15 @@ def write(root, rel_path, data):
 
 def pe_and_entry(pdb_name, guid_str, age):
     guid = uuid.UUID(guid_str)
-    return make_pe(pdb_name, guid, age), f"{pdb_name},{expected_signature_string(guid, age)},1"
+    return (
+        make_pe(pdb_name, guid, age),
+        f"{pdb_name},{expected_signature_string(guid, age)},1",
+    )
 
 
-def main():
+def test_wim_dedup():
     if shutil.which("wimlib-imagex") is None:
-        print("SKIP: wimlib-imagex not installed (apt-get install wimtools)")
-        return
+        pytest.skip("wimlib-imagex not installed (apt-get install wimtools)")
 
     with tempfile.TemporaryDirectory() as tmp:
         img1, img2 = os.path.join(tmp, "img1"), os.path.join(tmp, "img2")
@@ -75,24 +78,39 @@ def main():
         wim = os.path.join(tmp, "install.wim")
         for img in (img1, img2):
             cmd = "capture" if img == img1 else "append"
-            subprocess.run(["wimlib-imagex", cmd, img, wim, os.path.basename(img)],
-                           check=True, capture_output=True)
+            subprocess.run(
+                ["wimlib-imagex", cmd, img, wim, os.path.basename(img)],
+                check=True,
+                capture_output=True,
+            )
 
         # run the resolver + per-image extraction in a clean workdir, like the workflow does
         workdir = os.path.join(tmp, "work")
         code_dir = os.path.join(workdir, "code")
         os.makedirs(code_dir)
-        for script in ("wim_dedup.py", "extract_and_parse.sh", "pdb_finding.py", "merge_paths.py"):
+        for script in (
+            "wim_dedup.py",
+            "extract_and_parse.sh",
+            "pdb_finding.py",
+            "merge_paths.py",
+        ):
             shutil.copy(os.path.join(REPO_ROOT, "code", script), code_dir)
         shutil.copy(wim, workdir)
 
-        out = subprocess.run([sys.executable, "code/wim_dedup.py", "install.wim", "install"],
-                             check=True, capture_output=True, text=True, cwd=workdir)
+        out = subprocess.run(
+            [sys.executable, "code/wim_dedup.py", "install.wim", "install"],
+            check=True,
+            capture_output=True,
+            text=True,
+            cwd=workdir,
+        )
         matrix_line = out.stdout.strip()
         assert matrix_line == "version_matrix=[1,2]", f"unexpected matrix output: {matrix_line!r}"
 
-        listfile_1 = open(os.path.join(workdir, "listfile_install_1.txt")).read()
-        listfile_2 = open(os.path.join(workdir, "listfile_install_2.txt")).read()
+        with open(os.path.join(workdir, "listfile_install_1.txt")) as f:
+            listfile_1 = f.read()
+        with open(os.path.join(workdir, "listfile_install_2.txt")) as f:
+            listfile_2 = f.read()
         assert sorted(listfile_1.splitlines()) == [
             '"/Program Files/App/sp ace.exe"',
             '"/Windows/System32/b.dll"',
@@ -109,14 +127,20 @@ def main():
         got = set()
         got_paths = {}
         for image in ("1", "2"):
-            subprocess.run(["bash", "code/extract_and_parse.sh", "install", image],
-                           check=True, cwd=workdir)
+            subprocess.run(
+                ["bash", "code/extract_and_parse.sh", "install", image],
+                check=True,
+                cwd=workdir,
+            )
             with open(os.path.join(workdir, f"manifest_install_{image}.out")) as f:
                 got.update(line.strip() for line in f if line.strip())
             with open(os.path.join(workdir, f"manifest_install_{image}.paths")) as f:
                 got_paths[image] = sorted(line.split("\t")[0] for line in f if line.strip())
 
-        assert got == expected, f"manifest mismatch:\nmissing: {sorted(expected - got)}\nunexpected: {sorted(got - expected)}"
+        assert got == expected, (
+            f"manifest mismatch:\nmissing: {sorted(expected - got)}\n"
+            f"unexpected: {sorted(got - expected)}"
+        )
 
         # .paths must record the in-image path of every extracted PE
         assert got_paths["1"] == [
@@ -132,14 +156,22 @@ def main():
 
         # empty-listfile path: extract_and_parse must produce empty outputs
         open(os.path.join(workdir, "listfile_install_9.txt"), "w").close()
-        subprocess.run(["bash", "code/extract_and_parse.sh", "install", "9"], check=True, cwd=workdir)
+        subprocess.run(
+            ["bash", "code/extract_and_parse.sh", "install", "9"],
+            check=True,
+            cwd=workdir,
+        )
         assert os.path.getsize(os.path.join(workdir, "manifest_install_9.out")) == 0
         assert os.path.getsize(os.path.join(workdir, "manifest_install_9.paths")) == 0
 
         # merging all .paths must reproduce the merged manifest (scope=all guarantee)
-        subprocess.run([sys.executable, "code/merge_paths.py", ".", "files.json"],
-                       check=True, cwd=workdir)
-        files = json.load(open(os.path.join(workdir, "files.json")))
+        subprocess.run(
+            [sys.executable, "code/merge_paths.py", ".", "files.json"],
+            check=True,
+            cwd=workdir,
+        )
+        with open(os.path.join(workdir, "files.json")) as fh:
+            files = json.load(fh)
         recreated = {f"{f['pdb']},{f['guid']},1" for f in files}
         assert recreated == expected, (
             f"files.json does not reproduce the manifest:\nmissing: {sorted(expected - recreated)}"
@@ -147,7 +179,3 @@ def main():
         )
 
     print(f"test_wim_dedup OK ({len(expected)} entries)")
-
-
-if __name__ == "__main__":
-    main()

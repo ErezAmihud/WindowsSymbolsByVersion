@@ -1,4 +1,5 @@
 """Minimal helper for talking to the GitHub Actions runner."""
+
 import os
 import sys
 

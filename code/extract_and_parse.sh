@@ -10,9 +10,9 @@ manifest="manifest_${name}_${image}.out"
 paths="manifest_${name}_${image}.paths"
 
 if [ -s "$listfile" ]; then
-    tempdir=$(mktemp -d)
-    wimlib-imagex extract "${name}.wim" "$image" @"$listfile" --dest-dir "$tempdir" --no-acls --preserve-dir-structure > /dev/null
-    python3 ./code/pdb_finding.py "$tempdir" "$manifest" "$paths"
+	tempdir=$(mktemp -d)
+	wimlib-imagex extract "${name}.wim" "$image" @"$listfile" --dest-dir "$tempdir" --no-acls --preserve-dir-structure >/dev/null
+	python3 ./code/pdb_finding.py "$tempdir" "$manifest" "$paths"
 else
-    touch "$manifest" "$paths"
+	touch "$manifest" "$paths"
 fi

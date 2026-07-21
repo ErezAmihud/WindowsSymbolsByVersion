@@ -11,13 +11,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Installations
-        run: sudo apt-get update && sudo apt-get install --no-install-recommends -y wimtools && pip install -r requirements.txt
-      - run: python3 tests/test_daily.py
-      - run: python3 tests/test_state.py
-      - run: python3 tests/test_pdb_finding.py
-      - run: python3 tests/test_wim_dedup.py
+        run: sudo apt-get update && sudo apt-get install --no-install-recommends -y wimtools && pip install -r requirements.txt pytest
       - run: pip install -e ./cli
-      - run: python3 tests/test_cli.py
+      - run: pytest tests/
       - name: Docs build
         run: mkdocs build --strict
 
