@@ -8,6 +8,7 @@ Generates:
                scope filtering) is only present for builds processed after
                the pipeline started recording binary paths.
 """
+
 import json
 import os.path
 
@@ -55,7 +56,12 @@ def main():
     # before per-build path data); they stay in the state so the pipeline
     # never reprocesses them, but are not listed on the site.
     done = [
-        {"uuid": uuid, "title": info["title"], "build": info["build"], "arch": info["arch"]}
+        {
+            "uuid": uuid,
+            "title": info["title"],
+            "build": info["build"],
+            "arch": info["arch"],
+        }
         for uuid, info in state["builds"].items()
         if info["status"] == "done" and os.path.exists(f"manifests/{uuid}.manifest")
     ]

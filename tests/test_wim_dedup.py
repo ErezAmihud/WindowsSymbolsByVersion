@@ -12,6 +12,7 @@ editions inside a real install.wim), then checks that:
 Requires wimlib-imagex (apt package wimtools).
 Run from the repo root: python3 tests/test_wim_dedup.py
 """
+
 import json
 import os
 import shutil
@@ -35,7 +36,10 @@ def write(root, rel_path, data):
 
 def pe_and_entry(pdb_name, guid_str, age):
     guid = uuid.UUID(guid_str)
-    return make_pe(pdb_name, guid, age), f"{pdb_name},{expected_signature_string(guid, age)},1"
+    return (
+        make_pe(pdb_name, guid, age),
+        f"{pdb_name},{expected_signature_string(guid, age)},1",
+    )
 
 
 def main():
@@ -47,17 +51,29 @@ def main():
         img1, img2 = os.path.join(tmp, "img1"), os.path.join(tmp, "img2")
         expected = set()
 
-        shared_pe, entry = pe_and_entry("ntdll.pdb", "11111111-1111-1111-1111-111111111111", 1)
+        shared_pe, entry = pe_and_entry(
+            "ntdll.pdb", "11111111-1111-1111-1111-111111111111", 1
+        )
         expected.add(entry)
-        old_b, entry = pe_and_entry("b_old.pdb", "22222222-2222-2222-2222-222222222222", 1)
+        old_b, entry = pe_and_entry(
+            "b_old.pdb", "22222222-2222-2222-2222-222222222222", 1
+        )
         expected.add(entry)
-        new_b, entry = pe_and_entry("b_new.pdb", "33333333-3333-3333-3333-333333333333", 2)
+        new_b, entry = pe_and_entry(
+            "b_new.pdb", "33333333-3333-3333-3333-333333333333", 2
+        )
         expected.add(entry)
-        only2_pe, entry = pe_and_entry("only2.pdb", "44444444-4444-4444-4444-444444444444", 5)
+        only2_pe, entry = pe_and_entry(
+            "only2.pdb", "44444444-4444-4444-4444-444444444444", 5
+        )
         expected.add(entry)
-        bootmgr_pe, entry = pe_and_entry("bootmgr.pdb", "55555555-5555-5555-5555-555555555555", 9)
+        bootmgr_pe, entry = pe_and_entry(
+            "bootmgr.pdb", "55555555-5555-5555-5555-555555555555", 9
+        )
         expected.add(entry)
-        space_pe, entry = pe_and_entry("space.pdb", "66666666-6666-6666-6666-666666666666", 3)
+        space_pe, entry = pe_and_entry(
+            "space.pdb", "66666666-6666-6666-6666-666666666666", 3
+        )
         expected.add(entry)
 
         # image 1
@@ -75,21 +91,36 @@ def main():
         wim = os.path.join(tmp, "install.wim")
         for img in (img1, img2):
             cmd = "capture" if img == img1 else "append"
-            subprocess.run(["wimlib-imagex", cmd, img, wim, os.path.basename(img)],
-                           check=True, capture_output=True)
+            subprocess.run(
+                ["wimlib-imagex", cmd, img, wim, os.path.basename(img)],
+                check=True,
+                capture_output=True,
+            )
 
         # run the resolver + per-image extraction in a clean workdir, like the workflow does
         workdir = os.path.join(tmp, "work")
         code_dir = os.path.join(workdir, "code")
         os.makedirs(code_dir)
-        for script in ("wim_dedup.py", "extract_and_parse.sh", "pdb_finding.py", "merge_paths.py"):
+        for script in (
+            "wim_dedup.py",
+            "extract_and_parse.sh",
+            "pdb_finding.py",
+            "merge_paths.py",
+        ):
             shutil.copy(os.path.join(REPO_ROOT, "code", script), code_dir)
         shutil.copy(wim, workdir)
 
-        out = subprocess.run([sys.executable, "code/wim_dedup.py", "install.wim", "install"],
-                             check=True, capture_output=True, text=True, cwd=workdir)
+        out = subprocess.run(
+            [sys.executable, "code/wim_dedup.py", "install.wim", "install"],
+            check=True,
+            capture_output=True,
+            text=True,
+            cwd=workdir,
+        )
         matrix_line = out.stdout.strip()
-        assert matrix_line == "version_matrix=[1,2]", f"unexpected matrix output: {matrix_line!r}"
+        assert (
+            matrix_line == "version_matrix=[1,2]"
+        ), f"unexpected matrix output: {matrix_line!r}"
 
         listfile_1 = open(os.path.join(workdir, "listfile_install_1.txt")).read()
         listfile_2 = open(os.path.join(workdir, "listfile_install_2.txt")).read()
@@ -109,14 +140,21 @@ def main():
         got = set()
         got_paths = {}
         for image in ("1", "2"):
-            subprocess.run(["bash", "code/extract_and_parse.sh", "install", image],
-                           check=True, cwd=workdir)
+            subprocess.run(
+                ["bash", "code/extract_and_parse.sh", "install", image],
+                check=True,
+                cwd=workdir,
+            )
             with open(os.path.join(workdir, f"manifest_install_{image}.out")) as f:
                 got.update(line.strip() for line in f if line.strip())
             with open(os.path.join(workdir, f"manifest_install_{image}.paths")) as f:
-                got_paths[image] = sorted(line.split("\t")[0] for line in f if line.strip())
+                got_paths[image] = sorted(
+                    line.split("\t")[0] for line in f if line.strip()
+                )
 
-        assert got == expected, f"manifest mismatch:\nmissing: {sorted(expected - got)}\nunexpected: {sorted(got - expected)}"
+        assert (
+            got == expected
+        ), f"manifest mismatch:\nmissing: {sorted(expected - got)}\nunexpected: {sorted(got - expected)}"
 
         # .paths must record the in-image path of every extracted PE
         assert got_paths["1"] == [
@@ -132,13 +170,20 @@ def main():
 
         # empty-listfile path: extract_and_parse must produce empty outputs
         open(os.path.join(workdir, "listfile_install_9.txt"), "w").close()
-        subprocess.run(["bash", "code/extract_and_parse.sh", "install", "9"], check=True, cwd=workdir)
+        subprocess.run(
+            ["bash", "code/extract_and_parse.sh", "install", "9"],
+            check=True,
+            cwd=workdir,
+        )
         assert os.path.getsize(os.path.join(workdir, "manifest_install_9.out")) == 0
         assert os.path.getsize(os.path.join(workdir, "manifest_install_9.paths")) == 0
 
         # merging all .paths must reproduce the merged manifest (scope=all guarantee)
-        subprocess.run([sys.executable, "code/merge_paths.py", ".", "files.json"],
-                       check=True, cwd=workdir)
+        subprocess.run(
+            [sys.executable, "code/merge_paths.py", ".", "files.json"],
+            check=True,
+            cwd=workdir,
+        )
         files = json.load(open(os.path.join(workdir, "files.json")))
         recreated = {f"{f['pdb']},{f['guid']},1" for f in files}
         assert recreated == expected, (

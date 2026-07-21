@@ -7,6 +7,7 @@ that merge_paths.py merges .paths files into a sorted deduped files.json.
 
 Run from the repo root: python3 tests/test_pdb_finding.py
 """
+
 import json
 import os
 import subprocess
@@ -31,12 +32,34 @@ def build_tree(root):
         with open(path, "wb") as f:
             f.write(make_pe(pdb_name, guid, age))
         expected.add(f"{pdb_name},{expected_signature_string(guid, age)},1")
-        expected_paths.add(f"{rel_path}\t{pdb_name}\t{expected_signature_string(guid, age)}")
+        expected_paths.add(
+            f"{rel_path}\t{pdb_name}\t{expected_signature_string(guid, age)}"
+        )
 
-    add_pe("Windows/System32/ntdll.dll", "ntdll.pdb", "11111111-2222-3333-4444-555555555555", 1)
-    add_pe("Windows/System32/kernel32.dll", "kernel32.pdb", "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee", 2)
-    add_pe("Windows/explorer.exe", "explorer.pdb", "99999999-8888-7777-6666-555544443333", 10)
-    add_pe("Program Files/App/sp ace.exe", "space.pdb", "0f0f0f0f-1e1e-2d2d-3c3c-4b4b4b4b4b4b", 3)
+    add_pe(
+        "Windows/System32/ntdll.dll",
+        "ntdll.pdb",
+        "11111111-2222-3333-4444-555555555555",
+        1,
+    )
+    add_pe(
+        "Windows/System32/kernel32.dll",
+        "kernel32.pdb",
+        "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+        2,
+    )
+    add_pe(
+        "Windows/explorer.exe",
+        "explorer.pdb",
+        "99999999-8888-7777-6666-555544443333",
+        10,
+    )
+    add_pe(
+        "Program Files/App/sp ace.exe",
+        "space.pdb",
+        "0f0f0f0f-1e1e-2d2d-3c3c-4b4b4b4b4b4b",
+        3,
+    )
     # extensionless PE (e.g. bootmgr)
     add_pe("bootmgr", "bootmgr.pdb", "12312312-4564-5645-7897-891011121314", 7)
 
@@ -60,28 +83,43 @@ def test_pdb_finding():
 
         manifest = os.path.join(tmp, "manifest.out")
         subprocess.run(
-            [sys.executable, os.path.join(REPO_ROOT, "code", "pdb_finding.py"), tree, manifest],
-            check=True, cwd=REPO_ROOT,
+            [
+                sys.executable,
+                os.path.join(REPO_ROOT, "code", "pdb_finding.py"),
+                tree,
+                manifest,
+            ],
+            check=True,
+            cwd=REPO_ROOT,
         )
 
         with open(manifest) as f:
             got = {line.strip() for line in f if line.strip()}
-        assert got == expected, f"manifest mismatch:\nmissing: {sorted(expected - got)}\nunexpected: {sorted(got - expected)}"
+        assert (
+            got == expected
+        ), f"manifest mismatch:\nmissing: {sorted(expected - got)}\nunexpected: {sorted(got - expected)}"
 
         # 3-arg mode: same manifest, plus exact path<TAB>pdb<TAB>guid lines
         paths = os.path.join(tmp, "manifest.paths")
         subprocess.run(
-            [sys.executable, os.path.join(REPO_ROOT, "code", "pdb_finding.py"), tree, manifest, paths],
-            check=True, cwd=REPO_ROOT,
+            [
+                sys.executable,
+                os.path.join(REPO_ROOT, "code", "pdb_finding.py"),
+                tree,
+                manifest,
+                paths,
+            ],
+            check=True,
+            cwd=REPO_ROOT,
         )
         with open(manifest) as f:
             got = {line.strip() for line in f if line.strip()}
         assert got == expected, "3-arg mode changed the manifest output"
         with open(paths) as f:
             got_paths = {line.rstrip("\n") for line in f if line.strip()}
-        assert got_paths == expected_paths, (
-            f"paths mismatch:\nmissing: {sorted(expected_paths - got_paths)}\nunexpected: {sorted(got_paths - expected_paths)}"
-        )
+        assert (
+            got_paths == expected_paths
+        ), f"paths mismatch:\nmissing: {sorted(expected_paths - got_paths)}\nunexpected: {sorted(got_paths - expected_paths)}"
 
     print(f"test_pdb_finding OK ({len(expected)} entries)")
 
@@ -99,8 +137,14 @@ def test_merge_paths():
 
         out = os.path.join(tmp, "files.json")
         subprocess.run(
-            [sys.executable, os.path.join(REPO_ROOT, "code", "merge_paths.py"), tmp, out],
-            check=True, cwd=REPO_ROOT,
+            [
+                sys.executable,
+                os.path.join(REPO_ROOT, "code", "merge_paths.py"),
+                tmp,
+                out,
+            ],
+            check=True,
+            cwd=REPO_ROOT,
         )
         got = json.load(open(out))
 

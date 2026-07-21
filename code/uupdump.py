@@ -3,6 +3,7 @@
 All endpoints go through one session with a shared retry policy and
 User-Agent; all response models live here.
 """
+
 from typing import Dict, List, Literal, Optional
 
 import requests
@@ -16,9 +17,16 @@ _session.headers["User-Agent"] = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
     "Chrome/130.0.0.0 Safari/537.36"
 )
-_session.mount("https://", HTTPAdapter(max_retries=Retry(
-    total=4, backoff_factor=1, status_forcelist=[429, 500, 502, 503, 504],
-)))
+_session.mount(
+    "https://",
+    HTTPAdapter(
+        max_retries=Retry(
+            total=4,
+            backoff_factor=1,
+            status_forcelist=[429, 500, 502, 503, 504],
+        )
+    ),
+)
 
 
 def _get(endpoint: str, **params) -> dict:

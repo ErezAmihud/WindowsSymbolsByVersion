@@ -8,6 +8,7 @@ an ISO.
 
 Usage: merge_paths.py <dir_with_paths_files> <out_json>
 """
+
 import glob
 import json
 import os
@@ -25,14 +26,18 @@ def merge(src_dir):
                 try:
                     path, pdb, guid = line.split("\t")
                 except ValueError:
-                    raise ValueError(f"{paths_file}:{lineno}: expected 3 tab-separated fields, got {line!r}")
+                    raise ValueError(
+                        f"{paths_file}:{lineno}: expected 3 tab-separated fields, got {line!r}"
+                    )
                 entries.add((path, pdb, guid))
     return [{"path": p, "pdb": pdb, "guid": guid} for p, pdb, guid in sorted(entries)]
 
 
 def main():
     if len(sys.argv) != 3:
-        print("Usage: merge_paths.py <dir_with_paths_files> <out_json>", file=sys.stderr)
+        print(
+            "Usage: merge_paths.py <dir_with_paths_files> <out_json>", file=sys.stderr
+        )
         sys.exit(1)
     merged = merge(sys.argv[1])
     with open(sys.argv[2], "w") as f:

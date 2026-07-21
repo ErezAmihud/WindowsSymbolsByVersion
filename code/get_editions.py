@@ -3,6 +3,7 @@
 
 Usage: get_editions.py <uuid>
 """
+
 import sys
 from uupdump import get_editions
 from gha import write_output

@@ -1,4 +1,5 @@
 """Fetch, cache and query the build index (index.json of the project site)."""
+
 import json
 import os
 import sys
@@ -25,7 +26,11 @@ def load_index(index_file=None, force_refresh=False):
         except (OSError, json.JSONDecodeError) as e:
             raise SystemExit(f"error: cannot read index file {index_file}: {e}")
 
-    if not force_refresh and os.path.exists(CACHE_FILE) and time.time() - os.path.getmtime(CACHE_FILE) < CACHE_TTL:
+    if (
+        not force_refresh
+        and os.path.exists(CACHE_FILE)
+        and time.time() - os.path.getmtime(CACHE_FILE) < CACHE_TTL
+    ):
         with open(CACHE_FILE) as f:
             return json.load(f)
 
@@ -35,10 +40,15 @@ def load_index(index_file=None, force_refresh=False):
         entries = resp.json()
     except (requests.RequestException, json.JSONDecodeError) as e:
         if os.path.exists(CACHE_FILE):
-            print(f"warning: could not refresh index ({e}); using cached copy", file=sys.stderr)
+            print(
+                f"warning: could not refresh index ({e}); using cached copy",
+                file=sys.stderr,
+            )
             with open(CACHE_FILE) as f:
                 return json.load(f)
-        raise SystemExit(f"error: could not download {INDEX_URL} and no cache exists: {e}")
+        raise SystemExit(
+            f"error: could not download {INDEX_URL} and no cache exists: {e}"
+        )
 
     os.makedirs(os.path.dirname(CACHE_FILE), exist_ok=True)
     with open(CACHE_FILE, "w") as f:

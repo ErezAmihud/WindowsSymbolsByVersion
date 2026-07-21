@@ -17,6 +17,7 @@ CLI used by the workflows:
   state.py mark-done <uuid> [--title T --build B --arch A]   (looked up on uupdump if omitted)
   state.py mark-failed <uuid> [--run-url URL]
 """
+
 import argparse
 import json
 
@@ -50,7 +51,12 @@ def priority_uuids(state):
 
 
 def mark_done(state, uuid, title, build, arch):
-    state["builds"][uuid] = {"status": "done", "title": title, "build": build, "arch": arch}
+    state["builds"][uuid] = {
+        "status": "done",
+        "title": title,
+        "build": build,
+        "arch": arch,
+    }
     if uuid in state["priority"]:
         state["priority"].remove(uuid)
 
@@ -58,7 +64,11 @@ def mark_done(state, uuid, title, build, arch):
 def mark_failed(state, uuid, run_url=None):
     info = state["builds"].get(uuid, {})
     failures = info.get("failures", 0) + 1 if info.get("status") == "failed" else 1
-    state["builds"][uuid] = {"status": "failed", "failures": failures, "last_run": run_url}
+    state["builds"][uuid] = {
+        "status": "failed",
+        "failures": failures,
+        "last_run": run_url,
+    }
 
 
 def main():

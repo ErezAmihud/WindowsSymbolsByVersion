@@ -11,14 +11,20 @@ DEBUG_DIRECTORY_INDEX = pefile.DIRECTORY_ENTRY["IMAGE_DIRECTORY_ENTRY_DEBUG"]
 def get_guid(dll: pefile.PE):
     if hasattr(dll, "DIRECTORY_ENTRY_DEBUG"):
         for entry in dll.DIRECTORY_ENTRY_DEBUG:
-            if entry.struct.Type == pefile.DEBUG_TYPE["IMAGE_DEBUG_TYPE_CODEVIEW"] and entry.entry is not None and b"\\" not in entry.entry.PdbFileName:
+            if (
+                entry.struct.Type == pefile.DEBUG_TYPE["IMAGE_DEBUG_TYPE_CODEVIEW"]
+                and entry.entry is not None
+                and b"\\" not in entry.entry.PdbFileName
+            ):
                 signature_string = ""
                 if hasattr(entry.entry, "Signature"):
                     signature_string = hex(entry.entry.Signature)[2:]
                 else:
                     signature_string = entry.entry.Signature_String
 
-                yield entry.entry.PdbFileName.rstrip(b"\x00").decode("ascii"), signature_string
+                yield entry.entry.PdbFileName.rstrip(b"\x00").decode(
+                    "ascii"
+                ), signature_string
 
 
 def process_file(file_path):

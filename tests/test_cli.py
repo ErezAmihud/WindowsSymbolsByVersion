@@ -6,6 +6,7 @@ on PATH that records its argv and staged manifest.
 
 Run from the repo root: python3 tests/test_cli.py
 """
+
 import json
 import os
 import stat
@@ -40,12 +41,29 @@ MANIFEST_OLD = "old.pdb,G9,1\n"
 
 def make_fixtures(root, base_url):
     entries = [
-        {"uuid": UUID_NEW, "title": "Windows 11, version 24H2 (26100.1297)", "build": "26100.1297",
-         "arch": "amd64", "manifest": f"{base_url}/new.manifest", "files": f"{base_url}/new.files.json"},
-        {"uuid": UUID_NEW_X86, "title": "Windows 11, version 24H2 (26100.1297)", "build": "26100.1297",
-         "arch": "x86", "manifest": f"{base_url}/new_x86.manifest", "files": f"{base_url}/new_x86.files.json"},
-        {"uuid": UUID_OLD, "title": "Feature update to Windows 10, version 21H1 (19043.1826)",
-         "build": "19043.1826", "arch": "amd64", "manifest": f"{base_url}/old.manifest"},
+        {
+            "uuid": UUID_NEW,
+            "title": "Windows 11, version 24H2 (26100.1297)",
+            "build": "26100.1297",
+            "arch": "amd64",
+            "manifest": f"{base_url}/new.manifest",
+            "files": f"{base_url}/new.files.json",
+        },
+        {
+            "uuid": UUID_NEW_X86,
+            "title": "Windows 11, version 24H2 (26100.1297)",
+            "build": "26100.1297",
+            "arch": "x86",
+            "manifest": f"{base_url}/new_x86.manifest",
+            "files": f"{base_url}/new_x86.files.json",
+        },
+        {
+            "uuid": UUID_OLD,
+            "title": "Feature update to Windows 10, version 21H1 (19043.1826)",
+            "build": "19043.1826",
+            "arch": "amd64",
+            "manifest": f"{base_url}/old.manifest",
+        },
     ]
     with open(os.path.join(root, "index.json"), "w") as f:
         json.dump(entries, f)
@@ -77,9 +95,14 @@ def test_build_manifest(entries):
     # empty prefix matches everything: recreation reproduces the manifest
     assert wmanifest.build_manifest(new, "") == MANIFEST_NEW
     # system32 scope: explorer.exe and SysWOW64 excluded, sorted, deduped
-    assert wmanifest.build_manifest(new, wmanifest.SYSTEM32_PREFIX) == "ntdll.pdb,G1,1\nx.pdb,G2,1\n"
+    assert (
+        wmanifest.build_manifest(new, wmanifest.SYSTEM32_PREFIX)
+        == "ntdll.pdb,G1,1\nx.pdb,G2,1\n"
+    )
     # prefixes are case/slash-insensitive
-    assert wmanifest.build_manifest(new, "\\Windows\\System32\\DRIVERS") == "x.pdb,G2,1\n"
+    assert (
+        wmanifest.build_manifest(new, "\\Windows\\System32\\DRIVERS") == "x.pdb,G2,1\n"
+    )
     # builds without files.json only support scope all
     try:
         wmanifest.build_manifest(old, wmanifest.SYSTEM32_PREFIX)
@@ -97,8 +120,12 @@ def run_cli(args, fake_bin=None, record_dir=None):
     env.pop("WINSYMS_PDBLISTER", None)
     if record_dir:
         env["RECORD_DIR"] = record_dir
-    return subprocess.run([sys.executable, "-m", "winsyms"] + args,
-                          capture_output=True, text=True, env=env)
+    return subprocess.run(
+        [sys.executable, "-m", "winsyms"] + args,
+        capture_output=True,
+        text=True,
+        env=env,
+    )
 
 
 def make_fake_pdblister(bin_dir):
@@ -106,7 +133,9 @@ def make_fake_pdblister(bin_dir):
     os.makedirs(bin_dir, exist_ok=True)
     path = os.path.join(bin_dir, "pdblister")
     with open(path, "w") as f:
-        f.write('#!/bin/sh\necho "$@" > "$RECORD_DIR/argv"\ncp manifest "$RECORD_DIR/manifest"\n')
+        f.write(
+            '#!/bin/sh\necho "$@" > "$RECORD_DIR/argv"\ncp manifest "$RECORD_DIR/manifest"\n'
+        )
     os.chmod(path, os.stat(path).st_mode | stat.S_IXUSR)
     return bin_dir
 
@@ -118,9 +147,24 @@ def test_get(tmp, index_file):
     out_dir = os.path.join(tmp, "syms")
 
     # end-to-end: scope filter + pdblister invocation
-    res = run_cli(["get", "26100.1297", "--arch", "amd64", "--scope", "system32",
-                   "--index", index_file, "--out", out_dir, "--server", "https://sym.example/download"],
-                  fake_bin=fake_bin, record_dir=record)
+    res = run_cli(
+        [
+            "get",
+            "26100.1297",
+            "--arch",
+            "amd64",
+            "--scope",
+            "system32",
+            "--index",
+            index_file,
+            "--out",
+            out_dir,
+            "--server",
+            "https://sym.example/download",
+        ],
+        fake_bin=fake_bin,
+        record_dir=record,
+    )
     assert res.returncode == 0, res.stderr
     argv = open(os.path.join(record, "argv")).read().strip()
     assert argv == f"download SRV*{out_dir}*https://sym.example/download", argv
@@ -128,13 +172,31 @@ def test_get(tmp, index_file):
     assert staged == "ntdll.pdb,G1,1\nx.pdb,G2,1\n", staged
 
     # ambiguous query: list candidates, exit non-zero
-    res = run_cli(["get", "26100.1297", "--index", index_file], fake_bin=fake_bin, record_dir=record)
+    res = run_cli(
+        ["get", "26100.1297", "--index", index_file],
+        fake_bin=fake_bin,
+        record_dir=record,
+    )
     assert res.returncode != 0
-    assert "matches 2 builds" in res.stderr and UUID_NEW in res.stderr and UUID_NEW_X86 in res.stderr, res.stderr
+    assert (
+        "matches 2 builds" in res.stderr
+        and UUID_NEW in res.stderr
+        and UUID_NEW_X86 in res.stderr
+    ), res.stderr
 
     # --manifest-only: writes the manifest, needs no pdblister
     manifest_out = os.path.join(tmp, "m")
-    res = run_cli(["get", UUID_OLD, "--index", index_file, "--manifest-only", "--out", manifest_out])
+    res = run_cli(
+        [
+            "get",
+            UUID_OLD,
+            "--index",
+            index_file,
+            "--manifest-only",
+            "--out",
+            manifest_out,
+        ]
+    )
     assert res.returncode == 0, res.stderr
     assert open(manifest_out).read() == MANIFEST_OLD
 
