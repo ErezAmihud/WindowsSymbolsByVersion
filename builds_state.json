@@ -644,6 +644,12 @@
    "build": "17763.5936",
    "arch": "x86"
   },
+  "1ae36bcf-8ba3-4903-99f7-a2feca72c51b": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2486)",
+   "build": "19045.2486",
+   "arch": "x86"
+  },
   "1ae58b7f-7b0f-4043-9075-7752a5107d72": {
    "status": "done",
    "title": "Feature update to Windows 10, version 1809 (17763.5696)",
