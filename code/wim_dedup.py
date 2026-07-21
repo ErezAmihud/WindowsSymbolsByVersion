@@ -45,7 +45,10 @@ def image_count(wim_file):
     out = subprocess.run(
         ["wimlib-imagex", "info", wim_file], check=True, capture_output=True, text=True
     ).stdout
-    return int(re.search(r"Image Count:\s*(\d+)", out).group(1))
+    m = re.search(r"Image Count:\s*(\d+)", out)
+    if m is None:
+        raise ValueError(f"could not find image count in wimlib-imagex info for {wim_file}")
+    return int(m.group(1))
 
 
 def is_interesting(path):
@@ -63,6 +66,7 @@ def list_image_files(wim_file, image):
         errors="replace",
     )
     path, is_dir, in_unnamed_stream, file_hash = None, False, False, None
+    assert proc.stdout is not None  # stdout=PIPE guarantees this
     with proc.stdout:
         for line in proc.stdout:
             line = line.strip()

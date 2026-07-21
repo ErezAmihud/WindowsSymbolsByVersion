@@ -51,7 +51,8 @@ def build_sort_key(build: str):
 
 
 def main():
-    state = json.load(open("builds_state.json"))
+    with open("builds_state.json") as f:
+        state = json.load(f)
     # done builds without a manifest on disk were purged (2026-07: everything
     # before per-build path data); they stay in the state so the pipeline
     # never reprocesses them, but are not listed on the site.

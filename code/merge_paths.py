@@ -25,10 +25,10 @@ def merge(src_dir):
                     continue
                 try:
                     path, pdb, guid = line.split("\t")
-                except ValueError:
+                except ValueError as e:
                     raise ValueError(
                         f"{paths_file}:{lineno}: expected 3 tab-separated fields, got {line!r}"
-                    )
+                    ) from e
                 entries.add((path, pdb, guid))
     return [{"path": p, "pdb": pdb, "guid": guid} for p, pdb, guid in sorted(entries)]
 

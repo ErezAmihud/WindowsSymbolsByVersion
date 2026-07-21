@@ -17,7 +17,7 @@ def _fetch(url):
         resp.raise_for_status()
         return resp
     except requests.RequestException as e:
-        raise SystemExit(f"error: failed to download {url}: {e}")
+        raise SystemExit(f"error: failed to download {url}: {e}") from e
 
 
 def _normalize(path):

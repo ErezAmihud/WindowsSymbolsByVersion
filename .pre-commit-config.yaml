@@ -16,6 +16,14 @@ repos:
     rev: 1.1.1
     hooks:
       - id: pyrefly-check
+        # pyrefly runs in an isolated env; give it the project deps so imports resolve.
+        additional_dependencies:
+          - pydantic==2.13.4
+          - requests==2.33.1
+          - pefile==2024.8.26
+          - tqdm==4.68.4
+          - mkdocs-gen-files==0.6.1
+          - pytest
 
   # Shell: lint (shellcheck) + format (shfmt)
   - repo: https://github.com/shellcheck-py/shellcheck-py
@@ -38,7 +46,7 @@ repos:
     rev: v1.7.12
     hooks:
       - id: actionlint
-  
+
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v6.0.0
     hooks:

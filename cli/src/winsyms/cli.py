@@ -37,7 +37,8 @@ def _resolve_one(args):
     if len(matches) > 1:
         _print_entries(matches, file=sys.stderr)
         raise SystemExit(
-            f"error: {args.query!r} matches {len(matches)} builds; narrow with --arch, the full build number or the uuid"
+            f"error: {args.query!r} matches {len(matches)} builds; "
+            "narrow with --arch, the full build number or the uuid"
         )
     return matches[0]
 
@@ -121,7 +122,8 @@ def main(argv=None):
     p_get.add_argument(
         "--out",
         metavar="PATH",
-        help="symbol output directory (default: ./symbols); with --manifest-only, the manifest file path (default: ./manifest)",
+        help="symbol output directory (default: ./symbols); with --manifest-only, "
+        "the manifest file path (default: ./manifest)",
     )
     p_get.add_argument(
         "--server",
@@ -131,7 +133,8 @@ def main(argv=None):
     p_get.add_argument(
         "--manifest-only",
         action="store_true",
-        help="only write the manifest file, do not run pdblister (airgap: fetch here, download inside)",
+        help="only write the manifest file, do not run pdblister "
+        "(airgap: fetch here, download inside)",
     )
     p_get.add_argument(
         "--pdblister",
@@ -145,7 +148,7 @@ def main(argv=None):
     try:
         args.func(args)
     except KeyboardInterrupt:
-        raise SystemExit(130)
+        raise SystemExit(130) from None
 
 
 if __name__ == "__main__":

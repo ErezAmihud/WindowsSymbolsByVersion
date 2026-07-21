@@ -38,5 +38,5 @@ def run_download(binary, manifest_text, out_dir, server):
         try:
             subprocess.run([binary, "download", f"SRV*{out_dir}*{server}"], cwd=tmp, check=True)
         except subprocess.CalledProcessError as e:
-            raise SystemExit(f"error: pdblister exited with status {e.returncode}")
+            raise SystemExit(f"error: pdblister exited with status {e.returncode}") from e
     return out_dir

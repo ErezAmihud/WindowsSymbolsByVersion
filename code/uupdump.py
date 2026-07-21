@@ -4,7 +4,7 @@ All endpoints go through one session with a shared retry policy and
 User-Agent; all response models live here.
 """
 
-from typing import List, Literal, Optional
+from typing import Literal, Optional
 
 import requests
 from pydantic import BaseModel
@@ -49,33 +49,33 @@ class BuildInfo(BaseModel):
 
 
 class _ListidResponse(BaseModel):
-    builds: List[BuildInfo]
+    builds: list[BuildInfo]
 
 
 class _LangsResponse(BaseModel):
-    langList: List[str]
+    langList: list[str]
 
 
 class _EditionsResponse(BaseModel):
-    editionList: List[str]
+    editionList: list[str]
 
 
 class _Envelope(BaseModel):
     response: dict
 
 
-def listid() -> List[BuildInfo]:
+def listid() -> list[BuildInfo]:
     """All known builds, newest first."""
     data = _Envelope(**_get("listid.php", sortByDate="1")).response
     return _ListidResponse(**data).builds
 
 
-def get_langs(uuid: str) -> List[str]:
+def get_langs(uuid: str) -> list[str]:
     data = _Envelope(**_get("listlangs.php", id=uuid)).response
     return _LangsResponse(**data).langList
 
 
-def get_editions(uuid: str, language: str = "en-us") -> List[str]:
+def get_editions(uuid: str, language: str = "en-us") -> list[str]:
     data = _Envelope(**_get("listeditions.php", id=uuid, lang=language)).response
     return _EditionsResponse(**data).editionList
 
