@@ -3835,6 +3835,12 @@
    "build": "19045.5440",
    "arch": "amd64"
   },
+  "9d2720a7-93a8-4af7-9f1a-11d4ebf6c030": {
+   "status": "done",
+   "title": "Feature update to Microsoft server operating system, version 21H2 (20348.1487)",
+   "build": "20348.1487",
+   "arch": "amd64"
+  },
   "9d469676-9723-4677-9cf3-e30a1fb0fe5e": {
    "status": "failed",
    "failures": 3,
