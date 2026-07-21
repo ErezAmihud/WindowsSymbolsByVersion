@@ -127,7 +127,7 @@ jobs:
         with:
           ref: ${{ github.ref_name }}
       - run: python3 code/state.py mark-failed '${{ inputs.uuid }}' --run-url "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
-      - uses: EndBug/add-and-commit@v9
+      - uses: EndBug/add-and-commit@v10
         with:
           add: "builds_state.json"
           message: 'Automated commit, record failed attempt for ${{inputs.uuid}}'
@@ -308,7 +308,7 @@ jobs:
         if: ${{ !inputs.test_mode }}
         run: python3 code/state.py mark-done '${{ inputs.uuid }}'
       - if: ${{ !inputs.test_mode }}
-        uses: EndBug/add-and-commit@v9
+        uses: EndBug/add-and-commit@v10
         with:
           add: '["manifests", "builds_state.json"]'
           message: 'Automated commit, add manifest for ${{inputs.uuid}}'
