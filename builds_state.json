@@ -1803,6 +1803,11 @@
    "build": "22000.2652",
    "arch": "amd64"
   },
+  "4b198c0a-71de-4f6f-b7e1-831729d92c77": {
+   "status": "failed",
+   "failures": 2,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/29851979544"
+  },
   "4c12b548-3138-4f1c-a0db-b57fc13fc98b": {
    "status": "done",
    "title": "Feature update to Windows 10, version 21H1 (19043.2364)",
@@ -5375,6 +5380,11 @@
    "title": "Feature update to Microsoft server operating system, version 21H2 (20348.2966)",
    "build": "20348.2966",
    "arch": "amd64"
+  },
+  "d5db6747-a97e-40ba-b839-87719b0adba1": {
+   "status": "failed",
+   "failures": 1,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/29835364005"
   },
   "d5ee5cec-81c0-4bc3-8a3a-283c0563f0e5": {
    "status": "done",
