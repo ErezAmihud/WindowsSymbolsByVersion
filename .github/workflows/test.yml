@@ -2,6 +2,7 @@ name: Tests
 on:
   push:
   pull_request:
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -21,3 +22,11 @@ jobs:
       - run: python3 tests/test_cli.py
       - name: Docs build
         run: mkdocs build --strict
+
+  # Manual-only: exercises the full download_build.yml pipeline with synthetic WIMs,
+  # skipping the ~110min Windows create_iso build. Trigger via "Run workflow".
+  pipeline_test:
+    if: ${{ github.event_name == 'workflow_dispatch' }}
+    uses: ./.github/workflows/download_build.yml
+    with:
+      test_mode: true
