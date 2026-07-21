@@ -9,6 +9,7 @@ Usage (in the assert_test_manifest job): assert_pipeline_manifest.py <manifest.o
  - files.json is a JSON list of {path, pdb, guid}
 Both must reproduce expected_entries(); exits non-zero (failing the job) on any drift.
 """
+
 import json
 import os
 import sys
