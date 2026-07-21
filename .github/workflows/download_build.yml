@@ -250,7 +250,7 @@ jobs:
         path: partials
         pattern: ${{ inputs.uuid }}manifest*
         merge-multiple: true
-    - run: cat ./partials/*.out | sort | uniq -c | sed 's/\r$//' > manifest.out
+    - run: cat ./partials/*.out | sort | uniq | sed 's/\r$//' > manifest.out
     - run: python3 code/merge_paths.py ./partials files.json
 
     - name: Archive manifest result
