@@ -49,14 +49,10 @@ def pick_builds(builds, processed, priority, allowed_size, get_langs=get_langs):
 
 
 if __name__ == "__main__":
-    allowed_size = (
-        int(sys.argv[1]) if len(sys.argv) > 1 and sys.argv[1] else DEFAULT_ALLOWED_SIZE
-    )
+    allowed_size = int(sys.argv[1]) if len(sys.argv) > 1 and sys.argv[1] else DEFAULT_ALLOWED_SIZE
 
     state = load_state()
-    picked = pick_builds(
-        listid(), excluded_uuids(state), priority_uuids(state), allowed_size
-    )
+    picked = pick_builds(listid(), excluded_uuids(state), priority_uuids(state), allowed_size)
     for build in picked:
         print(build.uuid, str(build), file=sys.stderr)
     write_output("uuid_matrix", json.dumps([build.uuid for build in picked]))

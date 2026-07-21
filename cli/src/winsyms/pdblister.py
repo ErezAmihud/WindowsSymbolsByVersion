@@ -36,9 +36,7 @@ def run_download(binary, manifest_text, out_dir, server):
         with open(os.path.join(tmp, "manifest"), "w") as f:
             f.write(manifest_text)
         try:
-            subprocess.run(
-                [binary, "download", f"SRV*{out_dir}*{server}"], cwd=tmp, check=True
-            )
+            subprocess.run([binary, "download", f"SRV*{out_dir}*{server}"], cwd=tmp, check=True)
         except subprocess.CalledProcessError as e:
             raise SystemExit(f"error: pdblister exited with status {e.returncode}")
     return out_dir

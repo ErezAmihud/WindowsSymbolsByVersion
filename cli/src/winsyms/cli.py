@@ -73,9 +73,7 @@ def cmd_get(args):
     )
     text = manifest.build_manifest(entry, prefix).replace("\r\n", "\n")
     if not text:
-        raise SystemExit(
-            f"error: no pdb entries match path prefix {prefix!r} in this build"
-        )
+        raise SystemExit(f"error: no pdb entries match path prefix {prefix!r} in this build")
 
     if args.manifest_only:
         out_file = args.out or "manifest"
@@ -103,16 +101,12 @@ def main(argv=None):
     p_update.set_defaults(func=cmd_update)
 
     p_list = sub.add_parser("list", help="list known builds, optionally filtered")
-    p_list.add_argument(
-        "query", nargs="?", help="uuid, build number or title substring"
-    )
+    p_list.add_argument("query", nargs="?", help="uuid, build number or title substring")
     _add_index_args(p_list)
     p_list.set_defaults(func=cmd_list)
 
     p_get = sub.add_parser("get", help="download the symbols of one build")
-    p_get.add_argument(
-        "query", help="uuid, build number (e.g. 26100.1297) or title substring"
-    )
+    p_get.add_argument("query", help="uuid, build number (e.g. 26100.1297) or title substring")
     p_get.add_argument(
         "--scope",
         choices=["all", "system32"],

@@ -96,13 +96,10 @@ def test_build_manifest(entries):
     assert wmanifest.build_manifest(new, "") == MANIFEST_NEW
     # system32 scope: explorer.exe and SysWOW64 excluded, sorted, deduped
     assert (
-        wmanifest.build_manifest(new, wmanifest.SYSTEM32_PREFIX)
-        == "ntdll.pdb,G1,1\nx.pdb,G2,1\n"
+        wmanifest.build_manifest(new, wmanifest.SYSTEM32_PREFIX) == "ntdll.pdb,G1,1\nx.pdb,G2,1\n"
     )
     # prefixes are case/slash-insensitive
-    assert (
-        wmanifest.build_manifest(new, "\\Windows\\System32\\DRIVERS") == "x.pdb,G2,1\n"
-    )
+    assert wmanifest.build_manifest(new, "\\Windows\\System32\\DRIVERS") == "x.pdb,G2,1\n"
     # builds without files.json only support scope all
     try:
         wmanifest.build_manifest(old, wmanifest.SYSTEM32_PREFIX)
@@ -133,9 +130,7 @@ def make_fake_pdblister(bin_dir):
     os.makedirs(bin_dir, exist_ok=True)
     path = os.path.join(bin_dir, "pdblister")
     with open(path, "w") as f:
-        f.write(
-            '#!/bin/sh\necho "$@" > "$RECORD_DIR/argv"\ncp manifest "$RECORD_DIR/manifest"\n'
-        )
+        f.write('#!/bin/sh\necho "$@" > "$RECORD_DIR/argv"\ncp manifest "$RECORD_DIR/manifest"\n')
     os.chmod(path, os.stat(path).st_mode | stat.S_IXUSR)
     return bin_dir
 
@@ -179,9 +174,7 @@ def test_get(tmp, index_file):
     )
     assert res.returncode != 0
     assert (
-        "matches 2 builds" in res.stderr
-        and UUID_NEW in res.stderr
-        and UUID_NEW_X86 in res.stderr
+        "matches 2 builds" in res.stderr and UUID_NEW in res.stderr and UUID_NEW_X86 in res.stderr
     ), res.stderr
 
     # --manifest-only: writes the manifest, needs no pdblister

@@ -46,9 +46,7 @@ def load_index(index_file=None, force_refresh=False):
             )
             with open(CACHE_FILE) as f:
                 return json.load(f)
-        raise SystemExit(
-            f"error: could not download {INDEX_URL} and no cache exists: {e}"
-        )
+        raise SystemExit(f"error: could not download {INDEX_URL} and no cache exists: {e}")
 
     os.makedirs(os.path.dirname(CACHE_FILE), exist_ok=True)
     with open(CACHE_FILE, "w") as f:

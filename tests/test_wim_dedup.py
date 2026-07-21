@@ -51,29 +51,17 @@ def main():
         img1, img2 = os.path.join(tmp, "img1"), os.path.join(tmp, "img2")
         expected = set()
 
-        shared_pe, entry = pe_and_entry(
-            "ntdll.pdb", "11111111-1111-1111-1111-111111111111", 1
-        )
+        shared_pe, entry = pe_and_entry("ntdll.pdb", "11111111-1111-1111-1111-111111111111", 1)
         expected.add(entry)
-        old_b, entry = pe_and_entry(
-            "b_old.pdb", "22222222-2222-2222-2222-222222222222", 1
-        )
+        old_b, entry = pe_and_entry("b_old.pdb", "22222222-2222-2222-2222-222222222222", 1)
         expected.add(entry)
-        new_b, entry = pe_and_entry(
-            "b_new.pdb", "33333333-3333-3333-3333-333333333333", 2
-        )
+        new_b, entry = pe_and_entry("b_new.pdb", "33333333-3333-3333-3333-333333333333", 2)
         expected.add(entry)
-        only2_pe, entry = pe_and_entry(
-            "only2.pdb", "44444444-4444-4444-4444-444444444444", 5
-        )
+        only2_pe, entry = pe_and_entry("only2.pdb", "44444444-4444-4444-4444-444444444444", 5)
         expected.add(entry)
-        bootmgr_pe, entry = pe_and_entry(
-            "bootmgr.pdb", "55555555-5555-5555-5555-555555555555", 9
-        )
+        bootmgr_pe, entry = pe_and_entry("bootmgr.pdb", "55555555-5555-5555-5555-555555555555", 9)
         expected.add(entry)
-        space_pe, entry = pe_and_entry(
-            "space.pdb", "66666666-6666-6666-6666-666666666666", 3
-        )
+        space_pe, entry = pe_and_entry("space.pdb", "66666666-6666-6666-6666-666666666666", 3)
         expected.add(entry)
 
         # image 1
@@ -118,9 +106,7 @@ def main():
             cwd=workdir,
         )
         matrix_line = out.stdout.strip()
-        assert (
-            matrix_line == "version_matrix=[1,2]"
-        ), f"unexpected matrix output: {matrix_line!r}"
+        assert matrix_line == "version_matrix=[1,2]", f"unexpected matrix output: {matrix_line!r}"
 
         listfile_1 = open(os.path.join(workdir, "listfile_install_1.txt")).read()
         listfile_2 = open(os.path.join(workdir, "listfile_install_2.txt")).read()
@@ -148,13 +134,11 @@ def main():
             with open(os.path.join(workdir, f"manifest_install_{image}.out")) as f:
                 got.update(line.strip() for line in f if line.strip())
             with open(os.path.join(workdir, f"manifest_install_{image}.paths")) as f:
-                got_paths[image] = sorted(
-                    line.split("\t")[0] for line in f if line.strip()
-                )
+                got_paths[image] = sorted(line.split("\t")[0] for line in f if line.strip())
 
-        assert (
-            got == expected
-        ), f"manifest mismatch:\nmissing: {sorted(expected - got)}\nunexpected: {sorted(got - expected)}"
+        assert got == expected, (
+            f"manifest mismatch:\nmissing: {sorted(expected - got)}\nunexpected: {sorted(got - expected)}"
+        )
 
         # .paths must record the in-image path of every extracted PE
         assert got_paths["1"] == [

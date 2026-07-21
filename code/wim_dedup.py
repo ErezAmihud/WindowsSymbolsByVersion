@@ -93,11 +93,7 @@ def main():
         with open(listfile, "w") as out:
             for path, file_hash in list_image_files(wim_file, image):
                 total += 1
-                if (
-                    not is_interesting(path)
-                    or file_hash in seen_hashes
-                    or file_hash == EMPTY_HASH
-                ):
+                if not is_interesting(path) or file_hash in seen_hashes or file_hash == EMPTY_HASH:
                     continue
                 seen_hashes.add(file_hash)
                 out.write(f'"{path}"\n')

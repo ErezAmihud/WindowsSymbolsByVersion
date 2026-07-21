@@ -46,16 +46,12 @@ def main():
             raise RuntimeError("api down")
         return ["en-us", "de-de"]
 
-    picked = pick_builds(
-        builds, processed, priority, allowed_size=3, get_langs=fake_get_langs
-    )
+    picked = pick_builds(builds, processed, priority, allowed_size=3, get_langs=fake_get_langs)
     got = [b.uuid for b in picked]
     # priority build first, then list order, skipping everything filtered
     assert got == ["prio-1", "new-1", "new-2"], f"unexpected picks: {got}"
 
-    picked = pick_builds(
-        builds, processed, priority, allowed_size=100, get_langs=fake_get_langs
-    )
+    picked = pick_builds(builds, processed, priority, allowed_size=100, get_langs=fake_get_langs)
     got = [b.uuid for b in picked]
     assert got == ["prio-1", "new-1", "new-2", "new-3"], f"unexpected picks: {got}"
 

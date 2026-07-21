@@ -35,9 +35,7 @@ def merge(src_dir):
 
 def main():
     if len(sys.argv) != 3:
-        print(
-            "Usage: merge_paths.py <dir_with_paths_files> <out_json>", file=sys.stderr
-        )
+        print("Usage: merge_paths.py <dir_with_paths_files> <out_json>", file=sys.stderr)
         sys.exit(1)
     merged = merge(sys.argv[1])
     with open(sys.argv[2], "w") as f:

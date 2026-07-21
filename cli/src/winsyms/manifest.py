@@ -43,10 +43,6 @@ def build_manifest(entry, path_prefix=None):
     prefix = _normalize(path_prefix)
     files = _fetch(entry["files"]).json()
     lines = sorted(
-        {
-            f"{f['pdb']},{f['guid']},1"
-            for f in files
-            if _normalize(f["path"]).startswith(prefix)
-        }
+        {f"{f['pdb']},{f['guid']},1" for f in files if _normalize(f["path"]).startswith(prefix)}
     )
     return "".join(line + "\n" for line in lines)

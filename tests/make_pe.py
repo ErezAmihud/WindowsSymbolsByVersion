@@ -12,19 +12,13 @@ SECTION_FILE_OFFSET = 0x200
 DEBUG_DIR_SIZE = 28
 
 
-def make_pe(
-    pdb_name: str | None = None, guid: uuid.UUID | None = None, age: int = 1
-) -> bytes:
+def make_pe(pdb_name: str | None = None, guid: uuid.UUID | None = None, age: int = 1) -> bytes:
     cv_blob = b""
     debug_dir = b""
     if pdb_name is not None:
         guid = guid or uuid.uuid4()
         cv_blob = (
-            b"RSDS"
-            + guid.bytes_le
-            + struct.pack("<I", age)
-            + pdb_name.encode("ascii")
-            + b"\x00"
+            b"RSDS" + guid.bytes_le + struct.pack("<I", age) + pdb_name.encode("ascii") + b"\x00"
         )
         debug_dir = struct.pack(
             "<IIHHIIII",
@@ -86,9 +80,7 @@ def make_pe(
     data_directories = [(0, 0)] * 16
     if debug_dir:
         data_directories[6] = (SECTION_RVA, DEBUG_DIR_SIZE)
-    optional_header += b"".join(
-        struct.pack("<II", rva, size) for rva, size in data_directories
-    )
+    optional_header += b"".join(struct.pack("<II", rva, size) for rva, size in data_directories)
 
     section_header = struct.pack(
         "<8sIIIIIIHHI",

@@ -32,9 +32,7 @@ def build_tree(root):
         with open(path, "wb") as f:
             f.write(make_pe(pdb_name, guid, age))
         expected.add(f"{pdb_name},{expected_signature_string(guid, age)},1")
-        expected_paths.add(
-            f"{rel_path}\t{pdb_name}\t{expected_signature_string(guid, age)}"
-        )
+        expected_paths.add(f"{rel_path}\t{pdb_name}\t{expected_signature_string(guid, age)}")
 
     add_pe(
         "Windows/System32/ntdll.dll",
@@ -95,9 +93,9 @@ def test_pdb_finding():
 
         with open(manifest) as f:
             got = {line.strip() for line in f if line.strip()}
-        assert (
-            got == expected
-        ), f"manifest mismatch:\nmissing: {sorted(expected - got)}\nunexpected: {sorted(got - expected)}"
+        assert got == expected, (
+            f"manifest mismatch:\nmissing: {sorted(expected - got)}\nunexpected: {sorted(got - expected)}"
+        )
 
         # 3-arg mode: same manifest, plus exact path<TAB>pdb<TAB>guid lines
         paths = os.path.join(tmp, "manifest.paths")
@@ -117,9 +115,9 @@ def test_pdb_finding():
         assert got == expected, "3-arg mode changed the manifest output"
         with open(paths) as f:
             got_paths = {line.rstrip("\n") for line in f if line.strip()}
-        assert (
-            got_paths == expected_paths
-        ), f"paths mismatch:\nmissing: {sorted(expected_paths - got_paths)}\nunexpected: {sorted(got_paths - expected_paths)}"
+        assert got_paths == expected_paths, (
+            f"paths mismatch:\nmissing: {sorted(expected_paths - got_paths)}\nunexpected: {sorted(got_paths - expected_paths)}"
+        )
 
     print(f"test_pdb_finding OK ({len(expected)} entries)")
 

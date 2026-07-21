@@ -24,9 +24,7 @@ def get_guid(dll: pefile.PE):
                 else:
                     signature_string = entry.entry.Signature_String
 
-                yield entry.entry.PdbFileName.rstrip(b"\x00").decode(
-                    "ascii"
-                ), signature_string
+                yield entry.entry.PdbFileName.rstrip(b"\x00").decode("ascii"), signature_string
 
 
 def process_file(file_path):

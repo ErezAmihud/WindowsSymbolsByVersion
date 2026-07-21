@@ -80,9 +80,7 @@ def test_repo_state_consistent():
     state = json.load(open(os.path.join(repo, "builds_state.json")))
     done = {u for u, i in state["builds"].items() if i["status"] == "done"}
     manifests = {
-        f[:-9]
-        for f in os.listdir(os.path.join(repo, "manifests"))
-        if f.endswith(".manifest")
+        f[:-9] for f in os.listdir(os.path.join(repo, "manifests")) if f.endswith(".manifest")
     }
     assert manifests <= done, f"manifest-without-done={sorted(manifests - done)[:5]}"
 
