@@ -17,8 +17,14 @@ jobs:
   create_iso:
     name: create iso
     runs-on: ${{ inputs.test_mode && 'ubuntu-latest' || 'windows-latest' }}
+    # Real-mode ISO builds fail transiently (runner/uupdump); those failures are expected and
+    # recorded by mark_build_failed, so absorb them here to keep the run green. test_mode (PRs)
+    # stays false and still fails loudly.
+    continue-on-error: ${{ !inputs.test_mode }}
     permissions:
       contents: read
+    outputs:
+      built: ${{ steps.built.outputs.built }}
     steps:
         - uses: actions/checkout@v7
         # --- test mode: synthesize tiny WIMs on Linux instead of the ~110min Windows ISO build ---
@@ -113,11 +119,18 @@ jobs:
             name: ${{inputs.uuid}}boot.wim
             path: unpacked_dir/sources/boot.wim
             retention-days: 1
+        # No `if`: the default success() gate skips this when an earlier step failed, so `built`
+        # stays empty on a failed ISO build and is 'true' on the success path in either mode.
+        - name: Signal iso built
+          id: built
+          shell: bash
+          run: echo "built=true" >> "$GITHUB_OUTPUT"
 
   mark_build_failed:
     runs-on: ubuntu-latest
     needs: create_iso
-    if: ${{ always() && contains(needs.*.result, 'failure') && !inputs.test_mode }}
+    # create_iso no longer reports a 'failure' result (continue-on-error), so key off its output.
+    if: ${{ always() && needs.create_iso.outputs.built != 'true' && !inputs.test_mode }}
     permissions:
       contents: write
     steps:
@@ -135,6 +148,9 @@ jobs:
   split_wims:
     runs-on: ubuntu-latest
     needs: create_iso
+    # create_iso is continue-on-error, so gate explicitly on the ISO having been built rather
+    # than relying on the implicit success() of needs (which absorption would defeat).
+    if: ${{ needs.create_iso.outputs.built == 'true' }}
     permissions:
       contents: read
     outputs:
