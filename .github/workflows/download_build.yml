@@ -293,7 +293,7 @@ jobs:
           git config --global core.eol lf
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.ref_name }}
+          ref: ${{ !inputs.test_mode && github.ref_name || '' }}
       - run: python3 -m pip install -r requirements.txt
       - name: Download manifest
         uses: actions/download-artifact@v4
