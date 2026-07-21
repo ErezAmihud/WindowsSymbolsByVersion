@@ -1,6 +1,6 @@
 # Pinned versions used by all workflow jobs; bumped by dependabot.
 pydantic==2.13.4
-requests==2.33.1
+requests==2.34.2
 pefile==2024.8.26
 tqdm==4.68.4
 mkdocs==1.6.1
