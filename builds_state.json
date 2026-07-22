@@ -7091,6 +7091,12 @@
    "build": "19042.1889",
    "arch": "amd64"
   },
+  "fc1315c2-6da5-4630-ad21-93fb6059dc46": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 21H2 (20348.261)",
+   "build": "20348.261",
+   "arch": "amd64"
+  },
   "fc348bf4-2b84-4c0c-89cd-7c285229df34": {
    "status": "done",
    "title": "Feature update to Windows 10, version 22H2 (19045.4955)",
