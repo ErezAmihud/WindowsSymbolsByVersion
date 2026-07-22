@@ -1987,6 +1987,12 @@
    "build": "25398.1128",
    "arch": "amd64"
   },
+  "520806d4-7865-4801-be49-cb7425efe547": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 20H2 (19042.2311)",
+   "build": "19042.2311",
+   "arch": "x86"
+  },
   "521e73d3-fb1e-432e-a572-4f1777cc1501": {
    "status": "done",
    "title": "Feature update to Windows 10, version 1809 (17763.8880)",
