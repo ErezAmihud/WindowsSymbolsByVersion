@@ -4672,6 +4672,12 @@
    "build": "22621.4969",
    "arch": "amd64"
   },
+  "b79220ee-7263-4c6c-b7de-d1248db0a126": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 22H2 (19045.2311)",
+   "build": "19045.2311",
+   "arch": "x86"
+  },
   "b7cccf88-c6fb-4040-8db6-87498738a46a": {
    "status": "done",
    "title": "Feature update for Windows CPC OS, version 25H2 (26200.8457)",
