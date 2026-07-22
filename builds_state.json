@@ -1,6 +1,12 @@
 {
  "priority": [],
  "builds": {
+  "0019d8ed-e89b-4b79-9f76-9f1c77461e5f": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H1 (19043.1826)",
+   "build": "19043.1826",
+   "arch": "x86"
+  },
   "00267014-c3dd-4b50-9ca8-f41021fdff35": {
    "status": "done",
    "title": "Feature update to Windows 10, version 1803 (17134.81)",
