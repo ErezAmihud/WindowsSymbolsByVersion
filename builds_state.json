@@ -1141,6 +1141,12 @@
    "build": "20348.1726",
    "arch": "amd64"
   },
+  "2bbf5b05-bddf-4121-bb3d-01c9dff6986e": {
+   "status": "done",
+   "title": "Feature update to Windows 10 Team (19045.1865)",
+   "build": "19045.1865",
+   "arch": "amd64"
+  },
   "2bdf349d-5133-4f67-80c5-eaadef5691df": {
    "status": "done",
    "title": "Feature update to Windows 10, version 21H2 (19044.7291)",
