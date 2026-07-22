@@ -54,6 +54,12 @@
    "build": "26200.7705",
    "arch": "amd64"
   },
+  "025319ad-e6d9-495f-bdb8-cd8099b99428": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 22H2 (20349.946)",
+   "build": "20349.946",
+   "arch": "amd64"
+  },
   "02636583-e5d6-4ced-9448-c1fb9651e689": {
    "status": "done",
    "title": "Feature update to Azure Stack HCI, version 23H2 (25398.950)",
