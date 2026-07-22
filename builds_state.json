@@ -4706,6 +4706,11 @@
    "build": "19044.2006",
    "arch": "x86"
   },
+  "a7caff05-ff36-48ed-9901-96c44e582f72": {
+   "status": "failed",
+   "failures": 1,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/29940856682"
+  },
   "a7dcf12d-8931-4669-8edb-687c004cc2a6": {
    "status": "done",
    "title": "Feature update to Azure Stack HCI, version 23H2 (25398.1665)",
