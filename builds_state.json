@@ -155,6 +155,12 @@
    "build": "20348.1129",
    "arch": "amd64"
   },
+  "068ce486-dc69-4164-81f7-99594a3e688b": {
+   "status": "done",
+   "title": "Windows 11, version 22H2 (22621.674)",
+   "build": "22621.674",
+   "arch": "amd64"
+  },
   "069bfcf6-2c67-4392-9378-69339f737981": {
    "status": "done",
    "title": "Windows 11, version 24H2 (26100.3476)",
