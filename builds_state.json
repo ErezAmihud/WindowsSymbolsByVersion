@@ -5802,6 +5802,12 @@
    "failures": 1,
    "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/29956985541"
   },
+  "c34ec9ad-cf2e-4bdc-b400-9839596a0511": {
+   "status": "done",
+   "title": "Feature update to Microsoft server operating system, version 21H2 (20348.707)",
+   "build": "20348.707",
+   "arch": "amd64"
+  },
   "c38ad97e-9d4f-4cb2-810d-18f5ba99790f": {
    "status": "failed",
    "failures": 3,
