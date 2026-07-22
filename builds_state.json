@@ -1408,6 +1408,12 @@
    "failures": 3,
    "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/29549418903"
   },
+  "3330a78d-935c-4db6-b3c3-00de9d15c925": {
+   "status": "done",
+   "title": "Feature update to Microsoft server operating system, version 21H2 (20348.825)",
+   "build": "20348.825",
+   "arch": "amd64"
+  },
   "3338cf23-be08-48dd-a098-98b72a956ee4": {
    "status": "done",
    "title": "Feature update to Windows 10, version 1809 (17763.7792)",
