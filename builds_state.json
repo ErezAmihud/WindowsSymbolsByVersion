@@ -1900,6 +1900,12 @@
    "failures": 3,
    "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/29911000225"
   },
+  "45a038d5-3925-4052-b7ad-7419d4cdb430": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 21H2 (20348.768)",
+   "build": "20348.768",
+   "arch": "amd64"
+  },
   "46bae697-f3df-452f-8a9b-efbbbf88b3bb": {
    "status": "done",
    "title": "Feature update to Windows 10, version 22H2 (19045.3031)",
