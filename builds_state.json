@@ -2452,6 +2452,12 @@
    "build": "19045.6282",
    "arch": "x86"
   },
+  "5276df36-126b-48a8-91d6-46e54c373674": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 20H2 (19042.1415)",
+   "build": "19042.1415",
+   "arch": "x86"
+  },
   "52b7a75f-5fc2-4804-8327-7c423fca9b87": {
    "status": "done",
    "title": "Windows 11, version 24H2 (26100.7623)",
