@@ -19,6 +19,12 @@
    "build": "17763.4252",
    "arch": "x86"
   },
+  "0092e58a-d33d-47ec-8dd6-daf6d745be13": {
+   "status": "done",
+   "title": "Upgrade to Windows 11 (22000.527)",
+   "build": "22000.527",
+   "arch": "amd64"
+  },
   "009cea5e-2175-4dc7-87c0-16ec7f0e40da": {
    "status": "done",
    "title": "Windows 11, version 24H2 (26100.1876)",
