@@ -1,5 +1,7 @@
 # winsyms
 
+![builds analyzed](https://img.shields.io/endpoint?url=https://erezamihud.github.io/WindowsSymbolsByVersion/badge.json)
+
 Download the public PDB symbols of a **specific Windows release** in one command:
 
 ```console

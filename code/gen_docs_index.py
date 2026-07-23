@@ -7,12 +7,25 @@ Generates:
                `files` (the per-build path data used by the winsyms CLI for
                scope filtering) is only present for builds processed after
                the pipeline started recording binary paths.
+  badge.json - shields.io endpoint-badge schema, "<analyzed>/<available>"
+               builds; powers the badge embedded in README.md and
+               cli/README.md (the latter renders on the PyPI page too, so
+               the count stays live without a new winsyms release).
 """
 
 import json
 import os.path
+import sys
 
 import mkdocs_gen_files
+
+# mkdocs-gen-files runs this file via runpy.run_path, which (unlike `python
+# code/gen_docs_index.py`) does not put the script's own directory on
+# sys.path - so the sibling code/ imports below need it added explicitly.
+sys.path.insert(0, os.path.dirname(__file__))
+
+from daily import is_wanted  # noqa: E402
+from uupdump import listid  # noqa: E402
 
 BLOB_BASE = "https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/manifests"
 RAW_BASE = "https://raw.githubusercontent.com/ErezAmihud/WindowsSymbolsByVersion/main/manifests"
@@ -48,6 +61,16 @@ def build_sort_key(build: str):
         return tuple(int(part) for part in build.split("."))
     except ValueError:
         return (0,)
+
+
+def count_available():
+    """Live count of uupdump builds still in the pipeline's scope.
+
+    ponytail: skips daily.py's en-us listlangs check (one HTTP request per
+    candidate build) - too costly here, this is a display metric, not a
+    processing gate.
+    """
+    return sum(1 for build in listid() if is_wanted(build, processed=set()))
 
 
 def main():
@@ -93,6 +116,25 @@ def main():
 
     with mkdocs_gen_files.open("index.json", "w") as f:
         json.dump([index_entry(e) for e in done], f, indent=1)
+
+    try:
+        available = count_available()
+    except Exception as e:
+        # transient uupdump outage must not break the docs deploy; leave the
+        # previously published badge.json in place on gh-pages.
+        print(f"badge.json skipped, uupdump listid failed: {e}", file=sys.stderr)
+        return
+
+    with mkdocs_gen_files.open("badge.json", "w") as f:
+        json.dump(
+            {
+                "schemaVersion": 1,
+                "label": "builds analyzed",
+                "message": f"{len(done)}/{available}",
+                "color": "blue",
+            },
+            f,
+        )
 
 
 main()
