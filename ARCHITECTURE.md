@@ -26,6 +26,17 @@ flowchart TD
 variable `ALLOWED_DOWNLOAD_SIZE` caps how many new builds one run attempts
 (defaults to 3 when unset).
 
+## Alternatives considered
+
+The build source is [uupdump.net](https://uupdump.net), which mirrors
+Microsoft's UUP files and can be scripted to produce an ISO for any released
+build. [massgrave.dev](https://massgrave.dev/genuine-installation-media) and
+[files.rg-adguard.net](https://files.rg-adguard.net/) also distribute
+installation media and were considered as alternate sources. uupdump is the
+only one used today because it works and needs no manual intervention; if
+you have a more reliable or complete way to source builds, contributions are
+welcome.
+
 ## State: builds_state.json
 
 The single record of what happened to every build, owned by `code/state.py`:
@@ -97,9 +108,7 @@ only the published data - it has no coupling to the pipeline:
    [pdblister](https://github.com/ErezAmihud/pdblister) binary (must be on
    PATH; never auto-downloaded), or stops at `--manifest-only`.
 
-Releases are cut by pushing a `cli-v*` tag (`release-cli.yml`, PyPI trusted
-publishing). New builds do not require a CLI release - the data lives in
-this repo.
+See Runbooks below for cutting a release.
 
 ## Website
 
@@ -127,4 +136,10 @@ without a new `winsyms` release.
   `download_build.yml` run from the Actions UI.
 - **Local development:** `pip install -r requirements.txt`, `apt install
   wimtools`, then run the test scripts under `tests/` from the repo root
-  (they are also run by `.github/workflows/test.yml` on every push).
+  (they are also run by `.github/workflows/test.yml` on every push). Also install the [pre-commit](https://pre-commit.com/) hooks using `uvx pre-commit install`.
+- **Cut a CLI release:** bump `version` in `cli/pyproject.toml` and
+  `src/winsyms/__init__.py`, then push a `cli-v*` tag. `release-cli.yml`
+  builds and publishes to PyPI via a [trusted
+  publisher](https://docs.pypi.org/trusted-publishers/) (the `winsyms`
+  project on PyPI points at this repo's workflow, no token needed). New
+  builds landing in `manifests/` never require a CLI release.
