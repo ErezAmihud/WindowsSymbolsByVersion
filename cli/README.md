@@ -3,7 +3,7 @@
 [![PyPI](https://img.shields.io/pypi/v/winsyms.svg)](https://pypi.org/project/winsyms/)
 [![Python](https://img.shields.io/pypi/pyversions/winsyms.svg)](https://pypi.org/project/winsyms/)
 [![License: MIT](https://img.shields.io/pypi/l/winsyms.svg)](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/LICENSE)
-![builds analyzed](https://img.shields.io/endpoint?url=https://erezamihud.github.io/WindowsSymbolsByVersion/badge.json)
+![Builds analyzed](https://img.shields.io/endpoint?url=https://erezamihud.github.io/WindowsSymbolsByVersion/badge.json)
 
 Download the public PDB symbols for a specific Windows release, in one
 command:
