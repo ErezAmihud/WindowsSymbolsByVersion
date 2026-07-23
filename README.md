@@ -1,6 +1,6 @@
 # WindowsSymbolsByVersion
 
-Creation of a mapping between windows version to public pdb symbols. It is useful for airgapped networks where you can't get any information out.
+Download the debug symbols for any Windows build using just its version, build number, or uuid - no access to that installation's actual files needed.
 
 ## Install the CLI
 
@@ -14,8 +14,7 @@ $ winsyms get 26100.1297 --scope system32
 
 It resolves a build (by build number, uuid or title), recreates a manifest
 scoped to the paths you care about (e.g. only `Windows/System32`) and runs
-pdblister for you. `--manifest-only` covers the airgap flow. See
-[cli/README.md](cli/README.md) for details.
+pdblister for you. See [cli/README.md](cli/README.md) for details.
 The mapping is between a windows version to a symbol manifest, which you can convert to symbols using `symchk /im manifest.txt /s SRV*C:\MySymbols*http://msdl.microsoft.com/download/symbols`.
 **A faster way** is using [pdblister](https://github.com/microsoft/pdblister) by download and rename the manifest file to `manifest` and run `pdblister download SRV*C:\Symbols*https://msdl.microsoft.com/download/symbols`
 The manifests can be found in the [website](https://erezamihud.github.io/WindowsSymbolsByVersion/) or in the repo (by uuid).

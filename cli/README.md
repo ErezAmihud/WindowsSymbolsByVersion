@@ -1,5 +1,9 @@
 # winsyms
 
+[![PyPI](https://img.shields.io/pypi/v/winsyms.svg)](https://pypi.org/project/winsyms/)
+[![Python](https://img.shields.io/pypi/pyversions/winsyms.svg)](https://pypi.org/project/winsyms/)
+[![License: MIT](https://img.shields.io/pypi/l/winsyms.svg)](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/LICENSE)
+
 Download the public PDB symbols of a **specific Windows release** in one command:
 
 ```console
@@ -12,11 +16,11 @@ which processes every Windows build published on uupdump and records which
 pdb/guid every binary in the image references. New builds appear in the index
 daily - no `pip` upgrade needed, the CLI fetches the current index at runtime.
 
-## Prerequisite: pdblister
+## Requirements
 
-The actual mass download is done by [pdblister](https://github.com/ErezAmihud/pdblister),
-which must be on your `PATH` (or pointed at with `--pdblister PATH` /
-`WINSYMS_PDBLISTER`):
+Python 3.9+. The actual mass download is done by
+[pdblister](https://github.com/ErezAmihud/pdblister), which must be on your
+`PATH` (or pointed at with `--pdblister PATH` / `WINSYMS_PDBLISTER`):
 
 ```console
 $ cargo install --git https://github.com/ErezAmihud/pdblister
@@ -44,30 +48,12 @@ uuid.
 added to the pipeline. Older builds support `--scope all` only - the CLI
 tells you when that is the case.
 
-## Airgapped networks
-
-On the connected side:
-
-```console
-$ winsyms get 26100.1297 --manifest-only --out manifest
-```
-
-Carry `manifest` (a plain `pdb,guid,1` text file) inside, then run pdblister
-against your internal symbol mirror:
-
-```console
-$ pdblister download SRV*C:\Symbols*http://symbols.internal/download/symbols
-```
-
-or, if the inner network has winsyms and a copy of
-[index.json](https://erezamihud.github.io/WindowsSymbolsByVersion/index.json):
-
-```console
-$ winsyms get 26100.1297 --index index.json --server http://symbols.internal/download/symbols
-```
-
 Note: manifests list **every** pdb the image references; many are not on the
 public symbol server. Missing symbols are expected.
+
+## License
+
+MIT - see [LICENSE](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/LICENSE).
 
 ## Releasing (maintainers)
 
