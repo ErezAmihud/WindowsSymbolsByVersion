@@ -1,49 +1,60 @@
 # WindowsSymbolsByVersion
 
-Download the debug symbols for any Windows build using just its version, build number, or uuid - no access to that installation's actual files needed.
-Especially helpful for airgapped machines where you can't get anything out to the internet.
+[![License: MIT](https://img.shields.io/github/license/ErezAmihud/WindowsSymbolsByVersion)](LICENSE)
 
-## Install the CLI
+Get the debug symbols for any Windows build by its version, build number, or
+uuid — no access to that installation's actual files required.
 
-The easiest way to use this repo is the `winsyms` CLI:
+That matters most on **airgapped machines**: there's no internet to look up
+which PDBs a build needs, and normally you'd have to run a symbol tool
+against the machine's actual files to find out. This repo already has that
+mapping, computed ahead of time from public Windows builds.
+
+## Get symbols
+
+The easiest way is the `winsyms` CLI:
 
 ```console
 $ pip install winsyms
-$ cargo install --git https://github.com/ErezAmihud/pdblister   # does the actual downloading
+$ cargo install --git https://github.com/ErezAmihud/pdblister  # does the actual downloading
 $ winsyms get 26100.1297 --scope system32
 ```
 
-It resolves a build (by build number, uuid or title), recreates a manifest
-scoped to the paths you care about (via flag - e.g. only `Windows/System32`) and runs
-pdblister for you. See [cli/README.md](cli/README.md) for details.
+It resolves your build (by version, uuid, or title), fetches the manifest
+scoped to the paths you asked for, and runs
+[pdblister](https://github.com/ErezAmihud/pdblister) for you. See
+[cli/README.md](cli/README.md) for full usage.
 
+## Or, do it manually
 
-The manifests are also provided as it in the "manifests" directory so you can see the mapping between a windows version to a symbol manifest, which you can convert to symbols using `symchk /im manifest.txt /s SRV*C:\MySymbols*http://msdl.microsoft.com/download/symbols`.
-The manifests can be found in the [website](https://erezamihud.github.io/WindowsSymbolsByVersion/) or in the repo (by uuid).
-NOTE the manifest contains the debug symbols for **every** dll and exe in the iso, meaning a lot of them are probably not public. Expect some symbols to not be found.
-If you want the **latest** version, check this site after 1 day the release is on uupdump.
+Every build's manifest is committed under [`manifests/`](manifests/) (browse
+by uuid, or find the right one on the
+[website](https://erezamihud.github.io/WindowsSymbolsByVersion/)):
 
-## Method
+```console
+$ symchk /im manifest.txt /s SRV*C:\MySymbols*http://msdl.microsoft.com/download/symbols
+```
 
-I am using uup files from uupdump.net to create iso for each windows version and then parse it's install.wim and boot.wim to get all the dll's. If any symbol version that is here is not working let me know.
-Read more in the website, or see [ARCHITECTURE.md](ARCHITECTURE.md) for how the pipeline works.
+A manifest lists **every** dll/exe in that build's install image — most
+aren't public, so expect some symbols to be missing. For a build released in
+the last day or so, check the website: it can take up to a day after release
+on uupdump for a build to appear here.
 
-There is also a machine-readable index of all versions at
-[index.json](https://erezamihud.github.io/WindowsSymbolsByVersion/index.json) if you want to script the lookup.
+A machine-readable index of every processed build is at
+[index.json](https://erezamihud.github.io/WindowsSymbolsByVersion/index.json).
 
-## Releasing (maintainers)
+## How it works
 
-Tag `cli-v<version>` (after bumping `pyproject.toml` and
-`src/winsyms/__init__.py`) to trigger `.github/workflows/release-cli.yml`,
-which publishes to PyPI via trusted publishing. One-time setup: add a
-[trusted publisher](https://docs.pypi.org/trusted-publishers/) on PyPI for
-the `winsyms` project pointing at this repository and the
-`release-cli.yml` workflow.
+Each build is pulled from [uupdump.net](https://uupdump.net), converted to an
+ISO, and its `install.wim`/`boot.wim` are parsed for every PE file's PDB/GUID
+— fully automated on GitHub Actions. See [ARCHITECTURE.md](ARCHITECTURE.md)
+for the full pipeline.
 
-## Help is appriciated
+## Contributing
 
-If any1 have a faster method that is reliable to generate symbol manifests, feel free to contribute.
-
-I saw that [mas](https://massgrave.dev/genuine-installation-media) has some ways to get windows installation media, and [files.rg](https://files.rg-adguard.net/) can actually supply them, but I am not sure it is actually that important - as the repo currently works.
+The pipeline works today via uupdump.net. If you know a faster or more
+reliable way to generate these manifests, contributions are welcome — see
+[ARCHITECTURE.md](ARCHITECTURE.md#alternatives-considered) for what's been
+considered.
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/erezamihud)
