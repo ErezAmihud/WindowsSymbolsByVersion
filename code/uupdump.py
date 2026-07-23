@@ -35,10 +35,13 @@ def _get(endpoint: str, **params) -> dict:
     return out.json()
 
 
+AvailableArchTypes = Literal["amd64", "arm64", "x86"]
+
+
 class BuildInfo(BaseModel):
     title: str
     build: str
-    arch: Literal["amd64", "arm64", "x86"]
+    arch: AvailableArchTypes
     created: Optional[int] = None
     uuid: str
 

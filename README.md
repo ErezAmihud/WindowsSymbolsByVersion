@@ -1,6 +1,7 @@
 # WindowsSymbolsByVersion
 
 [![License: MIT](https://img.shields.io/github/license/ErezAmihud/WindowsSymbolsByVersion)](LICENSE)
+![builds analyzed](https://img.shields.io/endpoint?url=https://erezamihud.github.io/WindowsSymbolsByVersion/badge.json)
 
 Get the debug symbols for any Windows build by its version, build number, or
 uuid — no access to that installation's actual files required.

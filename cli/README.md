@@ -3,6 +3,7 @@
 [![PyPI](https://img.shields.io/pypi/v/winsyms.svg)](https://pypi.org/project/winsyms/)
 [![Python](https://img.shields.io/pypi/pyversions/winsyms.svg)](https://pypi.org/project/winsyms/)
 [![License: MIT](https://img.shields.io/pypi/l/winsyms.svg)](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/LICENSE)
+![builds analyzed](https://img.shields.io/endpoint?url=https://erezamihud.github.io/WindowsSymbolsByVersion/badge.json)
 
 Download the public PDB symbols for a specific Windows release, in one
 command:
@@ -40,7 +41,7 @@ $ winsyms get 26100.1297 --scope system32          # only binaries under Windows
 $ winsyms get 26100.1297 --path-prefix windows/system32/drivers/
 ```
 
-Run `winsyms --help` for the full flag reference (output dir, symbol
+Run `winsyms get --help` for the full flag reference (output dir, symbol
 server, cache TTL, and more).
 
 ## License
