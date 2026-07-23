@@ -54,12 +54,3 @@ public symbol server. Missing symbols are expected.
 ## License
 
 MIT - see [LICENSE](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/LICENSE).
-
-## Releasing (maintainers)
-
-Tag `cli-v<version>` (after bumping `pyproject.toml` and
-`src/winsyms/__init__.py`) to trigger `.github/workflows/release-cli.yml`,
-which publishes to PyPI via trusted publishing. One-time setup: add a
-[trusted publisher](https://docs.pypi.org/trusted-publishers/) on PyPI for
-the `winsyms` project pointing at this repository and the
-`release-cli.yml` workflow.

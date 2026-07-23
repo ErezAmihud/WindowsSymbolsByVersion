@@ -1,6 +1,7 @@
 # WindowsSymbolsByVersion
 
 Download the debug symbols for any Windows build using just its version, build number, or uuid - no access to that installation's actual files needed.
+Especially helpful for airgapped machines where you can't get anything out to the internet.
 
 ## Install the CLI
 
@@ -13,10 +14,11 @@ $ winsyms get 26100.1297 --scope system32
 ```
 
 It resolves a build (by build number, uuid or title), recreates a manifest
-scoped to the paths you care about (e.g. only `Windows/System32`) and runs
+scoped to the paths you care about (via flag - e.g. only `Windows/System32`) and runs
 pdblister for you. See [cli/README.md](cli/README.md) for details.
-The mapping is between a windows version to a symbol manifest, which you can convert to symbols using `symchk /im manifest.txt /s SRV*C:\MySymbols*http://msdl.microsoft.com/download/symbols`.
-**A faster way** is using [pdblister](https://github.com/microsoft/pdblister) by download and rename the manifest file to `manifest` and run `pdblister download SRV*C:\Symbols*https://msdl.microsoft.com/download/symbols`
+
+
+The manifests are also provided as it in the "manifests" directory so you can see the mapping between a windows version to a symbol manifest, which you can convert to symbols using `symchk /im manifest.txt /s SRV*C:\MySymbols*http://msdl.microsoft.com/download/symbols`.
 The manifests can be found in the [website](https://erezamihud.github.io/WindowsSymbolsByVersion/) or in the repo (by uuid).
 NOTE the manifest contains the debug symbols for **every** dll and exe in the iso, meaning a lot of them are probably not public. Expect some symbols to not be found.
 If you want the **latest** version, check this site after 1 day the release is on uupdump.
@@ -28,6 +30,15 @@ Read more in the website, or see [ARCHITECTURE.md](ARCHITECTURE.md) for how the 
 
 There is also a machine-readable index of all versions at
 [index.json](https://erezamihud.github.io/WindowsSymbolsByVersion/index.json) if you want to script the lookup.
+
+## Releasing (maintainers)
+
+Tag `cli-v<version>` (after bumping `pyproject.toml` and
+`src/winsyms/__init__.py`) to trigger `.github/workflows/release-cli.yml`,
+which publishes to PyPI via trusted publishing. One-time setup: add a
+[trusted publisher](https://docs.pypi.org/trusted-publishers/) on PyPI for
+the `winsyms` project pointing at this repository and the
+`release-cli.yml` workflow.
 
 ## Help is appriciated
 
