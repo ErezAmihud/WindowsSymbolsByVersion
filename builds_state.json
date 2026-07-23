@@ -4020,6 +4020,12 @@
    "build": "20348.2322",
    "arch": "amd64"
   },
+  "85796238-9be4-4f35-bd77-c733fb6045e9": {
+   "status": "done",
+   "title": "Upgrade to Windows 11 (22000.593)",
+   "build": "22000.593",
+   "arch": "amd64"
+  },
   "861425ff-a6f7-415d-8166-7763f98e658c": {
    "status": "done",
    "title": "Feature update to Windows 10, version 21H2 (19044.1739)",
