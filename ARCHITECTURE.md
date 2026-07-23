@@ -64,7 +64,7 @@ idempotent - a rerun cannot duplicate entries.
 | `pdb_finding.py` | walks a directory, reads PE debug directories (parallel, debug-dir-only parsing), emits `pdb,guid,1` lines and optionally `path<TAB>pdb<TAB>guid` lines |
 | `merge_paths.py` | merges the per-image `.paths` files into the build's `files.json` |
 | `get_editions.py` | resolves a build's edition list for the uupdump download request |
-| `gen_docs_index.py` | mkdocs-gen-files script: renders `index.md` + machine-readable `index.json` from builds_state.json |
+| `gen_docs_index.py` | mkdocs-gen-files script: renders `index.md` + machine-readable `index.json` from builds_state.json, plus `badge.json` (a live uupdump lookup) for the "builds analyzed" badge |
 | `move_iso_dir.bat` | renames the converter's output dir to `unpacked_dir` |
 
 `config.template` is the [uup-converter](https://github.com/abbodi1406/BatUtil)
@@ -107,6 +107,15 @@ The site is generated - do not edit `docs/index.md` (it does not exist in the
 repo). `code/gen_docs_index.py` renders the version tables and `index.json`
 from `builds_state.json` at build time. Publishing happens at the end of every
 `main.yml` run and on any push to main that touches the state file.
+
+`gen_docs_index.py` also emits `badge.json` (shields.io endpoint-badge
+schema): the analyzed count from `builds_state.json` over a live
+`uupdump.listid()` count of in-scope builds. It's skipped (leaving the
+previous file in place) if the uupdump call fails, so a transient API
+outage never breaks the docs deploy. `README.md` and `cli/README.md` embed
+it as `![builds analyzed](.../badge.json)` - since shields.io fetches that
+URL live, the badge stays current on GitHub and on the PyPI project page
+without a new `winsyms` release.
 
 ## Runbooks
 

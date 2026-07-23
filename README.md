@@ -1,5 +1,7 @@
 # WindowsSymbolsByVersion
 
+![builds analyzed](https://img.shields.io/endpoint?url=https://erezamihud.github.io/WindowsSymbolsByVersion/badge.json)
+
 Creation of a mapping between windows version to public pdb symbols. It is useful for airgapped networks where you can't get any information out.
 
 ## Install the CLI
