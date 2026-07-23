@@ -612,6 +612,12 @@
    "failures": 3,
    "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/29998232009"
   },
+  "12ef1ff9-8242-4afe-bd62-294db74ad4c2": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 2004 (19041.1415)",
+   "build": "19041.1415",
+   "arch": "amd64"
+  },
   "13a51fa0-7e8c-4ccb-baa4-f95246c5235e": {
    "status": "done",
    "title": "Feature update to Windows 10, version 21H1 (19043.2130)",
