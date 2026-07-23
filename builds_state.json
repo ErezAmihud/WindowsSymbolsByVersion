@@ -2469,6 +2469,12 @@
    "failures": 3,
    "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/29336356905"
   },
+  "53ea5350-f777-4e75-8bc8-1d474f60d4c4": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 2004 (19041.1415)",
+   "build": "19041.1415",
+   "arch": "x86"
+  },
   "5490ab3b-a78e-43d1-9883-fcd9ca2579ba": {
    "status": "done",
    "title": "Windows 11, version 22H2 (22621.4391)",
