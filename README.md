@@ -40,6 +40,9 @@ aren't public, so expect some symbols to be missing. For a build released in
 the last day or so, check the website: it can take up to a day after release
 on uupdump for a build to appear here.
 
+Only x86/amd64, en-us, non-insider/preview/cumulative-update builds are
+processed — arm64 and other languages aren't covered.
+
 A machine-readable index of every processed build is at
 [index.json](https://erezamihud.github.io/WindowsSymbolsByVersion/index.json).
 
