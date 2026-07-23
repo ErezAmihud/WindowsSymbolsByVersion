@@ -58,7 +58,7 @@ jobs:
             retention-days: 1
         # --- real mode: build the Windows ISO ---
         - if: ${{ !inputs.test_mode }}
-          uses: actions/setup-python@v5
+          uses: actions/setup-python@v7
           with:
             python-version: '3.10'
         - if: ${{ !inputs.test_mode }}
@@ -285,7 +285,7 @@ jobs:
       contents: read
     steps:
       - uses: actions/checkout@v7
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: '3.10'
       - name: Download merged manifest
