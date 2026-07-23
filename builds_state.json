@@ -5060,6 +5060,12 @@
    "build": "22631.2506",
    "arch": "amd64"
   },
+  "a84eaaea-f57c-4271-a642-4abf996a7101": {
+   "status": "done",
+   "title": "Upgrade to Windows 11 (22000.588)",
+   "build": "22000.588",
+   "arch": "amd64"
+  },
   "a87c198a-68a9-41e3-8bc9-0d0a46be97d4": {
    "status": "done",
    "title": "Feature update to Windows 10, version 22H2 (19045.5794)",
