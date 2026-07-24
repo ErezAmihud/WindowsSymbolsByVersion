@@ -3819,6 +3819,12 @@
    "build": "19044.5011",
    "arch": "x86"
   },
+  "6c5da194-603e-4339-bec5-92b021324cae": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 2004 (19041.928)",
+   "build": "19041.928",
+   "arch": "amd64"
+  },
   "6c696926-1e23-458b-bdd1-f72c500a6696": {
    "status": "done",
    "title": "Feature update to Microsoft server operating system, version 21H2 (20348.169)",
