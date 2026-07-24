@@ -2013,6 +2013,12 @@
    "build": "22621.6060",
    "arch": "amd64"
   },
+  "392bcade-aa59-480a-bcb8-2531cf4c7bb7": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 20H2 (19042.867)",
+   "build": "19042.867",
+   "arch": "amd64"
+  },
   "399a40db-5e69-4e48-bf5a-97ef65936f7d": {
    "status": "done",
    "title": "Feature update to Windows 10, version 21H1 (19043.1110)",
