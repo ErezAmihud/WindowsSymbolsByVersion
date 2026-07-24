@@ -6079,6 +6079,12 @@
    "build": "22631.5984",
    "arch": "amd64"
   },
+  "b597b515-a6f6-492c-9cce-d969208f44b4": {
+   "status": "done",
+   "title": "Upgrade to Windows 11 (22000.282)",
+   "build": "22000.282",
+   "arch": "amd64"
+  },
   "b5f0b18e-7d00-4aa5-a399-04045239e866": {
    "status": "done",
    "title": "Windows Server, version 23H2 (25398.709)",
