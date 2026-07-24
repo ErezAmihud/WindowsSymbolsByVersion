@@ -2490,6 +2490,12 @@
    "build": "19044.5854",
    "arch": "amd64"
   },
+  "4f3cf4a7-fbf3-40b1-9e01-5a066b4956e2": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 2004 (19041.1237)",
+   "build": "19041.1237",
+   "arch": "x86"
+  },
   "4f430b82-06d3-470d-9e16-9c7c496c2a9a": {
    "status": "done",
    "title": "Windows Server, version 23H2 (25398.1913)",
