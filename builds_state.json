@@ -6927,6 +6927,12 @@
    "build": "20348.524",
    "arch": "amd64"
   },
+  "c4a5f691-96f6-4b81-9e84-f4fc3bb2ef59": {
+   "status": "done",
+   "title": "Feature update to Microsoft server operating system, version 21H2 (20348.51)",
+   "build": "20348.51",
+   "arch": "amd64"
+  },
   "c4bd87c1-c34e-452f-9d2c-16ee2ec9e19a": {
    "status": "done",
    "title": "Windows Server 2025 (26100.2314)",
