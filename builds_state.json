@@ -2168,6 +2168,12 @@
    "build": "28000.1719",
    "arch": "amd64"
   },
+  "4126cd71-13e2-4246-82b3-0341fdca8701": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 20H2 (19042.962)",
+   "build": "19042.962",
+   "arch": "x86"
+  },
   "413372f8-51db-4ea1-970a-8dce91db00aa": {
    "status": "done",
    "title": "Windows 11, version 26H1 (28000.2269)",
