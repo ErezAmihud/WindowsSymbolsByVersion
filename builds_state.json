@@ -5170,6 +5170,12 @@
    "build": "19043.1645",
    "arch": "x86"
   },
+  "9b2fd359-c46c-4c34-9fab-0d0c11cf99da": {
+   "status": "done",
+   "title": "Feature update to Microsoft server operating system, version 21H2 (20348.288)",
+   "build": "20348.288",
+   "arch": "amd64"
+  },
   "9b5be1e9-79d6-4c3f-ad35-ca89c2c5d4ed": {
    "status": "done",
    "title": "Windows Server, version 23H2 (25398.1916)",
