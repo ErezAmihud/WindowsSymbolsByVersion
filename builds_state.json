@@ -4296,6 +4296,12 @@
    "build": "22631.7079",
    "arch": "amd64"
   },
+  "7fc97407-c8e0-4f79-8caa-22af3d72ef0f": {
+   "status": "done",
+   "title": "Feature update to Azure Stack HCI, version 21H2 (20348.169)",
+   "build": "20348.169",
+   "arch": "amd64"
+  },
   "7fde7fc9-df24-4d5e-8215-77f9193a474a": {
    "status": "done",
    "title": "Feature update to Azure Stack HCI, version 21H2 (20348.1607)",
