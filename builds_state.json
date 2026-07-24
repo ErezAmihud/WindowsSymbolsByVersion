@@ -4765,6 +4765,12 @@
    "build": "19044.3803",
    "arch": "x86"
   },
+  "8d701b0c-be6d-4be7-9863-2f602de054fb": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 21H2 (19044.1263)",
+   "build": "19044.1263",
+   "arch": "amd64"
+  },
   "8d75ee41-8349-4d3c-a688-c618bfea5e8a": {
    "status": "done",
    "title": "Feature update to Azure Stack HCI, version 23H2 (25398.1009)",
