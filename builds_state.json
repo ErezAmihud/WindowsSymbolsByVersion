@@ -1675,6 +1675,11 @@
    "build": "25398.2092",
    "arch": "amd64"
   },
+  "3005abbb-a147-4d27-8abe-548c86422c31": {
+   "status": "failed",
+   "failures": 1,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/30112517293"
+  },
   "3046790b-373b-457a-9e85-ef14aeea182a": {
    "status": "done",
    "title": "Windows 11, version 23H2 (22631.4112)",
