@@ -1199,6 +1199,12 @@
    "build": "22621.1631",
    "arch": "amd64"
   },
+  "24760966-c0d2-443f-9009-71c48d19a5c2": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 20H2 (19042.1165)",
+   "build": "19042.1165",
+   "arch": "x86"
+  },
   "2517c0c1-94d4-4433-b3f7-61c14a3dac3c": {
    "status": "done",
    "title": "Feature update to Windows 10, version 22H2 (19045.6691)",
