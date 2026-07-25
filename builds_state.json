@@ -8175,6 +8175,11 @@
    "failures": 3,
    "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/29778937565"
   },
+  "d217961c-ad9a-4e03-98ad-01d1e0ab03ca": {
+   "status": "failed",
+   "failures": 1,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/30152774427"
+  },
   "d21dc89f-cf10-4509-a0d8-f70886872d75": {
    "status": "done",
    "title": "Feature update to Azure Stack HCI, version 22H2 (20349.3091)",
