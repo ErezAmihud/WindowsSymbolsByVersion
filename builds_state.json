@@ -6570,6 +6570,12 @@
    "build": "22621.4108",
    "arch": "amd64"
   },
+  "ac417a02-f061-4f49-884d-9f427e1edfed": {
+   "status": "done",
+   "title": "Feature update to Windows 10 Team (19042.572)",
+   "build": "19042.572",
+   "arch": "amd64"
+  },
   "ac4adc36-0b59-4692-9372-a42d32b719b7": {
    "status": "done",
    "title": "Windows 11, version 25H2 (26200.5074)",
