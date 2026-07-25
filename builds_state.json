@@ -2140,6 +2140,12 @@
    "failures": 3,
    "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/30058967323"
   },
+  "3a055001-cbc7-4762-84c5-b786ec196129": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 2004 (19041.421)",
+   "build": "19041.421",
+   "arch": "x86"
+  },
   "3a118763-86b1-4de5-8adc-1e64d18b3e7e": {
    "status": "done",
    "title": "Windows 11, version 24H2 (26100.7309)",
