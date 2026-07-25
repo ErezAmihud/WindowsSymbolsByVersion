@@ -4563,6 +4563,11 @@
    "build": "20348.5139",
    "arch": "amd64"
   },
+  "79e83ae8-1f71-4510-b3cb-1a97609a9a68": {
+   "status": "failed",
+   "failures": 1,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/30152774427"
+  },
   "7a09793a-2789-4418-b773-af9f6ba58d41": {
    "status": "done",
    "title": "Feature update to Windows 10, version 2004 (19041.906)",
