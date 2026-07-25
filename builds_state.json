@@ -8980,6 +8980,12 @@
    "build": "19045.4291",
    "arch": "x86"
   },
+  "e7366588-f2c5-4ac2-a608-3a0b9ae796d3": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 2004 (19041.508)",
+   "build": "19041.508",
+   "arch": "amd64"
+  },
   "e743f171-6737-4c07-b15e-660b64199999": {
    "status": "done",
    "title": "Windows Server, version 23H2 (25398.2274)",
