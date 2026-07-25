@@ -6575,6 +6575,12 @@
    "build": "26100.4767",
    "arch": "amd64"
   },
+  "af0e681f-4602-45d3-9dac-84a26413ecc1": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 2004 (19041.685)",
+   "build": "19041.685",
+   "arch": "x86"
+  },
   "af3d089b-d6a3-4bc4-b572-1dcfac841a97": {
    "status": "failed",
    "failures": 3,
