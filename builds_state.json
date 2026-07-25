@@ -6213,6 +6213,12 @@
    "build": "22621.2506",
    "arch": "amd64"
   },
+  "a15e472e-8407-4aac-b642-457bf40fae2a": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 2004 (19041.508)",
+   "build": "19041.508",
+   "arch": "x86"
+  },
   "a1962e61-a626-4242-84c0-3f0c86b5693e": {
    "status": "done",
    "title": "Windows 11 (22000.1757)",
