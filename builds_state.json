@@ -873,6 +873,11 @@
    "build": "19045.6156",
    "arch": "x86"
   },
+  "18375148-5951-42ec-9347-1f6ded4f180a": {
+   "status": "failed",
+   "failures": 1,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/30138492290"
+  },
   "1843eef2-a370-40c5-8cfd-e1ed2956e77c": {
    "status": "done",
    "title": "Windows 11 (22000.2960)",
