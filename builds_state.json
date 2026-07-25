@@ -6914,8 +6914,8 @@
   },
   "b03dc98b-0bd9-443c-969d-ecc6192715e8": {
    "status": "failed",
-   "failures": 1,
-   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/30158811463"
+   "failures": 2,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/30166183760"
   },
   "b0500c16-65b7-4e36-b226-98f87290540d": {
    "status": "done",
