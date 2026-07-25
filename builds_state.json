@@ -7357,6 +7357,12 @@
    "build": "17763.6775",
    "arch": "amd64"
   },
+  "b9b3b62c-83c7-424b-8b24-c9f85e7c22c2": {
+   "status": "done",
+   "title": "Windows 10 build 19564.1005",
+   "build": "19564.1005",
+   "arch": "amd64"
+  },
   "b9c29c36-311e-48e3-8f34-b96e395eda12": {
    "status": "done",
    "title": "Feature update to Microsoft server operating system, version 21H2 (20348.4648)",
