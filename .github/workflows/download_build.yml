@@ -135,7 +135,7 @@ jobs:
       contents: write
     steps:
       - name: Mutex Action
-        uses: ben-z/gh-action-mutex@v1.0.0-alpha.10
+        uses: ben-z/gh-action-mutex@v1.0.0-alpha.9
       - uses: actions/checkout@v7
         with:
           ref: ${{ github.ref_name }}
@@ -302,7 +302,7 @@ jobs:
       contents: write
     steps:
       - name: Mutex Action
-        uses: ben-z/gh-action-mutex@v1.0.0-alpha.10
+        uses: ben-z/gh-action-mutex@v1.0.0-alpha.9
       - name: Force LF line endings
         run: |
           git config --global core.autocrlf false
