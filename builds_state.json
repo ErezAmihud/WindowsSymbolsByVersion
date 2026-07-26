@@ -10078,6 +10078,11 @@
    "build": "19045.4842",
    "arch": "amd64"
   },
+  "fcfa90b0-800a-4a71-b6c9-a29fc7677520": {
+   "status": "failed",
+   "failures": 1,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/30202967677"
+  },
   "fd386e36-5c3f-42de-8356-28e6dbf4aada": {
    "status": "done",
    "title": "Feature update to Windows 10, version 22H2 (19045.5371)",
