@@ -3893,6 +3893,11 @@
    "build": "19044.1499",
    "arch": "x86"
   },
+  "6620ce9d-3b9e-476d-b404-93eb5b9f5a64": {
+   "status": "failed",
+   "failures": 1,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/30191081405"
+  },
   "6660c956-c620-4de7-94b4-c11c4f99bc70": {
    "status": "done",
    "title": "Feature update to Windows 10, version 21H2 (19044.4291)",
