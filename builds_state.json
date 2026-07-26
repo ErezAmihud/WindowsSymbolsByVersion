@@ -8936,6 +8936,11 @@
    "build": "19045.4651",
    "arch": "amd64"
   },
+  "de76dee2-4573-421d-9550-57536d2e8de6": {
+   "status": "failed",
+   "failures": 1,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/30182976699"
+  },
   "de89ee2c-0ed6-4343-b95b-7db1c2657da4": {
    "status": "failed",
    "failures": 3,
