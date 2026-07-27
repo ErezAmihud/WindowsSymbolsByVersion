@@ -1946,6 +1946,11 @@
    "build": "19042.1526",
    "arch": "x86"
   },
+  "2faff704-ac88-4b3f-a3d2-11e6a63f0b67": {
+   "status": "failed",
+   "failures": 1,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/30260170560"
+  },
   "2fb8402f-90cb-4516-8758-0f5e38497d60": {
    "status": "done",
    "title": "Feature update to Microsoft server operating system, version 21H2 (20348.230)",
