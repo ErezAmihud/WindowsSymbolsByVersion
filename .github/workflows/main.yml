@@ -43,6 +43,8 @@ jobs:
     steps:
       - name: Checkout main
         uses: actions/checkout@v7
+        with:
+          ref: ${{ github.ref_name }}
       - run: pip install -r requirements.txt
       - run: git config user.name 'github-actions[bot]' && git config user.email 'github-actions[bot]@users.noreply.github.com'
       - name: Publish docs
@@ -60,4 +62,4 @@ jobs:
         if: ${{ !cancelled() && needs.list_releases.outputs.uuids != '[]' && vars.CHAIN_ENABLED == 'true' }}
         env:
           GH_TOKEN: ${{ secrets.CHAIN_PAT }}
-        run: gh workflow run ${{ github.workflow }} --ref main -R ${{ github.repository }}
+        run: gh workflow run "${{ github.workflow }}" --ref main -R ${{ github.repository }}
