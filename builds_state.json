@@ -8058,6 +8058,11 @@
    "build": "18363.2158",
    "arch": "x86"
   },
+  "bf697909-4180-4b46-9074-54a8ba90031b": {
+   "status": "failed",
+   "failures": 1,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/30231363641"
+  },
   "bf72a145-7fc6-4646-a693-941d0877e75b": {
    "status": "done",
    "title": "Windows 11, version 24H2 (26100.6588)",
