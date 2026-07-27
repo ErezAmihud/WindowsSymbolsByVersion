@@ -135,10 +135,14 @@ jobs:
       contents: write
     steps:
       - name: Mutex Action
-        uses: ben-z/gh-action-mutex@v1.0.0-alpha.9
+        uses: ben-z/gh-action-mutex@v1.0.0-alpha.10
       - uses: actions/checkout@v7
         with:
           ref: ${{ github.ref_name }}
+          fetch-depth: 1
+          sparse-checkout: |
+            code
+            builds_state.json
       - run: python3 code/state.py mark-failed '${{ inputs.uuid }}' --run-url "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
       - uses: EndBug/add-and-commit@v10
         with:
@@ -302,7 +306,7 @@ jobs:
       contents: write
     steps:
       - name: Mutex Action
-        uses: ben-z/gh-action-mutex@v1.0.0-alpha.9
+        uses: ben-z/gh-action-mutex@v1.0.0-alpha.10
       - name: Force LF line endings
         run: |
           git config --global core.autocrlf false
