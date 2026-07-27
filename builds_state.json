@@ -9681,6 +9681,11 @@
    "build": "19041.746",
    "arch": "x86"
   },
+  "e61bd681-9336-4100-a5d6-449d9efa458a": {
+   "status": "failed",
+   "failures": 1,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/30246327320"
+  },
   "e61d6ef4-31f5-4efa-8d73-a62ab2676f2f": {
    "status": "done",
    "title": "Feature update to Windows 10, version 1903 (18362.175)",
