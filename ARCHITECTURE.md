@@ -18,8 +18,10 @@ flowchart TD
         D2 --> E
         E --> G[deploy_manifest<br>commit manifests/uuid.manifest<br>+ uuid.files.json,<br>state.py mark-done]
     end
-    A --> H[publish_docs<br>mkdocs gh-deploy]
-    G -.builds_state.json commit.-> H
+    G --> I
+    F --> I[commit_changes<br>Commit new state to repo]
+    I --> H[publish_docs<br>mkdocs gh-deploy]
+    
 ```
 
 `main.yml` runs daily (03:00 UTC cron) and via `workflow_dispatch`. The repo
@@ -59,8 +61,7 @@ The single record of what happened to every build, owned by `code/state.py`:
   transient runner/uupdump errors do not permanently blacklist a build.
 - `priority` uuids are picked before anything else on the next run.
 
-Both jobs that commit (`mark_build_failed`, `deploy_manifest`) serialize via a
-mutex action, and all state mutations go through `state.py`, which is
+The job that commit is `commit_changes`, and all state mutations go through `state.py`, which is
 idempotent - a rerun cannot duplicate entries.
 
 ## Key scripts (code/)
