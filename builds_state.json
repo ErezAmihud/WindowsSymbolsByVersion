@@ -10012,6 +10012,11 @@
    "build": "19042.844",
    "arch": "x86"
   },
+  "f004c129-ae37-49c7-9ed9-32d92cae8c54": {
+   "status": "failed",
+   "failures": 1,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/30244206636"
+  },
   "f098e716-7ba9-44cc-b19b-f9870bef09ce": {
    "status": "done",
    "title": "Feature update to Windows 10, version 1809 (17763.6532)",
