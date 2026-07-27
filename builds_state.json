@@ -7976,6 +7976,11 @@
    "build": "19044.2545",
    "arch": "amd64"
   },
+  "b7121b47-ea27-4d17-8cc4-34b46f7d5665": {
+   "status": "failed",
+   "failures": 1,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/30262480518"
+  },
   "b73f9781-1a6c-446e-81af-3102fa61b8f0": {
    "status": "done",
    "title": "Feature update to Windows 10, version 20H2 (19042.2130)",
