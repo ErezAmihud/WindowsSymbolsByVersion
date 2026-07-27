@@ -1595,6 +1595,11 @@
    "failures": 3,
    "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/30125794198"
   },
+  "29e17d47-7bd0-41b9-8b0d-6919b73045a2": {
+   "status": "failed",
+   "failures": 1,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/30228577040"
+  },
   "29f78f1c-589e-4f8b-92a3-7d2c931f1e98": {
    "status": "done",
    "title": "Windows 11, version 23H2 (22631.4969)",
