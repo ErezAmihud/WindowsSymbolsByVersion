@@ -9405,6 +9405,11 @@
    "build": "22621.898",
    "arch": "amd64"
   },
+  "e3426cff-99ff-495b-ab05-b2bc36e39095": {
+   "status": "failed",
+   "failures": 1,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/30229307932"
+  },
   "e35f3c03-96c4-4561-afa1-81128adc2485": {
    "status": "failed",
    "failures": 3,
