@@ -130,7 +130,7 @@ def main():
             {
                 "schemaVersion": 1,
                 "label": "builds analyzed",
-                "message": f"{len(done)}/{available}",
+                "message": f"{len(state["builds"])}/{available}",
                 "color": "blue",
             },
             f,
