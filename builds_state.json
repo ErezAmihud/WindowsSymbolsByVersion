@@ -4418,6 +4418,12 @@
    "failures": 3,
    "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/30224836712"
   },
+  "6850722b-d202-417f-b6d3-f45419191852": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1803 (17134.1)",
+   "build": "17134.1",
+   "arch": "amd64"
+  },
   "6853f687-3a39-43ff-803f-15e5e5b8b932": {
    "status": "done",
    "title": "Feature update to Microsoft server operating system, version 21H2 (20348.587)",
