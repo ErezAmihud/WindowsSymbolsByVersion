@@ -6705,6 +6705,12 @@
    "build": "19041.1263",
    "arch": "amd64"
   },
+  "97556231-dc86-45ad-bf99-e51c0e56d5c8": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1803 (17134.5)",
+   "build": "17134.5",
+   "arch": "amd64"
+  },
   "97666913-1b77-41d4-9ebf-916d140b18e6": {
    "status": "done",
    "title": "Feature update to Windows 10, version 1809 (17763.6414)",
