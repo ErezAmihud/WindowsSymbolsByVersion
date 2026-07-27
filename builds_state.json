@@ -8382,6 +8382,12 @@
    "build": "19045.3693",
    "arch": "amd64"
   },
+  "bd352700-9e34-4bed-9827-280d92737ef9": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1803 (17134.1)",
+   "build": "17134.1",
+   "arch": "x86"
+  },
   "bd366428-2d6e-410d-baad-1c3e2bca1c73": {
    "status": "done",
    "title": "Windows 11, version 24H2 (26100.7627)",
