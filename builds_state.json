@@ -496,6 +496,12 @@
    "build": "17763.8276",
    "arch": "x86"
   },
+  "0b504c39-d86f-48f2-a8be-38df4167178c": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1709 (16299.15)",
+   "build": "16299.15",
+   "arch": "amd64"
+  },
   "0b86f7fa-bc82-4fd0-9f82-3fde958c69cc": {
    "status": "failed",
    "failures": 3,
