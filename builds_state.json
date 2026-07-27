@@ -7651,6 +7651,11 @@
    "build": "19044.6693",
    "arch": "x86"
   },
+  "b00ff816-29a7-4440-bfad-6c894b2afe52": {
+   "status": "failed",
+   "failures": 1,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/30263628345"
+  },
   "b01107c9-e7ac-4011-85f8-f85853e5abd9": {
    "status": "done",
    "title": "Feature update to Windows 10, version 1909 (18363.2094)",
