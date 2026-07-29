@@ -5718,6 +5718,12 @@
    "build": "22000.1574",
    "arch": "amd64"
   },
+  "81988c5b-0c14-41fc-8a1f-79fb5e4eb2fb": {
+   "status": "done",
+   "title": "Windows 11, version 26H1 (28000.2608)",
+   "build": "28000.2608",
+   "arch": "amd64"
+  },
   "81bb751a-1e24-46dd-ae53-ecfe3058de21": {
    "status": "failed",
    "failures": 3,
