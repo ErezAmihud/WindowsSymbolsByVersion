@@ -834,6 +834,12 @@
    "build": "19041.1415",
    "arch": "amd64"
   },
+  "1337bea2-e110-4ef9-841f-9fa7de2406df": {
+   "status": "done",
+   "title": "Feature update for Windows CPC OS, version 25H2 (26200.9168)",
+   "build": "26200.9168",
+   "arch": "amd64"
+  },
   "13a51fa0-7e8c-4ccb-baa4-f95246c5235e": {
    "status": "done",
    "title": "Feature update to Windows 10, version 21H1 (19043.2130)",
