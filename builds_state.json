@@ -4560,6 +4560,12 @@
    "build": "19045.4412",
    "arch": "x86"
   },
+  "6a8c4c24-0dd2-46b9-9d8f-bd7a84ec5ad4": {
+   "status": "done",
+   "title": "Windows 11, version 25H2 (26200.9168)",
+   "build": "26200.9168",
+   "arch": "amd64"
+  },
   "6a9cbc99-bff4-4d82-8104-d541ff12b8f2": {
    "status": "done",
    "title": "Feature update to Windows 10, version 2004 (19041.1348)",
