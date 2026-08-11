@@ -2069,6 +2069,12 @@
    "failures": 3,
    "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/30227889191"
   },
+  "312f676b-2cbe-41aa-ba85-85c09c88518c": {
+   "status": "done",
+   "title": "Windows 11, version 26H1 (28000.2704)",
+   "build": "28000.2704",
+   "arch": "amd64"
+  },
   "31357333-eeec-4295-abd8-d81e6d57393a": {
    "status": "done",
    "title": "Windows Server, version 23H2 (25398.1009)",
