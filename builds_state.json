@@ -8740,6 +8740,12 @@
    "build": "19042.1826",
    "arch": "x86"
   },
+  "c1c737c2-f2d9-4824-bb5b-1af515179099": {
+   "status": "done",
+   "title": "Windows 11, version 25H2 (26200.9278)",
+   "build": "26200.9278",
+   "arch": "amd64"
+  },
   "c1d1482a-8c7a-4b6b-9472-03a8affe4ab5": {
    "status": "done",
    "title": "Windows 11, version 22H2 (22621.2715)",
