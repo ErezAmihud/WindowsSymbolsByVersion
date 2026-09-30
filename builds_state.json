@@ -8618,6 +8618,12 @@
    "build": "19044.1288",
    "arch": "x86"
   },
+  "bc03c91c-1240-4ab4-861f-8ccca812e563": {
+   "status": "done",
+   "title": "Windows 11, version 25H2 (26200.7979)",
+   "build": "26200.7979",
+   "arch": "amd64"
+  },
   "bc6d3d80-7527-43ab-89bb-b15a9b657c42": {
    "status": "done",
    "title": "Feature update to Windows 10, version 21H1 (19043.1526)",
