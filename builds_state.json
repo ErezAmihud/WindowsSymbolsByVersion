@@ -6040,6 +6040,12 @@
    "build": "20348.2322",
    "arch": "amd64"
   },
+  "85607ef9-78bd-4a56-9d3e-ae965b063469": {
+   "status": "done",
+   "title": "Windows 11, version 26H1 (28000.3086)",
+   "build": "28000.3086",
+   "arch": "amd64"
+  },
   "85796238-9be4-4f35-bd77-c733fb6045e9": {
    "status": "done",
    "title": "Upgrade to Windows 11 (22000.593)",
