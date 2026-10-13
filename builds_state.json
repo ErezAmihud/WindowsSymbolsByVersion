@@ -6965,6 +6965,12 @@
    "build": "26200.8514",
    "arch": "amd64"
   },
+  "987a1a70-5de2-4fb9-a55a-94a7a7ca2df8": {
+   "status": "done",
+   "title": "Feature update to Windows 10, version 1809 (17763.9376)",
+   "build": "17763.9376",
+   "arch": "x86"
+  },
   "990fdf68-0d23-4418-a231-dfe1b7b7361f": {
    "status": "done",
    "title": "Feature update to Windows 10, version 2004 (19041.1319)",
