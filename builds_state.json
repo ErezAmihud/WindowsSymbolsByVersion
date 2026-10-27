@@ -3419,6 +3419,12 @@
    "build": "19044.5854",
    "arch": "amd64"
   },
+  "4ef76f77-dd31-49a8-9bb5-6de3a2115eb3": {
+   "status": "done",
+   "title": "Windows 11, version 24H2 (26100.9725)",
+   "build": "26100.9725",
+   "arch": "amd64"
+  },
   "4f3cf4a7-fbf3-40b1-9e01-5a066b4956e2": {
    "status": "done",
    "title": "Feature update to Windows 10, version 2004 (19041.1237)",
