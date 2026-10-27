@@ -4649,6 +4649,12 @@
    "build": "17763.3406",
    "arch": "amd64"
   },
+  "695fbadf-12b5-4fbd-97b5-f509745fe072": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.7654)",
+   "build": "22631.7654",
+   "arch": "amd64"
+  },
   "6960a64b-bcbb-4a3c-8854-4bb5d72b4e6d": {
    "status": "done",
    "title": "Feature update to Windows 10, version 21H1 (19043.2075)",
