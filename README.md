@@ -12,6 +12,8 @@ which PDBs a build needs, and normally you'd have to run a symbol tool
 against the machine's actual files to find out. This repo already has that
 mapping, computed ahead of time from public Windows builds.
 
+![winsyms downloading the driver symbols of Windows 11 24H2 build 26100.1297](assets/demo.gif)
+
 ## Get symbols
 
 The easiest way is the `winsyms` CLI:
