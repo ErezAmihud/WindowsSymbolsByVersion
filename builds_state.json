@@ -1784,6 +1784,12 @@
    "failures": 3,
    "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/30229978248"
   },
+  "293c754f-fec2-4161-b2d8-6940966fdf5d": {
+   "status": "done",
+   "title": "Windows 11, version 26H1 (28000.3237)",
+   "build": "28000.3237",
+   "arch": "amd64"
+  },
   "297b11a8-1c7f-4a4f-94b9-d2e3a355b9d2": {
    "status": "done",
    "title": "Feature update to Windows 10, version 1809 (17763.1999)",
