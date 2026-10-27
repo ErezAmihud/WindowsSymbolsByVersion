@@ -1,5 +1,6 @@
 # WindowsSymbolsByVersion
 
+[![PyPI](https://img.shields.io/pypi/v/winsyms.svg)](https://pypi.org/project/winsyms/)
 [![License: MIT](https://img.shields.io/github/license/ErezAmihud/WindowsSymbolsByVersion)](LICENSE)
 ![Builds analyzed](https://img.shields.io/endpoint?url=https://erezamihud.github.io/WindowsSymbolsByVersion/badge.json)
 
