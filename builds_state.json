@@ -9942,9 +9942,10 @@
    "arch": "amd64"
   },
   "fd40a8e3-e717-4031-894c-53c5e8e29fdb": {
-   "status": "failed",
-   "failures": 2,
-   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40623330047"
+   "status": "done",
+   "title": "Windows Server 2025 (26100.32995)",
+   "build": "26100.32995",
+   "arch": "amd64"
   },
   "fd91b7ad-3d5c-462e-b4c0-bc0439d9d152": {
    "status": "done",
