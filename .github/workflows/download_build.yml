@@ -12,6 +12,19 @@ on:
         default: false
         required: false
         type: boolean
+  # Re-run a single build by hand. Real mode commits the manifest / failure record to the
+  # dispatched branch (github.ref_name), so dispatch on main unless testing a change.
+  workflow_dispatch:
+    inputs:
+      uuid:
+        description: 'UUP entry uuid'
+        required: true
+        type: string
+      test_mode:
+        description: 'Skip the Windows ISO build; feed synthetic WIMs to exercise the pipeline'
+        default: false
+        required: false
+        type: boolean
 
 jobs:
   create_iso:
