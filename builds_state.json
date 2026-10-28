@@ -6841,6 +6841,11 @@
    "build": "19041.685",
    "arch": "x86"
   },
+  "af3d089b-d6a3-4bc4-b572-1dcfac841a97": {
+   "status": "failed",
+   "failures": 1,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40736574766"
+  },
   "af6e1934-5417-4286-b904-2e7a078a0342": {
    "status": "done",
    "title": "Windows 11 (22000.776)",
