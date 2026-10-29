@@ -3,7 +3,7 @@
 import argparse
 import sys
 
-from winsyms import __version__, index, manifest, pdblister
+from winsyms import __version__, index, manifest, pdblister, volatility
 
 DEFAULT_SERVER = "https://msdl.microsoft.com/download/symbols"
 
@@ -88,6 +88,39 @@ def cmd_get(args):
     print(f"symbols downloaded to {out_dir}")
 
 
+def cmd_volatility(args):
+    volatility.require_volatility()
+    entry = _resolve_one(args)
+    print(
+        f"selected: {entry['title']} [{entry['arch']}] ({entry['uuid']})",
+        file=sys.stderr,
+    )
+    names = args.pdb or volatility.VOLATILITY_PDBS
+    # The full manifest, not files.json, so this works for pre-path-data builds too
+    refs = volatility.select(manifest.build_manifest(entry, None), names)
+    if not refs:
+        raise SystemExit(f"error: this build has none of {', '.join(names)}")
+
+    binary = pdblister.find_pdblister(args.pdblister)
+    report = volatility.build_pack(
+        refs,
+        args.out,
+        download=lambda text, store: pdblister.run_download(binary, text, store, args.server),
+        convert=volatility.convert_with_volatility,
+    )
+
+    for ref in report.missing:
+        print(f"warning: {ref.name} ({ref.key}) is not on the symbol server", file=sys.stderr)
+    print(
+        f"{len(report.converted)} converted, {len(report.existing)} already present, "
+        f"{len(report.missing)} not public, {len(report.failed)} failed -> {args.out}"
+    )
+    if report.converted or report.existing:
+        print(f"use with: vol -s {args.out} -f <memory image> windows.info")
+    if report.failed or not (report.converted or report.existing):
+        raise SystemExit(1)
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(
         prog="winsyms",
@@ -143,6 +176,41 @@ def main(argv=None):
     )
     _add_index_args(p_get)
     p_get.set_defaults(func=cmd_get)
+
+    p_vol = sub.add_parser(
+        "volatility",
+        help="build Volatility 3 symbol tables (ISF) for one build",
+        description="Download the kernel, tcpip and win32k PDBs of one build and convert "
+        "them to Volatility 3 ISF files, ready for `vol -s DIR`. Run it on a connected "
+        "machine and copy DIR to an airgapped one. Needs volatility3: "
+        'pip install "winsyms[volatility]".',
+    )
+    p_vol.add_argument("query", help="uuid, build number (e.g. 26100.1297) or title substring")
+    p_vol.add_argument(
+        "--out",
+        metavar="DIR",
+        default="volatility-symbols",
+        help="symbols directory to create or extend (default: ./volatility-symbols)",
+    )
+    p_vol.add_argument(
+        "--pdb",
+        action="append",
+        metavar="NAME",
+        help="convert this pdb instead of the defaults (repeatable; default: "
+        f"{', '.join(volatility.VOLATILITY_PDBS)})",
+    )
+    p_vol.add_argument(
+        "--server",
+        default=DEFAULT_SERVER,
+        help=f"symbol server URL (default: {DEFAULT_SERVER})",
+    )
+    p_vol.add_argument(
+        "--pdblister",
+        metavar="PATH",
+        help="pdblister binary (default: $WINSYMS_PDBLISTER or PATH lookup)",
+    )
+    _add_index_args(p_vol)
+    p_vol.set_defaults(func=cmd_volatility)
 
     args = parser.parse_args(argv)
     try:

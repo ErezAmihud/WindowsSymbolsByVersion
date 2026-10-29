@@ -50,6 +50,23 @@ processed — arm64 and other languages aren't covered.
 A machine-readable index of every processed build is at
 [index.json](https://erezamihud.github.io/WindowsSymbolsByVersion/index.json).
 
+## Volatility 3 symbol tables
+
+Volatility needs an ISF symbol table matching the exact kernel in a memory
+image, and downloads it from Microsoft when it's missing — which fails on an
+airgapped forensics box. `winsyms` can build those tables ahead of time on a
+connected machine:
+
+```console
+$ pip install "winsyms[volatility]"
+$ winsyms volatility 26100.1297 --out vol-symbols
+$ vol -s vol-symbols -f memory.raw windows.pslist   # copy vol-symbols over first
+```
+
+This converts the kernel (`ntkrnlmp`/`ntkrpamp`), `tcpip` (for
+`windows.netscan`) and `win32k*` PDBs. Run it once per build you expect to
+see; existing tables are skipped, so one directory can cover many builds.
+
 ## How it works
 
 Each build is pulled from [uupdump.net](https://uupdump.net), converted to an
