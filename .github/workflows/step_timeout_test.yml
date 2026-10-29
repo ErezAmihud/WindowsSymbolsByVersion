@@ -1,0 +1,71 @@
+name: Step timeout test
+# Throwaway check for PR #40, removed in the next commit: does a step-level
+# timeout-minutes around nick-fields/retry fail the step normally (so the
+# failure is still recorded), both for a hang and for late errors whose
+# retry would overrun the cap?
+on:
+  push:
+    branches:
+      - claude/job-space-optimization-ggzkml
+    paths:
+      - .github/workflows/step_timeout_test.yml
+
+permissions:
+  contents: read
+
+jobs:
+  hang:
+    runs-on: windows-latest
+    continue-on-error: true
+    outputs:
+      built: ${{ steps.built.outputs.built }}
+    steps:
+      - name: Create iso
+        timeout-minutes: 2
+        uses: nick-fields/retry@v4
+        with:
+          max_attempts: 3
+          timeout_minutes: 10
+          retry_wait_seconds: 10
+          retry_on: error
+          shell: cmd
+          command: ping -n 900 127.0.0.1 >NUL
+      - name: Signal iso built
+        id: built
+        shell: bash
+        run: echo "built=true" >> "$GITHUB_OUTPUT"
+
+  late_errors:
+    runs-on: windows-latest
+    continue-on-error: true
+    outputs:
+      built: ${{ steps.built.outputs.built }}
+    steps:
+      - name: Create iso
+        timeout-minutes: 2
+        uses: nick-fields/retry@v4
+        with:
+          max_attempts: 3
+          timeout_minutes: 10
+          retry_wait_seconds: 10
+          retry_on: error
+          shell: cmd
+          command: ping -n 61 127.0.0.1 >NUL & exit 1
+      - name: Signal iso built
+        id: built
+        shell: bash
+        run: echo "built=true" >> "$GITHUB_OUTPUT"
+
+  mark_hang_failed:
+    runs-on: ubuntu-latest
+    needs: hang
+    if: ${{ always() && needs.hang.outputs.built != 'true' }}
+    steps:
+      - run: echo "recorded; hang result=${{ needs.hang.result }}"
+
+  mark_late_errors_failed:
+    runs-on: ubuntu-latest
+    needs: late_errors
+    if: ${{ always() && needs.late_errors.outputs.built != 'true' }}
+    steps:
+      - run: echo "recorded; late_errors result=${{ needs.late_errors.result }}"
