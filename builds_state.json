@@ -4232,6 +4232,11 @@
    "build": "19042.1566",
    "arch": "x86"
   },
+  "684edecd-d4a6-4803-8817-c2f6c1178c11": {
+   "status": "failed",
+   "failures": 1,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40913608733"
+  },
   "6850722b-d202-417f-b6d3-f45419191852": {
    "status": "done",
    "title": "Feature update to Windows 10, version 1803 (17134.1)",
