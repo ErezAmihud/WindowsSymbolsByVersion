@@ -4442,6 +4442,11 @@
    "build": "17763.4499",
    "arch": "x86"
   },
+  "72b127eb-03df-43ac-8fdc-0fc35293aa6b": {
+   "status": "failed",
+   "failures": 1,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40860897729"
+  },
   "72ce4168-c71c-4f97-93b9-c0500beec322": {
    "status": "done",
    "title": "Feature update to Windows 10, version 21H1 (19043.1151)",
