@@ -1,0 +1,55 @@
+name: Mount test
+# Throwaway experiment for PR #40: can the parse jobs read a wim through a
+# FUSE mount on hosted runners instead of extracting it? Compares mount,
+# extract-to-workspace and batched extraction against production manifests.
+on:
+  push:
+    branches:
+      - claude/mount-test-ggzkml
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        uuid:
+          - 58ddbb00-947e-420a-b296-a2451ae6ac0b_rev.2
+          - 0b86f7fa-bc82-4fd0-9f82-3fde958c69cc
+        name: [install, boot]
+    steps:
+      - uses: actions/checkout@v7
+      - name: Installations
+        run: sudo apt-get update && sudo apt-get install --no-install-recommends -y wimtools fuse3 && python3 -m pip install -r requirements.txt
+      - name: Environment
+        run: |
+          id
+          df -h . /tmp
+          ls -l /dev/fuse
+          command -v fusermount3
+          wimlib-imagex --version | head -1
+      - name: Download wim
+        uses: actions/download-artifact@v8
+        with:
+          name: ${{ matrix.uuid }}${{ matrix.name }}.wim
+          run-id: 40813827481
+          github-token: ${{ github.token }}
+      - name: Download listfiles
+        uses: actions/download-artifact@v8
+        with:
+          name: ${{ matrix.uuid }}listfiles
+          run-id: 40813827481
+          github-token: ${{ github.token }}
+      - name: Download production manifest
+        uses: actions/download-artifact@v8
+        with:
+          name: ${{ matrix.uuid }}manifest_${{ matrix.name }}_1
+          run-id: 40813827481
+          github-token: ${{ github.token }}
+          path: ref
+      - name: Compare mount, disk and batched
+        run: bash .github/mount-test/compare.sh ${{ matrix.name }} 1
