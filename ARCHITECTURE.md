@@ -71,8 +71,8 @@ idempotent - a rerun cannot duplicate entries.
 | `daily.py` | picks the next builds (filters insider/preview/cumulative, arm64, non-en-us) |
 | `state.py` | owns builds_state.json; `mark-done` / `mark-failed` CLI |
 | `wim_dedup.py` | lists each wim image from WIM metadata, hash-dedups across images, emits `wimextract` listfiles of PE-like files only |
-| `extract_and_parse.sh` | extracts one image's listfile and runs the parser |
-| `pdb_finding.py` | walks a directory, reads PE debug directories (parallel, debug-dir-only parsing), emits `pdb,guid,1` lines and optionally `path<TAB>pdb<TAB>guid` lines |
+| `extract_and_parse.sh` | mounts one wim image read-only (FUSE) and runs the parser on its listfile in place, so nothing is extracted to disk |
+| `pdb_finding.py` | walks a directory (or only the files a `--listfile` names), reads PE debug directories (parallel, debug-dir-only parsing), emits `pdb,guid,1` lines and optionally `path<TAB>pdb<TAB>guid` lines |
 | `merge_paths.py` | merges the per-image `.paths` files into the build's `files.json` |
 | `get_editions.py` | resolves a build's edition list for the uupdump download request |
 | `gen_docs_index.py` | mkdocs-gen-files script: renders `index.md` + machine-readable `index.json` from builds_state.json, plus `badge.json` (a live uupdump lookup) for the "builds analyzed" badge |

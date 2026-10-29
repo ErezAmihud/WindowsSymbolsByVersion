@@ -7,6 +7,7 @@ p7zip-full
 libssl-dev
 python3-dev
 wimtools
+fuse3
 chntpw
 genisoimage
 file

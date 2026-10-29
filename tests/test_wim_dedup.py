@@ -9,7 +9,7 @@ editions inside a real install.wim), then checks that:
    merge_paths.py turns them into a files.json whose pdb/guid set reproduces
    the merged manifest exactly (the scope=all recreation guarantee).
 
-Requires wimlib-imagex (apt package wimtools).
+Requires wimlib-imagex and FUSE (apt packages wimtools and fuse3).
 Run from the repo root: pytest tests/test_wim_dedup.py
 """
 
