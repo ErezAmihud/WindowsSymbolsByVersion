@@ -4587,6 +4587,11 @@
    "failures": 1,
    "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40838635281"
   },
+  "775f078d-2631-48f6-b911-fda1de943e38": {
+   "status": "failed",
+   "failures": 1,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40853892499"
+  },
   "77e24e81-9721-42c0-9c3a-dfe3aae32c6c": {
    "status": "done",
    "title": "Feature update to Windows 10, version 21H1 (19043.1865)",
