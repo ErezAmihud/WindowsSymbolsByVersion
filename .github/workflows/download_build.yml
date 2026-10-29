@@ -97,10 +97,17 @@ jobs:
           shell: powershell
         - name: Create iso
           if: ${{ !inputs.test_mode }}
+          # Caps all attempts together. Without it a late error plus a retry can run
+          # past GitHub's 6h job limit, which kills the job instead of failing this
+          # step, and mark_build_failed then never records the build. 330 leaves
+          # ~30 min of the 360 for the job's other steps (wim uploads take ~5).
+          timeout-minutes: 330
           uses: nick-fields/retry@v4
           with:
             max_attempts: 3
-            timeout_minutes: 110
+            # a slow build (many editions) needs more than 110; a timed-out attempt
+            # is not retried (retry_on: error), so a hang costs at most this
+            timeout_minutes: 240
             retry_wait_seconds: 100
             retry_on: error
             shell: cmd
