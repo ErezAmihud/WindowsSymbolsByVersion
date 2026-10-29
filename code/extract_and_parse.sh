@@ -1,32 +1,25 @@
 #!/usr/bin/bash
-# Extract only the files selected by wim_dedup.py from one wim image and
+# Parse only the files selected by wim_dedup.py from one wim image and
 # generate its manifest. Usage: extract_and_parse.sh <name> <image_index>
 #
-# The listfile is extracted and parsed EXTRACT_BATCH_SIZE files at a time
-# (default 2000), deleting each batch before the next. A full install.wim
-# image's PE files do not fit on a hosted runner next to the ~9GB wim, so peak
-# disk use must stay at one batch rather than the whole image.
+# The image is mounted read-only (wimlib's FUSE mount) and parsed in place
+# rather than extracted. An install.wim image's PE files take ~8GB, more than
+# fits in /tmp on some hosted runners (a 7.9GB tmpfs), and the parser only
+# reads each file's headers and debug directory, so mounting writes nothing
+# and is faster than extracting.
 set -e
 
 name=$1
 image=$2
-batch_size=${EXTRACT_BATCH_SIZE:-2000}
 listfile="listfile_${name}_${image}.txt"
 manifest="manifest_${name}_${image}.out"
 paths="manifest_${name}_${image}.paths"
 
-: >"$manifest"
-: >"$paths"
 if [ -s "$listfile" ]; then
-	workdir=$(mktemp -d)
-	trap 'rm -rf "$workdir"' EXIT
-	df -h . "$workdir" >&2
-	split -l "$batch_size" "$listfile" "$workdir/batch_"
-	for batch in "$workdir"/batch_*; do
-		wimlib-imagex extract "${name}.wim" "$image" @"$batch" --dest-dir "$workdir/files" --no-acls --preserve-dir-structure >/dev/null
-		python3 ./code/pdb_finding.py "$workdir/files" "$workdir/batch.out" "$workdir/batch.paths"
-		cat "$workdir/batch.out" >>"$manifest"
-		cat "$workdir/batch.paths" >>"$paths"
-		rm -rf "$workdir/files"
-	done
+	mountpoint=$(mktemp -d)
+	wimlib-imagex mount "${name}.wim" "$image" "$mountpoint"
+	trap 'wimlib-imagex unmount "$mountpoint" && rmdir "$mountpoint"' EXIT
+	python3 ./code/pdb_finding.py "$mountpoint" "$manifest" "$paths" --listfile "$listfile"
+else
+	touch "$manifest" "$paths"
 fi

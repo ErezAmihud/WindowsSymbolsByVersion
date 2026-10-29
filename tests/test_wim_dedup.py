@@ -9,7 +9,7 @@ editions inside a real install.wim), then checks that:
    merge_paths.py turns them into a files.json whose pdb/guid set reproduces
    the merged manifest exactly (the scope=all recreation guarantee).
 
-Requires wimlib-imagex (apt package wimtools).
+Requires wimlib-imagex and FUSE (apt packages wimtools and fuse3).
 Run from the repo root: pytest tests/test_wim_dedup.py
 """
 
@@ -126,15 +126,11 @@ def test_wim_dedup():
 
         got = set()
         got_paths = {}
-        # batch size 1 forces one extract+parse round per file, exercising the
-        # batching that keeps peak disk use bounded on real images
-        batch_env = {**os.environ, "EXTRACT_BATCH_SIZE": "1"}
         for image in ("1", "2"):
             subprocess.run(
                 ["bash", "code/extract_and_parse.sh", "install", image],
                 check=True,
                 cwd=workdir,
-                env=batch_env,
             )
             with open(os.path.join(workdir, f"manifest_install_{image}.out")) as f:
                 got.update(line.strip() for line in f if line.strip())
