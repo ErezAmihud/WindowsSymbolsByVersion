@@ -37,6 +37,11 @@
    "build": "26100.1876",
    "arch": "amd64"
   },
+  "00a4f4ca-d138-44e4-b2ae-c0e7c7d6bb0e": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40944547484"
+  },
   "00c26a49-4fd4-4bff-8812-66f8d4721fe9": {
    "status": "done",
    "title": "Windows 11, version 24H2 (26100.994)",
@@ -55,6 +60,11 @@
    "build": "19043.1348",
    "arch": "x86"
   },
+  "013f5e85-5e65-4d34-840e-2032641694c0": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40963669898"
+  },
   "0146f3ec-b4ee-41a6-b81f-6bc2d9ed0aeb": {
    "status": "done",
    "title": "Feature update to Windows 10, version 21H2 (19044.6218)",
@@ -66,6 +76,16 @@
    "title": "Windows 11, version 23H2 (22631.5840)",
    "build": "22631.5840",
    "arch": "amd64"
+  },
+  "0158a43a-fa62-48f9-9191-778ef415e4c5": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40889884332"
+  },
+  "01b1d964-4e1d-402e-a45e-2e7fb8cc3a39": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40979186500"
   },
   "02207d32-4a22-4c4a-9446-d9d239271832": {
    "status": "failed",
@@ -108,10 +128,20 @@
    "build": "19045.6390",
    "arch": "x86"
   },
+  "02e40d1b-0f48-4e9a-84f0-779ee10b28fb": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40966108171"
+  },
   "02e98fc7-ded3-4551-9ffe-34874910e69b": {
    "status": "failed",
    "failures": 3,
    "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40802107025"
+  },
+  "030ceef9-54f2-42f8-b3ea-5bf5183c6dab": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40973105781"
   },
   "032c5c24-c579-4e18-b730-a23246319f17": {
    "status": "done",
@@ -155,11 +185,31 @@
    "build": "26100.8313",
    "arch": "amd64"
   },
+  "03c8abd1-2967-47c7-ad6e-eeedfc11db19_rev.2": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40977198721"
+  },
   "03e7f864-f321-466d-8a39-49c764c19f02": {
    "status": "done",
    "title": "Feature update to Windows 10, version 22H2 (19045.5198)",
    "build": "19045.5198",
    "arch": "x86"
+  },
+  "03ef3ce8-5b0f-42ca-ad8d-5efa53d79531": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40955983472"
+  },
+  "03f59c37-3d9c-45dd-b459-4a3509dacda5": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40950242646"
+  },
+  "04253119-0422-4029-b395-2ce9c8df32c8": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40863204377"
   },
   "0451370e-a747-4cc4-a984-22d44306fdf0": {
    "status": "done",
@@ -184,6 +234,11 @@
    "title": "Feature update to Windows 10, version 21H2 (19044.2075)",
    "build": "19044.2075",
    "arch": "x86"
+  },
+  "04ef69ca-fbf1-4682-8a47-3169a4f851fd": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40883833829"
   },
   "054091b6-6919-4902-86b6-28e66ad8709d": {
    "status": "done",
@@ -287,11 +342,31 @@
    "build": "26100.4656",
    "arch": "amd64"
   },
+  "073d0596-47cc-4caa-956f-974b312dd849": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40993224026"
+  },
+  "07493fff-c686-4b67-b124-57c9c229df48": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40923796847"
+  },
   "07b5d982-3a98-4209-8953-de3eae9e9317": {
    "status": "done",
    "title": "Feature update to Windows 10, version 22H2 (19045.3391)",
    "build": "19045.3391",
    "arch": "amd64"
+  },
+  "07babd8d-f40b-4a36-8da6-f6ce22caaa93": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40975197623"
+  },
+  "07bcf8ef-c460-4518-a902-e2eb1a6b865a": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40872723560"
   },
   "07dd20c8-a2de-4792-a336-2ab01b43a160": {
    "status": "done",
@@ -389,6 +464,26 @@
    "build": "22621.5116",
    "arch": "amd64"
   },
+  "0a48cb72-cd3e-4f5a-a1e6-da2f7f9adb00": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40977198721"
+  },
+  "0a4bae5b-a180-4fea-b76c-0b0ed5bae163": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40889884332"
+  },
+  "0a57646e-98ff-4f82-831b-7e93e6a16417": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40970846592"
+  },
+  "0a62f322-7ce2-4155-ab96-bdc39a3d69d4": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40863204377"
+  },
   "0a870918-3dfe-4b88-b1bb-467712d0345a": {
    "status": "done",
    "title": "Windows 11 (22000.1516)",
@@ -463,8 +558,13 @@
   },
   "0c393b5f-8132-42c7-b9d1-57e532111734": {
    "status": "failed",
-   "failures": 1,
-   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40826022516"
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40853892499"
+  },
+  "0c394cc9-3ff2-4c57-b6d4-bd4ccaec308b": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40993224026"
   },
   "0c905a0b-fa76-49ac-807a-c94e4ae9a317": {
    "status": "done",
@@ -519,6 +619,11 @@
    "title": "Feature update to Windows 10, version 22H2 (19045.2787)",
    "build": "19045.2787",
    "arch": "amd64"
+  },
+  "0d470c1d-f5ae-4300-8cf8-b4038023d1d8": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40889884332"
   },
   "0d95158a-8142-4fd7-99c7-797571b921cf": {
    "status": "done",
@@ -592,6 +697,11 @@
    "build": "26200.7392",
    "arch": "amd64"
   },
+  "0e51fec7-87fd-4a3a-9ddf-53e7be10a522": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40872723560"
+  },
   "0e57f791-eb3d-43d3-9877-94c7486cbe91": {
    "status": "done",
    "title": "Feature update to Windows 10, version 22H2 (19045.4239)",
@@ -610,11 +720,26 @@
    "build": "26100.7705",
    "arch": "amd64"
   },
+  "0ee46e5d-b222-4bda-884c-1b02f69e7d81": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40947355881"
+  },
+  "0eeaa3d2-758f-4e10-9e87-894690fde4a5": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40926941694"
+  },
   "0fb6ccaa-e0d0-4e4d-8127-30a364f80b86": {
    "status": "done",
    "title": "Feature update to Windows 10, version 22H2 (19045.3516)",
    "build": "19045.3516",
    "arch": "x86"
+  },
+  "0fbf81ca-db08-46ee-bb76-79eaf88a5ee4": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40903185618"
   },
   "0fd55fe1-1306-48dc-b051-1fd2ebcfc0cb": {
    "status": "done",
@@ -700,6 +825,11 @@
    "build": "22621.4460",
    "arch": "amd64"
   },
+  "12b9ad89-0305-4e2d-8606-eb17a96da30c": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40916822279"
+  },
   "12d05fa2-2f72-4a02-a26f-dc4e21c7199d": {
    "status": "done",
    "title": "Windows 11, version 25H2 (26200.8039)",
@@ -711,6 +841,11 @@
    "title": "Feature update to Windows 10, version 21H1 (19043.1466)",
    "build": "19043.1466",
    "arch": "x86"
+  },
+  "12df4a55-253c-4ce0-b5f0-f4ea9673a5ba": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40865537717"
   },
   "12ef1ff9-8242-4afe-bd62-294db74ad4c2": {
    "status": "done",
@@ -729,6 +864,11 @@
    "title": "Feature update to Windows 10, version 21H1 (19043.2130)",
    "build": "19043.2130",
    "arch": "x86"
+  },
+  "13a5cd33-70e9-4c83-bdb0-7a826a9dcb8c": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40867832991"
   },
   "13ec3f1a-08d1-4c78-8fe2-58a15fc7efaf": {
    "status": "done",
@@ -796,6 +936,11 @@
    "build": "19045.6280",
    "arch": "x86"
   },
+  "14acdb6a-7ab0-46bf-be52-3f9cb1b82be1": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40993224026"
+  },
   "14be00b6-0e43-4184-b204-c1bf5c9d46cf": {
    "status": "done",
    "title": "Upgrade to Windows 11 (22000.613)",
@@ -813,6 +958,11 @@
    "title": "Windows 11, version 24H2 (26100.6899)",
    "build": "26100.6899",
    "arch": "amd64"
+  },
+  "1533d34c-4551-463a-8de0-b6c818dd69f4": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40966108171"
   },
   "153d27a4-bb23-45be-ba14-d678f889e69c": {
    "status": "done",
@@ -838,11 +988,26 @@
    "build": "19041.610",
    "arch": "x86"
   },
+  "160a8e65-5506-4940-a93b-bccb3007d280": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40941700175"
+  },
+  "162af9b6-b288-4cbd-ac58-d464264bbb4d": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40944547484"
+  },
   "164292dd-776a-4152-89e0-a68438e82e01": {
    "status": "done",
    "title": "Windows Server, version 23H2 (25398.830)",
    "build": "25398.830",
    "arch": "amd64"
+  },
+  "1683baa4-d441-4ee3-a7c4-4554acaed375": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40973105781"
   },
   "169eb6b3-af73-4a01-a70b-c4c31fb731a9": {
    "status": "done",
@@ -874,6 +1039,16 @@
    "build": "22621.3520",
    "arch": "amd64"
   },
+  "172df08d-cd27-4528-b5d5-d46276bbad92": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40910014503"
+  },
+  "1737c60f-6b88-47c0-b372-22517966c37b": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40941700175"
+  },
   "174e310b-d319-4869-9a16-58d4838df227": {
    "status": "done",
    "title": "Feature update to Windows 10, version 1809 (17763.6893)",
@@ -892,6 +1067,11 @@
    "build": "19045.7663",
    "arch": "amd64"
   },
+  "1814e485-c244-4739-b692-63be5ac51eb2": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40970846592"
+  },
   "181aba35-ce83-4c7d-9009-8d3351574ea8": {
    "status": "done",
    "title": "Windows Server, version 23H2 (25398.1486)",
@@ -903,6 +1083,11 @@
    "title": "Feature update to Windows 10, version 22H2 (19045.6156)",
    "build": "19045.6156",
    "arch": "x86"
+  },
+  "18375148-5951-42ec-9347-1f6ded4f180a": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40880824990"
   },
   "1843eef2-a370-40c5-8cfd-e1ed2956e77c": {
    "status": "done",
@@ -974,6 +1159,11 @@
    "title": "Feature update to Windows 10, version 22H2 (19045.3803)",
    "build": "19045.3803",
    "arch": "x86"
+  },
+  "19904431-7f7c-4027-85fa-f06bb50aea06": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40941700175"
   },
   "1991e6d2-0e13-4e72-8828-bd2ccc2cb6c7": {
    "status": "done",
@@ -1077,11 +1267,21 @@
    "build": "26100.1",
    "arch": "amd64"
   },
+  "1c5a0cb9-b65c-42bb-924e-25f54752bf4d": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40958589747"
+  },
   "1c95994c-8d53-46cf-bb50-ad8f13c7b26e": {
    "status": "done",
    "title": "Feature update to Windows 10, version 22H2 (19045.2310)",
    "build": "19045.2310",
    "arch": "x86"
+  },
+  "1ce83a9d-0153-4461-9b79-5e455e71104f": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40920439687"
   },
   "1cf7ec69-1caf-4c29-be73-2601aa6655cf": {
    "status": "done",
@@ -1118,6 +1318,11 @@
    "title": "Windows 11, version 23H2 (22631.4534)",
    "build": "22631.4534",
    "arch": "amd64"
+  },
+  "1d9debb4-da57-414d-9df1-6dea9c234217": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40877951307"
   },
   "1dc0b4f8-88d4-4dc4-9ed3-920acba78703": {
    "status": "done",
@@ -1191,6 +1396,11 @@
    "build": "26100.4484",
    "arch": "amd64"
   },
+  "1f85f73c-5db8-4762-ac2d-35b5cc77fc97": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40872723560"
+  },
   "1f880a7b-aca7-4895-ab99-9f28cf0add2f": {
    "status": "done",
    "title": "Feature update to Windows 10, version 20H2 (19042.685)",
@@ -1227,11 +1437,21 @@
    "build": "17763.6532",
    "arch": "x86"
   },
+  "201d6035-b620-4a00-8ab1-6e48776bc443": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40944547484"
+  },
   "203cf116-947d-43a5-9df0-aaf47837da69": {
    "status": "done",
    "title": "Feature update to Windows 10, version 1809 (17763.4737)",
    "build": "17763.4737",
    "arch": "x86"
+  },
+  "2043afac-8b6f-41b3-9848-319924e7920e": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40977198721"
   },
   "205bc94e-8234-42f9-9488-5b0e9cd1abb2": {
    "status": "done",
@@ -1251,11 +1471,26 @@
    "build": "20348.2113",
    "arch": "amd64"
   },
+  "209760d7-c65b-49b1-8be0-d84c972f3c81": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40979186500"
+  },
   "20c74156-f8e4-4095-a75a-65139084ba0b": {
    "status": "done",
    "title": "Feature update to Windows 10, version 21H2 (19044.2130)",
    "build": "19044.2130",
    "arch": "amd64"
+  },
+  "20c86252-ea52-437b-ae96-bf79cda4a639": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40899796253"
+  },
+  "213463a7-dc05-4576-98f2-c2600d410c92": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40899796253"
   },
   "2138697a-0335-4de4-8045-2be0b8fcc614": {
    "status": "done",
@@ -1305,6 +1540,11 @@
    "build": "22000.469",
    "arch": "amd64"
   },
+  "22eac5f7-84d1-4bf6-a674-d8dcb6dfd511": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40930090259"
+  },
   "2300d07a-3477-4b9e-8498-93ca59cff8d4": {
    "status": "done",
    "title": "Windows 11, version 25H2 (26200.9448)",
@@ -1341,6 +1581,11 @@
    "build": "22621.1635",
    "arch": "amd64"
   },
+  "238ab433-10c6-488e-9c22-61e9948eb9d8": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40947355881"
+  },
   "23b376bc-3097-48b9-a898-68a6ac056517": {
    "status": "done",
    "title": "Windows 11 (22000.1879)",
@@ -1376,6 +1621,11 @@
    "title": "Feature update to Windows 10, version 20H2 (19042.1165)",
    "build": "19042.1165",
    "arch": "x86"
+  },
+  "24c67817-e92d-4d02-9df6-a8a7554a3c75": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40877951307"
   },
   "2517c0c1-94d4-4433-b3f7-61c14a3dac3c": {
    "status": "done",
@@ -1460,6 +1710,11 @@
    "build": "22621.755",
    "arch": "amd64"
   },
+  "271250cb-fcd4-41cd-b31b-2315f54f3cee": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40953196271"
+  },
   "275d0060-4d32-4a27-9e7d-f90cd51dac75": {
    "status": "done",
    "title": "Feature update to Windows 10, version 2004 (19041.1052)",
@@ -1520,6 +1775,16 @@
    "build": "20348.5622",
    "arch": "amd64"
   },
+  "28d55a2e-c0dc-44bb-88d4-92c66f59336d": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40913608733"
+  },
+  "29185a53-9a49-4502-b1bd-32cc42e57b7a": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40938880033"
+  },
   "293c754f-fec2-4161-b2d8-6940966fdf5d": {
    "status": "done",
    "title": "Windows 11, version 26H1 (28000.3237)",
@@ -1550,6 +1815,16 @@
    "build": "19042.1319",
    "arch": "amd64"
   },
+  "29d0fb24-8683-42b5-8908-873fb509f240": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40872723560"
+  },
+  "29e17d47-7bd0-41b9-8b0d-6919b73045a2": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40935968448"
+  },
   "29f78f1c-589e-4f8b-92a3-7d2c931f1e98": {
    "status": "done",
    "title": "Windows 11, version 23H2 (22631.4969)",
@@ -1568,6 +1843,16 @@
    "build": "22631.6130",
    "arch": "amd64"
   },
+  "2a959e04-941a-4e0d-8242-5021307d2434": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40880824990"
+  },
+  "2abbfe8a-57a7-4ece-870e-2008a39b7d9d": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40970846592"
+  },
   "2ade4dc6-4524-44c3-a53e-4c2ca59d1a6e": {
    "status": "done",
    "title": "Feature update to Windows 10, version 21H1 (19043.1618)",
@@ -1585,6 +1870,11 @@
    "title": "Windows 11, version 26H2 (26300.9711)",
    "build": "26300.9711",
    "arch": "amd64"
+  },
+  "2b546c3b-6b2c-409c-9536-59a210bb8f28": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40977198721"
   },
   "2ba1d737-a36b-415b-a630-85bd5146d77d": {
    "status": "done",
@@ -1652,6 +1942,11 @@
    "build": "19042.2670",
    "arch": "amd64"
   },
+  "2d23cecc-1e21-4a22-937a-469f16c8cea4": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40947355881"
+  },
   "2d375561-4821-488d-ba0a-8269aebf51bc": {
    "status": "done",
    "title": "Windows 11, version 22H2 (22621.2283)",
@@ -1670,16 +1965,31 @@
    "build": "22631.2715",
    "arch": "amd64"
   },
+  "2d91ec01-3f2c-4b75-8cfa-bcfcf5620080": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40899796253"
+  },
   "2da58b0a-59cb-460c-8fa1-6191a146194c": {
    "status": "done",
    "title": "Feature update to Windows 10, version 1909 (18363.1916)",
    "build": "18363.1916",
    "arch": "amd64"
   },
+  "2db9be38-ed4f-4a16-afbb-ab26a52ce1ec": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40920439687"
+  },
   "2dba42e9-a4ce-4736-a22e-dc2daa247dd0": {
    "status": "failed",
-   "failures": 2,
-   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40826022516"
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40838635281"
+  },
+  "2dbea21e-0a44-4747-a2ee-416eecf243ad": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40961212527"
   },
   "2dce4b1a-819f-42df-89d3-e35238f5d323": {
    "status": "done",
@@ -1699,6 +2009,11 @@
    "build": "26200.8328",
    "arch": "amd64"
   },
+  "2e47bed2-1c9b-45ec-aed1-f99d51ece1f3": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40865537717"
+  },
   "2e4d05c4-a182-4a08-bc6e-cdab16227c05": {
    "status": "done",
    "title": "Feature update to Azure Stack HCI, version 22H2 (20349.2402)",
@@ -1710,6 +2025,11 @@
    "title": "Windows 11, version 25H2 (26200.7015)",
    "build": "26200.7015",
    "arch": "amd64"
+  },
+  "2e8ae87f-0fc6-4f71-9441-8a14248022ab": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40958589747"
   },
   "2e9d3812-57df-4b13-bec6-f218a9603dba": {
    "status": "done",
@@ -1747,6 +2067,11 @@
    "build": "19042.1526",
    "arch": "x86"
   },
+  "2faff704-ac88-4b3f-a3d2-11e6a63f0b67": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40977198721"
+  },
   "2fb8402f-90cb-4516-8758-0f5e38497d60": {
    "status": "done",
    "title": "Feature update to Microsoft server operating system, version 21H2 (20348.230)",
@@ -1777,6 +2102,11 @@
    "build": "25398.2092",
    "arch": "amd64"
   },
+  "3005abbb-a147-4d27-8abe-548c86422c31": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40875204252"
+  },
   "3046790b-373b-457a-9e85-ef14aeea182a": {
    "status": "done",
    "title": "Windows 11, version 23H2 (22631.4112)",
@@ -1800,6 +2130,11 @@
    "title": "Windows Server 2025 (26100.1)",
    "build": "26100.1",
    "arch": "amd64"
+  },
+  "312b7c0f-400e-4414-a8b5-f7be0365e061": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40926941694"
   },
   "312f676b-2cbe-41aa-ba85-85c09c88518c": {
    "status": "done",
@@ -1833,8 +2168,8 @@
   },
   "3192eef0-6592-4f07-a905-e400dc14015c": {
    "status": "failed",
-   "failures": 2,
-   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40826022516"
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40838635281"
   },
   "31978a90-7b9b-403b-9e58-ebcfbf1545c1": {
    "status": "done",
@@ -1919,6 +2254,11 @@
    "build": "17763.7792",
    "arch": "x86"
   },
+  "334adcfd-712e-4dd6-82ef-36fda7a8917e": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40993224026"
+  },
   "33c7b1ca-5d5d-473a-93eb-6566de915b2f": {
    "status": "done",
    "title": "Feature update to Windows 10, version 2004 (19041.662)",
@@ -1957,8 +2297,13 @@
   },
   "34193262-1b58-4858-b4a9-90b51439da73": {
    "status": "failed",
-   "failures": 1,
-   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40813827481"
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40838635281"
+  },
+  "3449b18c-ceb3-41cd-9e14-12aee8ccadf3": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40910014503"
   },
   "34622c23-e78b-48e3-8012-a498ead342c2": {
    "status": "done",
@@ -1971,6 +2316,11 @@
    "title": "Windows 11, version 22H2 (22621.5192)",
    "build": "22621.5192",
    "arch": "amd64"
+  },
+  "348e7e54-f708-4603-9abd-67317ec428bc": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40903185618"
   },
   "34b19868-57b6-4831-8a18-ff670133d696": {
    "status": "done",
@@ -2050,6 +2400,11 @@
    "build": "26100.3",
    "arch": "amd64"
   },
+  "3685a412-e355-45b5-94d4-27a3b3ed6e37": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40963669898"
+  },
   "36bd498a-41b1-4d22-aed3-41d3a5b2c3dc": {
    "status": "done",
    "title": "Feature update to Windows 10, version 22H2 (19045.4955)",
@@ -2073,6 +2428,11 @@
    "title": "Feature update to Windows 10, version 22H2 (19045.5608)",
    "build": "19045.5608",
    "arch": "amd64"
+  },
+  "37229205-2c6c-435d-9ea4-0c84298fdc3e": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40970846592"
   },
   "37575a33-7e28-4267-ba58-2cd9e9646a22": {
    "status": "done",
@@ -2104,11 +2464,26 @@
    "build": "26200.9457",
    "arch": "amd64"
   },
+  "380d667d-647d-4f3d-b2b0-65ceb2b45c80": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40886841210"
+  },
   "384e8dda-2a47-480f-8113-20b348cb8ab0": {
    "status": "done",
    "title": "Feature update to Windows 10, version 1809 (17763.7558)",
    "build": "17763.7558",
    "arch": "x86"
+  },
+  "3874c6b6-926e-4057-83f6-fe3953ecf59d": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40916822279"
+  },
+  "38f1d97f-caaf-4eeb-8ba7-4176f1a30ea1": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40968591924"
   },
   "39143328-3eb9-4179-b9c7-0f6dcbd964aa": {
    "status": "done",
@@ -2134,11 +2509,21 @@
    "build": "19043.1110",
    "arch": "x86"
   },
+  "39f5cf66-6e15-413d-b7b8-8dfb930ba69c": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40867832991"
+  },
   "3a055001-cbc7-4762-84c5-b786ec196129": {
    "status": "done",
    "title": "Feature update to Windows 10, version 2004 (19041.421)",
    "build": "19041.421",
    "arch": "x86"
+  },
+  "3a0d537a-3d7e-42df-9c2b-97abd93d3c88": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40930090259"
   },
   "3a118763-86b1-4de5-8adc-1e64d18b3e7e": {
    "status": "done",
@@ -2157,6 +2542,11 @@
    "title": "Windows 11, version 26H1 (28000.1643)",
    "build": "28000.1643",
    "arch": "amd64"
+  },
+  "3af72d09-c1dc-4c39-9746-51268116cd08": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40993224026"
   },
   "3b221c3e-91eb-4bdc-82db-9ca3e04918c8": {
    "status": "done",
@@ -2200,6 +2590,11 @@
    "build": "25398.1732",
    "arch": "amd64"
   },
+  "3bfe12f8-21c8-4de4-bb45-8f072360b542": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40910014503"
+  },
   "3c072f71-441a-4958-a62e-8452a2a47c46": {
    "status": "done",
    "title": "Feature update to Windows 10, version 1809 (17763.8755)",
@@ -2212,11 +2607,21 @@
    "build": "25398.469",
    "arch": "amd64"
   },
+  "3c61c03d-acda-4c24-94af-bd54ae988de5": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40875204252"
+  },
   "3ce84465-3024-4b40-8747-ef5afd25644f": {
    "status": "done",
    "title": "Feature update to Windows 10, version 22H2 (19045.4170)",
    "build": "19045.4170",
    "arch": "amd64"
+  },
+  "3cef64fc-87f1-4490-9d21-3a632babecb1": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40947355881"
   },
   "3d01a661-1c2c-4c2b-8e79-12c85e8e9b30": {
    "status": "failed",
@@ -2234,6 +2639,11 @@
    "title": "Feature update to Windows 10, version 21H2 (19044.4412)",
    "build": "19044.4412",
    "arch": "amd64"
+  },
+  "3d3c9d71-6d3c-42b1-b3a1-11169811bf92": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40930090259"
   },
   "3d8ad3cf-1fa6-43e7-a8ca-b55ed1c7c557": {
    "status": "done",
@@ -2265,6 +2675,11 @@
    "build": "19045.3324",
    "arch": "amd64"
   },
+  "3e07f416-ea50-4775-9617-8f7e36498564": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40872723560"
+  },
   "3e9da0ef-a89a-421e-bc39-25569f99c851": {
    "status": "done",
    "title": "Feature update to Windows 10, version 22H2 (19045.5912)",
@@ -2288,6 +2703,11 @@
    "title": "Feature update to Windows 10, version 21H1 (19043.1083)",
    "build": "19043.1083",
    "arch": "x86"
+  },
+  "3ee6d038-b8fe-4981-bf12-4bd7c4bf8ce0": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40930090259"
   },
   "3efcc9b1-839d-42ac-a209-2234c4bfde9a": {
    "status": "done",
@@ -2330,6 +2750,16 @@
    "build": "22631.4751",
    "arch": "amd64"
   },
+  "3f5f105c-7493-41a6-8fd1-6b3155b82e3d": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40886841210"
+  },
+  "3f6e01da-4e08-48e9-89c8-c6ae65a2358c": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40966108171"
+  },
   "3f85b104-aa6f-41b0-86b8-29196c1f2c3b": {
    "status": "done",
    "title": "Feature update to Windows 10, version 22H2 (19045.1889)",
@@ -2347,6 +2777,11 @@
    "title": "Feature update to Windows 10, version 21H2 (19044.1862)",
    "build": "19044.1862",
    "arch": "amd64"
+  },
+  "400a4f74-fd17-418c-b0fc-bf209091c2f8": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40941700175"
   },
   "400d7cc4-345e-4447-9f75-9a7566acb352": {
    "status": "done",
@@ -2420,6 +2855,11 @@
    "build": "17763.6054",
    "arch": "amd64"
   },
+  "4231906d-c297-4204-89dc-77f2dd6dce9e": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40973105781"
+  },
   "423a4fe8-e093-4176-8b5b-ef29f4cba0f0": {
    "status": "done",
    "title": "Update for Windows 11 (26200.8039)",
@@ -2485,11 +2925,21 @@
    "build": "19042.2251",
    "arch": "x86"
   },
+  "43df138c-ac74-4c09-968f-875f573e0ab0": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40910014503"
+  },
   "441a55a8-2503-448c-9768-14f925f5f8c8": {
    "status": "done",
    "title": "Feature update to Windows 10, version 1809 (17763.4499)",
    "build": "17763.4499",
    "arch": "amd64"
+  },
+  "444cd927-d576-49d8-a44c-17acb73e062d": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40979186500"
   },
   "4467b357-2680-47a1-8551-bea3fed7085b": {
    "status": "done",
@@ -2503,6 +2953,11 @@
    "build": "19045.4355",
    "arch": "amd64"
   },
+  "447efc5d-093a-45a6-b2df-b541f4b95699": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40923796847"
+  },
   "44978a43-5502-4388-b8d3-f1db2dfdf605": {
    "status": "done",
    "title": "Windows 11, version 24H2 (26100.7899)",
@@ -2515,11 +2970,21 @@
    "build": "26100.8894",
    "arch": "amd64"
   },
+  "44dafad1-8d8c-47ca-a495-8133cf2d0d36": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40883833829"
+  },
   "44ec6209-1796-4c40-acd7-b81b90d98398": {
    "status": "done",
    "title": "Windows 11 (22000.2003)",
    "build": "22000.2003",
    "arch": "amd64"
+  },
+  "44f91eb3-3039-41ec-9d34-f993afbbf79f": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40858608281"
   },
   "4501e627-3f35-40f2-a8a7-c204975c7a92": {
    "status": "done",
@@ -2551,6 +3016,11 @@
    "build": "19045.5011",
    "arch": "amd64"
   },
+  "45974967-f2bf-429c-9f5b-cd2e7b9c6c6a": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40858608281"
+  },
   "45a038d5-3925-4052-b7ad-7419d4cdb430": {
    "status": "done",
    "title": "Feature update to Azure Stack HCI, version 21H2 (20348.768)",
@@ -2569,11 +3039,21 @@
    "build": "22631.7517",
    "arch": "amd64"
   },
+  "4638c0a0-6247-4d62-9685-db5ad98a252b": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40880824990"
+  },
   "4642c508-03e5-43dd-a723-6dff3cd7a749": {
    "status": "done",
    "title": "Feature update to Windows 10, version 2004 (19041.1348)",
    "build": "19041.1348",
    "arch": "x86"
+  },
+  "469f92a0-874d-4dfb-b362-c6e68bf57ed4": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40947355881"
   },
   "46bae697-f3df-452f-8a9b-efbbbf88b3bb": {
    "status": "done",
@@ -2593,6 +3073,11 @@
    "build": "18362.175",
    "arch": "x86"
   },
+  "46cea7dd-b503-4053-b6d8-2394226892c6": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40867832991"
+  },
   "47278140-1a78-4d36-b6b8-161dc8f4faec": {
    "status": "done",
    "title": "Feature update to Windows 10, version 22H2 (19045.3154)",
@@ -2610,6 +3095,11 @@
    "title": "Windows 11, version 24H2 (26100.7840)",
    "build": "26100.7840",
    "arch": "amd64"
+  },
+  "475a2208-4f77-480f-9da1-ade6bf939c69": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40913608733"
   },
   "476e30d4-de6d-407b-bb6d-344fd1e64dc7": {
    "status": "done",
@@ -2634,6 +3124,11 @@
    "title": "Feature update to Azure Stack HCI, version 22H2 (20349.1070)",
    "build": "20349.1070",
    "arch": "amd64"
+  },
+  "47a8f401-6e60-4226-8841-a7a5da45eaa2": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40930090259"
   },
   "47ac90a8-1810-4842-b2fc-1a13e69218a8": {
    "status": "done",
@@ -2682,6 +3177,11 @@
    "build": "20348.350",
    "arch": "amd64"
   },
+  "48dd563c-8a23-4c47-8d60-e66218c6a46d": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40958589747"
+  },
   "48ea7c96-b1fb-4a82-9aee-669f44956da7": {
    "status": "done",
    "title": "Windows 11, version 24H2 (26100.1301)",
@@ -2705,6 +3205,16 @@
    "title": "Windows 11 (22000.3197)",
    "build": "22000.3197",
    "arch": "amd64"
+  },
+  "49c101a1-1044-43d6-83ee-c8baebfa69a1": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40856267475"
+  },
+  "49c6e322-4616-4c54-93ea-363432cd57a4": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40889884332"
   },
   "49d28a1f-8159-4dc5-b858-6556f636b3bd": {
    "status": "done",
@@ -2778,11 +3288,21 @@
    "build": "18363.1854",
    "arch": "amd64"
   },
+  "4b198c0a-71de-4f6f-b7e1-831729d92c77": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40858608281"
+  },
   "4b3b7a0c-a56a-409d-82c1-703d08383405": {
    "status": "done",
    "title": "Feature update to Windows 10, version 1809 (17763.1397)",
    "build": "17763.1397",
    "arch": "amd64"
+  },
+  "4b9bbd09-149b-466c-80e7-d43a303df727": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40933144838"
   },
   "4bab3a2a-188f-4781-97ed-8882b6dbd259": {
    "status": "done",
@@ -2820,6 +3340,11 @@
    "build": "19044.3570",
    "arch": "amd64"
   },
+  "4d5fdb12-cfd9-4338-bcfb-afc8574f1e42": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40938880033"
+  },
   "4d6d808e-480e-4adb-9d00-e863724f60e8": {
    "status": "done",
    "title": "Feature update to Windows 10, version 1809 (17763.6775)",
@@ -2837,6 +3362,11 @@
    "title": "Windows 11, version 24H2 (26100.9550)",
    "build": "26100.9550",
    "arch": "amd64"
+  },
+  "4d89ecc4-502d-412e-89b0-8a616c761a91": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40860897729"
   },
   "4d9217dd-3d1a-43c9-8151-ae28469e3922": {
    "status": "done",
@@ -2880,6 +3410,16 @@
    "build": "19041.964",
    "arch": "x86"
   },
+  "4ecd4323-29f3-45f1-b7e4-6f76d9e33d06": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40963669898"
+  },
+  "4ecd5358-050a-446e-b370-e48ea0222dad": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40955983472"
+  },
   "4ef6df23-de64-4bfa-9a43-6446e930f4d5": {
    "status": "done",
    "title": "Feature update to Windows 10, version 21H2 (19044.5854)",
@@ -2904,6 +3444,11 @@
    "build": "25398.1913",
    "arch": "amd64"
   },
+  "4f983717-7faa-4f48-8bfd-ec31578a182f": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40961212527"
+  },
   "4fd93f6e-3e8c-4d12-a32b-09c10335524f": {
    "status": "done",
    "title": "Feature update to Windows 10, version 22H2 (19045.4842)",
@@ -2922,11 +3467,21 @@
    "build": "17763.9121",
    "arch": "amd64"
   },
+  "50654540-ab8a-4872-a142-d81ead3ca3fd": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40865537717"
+  },
   "507cf67d-d0b0-4139-af31-6ad2c42d9aa4": {
    "status": "done",
    "title": "Windows 11 (22000.3019)",
    "build": "22000.3019",
    "arch": "amd64"
+  },
+  "5090176a-4e0c-48f9-8138-b9aa8ad28d37": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40899796253"
   },
   "509ef3a9-3bd5-4341-acb9-d2682c65550b": {
    "status": "done",
@@ -3047,6 +3602,11 @@
    "build": "19045.6282",
    "arch": "x86"
   },
+  "52738cbb-8b05-426f-8151-fea8ffe416d3": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40977198721"
+  },
   "5276df36-126b-48a8-91d6-46e54c373674": {
    "status": "done",
    "title": "Feature update to Windows 10, version 20H2 (19042.1415)",
@@ -3118,6 +3678,11 @@
    "build": "19044.4291",
    "arch": "x86"
   },
+  "54f644e9-73bd-4700-b3af-3620273620ba": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40958589747"
+  },
   "551d7013-c704-477e-a0a9-24a7040d5134": {
    "status": "done",
    "title": "Feature update to Windows 10, version 22H2 (19045.7725)",
@@ -3129,6 +3694,11 @@
    "title": "Windows 11, version 24H2 (26100.5061)",
    "build": "26100.5061",
    "arch": "amd64"
+  },
+  "55510328-ef18-4bc4-ae1c-a512f3dc9639": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40889884332"
   },
   "55a3720c-6034-4a33-b145-2e4066c6f318": {
    "status": "failed",
@@ -3201,6 +3771,11 @@
    "build": "19045.3633",
    "arch": "amd64"
   },
+  "56dcc875-02e5-4d3f-b28d-5ab4ae897353": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40993224026"
+  },
   "56dd69e2-20b8-4275-8908-cc22bb94fd94": {
    "status": "done",
    "title": "Windows 11, version 23H2 (22631.6132)",
@@ -3266,6 +3841,11 @@
    "title": "Feature update to Windows 10, version 21H2 (19044.1348)",
    "build": "19044.1348",
    "arch": "amd64"
+  },
+  "57c0fde4-4db5-4729-a633-0c2b970b72b5": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40938880033"
   },
   "57d5718b-02a3-49b0-bff1-202f0811a060": {
    "status": "done",
@@ -3506,6 +4086,11 @@
    "build": "19045.3269",
    "arch": "amd64"
   },
+  "5cac3fad-0b9e-4fc1-8b87-4c3e678b2417": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40899796253"
+  },
   "5cfaec62-2ae0-44d9-8059-35470ccb659a": {
    "status": "done",
    "title": "Windows 11, version 23H2 (22631.7582)",
@@ -3553,6 +4138,11 @@
    "title": "Feature update to Microsoft server operating system, version 21H2 (20348.5020)",
    "build": "20348.5020",
    "arch": "amd64"
+  },
+  "5d8d37ec-6063-4c4f-9095-47fc1dd92f36": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40865537717"
   },
   "5d8e5c1c-e6d2-45cd-a4de-2bc6525b89e7": {
    "status": "done",
@@ -3632,6 +4222,16 @@
    "build": "20348.1487",
    "arch": "amd64"
   },
+  "5f0d4662-2090-439c-bc37-43ca1cdf9e84": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40963669898"
+  },
+  "5f10cfa4-8161-461c-b225-df586d2d3f9a": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40930090259"
+  },
   "5f1cc6c1-cf3a-48b0-959f-e81453caf66c": {
    "status": "done",
    "title": "Windows 11, version 25H2 (26200.7627)",
@@ -3673,6 +4273,11 @@
    "title": "Feature update to Windows 10, version 22H2 (19045.4894)",
    "build": "19045.4894",
    "arch": "x86"
+  },
+  "6061bb86-1faa-4998-ab17-15310136c931": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40993224026"
   },
   "606d689b-7496-4124-8dbe-f29a8b3a4ea5": {
    "status": "done",
@@ -3716,6 +4321,11 @@
    "build": "20349.2461",
    "arch": "amd64"
   },
+  "613d57e3-a39e-46b7-b590-13f9a87d401f": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40910014503"
+  },
   "61429954-93f8-4eed-a246-3e81eaca00e8": {
    "status": "done",
    "title": "Feature update to Microsoft server operating system, version 21H2 (20348.2113)",
@@ -3728,11 +4338,21 @@
    "build": "19045.3754",
    "arch": "x86"
   },
+  "61b6fe36-79c3-487e-951c-6b582eba15de": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40977198721"
+  },
   "61c4a135-b280-49eb-9120-f88e30d8bc1e": {
    "status": "done",
    "title": "Feature update to Windows 10, version 22H2 (19045.4046)",
    "build": "19045.4046",
    "arch": "amd64"
+  },
+  "62155dae-af6d-44bd-8665-9d5f8a297eaf": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40947355881"
   },
   "6235204d-8849-4c01-93d5-7072b80d02da": {
    "status": "done",
@@ -3752,6 +4372,11 @@
    "build": "17133.1",
    "arch": "x86"
   },
+  "62fd97a1-333b-479c-896c-1e8b150c6880": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40903185618"
+  },
   "62fdc598-463a-47c3-9bfe-44e3d9c0e870": {
    "status": "done",
    "title": "Feature update to Microsoft server operating system, version 21H2 (20348.3692)",
@@ -3769,6 +4394,16 @@
    "title": "Feature update to Azure Stack HCI, version 23H2 (25398.1251)",
    "build": "25398.1251",
    "arch": "amd64"
+  },
+  "63390b88-9fef-483c-9143-808b784bf96c": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40935968448"
+  },
+  "633ad61e-a300-4fbf-b3f7-ff05bfd65d99": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40872723560"
   },
   "634239fb-1e01-4e55-9718-c795871a1aa6": {
    "status": "done",
@@ -3788,11 +4423,21 @@
    "build": "19045.4529",
    "arch": "x86"
   },
+  "63c4af5d-5f8a-4dbb-aeae-cf65424bfb16": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40938880033"
+  },
   "63f18a37-f0c7-48a5-8473-9d6ba1510922": {
    "status": "done",
    "title": "Feature update to Windows 10, version 21H2 (19044.7727)",
    "build": "19044.7727",
    "arch": "x86"
+  },
+  "63fc0db8-b6b3-4c48-9f13-7ae07276f1f2": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40938880033"
   },
   "64152752-c19b-40ad-a16f-d9520b86f06b": {
    "status": "done",
@@ -3847,6 +4492,11 @@
    "build": "19042.1889",
    "arch": "x86"
   },
+  "64ed273f-19a5-4d74-a5ef-480f6094c381": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40938880033"
+  },
   "65016017-8e35-4733-b6fc-0ea340ee74b2": {
    "status": "done",
    "title": "Feature update to Windows 10, version 1809 (17763.167)",
@@ -3858,6 +4508,11 @@
    "title": "Windows 11 (22000.1880)",
    "build": "22000.1880",
    "arch": "amd64"
+  },
+  "6517cd68-5f87-4724-8f77-6225c1d2e06e": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40860897729"
   },
   "6563628e-d112-4e73-a45e-4b984604df48": {
    "status": "failed",
@@ -3876,16 +4531,31 @@
    "build": "19044.7548",
    "arch": "x86"
   },
+  "65d035a2-9d8e-42a2-87cb-bb89f0b9eaed": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40889884332"
+  },
   "65d918da-f1db-4a81-b207-9b9053504059": {
    "status": "failed",
    "failures": 3,
    "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40802107025"
+  },
+  "65dad411-85d5-41bd-8f4e-ab34f8b9c25f": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40947355881"
   },
   "66021674-d372-4ff0-8261-6afb60698bee": {
    "status": "done",
    "title": "Feature update to Windows 10, version 21H2 (19044.1499)",
    "build": "19044.1499",
    "arch": "x86"
+  },
+  "6620ce9d-3b9e-476d-b404-93eb5b9f5a64": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40910014503"
   },
   "6660c956-c620-4de7-94b4-c11c4f99bc70": {
    "status": "done",
@@ -3947,6 +4617,11 @@
    "build": "19042.1566",
    "arch": "x86"
   },
+  "684edecd-d4a6-4803-8817-c2f6c1178c11": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40920439687"
+  },
   "6850722b-d202-417f-b6d3-f45419191852": {
    "status": "done",
    "title": "Feature update to Windows 10, version 1803 (17134.1)",
@@ -3976,6 +4651,11 @@
    "title": "Feature update to Windows 10, version 21H2 (19044.1387)",
    "build": "19044.1387",
    "arch": "x86"
+  },
+  "68c998ee-273b-4222-b613-4db1b301115e": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40970846592"
   },
   "695e208e-9240-4766-aac1-1e6b76eb5598": {
    "status": "done",
@@ -4103,6 +4783,16 @@
    "build": "19042.1645",
    "arch": "amd64"
   },
+  "6b74eb77-d1b0-41fc-95b1-5b69d3009ef2": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40860897729"
+  },
+  "6bcad783-767e-4549-ba67-1875f3e2846e": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40963669898"
+  },
   "6bcce867-cd35-4c42-8329-bfae7d12de83": {
    "status": "done",
    "title": "Feature update to Windows 10, version 21H2 (19044.2545)",
@@ -4138,6 +4828,11 @@
    "title": "Feature update to Microsoft server operating system, version 21H2 (20348.169)",
    "build": "20348.169",
    "arch": "amd64"
+  },
+  "6c72a7eb-193d-46a1-9a6b-68d8a748eae8": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40970846592"
   },
   "6c7bf258-2632-47dd-83ee-c23945978da1": {
    "status": "done",
@@ -4228,6 +4923,11 @@
    "build": "22000.348",
    "arch": "amd64"
   },
+  "6e35eb90-f877-4aba-b16f-166ea8e6e812": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40970846592"
+  },
   "6e3757fb-4ac7-4616-9e98-062fff6150f4": {
    "status": "done",
    "title": "Feature update to Windows 10, version 20H2 (19042.804)",
@@ -4240,6 +4940,16 @@
    "build": "25398.1085",
    "arch": "amd64"
   },
+  "6e60b119-f13e-4aa4-a08c-3f801b23c4ac": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40865537717"
+  },
+  "6ea6d7ff-d374-4148-aed4-0830478a03fc": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40920439687"
+  },
   "6ec6e8c1-684d-4adb-abbe-aee50d434d9c": {
    "status": "done",
    "title": "Feature update to Windows 10, version 1809 (17763.4851)",
@@ -4251,6 +4961,11 @@
    "title": "Feature update to Windows 10, version 22H2 (19045.4239)",
    "build": "19045.4239",
    "arch": "amd64"
+  },
+  "6f2e22a6-7fc7-4f8d-bf47-4c589289c0bb": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40860897729"
   },
   "6f5c7066-1c20-4c3e-b710-5c0fde2d8df2": {
    "status": "done",
@@ -4275,6 +4990,11 @@
    "title": "Feature update to Windows 10, version 21H2 (19044.1739)",
    "build": "19044.1739",
    "arch": "x86"
+  },
+  "6fb70691-9404-46be-9adf-edc76948353d": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40938880033"
   },
   "70713178-6750-4dcd-8aa3-36a77d3fa70d": {
    "status": "done",
@@ -4330,6 +5050,11 @@
    "build": "22621.1343",
    "arch": "amd64"
   },
+  "7128178e-8480-4e86-9c4a-9ff2483d64fc": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40963669898"
+  },
   "715bb6b3-5b6d-4a21-ba62-c70d6c2b8a4b": {
    "status": "done",
    "title": "Feature update to Windows 10, version 1809 (17763.2928)",
@@ -4350,8 +5075,8 @@
   },
   "71e30e21-7a62-4f18-b0b6-f9ebdfc2b4fb": {
    "status": "failed",
-   "failures": 1,
-   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40813827481"
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40838635281"
   },
   "722c50ca-bb24-4a02-8860-052ebbd3fa72": {
    "status": "done",
@@ -4367,8 +5092,13 @@
   },
   "7271d1c0-ee4c-421f-94e0-3e6f34fefe3c": {
    "status": "failed",
-   "failures": 1,
-   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40826022516"
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40853892499"
+  },
+  "72796a7b-a0e5-4bc1-8b46-af3700ddb45e": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/41004575206"
   },
   "727c204d-5397-48a0-b8ac-914494c61e08": {
    "status": "done",
@@ -4381,6 +5111,11 @@
    "title": "Feature update to Windows 10, version 1809 (17763.4499)",
    "build": "17763.4499",
    "arch": "x86"
+  },
+  "72b127eb-03df-43ac-8fdc-0fc35293aa6b": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40865537717"
   },
   "72ce4168-c71c-4f97-93b9-c0500beec322": {
    "status": "done",
@@ -4426,8 +5161,8 @@
   },
   "7376c94d-75d4-4475-9f2e-a5f6384ee2f4": {
    "status": "failed",
-   "failures": 1,
-   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40826022516"
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40853892499"
   },
   "737d489b-5651-43fe-8404-5ace32ce1ae1": {
    "status": "done",
@@ -4440,6 +5175,11 @@
    "title": "Feature update to Windows 10, version 21H2 (19044.1741)",
    "build": "19044.1741",
    "arch": "amd64"
+  },
+  "73d768c8-707b-4cd3-b1c6-a1b3c81801a0": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40889884332"
   },
   "741a2b36-7b2e-4a86-a9ac-f1664db4b6df": {
    "status": "done",
@@ -4483,6 +5223,11 @@
    "build": "19042.1679",
    "arch": "x86"
   },
+  "74d1f0e1-0bef-4b54-8876-7531c77eb401": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40953196271"
+  },
   "74db1138-e0bb-4698-aed9-ec4ea015cee8": {
    "status": "done",
    "title": "Feature update to Windows 10, version 22H2 (19045.5194)",
@@ -4507,6 +5252,11 @@
    "build": "19044.6575",
    "arch": "x86"
   },
+  "75706673-e019-47b9-b995-18e7c6629062": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40880824990"
+  },
   "75eaff2b-d1fc-4551-84d7-356ea7f2d237": {
    "status": "done",
    "title": "Feature update to Windows 10, version 21H1 (19043.1766)",
@@ -4524,6 +5274,11 @@
    "title": "Windows 11, version 24H2 (26100.4202)",
    "build": "26100.4202",
    "arch": "amd64"
+  },
+  "762adf22-3fd6-40c4-92d0-97696e89a09d": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40870230794"
   },
   "7635931b-6834-440e-8d9b-84ea36d3bfee": {
    "status": "done",
@@ -4567,6 +5322,21 @@
    "build": "22631.5261",
    "arch": "amd64"
   },
+  "772fc069-f7b5-46de-b138-fedb1613b1f0": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40856267475"
+  },
+  "775f078d-2631-48f6-b911-fda1de943e38": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40858608281"
+  },
+  "77739130-0195-44b1-96d0-570e4c40ec11": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40863204377"
+  },
   "77e24e81-9721-42c0-9c3a-dfe3aae32c6c": {
    "status": "done",
    "title": "Feature update to Windows 10, version 21H1 (19043.1865)",
@@ -4590,6 +5360,11 @@
    "title": "Feature update to Windows 10, version 1809 (17763.2803)",
    "build": "17763.2803",
    "arch": "amd64"
+  },
+  "782d4743-b2c5-41dc-9c0a-1ada2337d94b": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40865537717"
   },
   "783c1b3a-fffc-4de5-a5f2-9c92463fcb47": {
    "status": "done",
@@ -4669,6 +5444,11 @@
    "build": "26100.4188",
    "arch": "amd64"
   },
+  "795bf932-439e-4d75-b3cf-d46e07084365": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40923796847"
+  },
   "79653af8-4e0e-4675-8b68-f2d3634de2ea": {
    "status": "done",
    "title": "Upgrade to Windows 11 (22000.176)",
@@ -4704,6 +5484,16 @@
    "title": "Feature update to Microsoft server operating system, version 21H2 (20348.5139)",
    "build": "20348.5139",
    "arch": "amd64"
+  },
+  "79bfbb87-ae9d-480d-9f6f-5c82361e015d": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40935968448"
+  },
+  "79e83ae8-1f71-4510-b3cb-1a97609a9a68": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40893171462"
   },
   "7a09793a-2789-4418-b773-af9f6ba58d41": {
    "status": "done",
@@ -4741,6 +5531,11 @@
    "build": "19045.5794",
    "arch": "x86"
   },
+  "7a752bdf-6155-4fcf-b3d0-ef409928d356": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40955983472"
+  },
   "7a87ae9d-1431-4eeb-a010-e7e3260058ad": {
    "status": "done",
    "title": "Windows 11, version 23H2 (22631.3951)",
@@ -4764,6 +5559,11 @@
    "title": "Feature update to Azure Stack HCI, version 22H2 (20349.1487)",
    "build": "20349.1487",
    "arch": "amd64"
+  },
+  "7abb649a-7e0a-41f2-99bf-e7746a081552": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40970846592"
   },
   "7b394d3c-7cb8-479c-9092-e472b74eb0a1": {
    "status": "done",
@@ -4825,11 +5625,26 @@
    "build": "19041.1165",
    "arch": "amd64"
   },
+  "7c18e092-7d78-4f95-b5f7-b0c2987c62a4": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40947355881"
+  },
+  "7c22b63f-1054-4f2b-8c49-2a6a9c3e32c7": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40867832991"
+  },
   "7c267c63-a42f-4c37-b2e1-ba9a3ff61ce7": {
    "status": "done",
    "title": "Windows 11 (22000.795)",
    "build": "22000.795",
    "arch": "amd64"
+  },
+  "7c3f0f7c-6079-4da0-8c56-46b46423c1b8": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40963669898"
   },
   "7c428081-5f9f-4b2c-a4ec-b2c1aa5ecd5d": {
    "status": "done",
@@ -4885,6 +5700,11 @@
    "build": "19044.2130",
    "arch": "x86"
   },
+  "7d5c9bef-8711-48f5-a58c-47bbda25d509": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40858608281"
+  },
   "7d8e4e98-00a8-4404-9485-a63277a95b1d": {
    "status": "done",
    "title": "Feature update to Windows 10, version 1909 (18363.1679)",
@@ -4921,6 +5741,11 @@
    "build": "20348.3091",
    "arch": "amd64"
   },
+  "7debc684-ec80-4abc-8a9a-ead453958ac6": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40966108171"
+  },
   "7e33f1ba-a017-4656-a354-4142565b0a3c": {
    "status": "done",
    "title": "Feature update to Azure Stack HCI, version 22H2 (20349.2762)",
@@ -4932,6 +5757,11 @@
    "title": "Windows 11, version 25H2 (26200.7092)",
    "build": "26200.7092",
    "arch": "amd64"
+  },
+  "7e56ebd7-dcbe-4e4a-8dfe-ad315bc50a67": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40975197623"
   },
   "7e84f4b9-bcbd-45da-a19c-dbe2a5c52500": {
    "status": "done",
@@ -4995,8 +5825,8 @@
   },
   "7f5e6a14-5412-4abf-abb0-ffe6bee62238": {
    "status": "failed",
-   "failures": 1,
-   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40813827481"
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40838635281"
   },
   "7f6836ae-9517-4e27-9f76-5823e0b6744c": {
    "status": "done",
@@ -5058,6 +5888,11 @@
    "build": "17763.2366",
    "arch": "amd64"
   },
+  "804bab7d-450d-4a8d-a315-52601d77d322": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40865537717"
+  },
   "805cd4e4-8257-48fa-b1b4-cbbabfba8df7": {
    "status": "done",
    "title": "Feature update to Windows 10, version 20H2 (19042.746)",
@@ -5069,6 +5904,11 @@
    "title": "Feature update to Azure Stack HCI, version 21H2 (20348.524)",
    "build": "20348.524",
    "arch": "amd64"
+  },
+  "806a19c5-ad55-475b-a5bc-98687357237f": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40977198721"
   },
   "806ad015-35bb-4e96-bd8b-84f0b68f6fbf": {
    "status": "done",
@@ -5130,6 +5970,11 @@
    "build": "28000.2608",
    "arch": "amd64"
   },
+  "81bb751a-1e24-46dd-ae53-ecfe3058de21": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40875204252"
+  },
   "81d564e8-6a20-4668-87c3-9604cbf0c12c": {
    "status": "done",
    "title": "Feature update to Windows 10, version 1809 (17763.5576)",
@@ -5181,11 +6026,21 @@
    "build": "22631.7219",
    "arch": "amd64"
   },
+  "83bfec2a-6639-4faf-b866-bf111a372f9d": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40923796847"
+  },
   "83e6b7d8-a042-4071-9693-4c86fc3a662d": {
    "status": "done",
    "title": "Feature update to Microsoft server operating system, version 21H2 (20348.4297)",
    "build": "20348.4297",
    "arch": "amd64"
+  },
+  "840cd6a0-a697-413f-94ad-1d6cec2b4532": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40933144838"
   },
   "840ffefa-32b7-4e3f-8c25-8c86f7ea6753": {
    "status": "done",
@@ -5313,6 +6168,11 @@
    "build": "26100.8521",
    "arch": "amd64"
   },
+  "8659eef9-9ded-4a63-a0ca-f0a20d323edc": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40896530280"
+  },
   "869a591f-23a2-4580-a7be-74c9305f5376": {
    "status": "done",
    "title": "Feature update to Windows 10, version 1809 (17763.8146)",
@@ -5367,6 +6227,11 @@
    "build": "17763.5696",
    "arch": "x86"
   },
+  "87b0aad5-99de-4976-b33f-c272899134e2": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40870230794"
+  },
   "87b6d616-a21b-4b93-b10d-13ee16920fc9": {
    "status": "done",
    "title": "Windows 11, version 24H2 (26100.4662)",
@@ -5387,8 +6252,8 @@
   },
   "88285020-3ed0-4f3f-90c7-d2fa3581bd7f": {
    "status": "failed",
-   "failures": 1,
-   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40826022516"
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40853892499"
   },
   "886fa207-124a-4633-9f08-438f1c614f28": {
    "status": "done",
@@ -5426,6 +6291,11 @@
    "build": "22621.3447",
    "arch": "amd64"
   },
+  "88dcf397-6380-41ca-b38b-67fcee3c7669": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40913608733"
+  },
   "8905edce-8eb6-44ac-ba28-9230ccfe5dd4": {
    "status": "done",
    "title": "Feature update to Windows 10, version 22H2 (19045.2130)",
@@ -5449,6 +6319,11 @@
    "title": "Windows 11, version 25H2 (26200.7918)",
    "build": "26200.7918",
    "arch": "amd64"
+  },
+  "8944d06b-e330-44ae-ad9d-8518c78cd65f": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40910014503"
   },
   "89d03408-c26f-4112-b185-6ae5a44a2a13": {
    "status": "done",
@@ -5479,6 +6354,11 @@
    "title": "Feature update to Windows 10, version 1809 (17763.3287)",
    "build": "17763.3287",
    "arch": "x86"
+  },
+  "8a18c9b8-4b0b-4b3c-80ae-04d2296228aa": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40963669898"
   },
   "8a29cad9-a153-40ae-b471-f94199519378": {
    "status": "done",
@@ -5576,11 +6456,21 @@
    "build": "17763.168",
    "arch": "amd64"
   },
+  "8bf14cc9-9b86-4dba-9ca5-2bbd6bd758d6": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40977198721"
+  },
   "8c10c883-071c-43c3-bff8-8ed82fba2436": {
    "status": "done",
    "title": "Feature update to Windows 10, version 22H2 (19045.6575)",
    "build": "19045.6575",
    "arch": "x86"
+  },
+  "8c172b85-a4f3-4f89-868a-e7a46351b2dd": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40880824990"
   },
   "8c3ec809-d34f-4506-9936-e0df04acbd0f": {
    "status": "done",
@@ -5648,11 +6538,21 @@
    "build": "22000.708",
    "arch": "amd64"
   },
+  "8d9c26e5-7a28-4d1e-9da2-d7d02db4a3e6": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40970846592"
+  },
   "8dda76ff-194a-4a47-b1e7-c303136bf54e": {
    "status": "done",
    "title": "Windows 11, version 23H2 (22631.4169)",
    "build": "22631.4169",
    "arch": "amd64"
+  },
+  "8e24e0a2-a6c2-4b21-ba9f-93742f64fd0f": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40893171462"
   },
   "8e25946e-38b8-4323-9e28-575f445fb6b6": {
    "status": "done",
@@ -5726,6 +6626,11 @@
    "build": "26200.7462",
    "arch": "amd64"
   },
+  "8f2ad46f-8fe6-48dd-abdf-86dbdbf87603": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40877951307"
+  },
   "8f378cec-5123-4340-aca9-e94c446ed27d": {
    "status": "done",
    "title": "Feature update to Windows 10, version 21H2 (19044.4046)",
@@ -5737,6 +6642,11 @@
    "title": "Feature update to Windows 10, version 21H2 (19044.1826)",
    "build": "19044.1826",
    "arch": "amd64"
+  },
+  "8f484d4f-887a-4bbc-8432-332387ea3fc9": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40899796253"
   },
   "8f550c54-da87-45d3-89e3-0c03a6f16ae8": {
    "status": "done",
@@ -5810,11 +6720,21 @@
    "build": "19045.5487",
    "arch": "amd64"
   },
+  "902bd8b4-6c95-49da-8fd9-ff8e235a195d": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40916822279"
+  },
   "907109b4-a6ea-4d67-8ee6-2a2710c46b5b": {
    "status": "done",
    "title": "Windows 11, version 22H2 (22621.1194)",
    "build": "22621.1194",
    "arch": "amd64"
+  },
+  "909daed6-83d2-4920-9209-59666dbe2c3d": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40910014503"
   },
   "90ad25f6-1ea3-4452-bb91-babad6f61969": {
    "status": "done",
@@ -5833,6 +6753,21 @@
    "title": "Feature update to Windows 10, version 21H2 (19044.1679)",
    "build": "19044.1679",
    "arch": "amd64"
+  },
+  "90ce0da5-6e31-4090-9829-e807b9a0ade9": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40870230794"
+  },
+  "90ce484a-2bc5-40ae-9169-9edf153cdf89": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40955983472"
+  },
+  "91712d02-7dcf-478a-acfc-6e4c474fc754": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40968591924"
   },
   "918485a9-fdf8-49de-b4d0-c8a5bab88597": {
    "status": "done",
@@ -5875,6 +6810,11 @@
    "title": "Feature update to Windows 10, version 2004 (19041.789)",
    "build": "19041.789",
    "arch": "amd64"
+  },
+  "929acc27-5166-44e7-9fe8-424fdf1387d7": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40875204252"
   },
   "92ec64ac-7c04-4309-b3cc-50e40cbcb609": {
    "status": "done",
@@ -5934,6 +6874,11 @@
    "title": "Windows 11, version 23H2 (22631.6491)",
    "build": "22631.6491",
    "arch": "amd64"
+  },
+  "94476fea-3259-4450-941d-aa7b36cb92dd": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40893171462"
   },
   "9456da32-4542-4b66-9bcf-b9369499e018": {
    "status": "done",
@@ -6001,11 +6946,21 @@
    "build": "19044.2788",
    "arch": "amd64"
   },
+  "95b1aae3-fff7-4b0d-84c3-21220460b40a": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40993224026"
+  },
   "95cc0dd5-949f-452e-9115-30f6c5836016": {
    "status": "done",
    "title": "Windows 11, version 26H2 (26300.9539)",
    "build": "26300.9539",
    "arch": "amd64"
+  },
+  "96096854-fbdb-41ff-b4ca-621d8492c733": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40889884332"
   },
   "960b5860-55a0-4814-8a98-4cefe92923d0": {
    "status": "done",
@@ -6091,6 +7046,11 @@
    "build": "20348.887",
    "arch": "amd64"
   },
+  "978118ad-4411-4235-996c-9668396c2319": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40950242646"
+  },
   "979b6aad-db35-4ebb-8a46-2863cbfad96f": {
    "status": "done",
    "title": "Feature update to Windows 10, version 21H2 (19044.7417)",
@@ -6133,6 +7093,11 @@
    "build": "26100.7171",
    "arch": "amd64"
   },
+  "99688762-6838-49cf-854e-1071a29c1fbb": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40889884332"
+  },
   "997706be-9c66-47e9-9824-e3fd0fcf4b59": {
    "status": "done",
    "title": "Windows 11, version 22H2 (22621.963)",
@@ -6166,6 +7131,11 @@
    "status": "failed",
    "failures": 3,
    "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40826022516"
+  },
+  "9acbd1c8-4554-47cb-806d-fac9715fccfd": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40880824990"
   },
   "9acda6c6-13c7-417d-8bca-5d03e605690a": {
    "status": "done",
@@ -6202,6 +7172,11 @@
    "title": "Feature update to Microsoft server operating system, version 21H2 (20348.288)",
    "build": "20348.288",
    "arch": "amd64"
+  },
+  "9b304ea0-90a8-44c6-bb42-677d1f493328": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40883833829"
   },
   "9b5be1e9-79d6-4c3f-ad35-ca89c2c5d4ed": {
    "status": "done",
@@ -6257,6 +7232,11 @@
    "build": "20348.1487",
    "arch": "amd64"
   },
+  "9d469676-9723-4677-9cf3-e30a1fb0fe5e": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40858608281"
+  },
   "9d506446-e622-438a-9c60-e811f83e36a5": {
    "status": "done",
    "title": "Feature update to Windows 10, version 21H2 (19044.1566)",
@@ -6286,6 +7266,11 @@
    "title": "Feature update to Windows 10, version 2004 (19041.1387)",
    "build": "19041.1387",
    "arch": "amd64"
+  },
+  "9db97ad2-df8f-4f6d-bd26-4def71d7dc32": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40865537717"
   },
   "9dc70915-9375-4c7e-9baa-aef0a5aa1eb6": {
    "status": "done",
@@ -6325,8 +7310,8 @@
   },
   "a00eab2c-02ce-4beb-9d7f-713b760b646f": {
    "status": "failed",
-   "failures": 2,
-   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40826022516"
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40838635281"
   },
   "a0104ee8-62f8-4c2c-b181-997b74d0e2a3": {
    "status": "done",
@@ -6346,6 +7331,11 @@
    "build": "19043.1949",
    "arch": "amd64"
   },
+  "a03e5b1b-8b37-43fa-a9e9-ec5c2729e8f0": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40958589747"
+  },
   "a07c4aa8-ccf2-4891-85b8-d9f656729e51": {
    "status": "done",
    "title": "Feature update to Windows 10, version 1809 (17763.1518)",
@@ -6358,6 +7348,11 @@
    "build": "22621.1848",
    "arch": "amd64"
   },
+  "a0e86dd3-8aa8-4934-a70e-d3255a887bb0": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/41004575206"
+  },
   "a0ea85e8-4330-43ef-a88a-d982ae96ea3a": {
    "status": "failed",
    "failures": 3,
@@ -6368,6 +7363,11 @@
    "title": "Feature update to Windows 10, version 21H2 (19044.4529)",
    "build": "19044.4529",
    "arch": "amd64"
+  },
+  "a1205c77-6fee-4dd1-afd9-80d935c4d1a1": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40930090259"
   },
   "a14f634a-c830-4083-8f27-aff3c31a29e3": {
    "status": "done",
@@ -6399,6 +7399,11 @@
    "build": "25398.1916",
    "arch": "amd64"
   },
+  "a1ac3c12-5885-4dbe-bcc9-40af5cef3e6b": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40933144838"
+  },
   "a1b5ebab-a534-44c6-9075-8bb6d669d025": {
    "status": "done",
    "title": "Feature update to Windows 10, version 1809 (17763.9121)",
@@ -6428,6 +7433,11 @@
    "title": "Feature update to Windows 10, version 22H2 (19045.7058)",
    "build": "19045.7058",
    "arch": "x86"
+  },
+  "a24ea477-e136-4df6-adfc-a7c682079379": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40955983472"
   },
   "a25c1e53-e5f6-4620-95d9-3d22059ed916": {
    "status": "done",
@@ -6464,6 +7474,11 @@
    "title": "Feature update to Microsoft server operating system, version 21H2 (20348.2527)",
    "build": "20348.2527",
    "arch": "amd64"
+  },
+  "a385185a-d7dd-4f9a-8bc4-9a0baf8548d8": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40993224026"
   },
   "a3892b7a-7f8b-4158-820d-3f2ab3ba9330": {
    "status": "done",
@@ -6507,6 +7522,11 @@
    "build": "17763.3887",
    "arch": "x86"
   },
+  "a4aac51c-5cb0-40ed-b00f-f6cbc5c5acd9": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40950242646"
+  },
   "a4d10358-54d1-400c-bb7f-f74c3c280ad3": {
    "status": "done",
    "title": "Feature update to Windows 10, version 21H1 (19043.1319)",
@@ -6524,6 +7544,11 @@
    "title": "Feature update to Microsoft server operating system, version 21H2 (20348.3932)",
    "build": "20348.3932",
    "arch": "amd64"
+  },
+  "a4ed28c4-686b-4d45-8951-3ddb98f1214e": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40947355881"
   },
   "a4fce3c2-ebe2-4643-850f-58ab03fe9b64": {
    "status": "done",
@@ -6561,6 +7586,11 @@
    "build": "26200.9106",
    "arch": "amd64"
   },
+  "a5a17507-99f5-4609-898f-61c48c4671b4": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40913608733"
+  },
   "a5e17efd-b8e8-44ec-800c-257ad96aa3a0": {
    "status": "done",
    "title": "Feature update to Windows 10, version 22H2 (19045.3758)",
@@ -6595,6 +7625,16 @@
    "title": "Feature update to Windows 10, version 1809 (17763.5936)",
    "build": "17763.5936",
    "arch": "amd64"
+  },
+  "a69079d6-055f-4e88-a5da-b03f35c42f7d": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40867832991"
+  },
+  "a699543e-554f-43ca-8cd7-65124c0d652c": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40941700175"
   },
   "a6ba652c-1bd7-4a85-8751-c877cfb64535": {
    "status": "done",
@@ -6650,6 +7690,11 @@
    "build": "19044.1288",
    "arch": "amd64"
   },
+  "a7caff05-ff36-48ed-9901-96c44e582f72": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40860897729"
+  },
   "a7dcf12d-8931-4669-8edb-687c004cc2a6": {
    "status": "done",
    "title": "Feature update to Azure Stack HCI, version 23H2 (25398.1665)",
@@ -6667,6 +7712,11 @@
    "title": "Feature update to Windows 10, version 21H1 (19043.1826)",
    "build": "19043.1826",
    "arch": "amd64"
+  },
+  "a809f10c-39e4-4a94-95c5-c3260247b1c2": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40899796253"
   },
   "a8198661-827d-4c74-9c8f-c70b7f8cd025": {
    "status": "done",
@@ -6704,6 +7754,16 @@
    "build": "26100.7015",
    "arch": "amd64"
   },
+  "a8c46e01-9851-44a9-962f-5a27614fbf76": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40880824990"
+  },
+  "a8e60648-7b2f-4b73-91c2-16901ab5566a": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40955983472"
+  },
   "a8eaeb9e-6de2-454c-8022-5b3fb5c8fce8": {
    "status": "done",
    "title": "Feature update to Windows 10, version 21H2 (19044.2075)",
@@ -6715,6 +7775,11 @@
    "title": "Windows 11, version 25H2 (26200.8457)",
    "build": "26200.8457",
    "arch": "amd64"
+  },
+  "a9199c6e-0ecd-4093-a4ee-8757d244f918": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40981158529"
   },
   "a9334fec-5900-48d6-852b-7536e61148cc": {
    "status": "done",
@@ -6740,6 +7805,11 @@
    "build": "25398.1425",
    "arch": "amd64"
   },
+  "a9c05b7d-ca28-489c-9b3b-f3feffe932c3": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40920439687"
+  },
   "a9e9673e-1444-4bec-9445-1d294d11bb4e": {
    "status": "done",
    "title": "Windows 11, version 26H2 (26300.9725)",
@@ -6753,8 +7823,8 @@
   },
   "aa094a3f-031a-44b0-9ac0-305384dc4c3f": {
    "status": "failed",
-   "failures": 2,
-   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40826022516"
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40838635281"
   },
   "aa40a552-e5f7-4977-80a8-3a757ad2b12d": {
    "status": "done",
@@ -6840,6 +7910,11 @@
    "build": "22621.4108",
    "arch": "amd64"
   },
+  "ac2b20ab-6186-4267-8d55-4b3ca35197d1": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40903185618"
+  },
   "ac417a02-f061-4f49-884d-9f427e1edfed": {
    "status": "done",
    "title": "Feature update to Windows 10 Team (19042.572)",
@@ -6852,11 +7927,21 @@
    "build": "26200.5074",
    "arch": "amd64"
   },
+  "ac7dcfd7-81c9-4181-86cf-3929a4908b51": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40973105781"
+  },
   "ac94e557-eb76-4c8b-a064-0c72d6d3e09c": {
    "status": "done",
    "title": "Windows 11, version 24H2 (26100.9711)",
    "build": "26100.9711",
    "arch": "amd64"
+  },
+  "ac9c4fcd-f79a-4de4-ae28-125696f2111c": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40872723560"
   },
   "acbc3228-b04c-406d-afdc-2643cdf2d01b": {
    "status": "done",
@@ -6960,6 +8045,11 @@
    "build": "17763.165",
    "arch": "amd64"
   },
+  "ae4c8b2b-3349-4403-96d2-2a90a20d6833": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40906722672"
+  },
   "ae655a7e-6da3-4cc3-911c-bb8e066ac216": {
    "status": "done",
    "title": "Feature update to Windows 10, version 22H2 (19045.6033)",
@@ -6977,6 +8067,16 @@
    "title": "Feature update to Windows 10, version 21H2 (19044.5859)",
    "build": "19044.5859",
    "arch": "x86"
+  },
+  "aeaadafd-0364-4c79-9fc1-b6fd2c172ca8": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40977198721"
+  },
+  "aed5dfbe-e285-43cd-baef-ab25f58f3358": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40979186500"
   },
   "aedb85ac-2c65-4c94-af40-d210e31eb7ec": {
    "status": "done",
@@ -7006,6 +8106,11 @@
    "title": "Windows 11, version 23H2 (22631.3527)",
    "build": "22631.3527",
    "arch": "amd64"
+  },
+  "af93b473-cb01-4ad5-95fb-ebc5356b1a92": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40938880033"
   },
   "afbfd20a-e84a-4fa1-8a13-8b50298d5bba": {
    "status": "done",
@@ -7037,11 +8142,21 @@
    "build": "19044.6693",
    "arch": "x86"
   },
+  "b00ff816-29a7-4440-bfad-6c894b2afe52": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40993224026"
+  },
   "b01107c9-e7ac-4011-85f8-f85853e5abd9": {
    "status": "done",
    "title": "Feature update to Windows 10, version 1909 (18363.2094)",
    "build": "18363.2094",
    "arch": "x86"
+  },
+  "b03dc98b-0bd9-443c-969d-ecc6192715e8": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40899796253"
   },
   "b0500c16-65b7-4e36-b226-98f87290540d": {
    "status": "done",
@@ -7181,6 +8296,11 @@
    "build": "22000.434",
    "arch": "amd64"
   },
+  "b371cae4-aa23-4152-91a1-fd6dee0fd8f2": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40920439687"
+  },
   "b3740d6a-8de6-4fd1-bde5-832d7be724ee": {
    "status": "done",
    "title": "Feature update to Windows 10, version 2004 (19041.1202)",
@@ -7277,6 +8397,11 @@
    "build": "19045.4235",
    "arch": "x86"
   },
+  "b509af0b-393e-47f6-9463-cc9a27c65675": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40923796847"
+  },
   "b55fde7e-913d-4300-8668-f616ab3af9e0": {
    "status": "done",
    "title": "Windows 11, version 23H2 (22631.5984)",
@@ -7309,8 +8434,8 @@
   },
   "b612df79-0a67-4ef5-80b3-3cc051ce8ee9": {
    "status": "failed",
-   "failures": 2,
-   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40826022516"
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40838635281"
   },
   "b61e4290-c51c-4610-810b-b81f82576799": {
    "status": "done",
@@ -7390,11 +8515,21 @@
    "build": "19044.2545",
    "arch": "amd64"
   },
+  "b7121b47-ea27-4d17-8cc4-34b46f7d5665": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40979186500"
+  },
   "b73f9781-1a6c-446e-81af-3102fa61b8f0": {
    "status": "done",
    "title": "Feature update to Windows 10, version 20H2 (19042.2130)",
    "build": "19042.2130",
    "arch": "amd64"
+  },
+  "b76d8aed-0985-4fa7-8541-429f51d7bcfb": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40955983472"
   },
   "b7871ebd-39ef-4ba6-970f-fb7957457380": {
    "status": "done",
@@ -7431,6 +8566,11 @@
    "title": "Windows 11, version 25H2 (26200.7309)",
    "build": "26200.7309",
    "arch": "amd64"
+  },
+  "b83b45b7-269e-4d9d-9c99-84220787b230": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40930090259"
   },
   "b86484ef-97c7-4c1d-a465-687cf83ba4c9": {
    "status": "done",
@@ -7479,6 +8619,11 @@
    "failures": 3,
    "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40802107025"
   },
+  "b90b71bd-0e55-4dfa-afe0-816417771b97": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40941700175"
+  },
   "b912261e-ae93-499a-9897-e277c78f7222": {
    "status": "done",
    "title": "Windows 11, version 22H2 (22621.5189)",
@@ -7509,6 +8654,11 @@
    "build": "19044.6809",
    "arch": "amd64"
   },
+  "b9dc17aa-8fe2-4973-a18b-de8b80ad1202": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40899796253"
+  },
   "b9de0e0d-094c-4371-b890-ecda00da6663": {
    "status": "done",
    "title": "Windows 11, version 25H2 (26200.7623)",
@@ -7532,6 +8682,11 @@
    "title": "Windows 11, version 24H2 (26100.560)",
    "build": "26100.560",
    "arch": "amd64"
+  },
+  "ba17d802-5522-43d7-bac5-e6b21c45a6d3": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40886841210"
   },
   "ba2c300a-853e-4a97-bbda-f8d264108420": {
    "status": "done",
@@ -7568,6 +8723,11 @@
    "title": "Windows 11, version 22H2 (22621.5549)",
    "build": "22621.5549",
    "arch": "amd64"
+  },
+  "baa6fbf9-7467-4ffa-8a30-289aad2d9aa5": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40858608281"
   },
   "baaa5c57-d319-447b-aa26-3234861345b1": {
    "status": "done",
@@ -7610,6 +8770,11 @@
    "title": "Feature update to Windows 10, version 20H2 (19042.1387)",
    "build": "19042.1387",
    "arch": "x86"
+  },
+  "bbcdbf02-fd0f-497f-9d01-956bec5f9c13": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40889884332"
   },
   "bbdbfaa0-1889-4bfa-889c-1b5fcdf50cc8": {
    "status": "done",
@@ -7689,6 +8854,11 @@
    "build": "16299.19",
    "arch": "x86"
   },
+  "bdb032e0-d331-49dc-9af0-fdeaf117b9a4": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40977198721"
+  },
   "bdea78c5-e7ee-4083-a899-273d8edabab3": {
    "status": "done",
    "title": "Feature update to Windows 10, version 2004 (19041.844)",
@@ -7713,6 +8883,11 @@
    "build": "17763.8389",
    "arch": "x86"
   },
+  "be764dba-65bb-4151-bb07-f455261b67c1": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40906722672"
+  },
   "be8f5dde-6fe5-4c41-9728-7fb8c6b256f9": {
    "status": "done",
    "title": "Feature update to Windows 10, version 2004 (19041.962)",
@@ -7736,6 +8911,11 @@
    "title": "Feature update to Windows 10, version 20H2 (19042.2251)",
    "build": "19042.2251",
    "arch": "amd64"
+  },
+  "bedc038a-76d5-4a5e-bf78-0922697a6d7f": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40883833829"
   },
   "bef08a78-02c6-4ccf-939c-327288e97bcc": {
    "status": "done",
@@ -7766,6 +8946,11 @@
    "title": "Feature update to Windows 10, version 1909 (18363.2158)",
    "build": "18363.2158",
    "arch": "x86"
+  },
+  "bf697909-4180-4b46-9074-54a8ba90031b": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40947355881"
   },
   "bf72a145-7fc6-4646-a693-941d0877e75b": {
    "status": "done",
@@ -7808,6 +8993,11 @@
    "title": "Feature update to Windows 10, version 22H2 (19045.2193)",
    "build": "19045.2193",
    "arch": "amd64"
+  },
+  "c0340fe5-efce-4c5c-bcb3-6eac6f695926": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40975197623"
   },
   "c07dd0d5-8f46-403b-8512-d4ec424ecb58": {
    "status": "done",
@@ -7935,11 +9125,21 @@
    "build": "17763.6189",
    "arch": "amd64"
   },
+  "c334e220-bb8a-44d0-8876-e4069d1ab0cc": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40865537717"
+  },
   "c34ec9ad-cf2e-4bdc-b400-9839596a0511": {
    "status": "done",
    "title": "Feature update to Microsoft server operating system, version 21H2 (20348.707)",
    "build": "20348.707",
    "arch": "amd64"
+  },
+  "c35db36f-ef56-4ac9-8a73-97b700a10394": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40963669898"
   },
   "c38ad97e-9d4f-4cb2-810d-18f5ba99790f": {
    "status": "failed",
@@ -7957,6 +9157,11 @@
    "title": "Feature update to Windows 10, version 22H2 (19045.7291)",
    "build": "19045.7291",
    "arch": "x86"
+  },
+  "c43da501-3bd7-4d5c-a0f2-f1f6fd85cdfe": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40920439687"
   },
   "c444b55a-3225-4ce1-853d-e9be718511bd": {
    "status": "done",
@@ -8018,6 +9223,11 @@
    "build": "17763.1",
    "arch": "x86"
   },
+  "c56fbeca-0e49-45ff-8095-e7f726d56505": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40979186500"
+  },
   "c575db54-6583-4100-89d1-47a17d3e6307": {
    "status": "done",
    "title": "Feature update to Windows 10, version 1809 (17763.9245)",
@@ -8032,8 +9242,8 @@
   },
   "c5fc724e-d3ff-465c-932c-5b45ec84050b": {
    "status": "failed",
-   "failures": 2,
-   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40826022516"
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40838635281"
   },
   "c6177e06-31cb-403d-b0c0-821d3bef5dd2": {
    "status": "done",
@@ -8046,6 +9256,11 @@
    "title": "Windows 11, version 25H2 (26200.8728)",
    "build": "26200.8728",
    "arch": "amd64"
+  },
+  "c6a0bbfe-fa2b-4d86-aab4-fb51f87b459e": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40947355881"
   },
   "c6cab68f-3c02-4c4d-a7cf-95a839044aef": {
    "status": "done",
@@ -8077,6 +9292,11 @@
    "build": "19045.4717",
    "arch": "amd64"
   },
+  "c738c16d-be75-4758-b04f-cdc3946561ad": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40966108171"
+  },
   "c73b016f-4803-4288-9966-40e6c5fc8a12": {
    "status": "done",
    "title": "Feature update to Microsoft server operating system, version 21H2 (20348.2340)",
@@ -8088,6 +9308,11 @@
    "title": "Windows 11, version 23H2 (22631.2361)",
    "build": "22631.2361",
    "arch": "amd64"
+  },
+  "c74e3854-87c8-448a-91ac-31a153deae6e": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40899796253"
   },
   "c780bdf0-6cc5-467f-9974-7d5bb2d7d69b": {
    "status": "failed",
@@ -8154,6 +9379,11 @@
    "build": "20348.4294",
    "arch": "amd64"
   },
+  "c9468807-53fa-478a-b633-fead1a8a0f55": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40953196271"
+  },
   "c972dd56-45ab-4536-a6ea-7759da4dd753": {
    "status": "done",
    "title": "Feature update to Windows 10, version 1809 (17763.1757)",
@@ -8207,6 +9437,11 @@
    "title": "Feature update to Windows 10, version 21H2 (19044.4651)",
    "build": "19044.4651",
    "arch": "amd64"
+  },
+  "cab48188-9dd3-4f4a-b839-c1f5e0365f10": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40955983472"
   },
   "caf166fc-4332-406a-96d8-17789b8af6de": {
    "status": "failed",
@@ -8332,6 +9567,11 @@
    "build": "26100.4851",
    "arch": "amd64"
   },
+  "cd1e50b5-e130-4d98-9b6e-a9922dc35d45": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40875204252"
+  },
   "cd273543-49d1-47c6-a7d5-00a46d3f0bb6": {
    "status": "done",
    "title": "Windows 11, version 24H2 (26100.3781)",
@@ -8355,6 +9595,11 @@
    "title": "Feature update to Windows 10, version 1809 (17763.2300)",
    "build": "17763.2300",
    "arch": "amd64"
+  },
+  "cd8222e6-f579-45d2-b2ed-6c80143ec43b": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40955983472"
   },
   "cd8257ce-cb10-4a06-a107-1e60725358fa": {
    "status": "done",
@@ -8392,6 +9637,11 @@
    "build": "26200.7093",
    "arch": "amd64"
   },
+  "ce76251e-d409-4ac4-98a4-6e667ae9254d": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40961212527"
+  },
   "ce7c48c4-b024-4c65-b689-099fdc4aa374": {
    "status": "done",
    "title": "Windows Server, version 23H2 (25398.469)",
@@ -8422,6 +9672,16 @@
    "build": "19041.1052",
    "arch": "amd64"
   },
+  "cef0f044-b039-4a2a-a5ca-f919f0efe6fc": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40858608281"
+  },
+  "cf03d086-4c37-43ba-8e18-e379fa99b140": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40910014503"
+  },
   "cf1704a2-1229-4564-b0d2-5b549c6dc48c": {
    "status": "done",
    "title": "Windows 11, version 23H2 (22631.4830)",
@@ -8439,6 +9699,11 @@
    "title": "Feature update to Microsoft server operating system, version 21H2 (20348.2159)",
    "build": "20348.2159",
    "arch": "amd64"
+  },
+  "cf62dc01-2836-4592-841c-0d161075e136": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40856267475"
   },
   "cf6c04d7-de26-4f14-a235-1a167fe556a3": {
    "status": "done",
@@ -8458,6 +9723,16 @@
    "build": "20348.2031",
    "arch": "amd64"
   },
+  "cfd34cf9-d9f5-4659-8466-0e10049ef44d": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40981158529"
+  },
+  "cff447cf-3310-43ab-a7c7-75e58fb9f04b": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40920439687"
+  },
   "d02477e0-9520-488e-a36b-70efc7c94365": {
    "status": "done",
    "title": "Windows 11, version 24H2 (26100.7781)",
@@ -8475,6 +9750,21 @@
    "title": "Feature update to Windows 10, version 21H2 (19044.1826)",
    "build": "19044.1826",
    "arch": "x86"
+  },
+  "d0d7dabe-da68-4d97-8de4-e60a51ef60a4": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40896530280"
+  },
+  "d11ad4d6-8db1-4f14-af8e-8a70cdbcbb9a": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40910014503"
+  },
+  "d11ba0e0-9da8-4072-9d1e-712e4f7399a9": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40938880033"
   },
   "d12f36d1-0a2b-4612-a8e2-7e83537b1ab5": {
    "status": "done",
@@ -8494,11 +9784,21 @@
    "build": "19042.985",
    "arch": "amd64"
   },
+  "d168f841-ffee-4bd3-adac-679bb9024547": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40970846592"
+  },
   "d16a1cca-3eee-41d9-9952-5f04f75b40a7": {
    "status": "done",
    "title": "Feature update to Windows 10, version 20H2 (19042.1706)",
    "build": "19042.1706",
    "arch": "amd64"
+  },
+  "d172250a-4945-4f3d-8db2-324b741621af": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40973105781"
   },
   "d19f87ac-9293-41a3-9efa-ee8db1608269": {
    "status": "done",
@@ -8518,6 +9818,11 @@
    "build": "19045.6159",
    "arch": "x86"
   },
+  "d1b2e406-7564-403b-b25a-eb070e04bd8e": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40970846592"
+  },
   "d1bb1fda-6d7b-4233-b98c-4337990a0828": {
    "status": "done",
    "title": "Feature update to Windows 10, version 1809 (17763.3532)",
@@ -8529,6 +9834,21 @@
    "title": "Feature update to Windows 10, version 1809 (17763.8027)",
    "build": "17763.8027",
    "arch": "amd64"
+  },
+  "d203447d-3b25-4d5a-bbea-fc2a90e5a49d": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40926941694"
+  },
+  "d20b7d4b-3135-4715-be2e-5e47252ef589": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40858608281"
+  },
+  "d217961c-ad9a-4e03-98ad-01d1e0ab03ca": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40889884332"
   },
   "d21dc89f-cf10-4509-a0d8-f70886872d75": {
    "status": "done",
@@ -8589,6 +9909,11 @@
    "build": "19044.7811",
    "arch": "amd64"
   },
+  "d43434b0-7b06-4fc4-9505-955158da768f": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40903185618"
+  },
   "d46a4fc9-2fd9-4a12-b8fd-0c9e22a5456c": {
    "status": "done",
    "title": "Feature update to Windows 10, version 22H2 (19045.2006)",
@@ -8600,6 +9925,11 @@
    "title": "Feature update to Windows 10, version 21H1 (19043.1526)",
    "build": "19043.1526",
    "arch": "x86"
+  },
+  "d5204f43-4b69-4a5c-aac1-d5e8777e2cc4": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40872723560"
   },
   "d523cbcd-c2ba-4dd0-a15c-baa75f0c7cf7": {
    "status": "done",
@@ -8631,11 +9961,21 @@
    "build": "20348.2966",
    "arch": "amd64"
   },
+  "d5a5de05-e71d-4af0-b288-65a1a8396b00": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40867832991"
+  },
   "d5d7ad35-c477-4c34-8c5b-2d8bcb0ad684": {
    "status": "done",
    "title": "Feature update to Windows 10, version 2004 (19041.608)",
    "build": "19041.608",
    "arch": "amd64"
+  },
+  "d5db6747-a97e-40ba-b839-87719b0adba1": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40858608281"
   },
   "d5ea3411-5467-4284-9ad2-71a2e1a5d21a": {
    "status": "done",
@@ -8691,6 +10031,11 @@
    "build": "17763.8644",
    "arch": "x86"
   },
+  "d6434ef3-5c27-49d2-a652-b0b5c1ce2cd1": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40950242646"
+  },
   "d65d9cd7-26d3-4002-abcb-3821726a9d34": {
    "status": "done",
    "title": "Windows 11, version 22H2 (22621.1485)",
@@ -8721,6 +10066,11 @@
    "build": "25398.1189",
    "arch": "amd64"
   },
+  "d71b68f5-05e8-46a0-8c4f-1286cff20867": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40938880033"
+  },
   "d71bafd6-0e32-4133-a2c5-04e9ba85b99f": {
    "status": "done",
    "title": "Windows 11, version 24H2 (26100.8973)",
@@ -8739,16 +10089,31 @@
    "build": "22621.3296",
    "arch": "amd64"
   },
+  "d7a8f8c5-7761-487a-b2dc-c211b33da266": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40913608733"
+  },
   "d7b71fc6-95d7-4468-8034-67c199ebcfb4": {
    "status": "failed",
    "failures": 3,
    "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40669421890"
+  },
+  "d7baca53-05d7-4a0b-8415-756775a43bd4": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40910014503"
   },
   "d7cfe811-f371-4187-8267-1beef215651b": {
    "status": "done",
    "title": "Windows 11, version 23H2 (22631.3235)",
    "build": "22631.3235",
    "arch": "amd64"
+  },
+  "d7f2eabb-1eb4-4fb0-aafd-e9bb9c91bbf0": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40880824990"
   },
   "d82f8ecf-202d-47ac-89a2-2562a7528027": {
    "status": "done",
@@ -8761,6 +10126,11 @@
    "title": "Feature update to Windows 10, version 1803 (17134.5)",
    "build": "17134.5",
    "arch": "x86"
+  },
+  "d8a5d935-23bc-4df2-8936-ee53cc44d500": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40899796253"
   },
   "d8fb5cff-e224-457a-9086-90dee2c30fec": {
    "status": "done",
@@ -8822,6 +10192,11 @@
    "build": "26100.8893",
    "arch": "amd64"
   },
+  "da569fa4-b259-4463-b1d5-67a2d7fdaefb": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40966108171"
+  },
   "da5c5877-52f4-4a6e-a4c9-41007c84d328": {
    "status": "done",
    "title": "Feature update to Windows 10, version 21H1 (19043.1889)",
@@ -8875,11 +10250,21 @@
    "build": "25398.531",
    "arch": "amd64"
   },
+  "db404046-7a05-488c-8d77-8d3b078f8da9": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40920439687"
+  },
   "db426e82-3a45-4e3f-9430-c26f44d865ff": {
    "status": "done",
    "title": "Windows 11 (22000.1165)",
    "build": "22000.1165",
    "arch": "amd64"
+  },
+  "db63bc90-9112-434b-a8a3-dc0a25f2d466": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40880824990"
   },
   "db640db1-d7b0-4d44-8bbc-b930ab72865a": {
    "status": "done",
@@ -8916,6 +10301,11 @@
    "title": "Feature update to Windows 10, version 20H2 (19042.1620)",
    "build": "19042.1620",
    "arch": "amd64"
+  },
+  "dc8484ab-2ce8-4642-8747-ecab8dda88ea": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40930090259"
   },
   "dc84a9c4-2f03-43cf-a677-fe099f33fbd1": {
    "status": "done",
@@ -8997,8 +10387,8 @@
   },
   "ddabce84-45ed-4515-8675-daec64fcee2c": {
    "status": "failed",
-   "failures": 1,
-   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40826022516"
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40853892499"
   },
   "ddd5b1a0-6f79-408b-ad0c-b177d72ed65b": {
    "status": "done",
@@ -9018,11 +10408,36 @@
    "build": "22621.5415",
    "arch": "amd64"
   },
+  "ddf1d41c-b3df-4ba7-ab15-1ccc01863f53": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40858608281"
+  },
+  "ddf6f37d-c199-452c-8a51-acd81277b663": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40955983472"
+  },
   "de029f6a-7498-4e10-8501-d1581b153ddd": {
    "status": "done",
    "title": "Feature update to Windows 10, version 22H2 (19045.4651)",
    "build": "19045.4651",
    "arch": "amd64"
+  },
+  "de76dee2-4573-421d-9550-57536d2e8de6": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40906722672"
+  },
+  "de89ee2c-0ed6-4343-b95b-7db1c2657da4": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40893171462"
+  },
+  "de930767-7aba-4552-a0de-e38afadbbec2": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40963669898"
   },
   "de9a64be-95b2-480b-aa43-f154bd39f4c0": {
    "status": "done",
@@ -9041,6 +10456,11 @@
    "title": "Windows 11, version 26H2 (26300.9278)",
    "build": "26300.9278",
    "arch": "amd64"
+  },
+  "def6bc61-fed9-4b9e-b9ef-52c78a252421": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40865537717"
   },
   "df27ee69-4463-4e72-86f2-123f60a893bf": {
    "status": "done",
@@ -9066,6 +10486,11 @@
    "build": "26100.1591",
    "arch": "amd64"
   },
+  "df9cf253-d867-4fb9-9eb6-a3b09680709f": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40893171462"
+  },
   "dfb804e7-bb24-41dd-9db2-931203293d46": {
    "status": "done",
    "title": "Feature update to Windows 10, version 21H2 (19044.3324)",
@@ -9077,6 +10502,11 @@
    "title": "Windows 11, version 26H1 (28000.2956)",
    "build": "28000.2956",
    "arch": "amd64"
+  },
+  "dfeb3c7d-1d47-467b-9a9e-65794390a12e": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40933144838"
   },
   "e02e746f-e5f1-4df9-9cad-ddc74b388f76": {
    "status": "done",
@@ -9168,6 +10598,11 @@
    "build": "19045.4353",
    "arch": "x86"
   },
+  "e2b81194-088b-43fa-a520-829cddc5cd11": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40872723560"
+  },
   "e2d7464a-c8cc-4779-ad1d-36699425f3d3": {
    "status": "done",
    "title": "Feature update to Windows 10, version 21H2 (19044.1387)",
@@ -9179,6 +10614,16 @@
    "title": "Windows 11, version 22H2 (22621.898)",
    "build": "22621.898",
    "arch": "amd64"
+  },
+  "e3426cff-99ff-495b-ab05-b2bc36e39095": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40938880033"
+  },
+  "e35f3c03-96c4-4561-afa1-81128adc2485": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40893171462"
   },
   "e36f3f9b-4a79-4ea9-8529-b68e178b901e": {
    "status": "failed",
@@ -9196,6 +10641,11 @@
    "title": "Windows 11, version 26H1 (28000.1836)",
    "build": "28000.1836",
    "arch": "amd64"
+  },
+  "e45efb35-eab7-4acc-9451-979b978fadce": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40958589747"
   },
   "e460cc22-afce-4903-9f55-edc9a09b4997": {
    "status": "done",
@@ -9257,6 +10707,11 @@
    "build": "19041.746",
    "arch": "x86"
   },
+  "e61bd681-9336-4100-a5d6-449d9efa458a": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40955983472"
+  },
   "e61d6ef4-31f5-4efa-8d73-a62ab2676f2f": {
    "status": "done",
    "title": "Feature update to Windows 10, version 1903 (18362.175)",
@@ -9273,6 +10728,11 @@
    "title": "Feature update to Windows 10, version 21H2 (19044.2673)",
    "build": "19044.2673",
    "arch": "amd64"
+  },
+  "e6752d01-bc15-4f5c-876d-a202c1d47c9c": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40903185618"
   },
   "e686b35f-94c1-471c-ada3-4dbd358fe75f": {
    "status": "done",
@@ -9358,6 +10818,16 @@
    "build": "18363.1734",
    "arch": "x86"
   },
+  "e7e51ab6-2557-41d1-b45e-f70a97893b23": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40872723560"
+  },
+  "e7f5c4e9-b130-47ff-9cb7-bc48544ea82b": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40933144838"
+  },
   "e7fd3a85-5640-4f32-8e85-d9a537dcbe91": {
    "status": "done",
    "title": "Feature update to Windows 10, version 2004 (19041.1237)",
@@ -9400,6 +10870,11 @@
    "build": "22000.2121",
    "arch": "amd64"
   },
+  "e92d71c8-7cb7-4688-a176-9eee0c93ec37": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40993224026"
+  },
   "e92e60e7-fd23-4013-9483-6985db4638aa": {
    "status": "done",
    "title": "Feature update to Windows 10, version 22H2 (19045.2364)",
@@ -9430,6 +10905,11 @@
    "build": "19045.6332",
    "arch": "amd64"
   },
+  "e9d7dcf3-926e-471a-8d35-c0d4ea197451": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40930090259"
+  },
   "e9e03d56-c0e1-4481-bc8a-789ecdfd3bd1": {
    "status": "done",
    "title": "Feature update to Windows 10, version 2004 (19041.630)",
@@ -9459,6 +10939,11 @@
    "title": "Feature update to Windows 10, version 22H2 (19045.4170)",
    "build": "19045.4170",
    "arch": "x86"
+  },
+  "ea4663f1-bfde-4535-baeb-3564390f6332": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40968591924"
   },
   "ea48477f-d2e7-49af-a0c0-a5ad958b6199": {
    "status": "done",
@@ -9507,6 +10992,11 @@
    "title": "Feature update to Windows 10, version 21H1 (19043.1947)",
    "build": "19043.1947",
    "arch": "x86"
+  },
+  "ebc8c86a-0319-4c56-867d-3246c40833ad": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40920439687"
   },
   "ebdf2c99-ec0c-4cb5-824c-e58fa7b2800a": {
    "status": "done",
@@ -9592,6 +11082,11 @@
    "build": "22621.3227",
    "arch": "amd64"
   },
+  "ed3bbf0b-5330-4b2b-835b-8bdfa3836b35": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40875204252"
+  },
   "ed6cb54a-1bfe-4bb6-90a4-4e2f44088b2d": {
    "status": "done",
    "title": "Feature update to Microsoft server operating system, version 21H2 (20348.1906)",
@@ -9603,6 +11098,11 @@
    "title": "Windows 11, version 23H2 (22631.4890)",
    "build": "22631.4890",
    "arch": "amd64"
+  },
+  "edb18f5e-9298-45dc-96b9-115f17892942": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40896530280"
   },
   "edd8bccc-71da-47c7-adf2-ab4dbb1f8115": {
    "status": "done",
@@ -9622,11 +11122,26 @@
    "build": "19042.662",
    "arch": "amd64"
   },
+  "ef6f4c75-37fd-48e8-b2d1-f257052acd1a": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40981158529"
+  },
+  "ef893bef-db68-466c-9443-6b03ce55df5c": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40883833829"
+  },
   "efc0581b-edaf-4007-ace5-091d7ed01a08": {
    "status": "done",
    "title": "Feature update to Windows 10, version 20H2 (19042.844)",
    "build": "19042.844",
    "arch": "x86"
+  },
+  "f004c129-ae37-49c7-9ed9-32d92cae8c54": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40950242646"
   },
   "f098e716-7ba9-44cc-b19b-f9870bef09ce": {
    "status": "done",
@@ -9639,6 +11154,11 @@
    "title": "Feature update to Windows 10, version 1809 (17763.2452)",
    "build": "17763.2452",
    "arch": "amd64"
+  },
+  "f0d3ccb9-6371-48a0-ae2e-8679485a4ee3": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40913608733"
   },
   "f0e8c7b1-a035-4ad8-b431-e6f0c6683d6d": {
    "status": "done",
@@ -9754,11 +11274,15 @@
    "build": "19044.3208",
    "arch": "x86"
   },
+  "f33ba40d-cd4d-41cd-bbd6-13825f131184": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40930090259"
+  },
   "f34ab3ce-f545-41c2-8194-582b7ca827a2": {
-   "status": "done",
-   "title": "Windows Server 2025 (26100.32860)",
-   "build": "26100.32860",
-   "arch": "amd64"
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40736574766"
   },
   "f3691231-0586-44d5-859b-e25f5eb9cfb7": {
    "status": "done",
@@ -9897,6 +11421,11 @@
    "build": "26100.268",
    "arch": "amd64"
   },
+  "f822ce72-f215-4736-9fb6-b7666336f72d": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40872723560"
+  },
   "f83989b7-20df-4fc2-9cb4-72183c21d735": {
    "status": "done",
    "title": "Feature update to Windows 10, version 1809 (17763.5458)",
@@ -9917,8 +11446,8 @@
   },
   "f871b882-95f6-4ef8-9bd7-ffdc238ba06e": {
    "status": "failed",
-   "failures": 1,
-   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40813827481"
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40838635281"
   },
   "f88b5f2d-6b78-4d11-82dd-03d1acdf839f": {
    "status": "done",
@@ -9938,16 +11467,31 @@
    "build": "19045.3570",
    "arch": "x86"
   },
+  "f9305339-ef1f-4b36-ae50-3ba15c97bfea": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40923796847"
+  },
   "f940c27e-3559-43b4-a165-506856b1d65f": {
    "status": "failed",
-   "failures": 1,
-   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40826022516"
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40853892499"
+  },
+  "f99b8cc0-8ad8-4931-93f7-158dfa5e9615": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40950242646"
   },
   "f9e3c41f-c631-4ccb-ac7f-b52506c17fe7": {
    "status": "done",
    "title": "Feature update to Windows 10, version 22H2 (19045.2846)",
    "build": "19045.2846",
    "arch": "amd64"
+  },
+  "f9f00696-7833-40b2-97c9-e14a500447b0": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40880824990"
   },
   "f9f33df4-5518-49bc-bc9d-88fb80331c37": {
    "status": "done",
@@ -9960,6 +11504,11 @@
    "title": "Feature update to Windows 10, version 20H2 (19042.1348)",
    "build": "19042.1348",
    "arch": "amd64"
+  },
+  "fa258d2a-3543-4f78-9b25-ea813b3e6971": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40973105781"
   },
   "fa685cb1-2e59-486d-b2a8-eedf22be4556": {
    "status": "done",
@@ -10027,6 +11576,11 @@
    "build": "25398.643",
    "arch": "amd64"
   },
+  "fbcf5b50-4e5f-4be7-9c72-e9d505860d10": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40883833829"
+  },
   "fbd668ef-348a-4f67-93b2-dc9c679498b5": {
    "status": "done",
    "title": "Feature update to Windows 10, version 20H2 (19042.1586)",
@@ -10063,11 +11617,26 @@
    "build": "19045.2311",
    "arch": "amd64"
   },
+  "fc82fd2a-9653-4437-92c1-e57554b2ff12": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40860897729"
+  },
+  "fc9fd0db-a857-42fa-ab30-7f177f2714d8": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40933144838"
+  },
   "fcc8f5c5-5c96-4077-9783-9e7e8f9d8e14": {
    "status": "done",
    "title": "Feature update to Windows 10, version 22H2 (19045.4842)",
    "build": "19045.4842",
    "arch": "amd64"
+  },
+  "fcfa90b0-800a-4a71-b6c9-a29fc7677520": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40920439687"
   },
   "fd386e36-5c3f-42de-8356-28e6dbf4aada": {
    "status": "done",
@@ -10080,6 +11649,11 @@
    "title": "Windows Server 2025 (26100.32995)",
    "build": "26100.32995",
    "arch": "amd64"
+  },
+  "fd62250b-168c-470e-b8a5-bd3335632bbb": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40880824990"
   },
   "fd91b7ad-3d5c-462e-b4c0-bc0439d9d152": {
    "status": "done",
@@ -10161,14 +11735,19 @@
   },
   "fe2ba97f-43c5-48be-97e6-acb9de47c182": {
    "status": "failed",
-   "failures": 2,
-   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40826022516"
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40838635281"
   },
   "fe2edb4c-204a-49f5-89dd-9821e9fea7d1": {
    "status": "done",
    "title": "Feature update to Windows 10, version 22H2 (19045.5674)",
    "build": "19045.5674",
    "arch": "x86"
+  },
+  "fe34c43b-cc41-4990-a3f0-9436778eba14": {
+   "status": "failed",
+   "failures": 3,
+   "last_run": "https://github.com/ErezAmihud/WindowsSymbolsByVersion/actions/runs/40963669898"
   },
   "fe47c57f-a77f-41e3-9012-00b4187e3462": {
    "status": "done",
