@@ -20,6 +20,9 @@ classifiers = [
     "Topic :: Software Development :: Debuggers",
 ]
 
+[project.optional-dependencies]
+volatility = ["volatility3>=2.7"]
+
 [project.urls]
 Homepage = "https://github.com/ErezAmihud/WindowsSymbolsByVersion"
 Index = "https://erezamihud.github.io/WindowsSymbolsByVersion/"
