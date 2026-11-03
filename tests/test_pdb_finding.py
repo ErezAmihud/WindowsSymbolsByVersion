@@ -123,6 +123,47 @@ def test_pdb_finding():
     print(f"test_pdb_finding OK ({len(expected)} entries)")
 
 
+def test_pdb_finding_listfile():
+    with tempfile.TemporaryDirectory() as tmp:
+        tree = os.path.join(tmp, "tree")
+        os.makedirs(tree)
+        _, expected_paths = build_tree(tree)
+
+        # wim_dedup.py listfile format: one quoted in-image path per line; a
+        # listed path that does not exist is skipped like any unreadable file
+        listed = ["Windows/System32/ntdll.dll", "Program Files/App/sp ace.exe", "bootmgr"]
+        listfile = os.path.join(tmp, "listfile.txt")
+        with open(listfile, "w") as f:
+            f.writelines(f'"/{rel}"\n' for rel in [*listed, "Windows/missing.dll"])
+
+        manifest = os.path.join(tmp, "manifest.out")
+        paths = os.path.join(tmp, "manifest.paths")
+        subprocess.run(
+            [
+                sys.executable,
+                os.path.join(REPO_ROOT, "code", "pdb_finding.py"),
+                tree,
+                manifest,
+                paths,
+                "--listfile",
+                listfile,
+            ],
+            check=True,
+            cwd=REPO_ROOT,
+        )
+        with open(paths) as f:
+            got_paths = {line.rstrip("\n") for line in f if line.strip()}
+        want = {p for p in expected_paths if p.split("\t")[0] in listed}
+        assert len(want) == len(listed)
+        assert got_paths == want, (
+            f"listfile paths mismatch:\nmissing: {sorted(want - got_paths)}\n"
+            f"unexpected: {sorted(got_paths - want)}"
+        )
+        with open(manifest) as f:
+            got = {line.strip() for line in f if line.strip()}
+        assert got == {f"{p.split(chr(9))[1]},{p.split(chr(9))[2]},1" for p in want}
+
+
 def test_merge_paths():
     with tempfile.TemporaryDirectory() as tmp:
         # overlapping entries across two .paths files must be deduped

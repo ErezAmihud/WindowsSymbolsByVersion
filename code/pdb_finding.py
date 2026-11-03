@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+import argparse
 import os
 import os.path
 import sys
@@ -56,15 +57,30 @@ def list_files(directory):
             yield os.path.join(root, file)
 
 
-def traverse_directory(directory, out, paths_out=None, workers=None):
+def read_listfile(directory, listfile):
+    """Yield the files named in a wim_dedup.py listfile, under directory.
+
+    Each line is one quoted in-image path (the `wimextract @listfile` format).
+    """
+    with open(listfile, encoding="utf-8") as f:
+        for line in f:
+            rel = line.strip().strip('"').lstrip("/")
+            if rel:
+                yield os.path.join(directory, rel)
+
+
+def traverse_directory(directory, out, paths_out=None, workers=None, listfile=None):
     """Traverse the directory and process each file.
+
+    With listfile, only the files it names are processed instead of the whole
+    tree (e.g. a mounted wim image, where walking every file is wasted work).
 
     When paths_out is given, also write one `path<TAB>pdb<TAB>guid` line per
     entry, with the path relative to `directory` using forward slashes (i.e.
     the file's path inside the scanned image). Tab-separated because pdb
     names and paths may contain commas.
     """
-    files = list(list_files(directory))
+    files = list(read_listfile(directory, listfile) if listfile else list_files(directory))
     with ProcessPoolExecutor(max_workers=workers or os.cpu_count()) as executor:
         results = zip(files, executor.map(process_file, files, chunksize=64))
         for file_path, rets in tqdm.tqdm(results, total=len(files), mininterval=10):
@@ -76,21 +92,22 @@ def traverse_directory(directory, out, paths_out=None, workers=None):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) not in (3, 4):
-        print("Usage: python script.py <directory> <out> [paths_out]")
+    parser = argparse.ArgumentParser(
+        description="Emit pdb,guid,1 lines for the PE files in a directory."
+    )
+    parser.add_argument("directory")
+    parser.add_argument("out")
+    parser.add_argument("paths_out", nargs="?")
+    parser.add_argument("--listfile", help="only parse the files this wim_dedup.py listfile names")
+    args = parser.parse_args()
+
+    if not os.path.isdir(args.directory):
+        print(f"The specified path '{args.directory}' is not a directory.")
         sys.exit(1)
 
-    target_directory = sys.argv[1]
-    target_output = sys.argv[2]
-    target_paths = sys.argv[3] if len(sys.argv) == 4 else None
-
-    if not os.path.isdir(target_directory):
-        print(f"The specified path '{target_directory}' is not a directory.")
-        sys.exit(1)
-
-    with open(target_output, "w") as f:
-        if target_paths is None:
-            traverse_directory(target_directory, f)
+    with open(args.out, "w") as f:
+        if args.paths_out is None:
+            traverse_directory(args.directory, f, listfile=args.listfile)
         else:
-            with open(target_paths, "w") as pf:
-                traverse_directory(target_directory, f, pf)
+            with open(args.paths_out, "w") as pf:
+                traverse_directory(args.directory, f, pf, listfile=args.listfile)
