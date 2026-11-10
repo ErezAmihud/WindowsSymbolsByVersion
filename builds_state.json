@@ -1628,6 +1628,12 @@
    "build": "19042.1165",
    "arch": "x86"
   },
+  "24a8df30-2418-4fa3-8c7b-a7d75e7589e8": {
+   "status": "done",
+   "title": "Windows 11, version 23H2 (22631.7711)",
+   "build": "22631.7711",
+   "arch": "amd64"
+  },
   "24c67817-e92d-4d02-9df6-a8a7554a3c75": {
    "status": "failed",
    "failures": 3,
