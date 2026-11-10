@@ -4169,6 +4169,12 @@
    "build": "20348.5020",
    "arch": "amd64"
   },
+  "5d8b7dca-51fa-476c-8832-717bd618a211": {
+   "status": "done",
+   "title": "Windows Server 2025 (26100.33822)",
+   "build": "26100.33822",
+   "arch": "amd64"
+  },
   "5d8d37ec-6063-4c4f-9095-47fc1dd92f36": {
    "status": "failed",
    "failures": 3,
