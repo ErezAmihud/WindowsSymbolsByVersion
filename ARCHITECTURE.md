@@ -108,6 +108,15 @@ only the published data - it has no coupling to the pipeline:
    [pdblister](https://github.com/ErezAmihud/pdblister) binary (must be on
    PATH; never auto-downloaded), or stops at `--manifest-only`.
 
+`winsyms volatility` reuses steps 1-3 for a fixed set of PDBs (kernel,
+tcpip, win32k*) into a temp symbol store, then converts each with
+volatility3's own `PdbReader` into `<out>/windows/<pdb>/<GUID>-<age>.json.xz`
+(decimal age - the manifest key carries it in hex). Volatility indexes ISF
+files by the GUID/age in their metadata, so the path is convention, not
+contract. volatility3 is an optional extra (`winsyms[volatility]`) checked
+before any download; download and conversion are injected into
+`volatility.build_pack` so tests need neither tool.
+
 See Runbooks below for cutting a release.
 
 ## Website

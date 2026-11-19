@@ -44,6 +44,24 @@ $ winsyms get 26100.1297 --path-prefix windows/system32/drivers/
 Run `winsyms get --help` for the full flag reference (output dir, symbol
 server, cache TTL, and more).
 
+## Volatility 3
+
+`winsyms volatility` builds the
+[ISF symbol tables](https://volatility3.readthedocs.io/en/latest/symbol-tables.html)
+Volatility 3 needs for a build, so memory images can be analysed on a
+machine with no internet:
+
+```console
+$ pip install "winsyms[volatility]"
+$ winsyms volatility 26100.1297 --out vol-symbols   # on a connected machine
+$ vol -s vol-symbols -f memory.raw windows.info     # anywhere, offline
+```
+
+By default it converts `ntkrnlmp.pdb`, `ntkrpamp.pdb`, `tcpip.pdb`,
+`win32k.pdb`, `win32kbase.pdb` and `win32kfull.pdb`; pick others with
+`--pdb NAME` (repeatable). Tables already in `--out` are skipped, so rerunning
+for more builds extends the same directory.
+
 ## License
 
 MIT. See [LICENSE](https://github.com/ErezAmihud/WindowsSymbolsByVersion/blob/main/LICENSE).
