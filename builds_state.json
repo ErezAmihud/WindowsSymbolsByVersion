@@ -7040,6 +7040,12 @@
    "build": "19042.1263",
    "arch": "x86"
   },
+  "969fbd50-31b0-4242-92d3-90ed574dee9b": {
+   "status": "done",
+   "title": "Windows 11, version 26H2 (26300.10075)",
+   "build": "26300.10075",
+   "arch": "amd64"
+  },
   "96a761d2-db68-4faa-b3e3-2336987a50e8": {
    "status": "done",
    "title": "Windows 11 (22000.2001)",
